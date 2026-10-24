@@ -1,0 +1,23 @@
+{
+  "name": "phase6-native-direct-npu-real-score-control-v1",
+  "status": "descriptive control matched to Phase 5 SIFT1M evaluation",
+  "dataset": "ANN_SIFT1M",
+  "dataset_manifest": "results/phase5/sift1m/dataset_manifest.json",
+  "split": "evaluation",
+  "query_ids": [4, 5, 6, 7],
+  "n": [1024, 16384, 131072, 1000000],
+  "k": [4, 10],
+  "dtype": "f16",
+  "tile_width": 256,
+  "tile_batch": 32,
+  "query_batch": 1,
+  "initial_candidate_budget": 1,
+  "npu_compiler_type": "PLUGIN",
+  "methods": ["ov_npu_native_direct"],
+  "warmup": 2,
+  "repeats": 5,
+  "blocks": 2,
+  "required_correctness": "exact over stored FP16 scores; score descending, original index ascending",
+  "embedding_or_distance_time_included": false,
+  "confirmatory_holdout_query_ids": [8, 9, 10, 11, 12, 13, 14, 15]
+}
