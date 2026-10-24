@@ -42,6 +42,10 @@ class RunResult:
     device_submissions: int = 0
     staged_input_bytes: int = 0
     retrieved_output_bytes: int = 0
+    adaptive_policy: str = "fixed"
+    cost_aware_jumps: int = 0
+    cost_model_launch_ns: int = 0
+    cost_model_extra_candidate_ns: int = 0
 
     def metadata(self) -> dict:
         d = asdict(self)
@@ -92,7 +96,6 @@ class TileSelector:
         width = self.backend.width
         groups: dict[int, list[int]] = defaultdict(list)
         for i in active:
-            b = min(target[i], self.k, states[i].size)
             # One extra output is required to bound omitted elements.
             requested = min(width, min(target[i], self.k) + 1)
             groups[requested].append(i)
@@ -120,31 +123,66 @@ class TileSelector:
                 ):
                     self.profile[target_name] += int(backend_profile.get(source, 0))
                 extraction_start = perf_counter_ns()
-                for row_no, tile_id in enumerate(chosen):
-                    st = states[tile_id]
-                    b = min(target[tile_id], self.k, st.size)
-                    local = np.asarray(got_indices[row_no, :b], dtype=np.int64)
-                    if (np.any(local >= st.size) or np.any(local < 0)
-                            or len(np.unique(local)) != b):
-                        raise RuntimeError(f"Backend yielded invalid tile indices for tile {tile_id}")
-                    orig = np.asarray(scores[st.start + local])
-                    u = (float(got_values[row_no, b]) if b < st.size else float("-inf"))
-                    st.budget = b
-                    st.upper_bound = u
-                    # Native TopK may be unstable for tied scores at local boundary.
-                    # Completed (r=K) tiles require a deterministic exact local TopK.
-                    # Repair ONLY when the local boundary can omit an equal-scored item.
-                    if b >= min(self.k, st.size) and b < st.size and np.min(orig) == u:
-                        repaired = exact_topk(scores[st.start:st.start + st.size], b)
-                        local = repaired
-                        orig = scores[st.start + local]
+                # Rows in one static request normally share a candidate budget.
+                # Process each distinct budget as an array to avoid one NumPy
+                # sort/uniqueness allocation per tile. Short final tiles form at
+                # most one additional budget group.
+                sizes = np.asarray([states[tile_id].size for tile_id in chosen],
+                                   dtype=np.int64)
+                starts = np.asarray([states[tile_id].start for tile_id in chosen],
+                                    dtype=np.int64)
+                budgets = np.asarray([
+                    min(target[tile_id], self.k, states[tile_id].size)
+                    for tile_id in chosen
+                ], dtype=np.int64)
+                for budget in np.unique(budgets):
+                    positions = np.flatnonzero(budgets == budget)
+                    local = np.asarray(got_indices[positions, :budget], dtype=np.int64)
+                    group_sizes = sizes[positions]
+                    invalid = np.any((local < 0) | (local >= group_sizes[:, None]), axis=1)
+                    duplicate = (
+                        np.any(np.diff(np.sort(local, axis=1), axis=1) == 0, axis=1)
+                        if budget > 1 else np.zeros(positions.size, dtype=bool)
+                    )
+                    if np.any(invalid | duplicate):
+                        bad_position = positions[int(np.flatnonzero(invalid | duplicate)[0])]
+                        raise RuntimeError(
+                            f"Backend yielded invalid tile indices for tile {chosen[bad_position]}"
+                        )
+                    group_starts = starts[positions]
+                    orig = np.asarray(scores[group_starts[:, None] + local])
+                    upper = np.full(positions.size, -np.inf, dtype=np.float64)
+                    unfinished = budget < group_sizes
+                    if np.any(unfinished):
+                        upper[unfinished] = got_values[positions[unfinished], budget]
+                    completed = budget >= np.minimum(self.k, group_sizes)
+                    repair = completed & unfinished & (np.min(orig, axis=1) == upper)
+                    ordinary = np.flatnonzero(~repair)
+                    if ordinary.size:
+                        order = np.lexsort(
+                            (local[ordinary], -orig[ordinary].astype(np.float64)), axis=1
+                        )
+                        sorted_local = np.take_along_axis(local[ordinary], order, axis=1)
+                        sorted_values = np.take_along_axis(orig[ordinary], order, axis=1)
+                        for group_row, local_row, value_row in zip(
+                            ordinary, sorted_local, sorted_values, strict=True
+                        ):
+                            position = positions[group_row]
+                            st = states[chosen[position]]
+                            st.budget = int(budget)
+                            st.upper_bound = float(upper[group_row])
+                            st.ids = st.start + local_row
+                            st.values = value_row
+                    for group_row in np.flatnonzero(repair):
+                        position = positions[group_row]
+                        st = states[chosen[position]]
+                        repaired = exact_topk(scores[st.start:st.start + st.size], int(budget))
+                        st.budget = int(budget)
+                        st.upper_bound = float(upper[group_row])
+                        st.ids = st.start + repaired
+                        st.values = scores[st.start + repaired]
                         st.tie_repairs += 1
                         self.cpu_tie_repairs += 1
-                    # Canonicalize ordering within retained candidates; selection
-                    # correctness is independently verified against reference.
-                    sort_idx = np.lexsort((local, -orig.astype(np.float64)))
-                    st.ids = st.start + local[sort_idx]
-                    st.values = orig[sort_idx]
                 self.profile["candidate_extraction_ns"] += perf_counter_ns() - extraction_start
 
     @staticmethod
@@ -156,8 +194,11 @@ class TileSelector:
         order = topk_with_ids(cand_vals, cand_ids, k)
         return cand_ids[order], float(cand_vals[order[-1]]), int(cand_ids.size)
 
-    def select(self, scores: np.ndarray, adaptive: bool) -> RunResult:
+    def select(self, scores: np.ndarray, adaptive: bool,
+               policy: str = "geometric") -> RunResult:
         validate_scores(scores, self.k)
+        if policy not in ("geometric", "submission_aware"):
+            raise ValueError("adaptive policy must be geometric or submission_aware")
         if np.dtype(scores.dtype) != self.backend.dtype:
             raise ValueError(f"score dtype {scores.dtype} != tile backend dtype {self.backend.dtype}")
         width = self.backend.width
@@ -173,6 +214,9 @@ class TileSelector:
         # unprepared K shapes and prevents batching.
         target = {i: first_r for i in range(len(states))}
         rounds = 0
+        cost_aware_jumps = 0
+        cost_model_launch_ns = 0
+        cost_model_extra_candidate_ns = 0
         while True:
             rounds += 1
             self._update(states, active, target, scores)
@@ -202,8 +246,30 @@ class TileSelector:
                       if not done[i] and (candidate_count < self.k or st.upper_bound >= tau)]
             if not active:
                 raise RuntimeError("No eligible tile to refine; certificate was not satisfied")
-            target = {i: min(self.k, max(states[i].budget + 1, states[i].budget * 2))
-                      for i in active}
+            geometric_target = {
+                i: min(self.k, max(states[i].budget + 1, states[i].budget * 2))
+                for i in active
+            }
+            target = geometric_target
+            if policy == "submission_aware" and len(active) <= self.backend.batch:
+                submissions = max(self.backend.calls - previous, 1)
+                retained = sum(st.budget for st in states if st.ids is not None)
+                cost_model_launch_ns = int(
+                    self.profile["backend_execute_sync_ns"] / submissions
+                )
+                candidate_ns = self.profile["candidate_extraction_ns"] / max(retained, 1)
+                extra_candidates = sum(
+                    self.k - geometric_target[i] for i in active
+                )
+                cost_model_extra_candidate_ns = int(candidate_ns * extra_candidates)
+                # One full active set fits in one static submission. Spend the
+                # additional output/merge work now when it costs no more than
+                # one observed synchronous submission, eliminating any later
+                # refinement submission if the next certificate still fails.
+                if (extra_candidates > 0
+                        and cost_model_extra_candidate_ns <= cost_model_launch_ns):
+                    target = {i: self.k for i in active}
+                    cost_aware_jumps += 1
             if rounds > 1 + (self.k.bit_length() + 1):
                 raise RuntimeError("Adaptive selection did not terminate in expected rounds")
             self.profile["certification_ns"] += perf_counter_ns() - certificate_start
@@ -216,6 +282,10 @@ class TileSelector:
             backend_ns=self.backend_ns, host_routing_and_merge=True,
             device_submissions=(self.backend.calls - previous
                                 if isinstance(self.backend, OpenVINOTileBackend) else 0),
+            adaptive_policy=(policy if adaptive else "fixed"),
+            cost_aware_jumps=cost_aware_jumps,
+            cost_model_launch_ns=cost_model_launch_ns,
+            cost_model_extra_candidate_ns=cost_model_extra_candidate_ns,
             **self.profile,
         )
 
@@ -253,13 +323,13 @@ class MethodRunner:
             self.torch_stable = method.endswith("_stable")
             if self.torch_device == "cuda" and not torch.cuda.is_available():
                 raise BackendUnavailable("CUDA is not available to PyTorch")
-        elif method in ("numpy_hier", "numpy_adaptive"):
+        elif method in ("numpy_hier", "numpy_adaptive", "numpy_costadaptive"):
             self.kind = method.rsplit("_", 1)[-1]
             self.backend = NumpyTileBackend(tile, batch, dtype)
         else:
             m = re.fullmatch(
                 r"ov_([a-zA-Z0-9.]+)_(native|bitonic)_"
-                r"(?:(sequential|batched)_)?(direct|hier|adaptive)", method,
+                r"(?:(sequential|batched)_)?(direct|hier|adaptive|costadaptive)", method,
             )
             if not m:
                 raise ValueError(f"Unknown method {method}")
@@ -326,6 +396,11 @@ class MethodRunner:
             **self.backend.device_info,
             "execution_mode": self.execution_mode,
             "tile_batch": self.backend.batch,
+            "adaptive_policy": (
+                "submission_aware" if self.kind == "costadaptive"
+                else "geometric" if self.kind == "adaptive"
+                else "fixed"
+            ),
         }
 
     def run(self, scores: np.ndarray) -> RunResult:
@@ -374,4 +449,6 @@ class MethodRunner:
             )
         if self.selector is None:
             raise AssertionError("Runner not initialized")
-        return self.selector.select(scores, adaptive=(self.kind == "adaptive"))
+        adaptive = self.kind in ("adaptive", "costadaptive")
+        policy = "submission_aware" if self.kind == "costadaptive" else "geometric"
+        return self.selector.select(scores, adaptive=adaptive, policy=policy)
