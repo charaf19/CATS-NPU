@@ -16,9 +16,11 @@ authors = [{name = "CATS-NPU Research"}]
 ov = ["openvino>=2025.4,<2027"]
 dev = ["pytest>=8", "ruff>=0.7"]
 native = ["cmake==4.4.4", "ninja==1.13.2", "ziglang==0.15.2"]
+real = ["sentence-transformers==5.1.2"]
 all = [
   "openvino>=2025.4,<2027", "pytest>=8", "ruff>=0.7",
   "cmake==4.4.4", "ninja==1.13.2", "ziglang==0.15.2",
+  "sentence-transformers==5.1.2",
 ]
 
 [project.scripts]
