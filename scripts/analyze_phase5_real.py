@@ -19,7 +19,7 @@ COLORS = {
 }
 
 
-def write_scaling_svg(rows: list[dict], path: Path, k: int) -> None:
+def write_scaling_svg(rows: list[dict], path: Path, k: int, title: str) -> None:
     import math
 
     methods = [method for method in COLORS
@@ -43,7 +43,7 @@ def write_scaling_svg(rows: list[dict], path: Path, k: int) -> None:
         return top + (ymax - math.log10(value)) / (ymax - ymin) * plot_h
     parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">',
              '<rect width="100%" height="100%" fill="white"/>',
-             f'<text x="{left}" y="28" font-family="sans-serif" font-size="20">SIFT1M exact Top-K latency scaling (K={k})</text>']
+             f'<text x="{left}" y="28" font-family="sans-serif" font-size="20">{title} exact Top-K latency (K={k})</text>']
     for power in range(ymin, ymax + 1):
         yy = y(10 ** power)
         parts += [f'<line x1="{left}" y1="{yy:.1f}" x2="{left + plot_w}" y2="{yy:.1f}" stroke="#ddd"/>',
@@ -71,7 +71,7 @@ def write_scaling_svg(rows: list[dict], path: Path, k: int) -> None:
         parts += [f'<line x1="{left + plot_w + 25}" y1="{yy}" x2="{left + plot_w + 55}" y2="{yy}" stroke="{color}" stroke-width="3"/>',
                   f'<text x="{left + plot_w + 64}" y="{yy + 5}" font-family="sans-serif" font-size="13">{labels[method]}</text>']
     parts += [f'<rect x="{left}" y="{top}" width="{plot_w}" height="{plot_h}" fill="none" stroke="#333"/>',
-              '<text x="90" y="545" font-family="sans-serif" font-size="11" fill="#555">Four evaluation queries; per-query medians aggregated by median. Descriptive, one experimental launch.</text>',
+              '<text x="90" y="545" font-family="sans-serif" font-size="11" fill="#555">Evaluation queries; per-query medians aggregated by median. Descriptive, one experimental launch.</text>',
               '</svg>']
     path.write_text("\n".join(parts) + "\n", encoding="utf-8")
 
@@ -80,6 +80,7 @@ def main() -> None:
     parser = ArgumentParser()
     parser.add_argument("input", type=Path, nargs="+")
     parser.add_argument("--out", type=Path, default=Path("results/phase5/sift1m_summary"))
+    parser.add_argument("--title", default="SIFT1M")
     args = parser.parse_args()
     records = []
     for root in args.input:
@@ -187,8 +188,10 @@ def main() -> None:
     args.out.with_name(args.out.name + "_key_metrics.json").write_text(
         json.dumps(summary, indent=2) + "\n"
     )
-    write_scaling_svg(rows, args.out.with_name("sift1m_scaling_k4.svg"), 4)
-    write_scaling_svg(rows, args.out.with_name("sift1m_scaling_k10.svg"), 10)
+    write_scaling_svg(rows, args.out.with_name(args.out.name + "_scaling_k4.svg"), 4,
+                      args.title)
+    write_scaling_svg(rows, args.out.with_name(args.out.name + "_scaling_k10.svg"), 10,
+                      args.title)
     print(json.dumps(summary, indent=2))
 
 

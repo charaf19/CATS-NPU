@@ -1,0 +1,30 @@
+{
+  "name": "phase5-beir-semantic-score-evaluation-v1",
+  "status": "held-out evaluation split; descriptive until independent sessions",
+  "dataset_manifests": [
+    "results/phase5/beir/scifact/dataset_manifest.json",
+    "results/phase5/beir/fiqa/dataset_manifest.json"
+  ],
+  "split": "evaluation",
+  "k": [4, 10],
+  "dtype": "f16",
+  "tile_width": 256,
+  "tile_batch": 32,
+  "query_batch": 1,
+  "initial_candidate_budget": 1,
+  "npu_compiler_type": "PLUGIN",
+  "methods": [
+    "cpu_exact",
+    "cpp_exact",
+    "torch_cuda_stable",
+    "ov_npu_native_direct",
+    "ov_npu_native_batched_hier",
+    "ov_npu_native_batched_adaptive",
+    "ov_npu_native_batched_costadaptive"
+  ],
+  "warmup": 2,
+  "repeats": 5,
+  "blocks": 2,
+  "required_correctness": "exact over stored FP16 cosine scores; score descending, original index ascending",
+  "embedding_time_included": false
+}
