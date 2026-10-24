@@ -1,0 +1,18 @@
+{
+  "name": "feasibility-pilot-v1",
+  "objective": "Establish actual Intel NPU Top-K compilation, inference, correctness, and first timing comparisons",
+  "hardware": "Intel Core Ultra 7 255H / Intel AI Boost 3720",
+  "precision": "f16",
+  "n": [512, 4096],
+  "k": [4, 10],
+  "tile_width": 16,
+  "tile_batch": 1,
+  "initial_candidate_budget": 1,
+  "distributions": ["normal", "tied", "clustered", "adversarial"],
+  "primary_baselines": ["cpu_exact", "numpy_hier", "numpy_adaptive"],
+  "experimental_methods": ["ov_npu_native_hier", "ov_npu_native_adaptive"],
+  "fallback_if_compilation_fails": ["ov_npu_bitonic_hier", "ov_npu_bitonic_adaptive"],
+  "steady_state": {"warmup": 3, "repeats": 20, "blocks": 2},
+  "confirmatory_sessions_required": "at least 6 separately launched; preferably 8-10 with environment controls",
+  "caution": "This JSON describes the pilot; the provided PowerShell scripts supply CLI parameters explicitly."
+}

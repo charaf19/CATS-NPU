@@ -1,0 +1,31 @@
+{
+  "name": "phase2-batched-development-pilot-v1",
+  "purpose": "Measure sequential versus static tile-batched exact NPU Top-K after correctness preflight",
+  "status": "development tuning; not confirmatory",
+  "precision": "f16",
+  "n": [512, 4096, 16384],
+  "k": [4, 10],
+  "tile_width": 16,
+  "tile_batch": 32,
+  "query_batch": 1,
+  "initial_candidate_budget": 1,
+  "distributions": ["normal", "tied", "clustered", "adversarial"],
+  "npu_compiler_type": "PLUGIN",
+  "methods": [
+    "cpu_exact",
+    "cpp_exact",
+    "numpy_hier",
+    "numpy_adaptive",
+    "ov_npu_native_sequential_hier",
+    "ov_npu_native_batched_hier",
+    "ov_npu_native_sequential_adaptive",
+    "ov_npu_native_batched_adaptive",
+    "torch_cpu_stable",
+    "torch_cuda_stable"
+  ],
+  "npu_steady_state": {"warmup": 2, "repeats": 5, "blocks": 2},
+  "cuda_steady_state": {"warmup": 3, "repeats": 10, "blocks": 2},
+  "required_correctness": "exact descending score, ascending original index",
+  "statistics": "descriptive only; blocks and iterations are not independent sessions",
+  "artifacts": "results/phase2_pilot"
+}

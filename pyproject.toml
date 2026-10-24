@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cats-npu"
+version = "0.1.0"
+description = "Certified adaptive Top-K selection research prototype for consumer NPUs"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3"]
+license = {text = "MIT"}
+authors = [{name = "CATS-NPU Research"}]
+
+[project.optional-dependencies]
+ov = ["openvino>=2025.4,<2027"]
+dev = ["pytest>=8", "ruff>=0.7"]
+native = ["cmake==4.4.4", "ninja==1.13.2", "ziglang==0.15.2"]
+all = [
+  "openvino>=2025.4,<2027", "pytest>=8", "ruff>=0.7",
+  "cmake==4.4.4", "ninja==1.13.2", "ziglang==0.15.2",
+]
+
+[project.scripts]
+cats-npu = "cats_npu.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 105
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "B"]
