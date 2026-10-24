@@ -1,0 +1,42 @@
+{
+  "name": "phase7-confirmatory-sift1m-direct-vs-certified-v1",
+  "locked_before_data_collection": true,
+  "primary_hypothesis": "At SIFT1M N=1000000, K=10, the frozen geometric certified NPU method is faster than native direct NPU TopK.",
+  "primary_baseline": "ov_npu_native_direct",
+  "primary_method": "ov_npu_native_batched_adaptive",
+  "practical_speedup_threshold": 1.10,
+  "test": "two-sided exact sign-flip test over per-session mean log speedups",
+  "alpha": 0.05,
+  "confidence_interval": "95% session-cluster bootstrap of geometric-mean speedup",
+  "dataset_manifest": "results/phase5/sift1m/dataset_manifest.json",
+  "split": "confirmatory_holdout",
+  "query_ids": [8, 9, 10, 11, 12, 13, 14, 15],
+  "n": 1000000,
+  "k": 10,
+  "dtype": "f16",
+  "tile_width": 256,
+  "tile_batch": 32,
+  "query_batch": 1,
+  "initial_candidate_budget": 1,
+  "npu_compiler_type": "PLUGIN",
+  "methods": [
+    "cpp_exact",
+    "torch_cuda_stable",
+    "ov_npu_native_direct",
+    "ov_npu_native_batched_hier",
+    "ov_npu_native_batched_adaptive",
+    "ov_npu_native_batched_costadaptive"
+  ],
+  "independent_sessions": 6,
+  "warmup": 2,
+  "repeats": 5,
+  "blocks": 2,
+  "counterbalance": "cyclic method and query order by session",
+  "secondary_exploratory_comparisons": [
+    "geometric versus fixed NPU",
+    "submission-aware versus geometric NPU",
+    "geometric NPU versus stable CUDA",
+    "geometric NPU versus optimized C++"
+  ],
+  "required_correctness": "zero skips and exact agreement over stored FP16 scores in every session"
+}

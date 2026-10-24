@@ -4,18 +4,18 @@ A complete, executable **research starting repository** for studying one
 component of vector retrieval: exact Top-K selection on the Intel AI Boost NPU,
 with fair CPU/GPU controls and explicit hardware feasibility checks.
 
-**Status (Windows validation, 2026-10-23):** **123 tests pass and three physical
-NPU regressions are skipped by default**. With hardware regressions enabled,
-124 tests pass and the two documented bitonic defects are strict
+**Status (Windows validation, 2026-10-24):** **168 tests pass and three physical
+NPU regressions are skipped by default**. Phase 3 selected tile width 256 and
+tile batch 32 after a 20-configuration physical sweep. Phase 4 added an exact
+submission-aware policy, but its real-data benefit is inconsistent. SIFT1M,
+BEIR SciFact, and BEIR FiQA evaluation found a crossover among NPU mappings:
+direct TopK is best for small arrays while certified geometric refinement is
+faster at larger arrays. Optimized C++ and stable CUDA remain substantially
+faster. With hardware regressions enabled, the two documented bitonic defects are strict
 expected failures. The portable C++ baseline builds with
-project-local CMake/Ninja/Zig and passes deterministic tie tests. Native NPU
-tile batching is exact on the Phase 2 pilot matrix and reduces NPU submissions
-by 32x. At N=4096, K=10, normal FP16, batching reduced hierarchical latency
-from 96.34 ms to 8.21 ms and adaptive latency from 96.35 ms to 5.96 ms in one
-exploratory session. The optimized C++ baseline remained much faster at about
-0.068 ms. Bitonic and full-domain native numeric exactness still have documented
-failures, so correctness gates remain open and no confirmatory or novelty claim
-is supported. See [Phase 2 engineering](docs/PHASE2_ENGINEERING.md).
+project-local CMake/Ninja/Zig and passes deterministic tie tests. No
+confirmatory or algorithmic novelty claim is currently supported. See the
+[research ledger](docs/RESEARCH_PROGRESS.md).
 
 Read the [authoritative research charter](docs/RESEARCH_CHARTER.md) and
 [dated audit, evidence, and prioritized repair plan](docs/AUDIT_2026-10-23.md)
@@ -87,6 +87,23 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\scripts\10_pilot_npu.ps1
 .\scripts\11_pilot_gpu.ps1
 .\scripts\12_analyze_phase2.ps1
+
+# Phase 3/4 development work:
+.\scripts\13_phase3_ablation.ps1
+.\scripts\14_analyze_phase3.ps1 -ResultsPath results/phase3/ablation_baseline
+.\scripts\15_phase4_policy_pilot.ps1
+.\scripts\16_analyze_phase4.ps1 -ResultsPath results/phase4/policy_pilot
+
+# Real-data preparation and descriptive comparison:
+.\scripts\17_prepare_sift1m.ps1 -Download
+.\scripts\18_benchmark_sift1m.ps1
+.\scripts\20_benchmark_direct_npu.ps1
+.\scripts\22_prepare_beir.ps1
+.\scripts\23_benchmark_beir.ps1
+
+# Locked six-session confirmatory experiment; run only after reading the protocol:
+.\scripts\25_run_confirmatory.ps1
+.\scripts\26_analyze_confirmatory.ps1 -ResultsPath results/phase7/confirmatory/<timestamp>
 ```
 
 ### Direct Python commands
@@ -142,6 +159,7 @@ CATS-NPU/
 | `cpp_exact` | Optimized C++ exact TopK, after building native DLL |
 | `numpy_hier` | Exact local-K across CPU tiles + host merge |
 | `numpy_adaptive` | Certified adaptive local candidate budgets (CPU) |
+| `numpy_costadaptive` | Submission-aware certified candidate budgets (CPU) |
 | `ov_cpu_native_hier` | OpenVINO CPU TopK tiles + host merge |
 | `ov_npu_native_direct` | Single native TopK graph compiled explicitly on NPU |
 | `ov_npu_native_hier` | NPU tile TopK + host merge |
@@ -149,6 +167,7 @@ CATS-NPU/
 | `ov_npu_native_sequential_hier` | Explicit one-tile-per-submission NPU control |
 | `ov_npu_native_batched_hier` | Fixed-shape batched NPU local TopK + host exact merge |
 | `ov_npu_native_batched_adaptive` | Batched NPU local TopK + CPU adaptive certificate |
+| `ov_npu_native_batched_costadaptive` | Batched NPU local TopK + CPU submission-aware certificate |
 | `ov_npu_bitonic_hier` | Static compare-exchange graph + host merge |
 | `ov_npu_bitonic_adaptive` | Static comparison graph + CPU adaptation |
 | `torch_cuda` | PyTorch CUDA TopK, host input/output; equal ties may differ |
