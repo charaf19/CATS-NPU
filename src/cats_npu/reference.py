@@ -58,7 +58,16 @@ def topk_with_ids(values: np.ndarray, ids: np.ndarray, k: int) -> np.ndarray:
 def exact_topk(scores: np.ndarray, k: int) -> np.ndarray:
     """Deterministic reference returning sorted original indices."""
     a = validate_scores(scores, k)
-    return topk_with_ids(a, np.arange(a.size, dtype=np.int64), k)
+    # IDs here are exactly 0..N-1, so the uniqueness check needed by
+    # topk_with_ids would sort a million known-unique IDs during a large
+    # boundary-tie repair. Select directly and retain the same stable order.
+    kth = np.partition(a, a.size - k)[a.size - k]
+    higher = np.flatnonzero(a > kth)
+    needed = k - higher.size
+    tied = np.flatnonzero(a == kth)[:needed]
+    chosen = np.concatenate((higher, tied))
+    order = np.lexsort((chosen, -a[chosen].astype(np.float64)))
+    return chosen[order].astype(np.int64, copy=False)
 
 
 def matches_reference(scores: np.ndarray, found: np.ndarray, k: int) -> bool:

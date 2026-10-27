@@ -25,6 +25,15 @@ def test_reference_custom_global_ids():
     np.testing.assert_array_equal(ids[found], [4, 2, 3])
 
 
+@pytest.mark.parametrize("dtype", [np.float16, np.float32, np.float64])
+@pytest.mark.parametrize("k", [1, 10, 100, 4096])
+def test_reference_large_boundary_ties_match_full_sort(dtype, k):
+    rng = np.random.default_rng(19)
+    # Many ties, including at the selection boundary, expose unstable TopK.
+    scores = rng.integers(-5, 6, size=4096).astype(dtype)
+    np.testing.assert_array_equal(exact_topk(scores, k), brute_topk(scores, k))
+
+
 @pytest.mark.parametrize("bad", [np.array([0., np.nan]), np.array([np.inf, 1.]),
                                       np.array([]), np.array([[1., 2.]])])
 def test_reject_bad_scores(bad):

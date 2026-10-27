@@ -1,0 +1,561 @@
+{
+  "status": "frozen before holdout timing",
+  "training_sources_sha256": {
+    "results\\phase8\\predictive_headroom.json": "972de3aa1d3bc9c6d804ebfad3a1ab32523bb3b582bf298be8892a4ed68108a2",
+    "results\\phase8\\synthetic_exploratory_fixed\\observations_phase8_exploratory_fixed_20261027.jsonl": "fa80d6e62df9f11416b55ced6544c9b8e4add21bf8fda3804636747884a0d9b6"
+  },
+  "model": "depth-4 multi-output decision tree; min leaf 3; random seed 42",
+  "method_order": [
+    "ov_npu_native_direct",
+    "ov_npu_native_batched_hier",
+    "ov_npu_native_batched_adaptive",
+    "ov_npu_native_batched_costadaptive"
+  ],
+  "zero_overhead_only": true,
+  "predictions": [
+    {
+      "dataset": "BEIR/scifact",
+      "query_position": 8,
+      "query_id": "50",
+      "n": 5183,
+      "k": 4,
+      "score_path": "results\\phase5\\beir\\scifact\\q0008_50_n5183_cosine_f16.npy",
+      "score_sha256": "f04b350d30aeba31910ef3adc40ccd06e5061088baebf103ed2ea3d5a2f4edfb",
+      "tree_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "relative_log_cost_prediction": [
+        0.3886031149302922,
+        0.0,
+        0.08819603711913511,
+        0.02705207404161498
+      ]
+    },
+    {
+      "dataset": "BEIR/scifact",
+      "query_position": 8,
+      "query_id": "50",
+      "n": 5183,
+      "k": 10,
+      "score_path": "results\\phase5\\beir\\scifact\\q0008_50_n5183_cosine_f16.npy",
+      "score_sha256": "f04b350d30aeba31910ef3adc40ccd06e5061088baebf103ed2ea3d5a2f4edfb",
+      "tree_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "relative_log_cost_prediction": [
+        0.36556731049058283,
+        0.0,
+        0.45466114472756836,
+        0.5132772922425058
+      ]
+    },
+    {
+      "dataset": "BEIR/scifact",
+      "query_position": 9,
+      "query_id": "51",
+      "n": 5183,
+      "k": 4,
+      "score_path": "results\\phase5\\beir\\scifact\\q0009_51_n5183_cosine_f16.npy",
+      "score_sha256": "5e410a7939af5981d51de935f2494353b992332b08a77d7e0daa4d368004d48b",
+      "tree_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "relative_log_cost_prediction": [
+        0.3886031149302922,
+        0.0,
+        0.08819603711913511,
+        0.02705207404161498
+      ]
+    },
+    {
+      "dataset": "BEIR/scifact",
+      "query_position": 9,
+      "query_id": "51",
+      "n": 5183,
+      "k": 10,
+      "score_path": "results\\phase5\\beir\\scifact\\q0009_51_n5183_cosine_f16.npy",
+      "score_sha256": "5e410a7939af5981d51de935f2494353b992332b08a77d7e0daa4d368004d48b",
+      "tree_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "relative_log_cost_prediction": [
+        0.36556731049058283,
+        0.0,
+        0.45466114472756836,
+        0.5132772922425058
+      ]
+    },
+    {
+      "dataset": "BEIR/scifact",
+      "query_position": 10,
+      "query_id": "53",
+      "n": 5183,
+      "k": 4,
+      "score_path": "results\\phase5\\beir\\scifact\\q0010_53_n5183_cosine_f16.npy",
+      "score_sha256": "ec909e6a5814f0b6c5915263623e89d8c3070636d48d7f7aad056ba93825ca3c",
+      "tree_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "relative_log_cost_prediction": [
+        0.3886031149302922,
+        0.0,
+        0.08819603711913511,
+        0.02705207404161498
+      ]
+    },
+    {
+      "dataset": "BEIR/scifact",
+      "query_position": 10,
+      "query_id": "53",
+      "n": 5183,
+      "k": 10,
+      "score_path": "results\\phase5\\beir\\scifact\\q0010_53_n5183_cosine_f16.npy",
+      "score_sha256": "ec909e6a5814f0b6c5915263623e89d8c3070636d48d7f7aad056ba93825ca3c",
+      "tree_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "relative_log_cost_prediction": [
+        0.36556731049058283,
+        0.0,
+        0.45466114472756836,
+        0.5132772922425058
+      ]
+    },
+    {
+      "dataset": "BEIR/scifact",
+      "query_position": 11,
+      "query_id": "54",
+      "n": 5183,
+      "k": 4,
+      "score_path": "results\\phase5\\beir\\scifact\\q0011_54_n5183_cosine_f16.npy",
+      "score_sha256": "e677b6d755e1d7cd69be957de03e003ef7fc129c4a7ae09ffbc0f72ec28b85eb",
+      "tree_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "relative_log_cost_prediction": [
+        0.3886031149302922,
+        0.0,
+        0.08819603711913511,
+        0.02705207404161498
+      ]
+    },
+    {
+      "dataset": "BEIR/scifact",
+      "query_position": 11,
+      "query_id": "54",
+      "n": 5183,
+      "k": 10,
+      "score_path": "results\\phase5\\beir\\scifact\\q0011_54_n5183_cosine_f16.npy",
+      "score_sha256": "e677b6d755e1d7cd69be957de03e003ef7fc129c4a7ae09ffbc0f72ec28b85eb",
+      "tree_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "relative_log_cost_prediction": [
+        0.36556731049058283,
+        0.0,
+        0.45466114472756836,
+        0.5132772922425058
+      ]
+    },
+    {
+      "dataset": "BEIR/scifact",
+      "query_position": 12,
+      "query_id": "56",
+      "n": 5183,
+      "k": 4,
+      "score_path": "results\\phase5\\beir\\scifact\\q0012_56_n5183_cosine_f16.npy",
+      "score_sha256": "644e07d81044c0a69d5311916c69828aebd8a5f4b32b050c03607f29ab4c83b3",
+      "tree_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "relative_log_cost_prediction": [
+        0.3886031149302922,
+        0.0,
+        0.08819603711913511,
+        0.02705207404161498
+      ]
+    },
+    {
+      "dataset": "BEIR/scifact",
+      "query_position": 12,
+      "query_id": "56",
+      "n": 5183,
+      "k": 10,
+      "score_path": "results\\phase5\\beir\\scifact\\q0012_56_n5183_cosine_f16.npy",
+      "score_sha256": "644e07d81044c0a69d5311916c69828aebd8a5f4b32b050c03607f29ab4c83b3",
+      "tree_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "relative_log_cost_prediction": [
+        0.36556731049058283,
+        0.0,
+        0.45466114472756836,
+        0.5132772922425058
+      ]
+    },
+    {
+      "dataset": "BEIR/scifact",
+      "query_position": 13,
+      "query_id": "57",
+      "n": 5183,
+      "k": 4,
+      "score_path": "results\\phase5\\beir\\scifact\\q0013_57_n5183_cosine_f16.npy",
+      "score_sha256": "e95698cfb6f0314d6257ee1dce4a9f69e5ac50b49da9f50cb3404698757e70b2",
+      "tree_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "relative_log_cost_prediction": [
+        0.3886031149302922,
+        0.0,
+        0.08819603711913511,
+        0.02705207404161498
+      ]
+    },
+    {
+      "dataset": "BEIR/scifact",
+      "query_position": 13,
+      "query_id": "57",
+      "n": 5183,
+      "k": 10,
+      "score_path": "results\\phase5\\beir\\scifact\\q0013_57_n5183_cosine_f16.npy",
+      "score_sha256": "e95698cfb6f0314d6257ee1dce4a9f69e5ac50b49da9f50cb3404698757e70b2",
+      "tree_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "relative_log_cost_prediction": [
+        0.36556731049058283,
+        0.0,
+        0.45466114472756836,
+        0.5132772922425058
+      ]
+    },
+    {
+      "dataset": "BEIR/scifact",
+      "query_position": 14,
+      "query_id": "70",
+      "n": 5183,
+      "k": 4,
+      "score_path": "results\\phase5\\beir\\scifact\\q0014_70_n5183_cosine_f16.npy",
+      "score_sha256": "9543167ed9bf1d700c081bee5204be1e850e9df62762ff1e01be90d31ee48727",
+      "tree_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "relative_log_cost_prediction": [
+        0.3886031149302922,
+        0.0,
+        0.08819603711913511,
+        0.02705207404161498
+      ]
+    },
+    {
+      "dataset": "BEIR/scifact",
+      "query_position": 14,
+      "query_id": "70",
+      "n": 5183,
+      "k": 10,
+      "score_path": "results\\phase5\\beir\\scifact\\q0014_70_n5183_cosine_f16.npy",
+      "score_sha256": "9543167ed9bf1d700c081bee5204be1e850e9df62762ff1e01be90d31ee48727",
+      "tree_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "relative_log_cost_prediction": [
+        0.36556731049058283,
+        0.0,
+        0.45466114472756836,
+        0.5132772922425058
+      ]
+    },
+    {
+      "dataset": "BEIR/scifact",
+      "query_position": 15,
+      "query_id": "72",
+      "n": 5183,
+      "k": 4,
+      "score_path": "results\\phase5\\beir\\scifact\\q0015_72_n5183_cosine_f16.npy",
+      "score_sha256": "34ce73cae3f3c092b95e7f8b91d2a27d4f11148fee2400598470e123ad9d414a",
+      "tree_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "relative_log_cost_prediction": [
+        0.3886031149302922,
+        0.0,
+        0.08819603711913511,
+        0.02705207404161498
+      ]
+    },
+    {
+      "dataset": "BEIR/scifact",
+      "query_position": 15,
+      "query_id": "72",
+      "n": 5183,
+      "k": 10,
+      "score_path": "results\\phase5\\beir\\scifact\\q0015_72_n5183_cosine_f16.npy",
+      "score_sha256": "34ce73cae3f3c092b95e7f8b91d2a27d4f11148fee2400598470e123ad9d414a",
+      "tree_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "relative_log_cost_prediction": [
+        0.36556731049058283,
+        0.0,
+        0.45466114472756836,
+        0.5132772922425058
+      ]
+    },
+    {
+      "dataset": "BEIR/fiqa",
+      "query_position": 8,
+      "query_id": "89",
+      "n": 57638,
+      "k": 4,
+      "score_path": "results\\phase5\\beir\\fiqa\\q0008_89_n57638_cosine_f16.npy",
+      "score_sha256": "82b709cb78ade7a3c6b57361b2acc87e182e41d0304e71e00d75ee8249d053da",
+      "tree_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "relative_log_cost_prediction": [
+        0.4037613386460219,
+        0.0,
+        -0.010600790339044118,
+        -0.17149330422784934
+      ]
+    },
+    {
+      "dataset": "BEIR/fiqa",
+      "query_position": 8,
+      "query_id": "89",
+      "n": 57638,
+      "k": 10,
+      "score_path": "results\\phase5\\beir\\fiqa\\q0008_89_n57638_cosine_f16.npy",
+      "score_sha256": "82b709cb78ade7a3c6b57361b2acc87e182e41d0304e71e00d75ee8249d053da",
+      "tree_choice": "ov_npu_native_batched_adaptive",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "relative_log_cost_prediction": [
+        0.3167959621236882,
+        0.0,
+        -0.24666852757104518,
+        -0.06888912299250377
+      ]
+    },
+    {
+      "dataset": "BEIR/fiqa",
+      "query_position": 9,
+      "query_id": "90",
+      "n": 57638,
+      "k": 4,
+      "score_path": "results\\phase5\\beir\\fiqa\\q0009_90_n57638_cosine_f16.npy",
+      "score_sha256": "56d2738424e2e84b39ab2814ad62bc76de83ba4443807bc9f6e2f34957f2163d",
+      "tree_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "relative_log_cost_prediction": [
+        0.4037613386460219,
+        0.0,
+        -0.010600790339044118,
+        -0.17149330422784934
+      ]
+    },
+    {
+      "dataset": "BEIR/fiqa",
+      "query_position": 9,
+      "query_id": "90",
+      "n": 57638,
+      "k": 10,
+      "score_path": "results\\phase5\\beir\\fiqa\\q0009_90_n57638_cosine_f16.npy",
+      "score_sha256": "56d2738424e2e84b39ab2814ad62bc76de83ba4443807bc9f6e2f34957f2163d",
+      "tree_choice": "ov_npu_native_batched_adaptive",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "relative_log_cost_prediction": [
+        0.3167959621236882,
+        0.0,
+        -0.24666852757104518,
+        -0.06888912299250377
+      ]
+    },
+    {
+      "dataset": "BEIR/fiqa",
+      "query_position": 10,
+      "query_id": "94",
+      "n": 57638,
+      "k": 4,
+      "score_path": "results\\phase5\\beir\\fiqa\\q0010_94_n57638_cosine_f16.npy",
+      "score_sha256": "e129c088aa6773007f0856b7982c126c26418725fba62e61053d42e8bc96b053",
+      "tree_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "relative_log_cost_prediction": [
+        0.4037613386460219,
+        0.0,
+        -0.010600790339044118,
+        -0.17149330422784934
+      ]
+    },
+    {
+      "dataset": "BEIR/fiqa",
+      "query_position": 10,
+      "query_id": "94",
+      "n": 57638,
+      "k": 10,
+      "score_path": "results\\phase5\\beir\\fiqa\\q0010_94_n57638_cosine_f16.npy",
+      "score_sha256": "e129c088aa6773007f0856b7982c126c26418725fba62e61053d42e8bc96b053",
+      "tree_choice": "ov_npu_native_batched_adaptive",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "relative_log_cost_prediction": [
+        0.3167959621236882,
+        0.0,
+        -0.24666852757104518,
+        -0.06888912299250377
+      ]
+    },
+    {
+      "dataset": "BEIR/fiqa",
+      "query_position": 11,
+      "query_id": "98",
+      "n": 57638,
+      "k": 4,
+      "score_path": "results\\phase5\\beir\\fiqa\\q0011_98_n57638_cosine_f16.npy",
+      "score_sha256": "ba66f08cbc974b2286145b931634e93a27b4c659a51630a81ed7911111616b0e",
+      "tree_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "relative_log_cost_prediction": [
+        0.4037613386460219,
+        0.0,
+        -0.010600790339044118,
+        -0.17149330422784934
+      ]
+    },
+    {
+      "dataset": "BEIR/fiqa",
+      "query_position": 11,
+      "query_id": "98",
+      "n": 57638,
+      "k": 10,
+      "score_path": "results\\phase5\\beir\\fiqa\\q0011_98_n57638_cosine_f16.npy",
+      "score_sha256": "ba66f08cbc974b2286145b931634e93a27b4c659a51630a81ed7911111616b0e",
+      "tree_choice": "ov_npu_native_batched_adaptive",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "relative_log_cost_prediction": [
+        0.3167959621236882,
+        0.0,
+        -0.24666852757104518,
+        -0.06888912299250377
+      ]
+    },
+    {
+      "dataset": "BEIR/fiqa",
+      "query_position": 12,
+      "query_id": "104",
+      "n": 57638,
+      "k": 4,
+      "score_path": "results\\phase5\\beir\\fiqa\\q0012_104_n57638_cosine_f16.npy",
+      "score_sha256": "3ac63c855ad8b14efae014cb9bb526797e73f423bf3bff40a975251672efae89",
+      "tree_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "relative_log_cost_prediction": [
+        0.4037613386460219,
+        0.0,
+        -0.010600790339044118,
+        -0.17149330422784934
+      ]
+    },
+    {
+      "dataset": "BEIR/fiqa",
+      "query_position": 12,
+      "query_id": "104",
+      "n": 57638,
+      "k": 10,
+      "score_path": "results\\phase5\\beir\\fiqa\\q0012_104_n57638_cosine_f16.npy",
+      "score_sha256": "3ac63c855ad8b14efae014cb9bb526797e73f423bf3bff40a975251672efae89",
+      "tree_choice": "ov_npu_native_batched_adaptive",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "relative_log_cost_prediction": [
+        0.3167959621236882,
+        0.0,
+        -0.24666852757104518,
+        -0.06888912299250377
+      ]
+    },
+    {
+      "dataset": "BEIR/fiqa",
+      "query_position": 13,
+      "query_id": "106",
+      "n": 57638,
+      "k": 4,
+      "score_path": "results\\phase5\\beir\\fiqa\\q0013_106_n57638_cosine_f16.npy",
+      "score_sha256": "ecc6d3da8361920971b4fbad9c68006f5d6cdcdf65013e031c420491f0519f79",
+      "tree_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "relative_log_cost_prediction": [
+        0.4037613386460219,
+        0.0,
+        -0.010600790339044118,
+        -0.17149330422784934
+      ]
+    },
+    {
+      "dataset": "BEIR/fiqa",
+      "query_position": 13,
+      "query_id": "106",
+      "n": 57638,
+      "k": 10,
+      "score_path": "results\\phase5\\beir\\fiqa\\q0013_106_n57638_cosine_f16.npy",
+      "score_sha256": "ecc6d3da8361920971b4fbad9c68006f5d6cdcdf65013e031c420491f0519f79",
+      "tree_choice": "ov_npu_native_batched_adaptive",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "relative_log_cost_prediction": [
+        0.3167959621236882,
+        0.0,
+        -0.24666852757104518,
+        -0.06888912299250377
+      ]
+    },
+    {
+      "dataset": "BEIR/fiqa",
+      "query_position": 14,
+      "query_id": "109",
+      "n": 57638,
+      "k": 4,
+      "score_path": "results\\phase5\\beir\\fiqa\\q0014_109_n57638_cosine_f16.npy",
+      "score_sha256": "8579dec041d3be70d1598b1c932d6192b3cfe0bf0872cd649ab15f4ae0d24f05",
+      "tree_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "relative_log_cost_prediction": [
+        0.4037613386460219,
+        0.0,
+        -0.010600790339044118,
+        -0.17149330422784934
+      ]
+    },
+    {
+      "dataset": "BEIR/fiqa",
+      "query_position": 14,
+      "query_id": "109",
+      "n": 57638,
+      "k": 10,
+      "score_path": "results\\phase5\\beir\\fiqa\\q0014_109_n57638_cosine_f16.npy",
+      "score_sha256": "8579dec041d3be70d1598b1c932d6192b3cfe0bf0872cd649ab15f4ae0d24f05",
+      "tree_choice": "ov_npu_native_batched_adaptive",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "relative_log_cost_prediction": [
+        0.3167959621236882,
+        0.0,
+        -0.24666852757104518,
+        -0.06888912299250377
+      ]
+    },
+    {
+      "dataset": "BEIR/fiqa",
+      "query_position": 15,
+      "query_id": "475",
+      "n": 57638,
+      "k": 4,
+      "score_path": "results\\phase5\\beir\\fiqa\\q0015_475_n57638_cosine_f16.npy",
+      "score_sha256": "2dfdb5e30388175281fe7562b830b447ef8d06ffef9bb7a80d2e082d89b35a7f",
+      "tree_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "relative_log_cost_prediction": [
+        0.4037613386460219,
+        0.0,
+        -0.010600790339044118,
+        -0.17149330422784934
+      ]
+    },
+    {
+      "dataset": "BEIR/fiqa",
+      "query_position": 15,
+      "query_id": "475",
+      "n": 57638,
+      "k": 10,
+      "score_path": "results\\phase5\\beir\\fiqa\\q0015_475_n57638_cosine_f16.npy",
+      "score_sha256": "2dfdb5e30388175281fe7562b830b447ef8d06ffef9bb7a80d2e082d89b35a7f",
+      "tree_choice": "ov_npu_native_batched_adaptive",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "relative_log_cost_prediction": [
+        0.3167959621236882,
+        0.0,
+        -0.24666852757104518,
+        -0.06888912299250377
+      ]
+    }
+  ]
+}
