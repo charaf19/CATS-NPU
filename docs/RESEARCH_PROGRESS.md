@@ -1,6 +1,6 @@
 # Research progress and evidence ledger
 
-Last updated: 2026-10-24
+Last updated: 2026-10-27
 
 This ledger records completed work, evidence strength, limitations, and the next gate. Research outputs and figures are stored under `results/`. Manuscript and TeX work is outside the repository scope for this execution.
 
@@ -9,10 +9,10 @@ This ledger records completed work, evidence strength, limitations, and the next
 | Phase 2: feasibility and batching | Complete | Physical NPU feasibility, strict correctness guards, C++ and CUDA controls, 1,920-observation strict pilot | Engineering gain established; NPU performance advantage not established |
 | Phase 3: profiling and optimization | Complete for development | 20-config/1,920-observation NPU sweep; T256/B32 recommendation; vectorized extraction before/after; CPU/GPU gap | Engineering characterization passed; competitiveness failed |
 | Phase 4: contribution and novelty | Prototype and critical assessment complete | Exact submission-aware implementation, proof, tests, 1,600-observation pilot, related-work comparison | Systems mechanism partially supported; algorithmic novelty not established |
-| Phase 5: real data | Descriptive evaluation complete | SIFT1M, BEIR SciFact, and BEIR FiQA; fixed splits, hashes, precision analysis; 3,360 observations | Real-score feasibility passed; confirmatory holdouts untouched |
+| Phase 5: real data | Descriptive evaluation complete | SIFT1M, BEIR SciFact, and BEIR FiQA; fixed splits, hashes, precision analysis; 3,360 observations | Real-score feasibility passed; holdouts were untouched at this checkpoint |
 | Phase 6: final comparison | Descriptive comparison complete | C++, stable CUDA, direct NPU, fixed NPU, geometric and submission-aware NPU through 1M scores | NPU-internal crossover supported descriptively; CPU/GPU competitiveness failed |
-| Phase 7: confirmatory statistics | Not yet evaluated | Analysis supports session-level inference; current Phase 3/4 evidence is development-only | Open |
-| Phase 8: go/no-go | Premature | Novelty, real data, scaling, and independent sessions missing | Current trajectory: conditional/no-go unless later evidence adds a defensible systems contribution |
+| Phase 7: confirmatory statistics | Complete for the locked SIFT1M question | Six sessions, 2,880 valid observations; direct/geometric NPU speedup 1.666×, CI 1.646–1.685×, exact p=0.03125; 1.370× in a post-hoc no-tie sensitivity | Narrow within-NPU advantage passed; tie effect and one-machine scope limit interpretation |
+| Phase 8: predictive contribution and go/no-go | Complete for tested predictor | 48 real and 16 synthetic development cases; frozen six-session BEIR test with 4,608 correct observations; three integrated sessions with 1,728 correct observations | **NO-GO for the tested predictive contribution and a Q2 manuscript now:** zero-overhead method selection gain does not survive decision overhead and is reproducible by a static shape map |
 
 ## Verified Phase 2 baseline
 
@@ -89,12 +89,22 @@ Details: `docs/ALGORITHMIC_CONTRIBUTION.md` and `docs/NOVELTY_ASSESSMENT.md`.
 
 Details: `docs/REAL_DATA_EVALUATION.md` and `docs/FINAL_BENCHMARKS.md`.
 
-## Next justified work
+## Phase 7 record
 
-1. Lock primary hypotheses around the NPU-internal direct/geometric crossover and the negative NPU-versus-CUDA comparison.
-2. Use only the preserved confirmatory queries and frozen T256/B32 configuration.
-3. Collect at least six separately initiated, counterbalanced sessions.
-4. Apply session-clustered paired inference and practical effect thresholds.
-5. Reassess novelty and the publication decision after confirmatory evidence.
+- Locked revision `7fd0a10`; all six sessions passed exact correctness and device-placement checks.
+- The prespecified primary direct-versus-geometric NPU comparison passed its statistical and 1.10× practical criteria.
+- FP16 boundary tie on SIFT query 15 triggered roughly 0.46–0.48 seconds of measured host repair in direct NPU and CUDA at locked revision `7fd0a10`. A post-hoc analysis excluding it still favors geometric NPU by 1.370×.
+- A subsequent audit identified an avoidable known-unique-ID uniqueness sort in that CPU repair. Revision `fdb5e1c` removed it while preserving stable output. A same-process exploratory microbenchmark fell from 305.79 to 4.70 ms median on query 15. The historical Phase 7 estimate remains unchanged but its magnitude does not carry over to the corrected code.
+- C++ and stable CUDA remain substantially faster than every NPU method under host-input, host-output timing.
 
-No confirmatory or publication decision should be made before those items are evaluated.
+Details: `docs/STATISTICAL_VALIDATION.md`.
+
+## Phase 8 decision record
+
+- A shape-only leave-one-query-out rule had 1.048× regret to the per-case oracle over previously used real-score evaluation cases, assuming zero lookup cost. The label medians came from separate Phase 5/6 sessions, so this is a development feasibility estimate, not confirmatory evidence.
+- A cheap score-sketch decision tree lost to that shape rule on grouped real-data development checks, though it helped synthetic cases. A 128-tree forest had roughly 5.1 ms measured decision cost.
+- The tree's frozen BEIR holdout choices beat the predeclared shape rule by 1.097× with six-session interval [1.094, 1.100] and exact p=0.03125 **before decision overhead**. Every differing choice was the same fixed-hierarchy switch for SciFact `N=5183,K=4`; the model made no query-dependent choice within any held-out shape.
+- Three integrated exploratory sessions measured 0.461 ms median decision cost and found original-shape/dynamic-tree latency ratio 0.924×. A static `N,K` map reproducing every frozen tree choice achieved static/dynamic-tree ratio 0.836×. All 1,728 observations were exact on the requested NPU.
+- Prior exact Top-K work already includes threshold-guided selection and hardware-aware algorithm dispatch. The current system has a valid narrow systems observation but lacks a differentiated predictive mechanism, measured net benefit, broad hardware generalization, and universal exactness proof over opaque NPU numerical behavior.
+
+The publication decision is **NO-GO at this milestone**. Do not prepare a manuscript or run another confirmatory study of this decision tree. A new line of work would first need to articulate and development-test a mechanism that cannot be replaced by a zero-cost shape map, preserves the exactness contract on its declared numerical domain, and earns enough benefit to pay its measured dispatch cost. Preserve both Phase 7 and Phase 8 raw records unchanged. Details: `docs/PREDICTIVE_FEASIBILITY.md` and `docs/PUBLICATION_GO_NO_GO.md`.

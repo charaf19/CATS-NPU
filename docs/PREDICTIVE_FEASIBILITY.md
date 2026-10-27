@@ -1,0 +1,57 @@
+# Phase 8 predictive Top-K feasibility
+
+Date: 2026-10-27. Status: development screen, frozen BEIR holdout, and integrated follow-up complete. This is research documentation; no manuscript or TeX artifact is part of the repository.
+
+## Research question and novelty boundary
+
+The testable claim is that a cheap observation of the score vector can predict which of four *existing exact NPU paths* has the lowest host-input/host-output latency better than a strong `N,K`-only rule. The paths are native direct OpenVINO TopK, fixed batched hierarchy, geometric certified refinement, and submission-aware certified refinement. The prediction must pay for inspecting scores, must maintain the stable FP16 score/index contract, and must report only explicit `NPU` execution.
+
+This is a high novelty bar. [AMD's adaptive Top-K study](https://rocm.blogs.amd.com/software-tools-optimization/adaptive-topk/README.html) already selects exact GPU algorithms by hardware/workload regime. [DeepSelect's technical account](https://github.com/deepseek-ai/DeepSelect/blob/main/docs/DeepSelect-deep-dive.md) already covers exact threshold-guided candidate reduction on CUDA and Ascend. The [SIGMOD 2018 GPU Top-K study](https://doi.org/10.1145/3183713.3183735) developed a cost model for selecting algorithms. A shape switch, a score-sketch decision tree, or an empirical crossover alone is therefore not a journal-level contribution. To justify further development, the project would need a distinctive static-NPU mechanism or a broadly validated predictive model with measured net benefit and explanatory value beyond these precedents.
+
+The current hardware is one Intel AI Boost NPU with OpenVINO 2026.4.1, compiler 458778 and driver 1004512. [OpenVINO's NPU documentation](https://docs.openvino.ai/2026/openvino-workflow/running-inference/inference-devices-and-modes/npu-device.html) describes the FP16-oriented NPU execution model and current dynamic-shape constraints; the project's strict static-shape `NPU` runs fit that environment. The study cannot establish generality across consumer NPUs or driver/compiler versions.
+
+## Development data and experimental candidates
+
+`scripts/assess_predictive_headroom.py` reads 48 previously collected SIFT1M, SciFact, and FiQA evaluation cases: four queries per real dataset, four SIFT vector lengths, and `K∈{4,10}`. These cases are *development data* for Phase 8. Direct NPU observations came from a later Phase 6 run while the other three NPU observations came from Phase 5, so the four method medians are not paired in one session. The per-case minimum is a hindsight oracle and cannot be implemented without running all methods. The leave-one-query-out shape rule chooses the method with the best peer-query median at the same `N,K`, with zero decision cost. It is optimistic because peers come from the same dataset and exact shape. Its geometric-mean regret to the oracle was 1.0483 over 48 cases, with 70.8% oracle hits. This leaves only 4.8% geometric-mean ideal headroom for a more complicated chooser in that specific collection, before decision overhead. It is not an upper bound on all workloads.
+
+`scripts/explore_phase8_predictor.py` uses 512 evenly spaced and 512 leading scores to form a fixed score sketch. Its features include shape, score spread, high-value concentration, head/global contrast, and sampled tie frequency; it does not calculate Top-K over the full vector. The candidates are a depth-4, minimum-leaf-3 decision tree and a 128-tree forest, both predicting log latency relative to fixed hierarchy. The labels are method medians from the real development cases plus a fresh, corrected-source, 16-case synthetic NPU pilot (`normal`, `tied`, `clustered`, `adversarial`; `N∈{4096,16384}`, `K∈{4,10}`). The pilot's 384 observations were all exact and reported NPU execution. Validation leaves each complete query or synthetic distribution out while training the model. This guards against reusing the same query's different `N,K` rows as training, but it is still within the same development datasets and one synthetic seed.
+
+| Group-held-out development metric | Shape rule | Decision tree | Random forest |
+|---|---:|---:|---:|
+| Real: geometric-mean regret / oracle, 48 cases | 1.0493 | 1.0754 | 1.0716 |
+| Real: oracle hit rate | 68.8% | 60.4% | 58.3% |
+| Synthetic: geometric-mean regret / oracle, 16 cases | 1.3247 | 1.1671 | 1.1129 |
+| Median score sketch + model decision on 1M-score host input | 0 ms assumed | 0.175 ms | 5.120 ms |
+
+The forest's synthetic selection advantage disappears once its roughly 5.1 ms CPU decision cost is added to these short cases; this is a projected result from measured decision cost and method medians, not an integrated dispatcher benchmark. The cheaper tree still improves the synthetic cases in that projection, but is about 8.8% slower than the zero-cost shape rule on the real cases. The development data therefore do not support replacing the runtime with either candidate. Score distribution matters in adversarial cases, but no reliable cross-domain prediction has yet been demonstrated.
+
+## Frozen BEIR validation gate
+
+The tree was selected for a *necessary-condition* test because its measured decision cost is much lower than the forest's. `configs/phase8_beir_validation.json` and the 32 method choices in `configs/phase8_beir_predictions.json` were committed in revision `fdb5e1c` before any new holdout timing. The untouched BEIR SciFact and FiQA query positions 8–15, `K=4,10`, four explicit NPU methods, and six separately initiated sessions are fixed. The original Phase 7 protocol and raw observations remain unchanged. The primary zero-overhead gate requires at least 1.05× geometric-mean speedup of tree choice over the shape rule, a session-cluster bootstrap interval entirely above 1, and two-sided exact sign-flip `p<0.05`. Passing would trigger an integrated end-to-end dispatcher benchmark; failing means no predictor performance claim and no further implementation based on this model.
+
+The tree choice is exact only when its selected candidate method is exact; prediction quality does not affect that logical condition. It cannot by itself fix wrong NPU output or create a new correctness certificate. The current candidate has no new complexity or regret guarantee. Its score sketch costs `O(min(N,1024))` sampled reads plus bounded small-array statistics; the NPU methods retain their established costs and certified behavior. A general dispatcher would need its candidate static shapes compiled. Setup/compilation cost would matter in a short-lived deployment and is outside this feasibility gate.
+
+## Frozen BEIR outcome: apparent win without per-query adaptation
+
+The six-session holdout in `results/phase8/beir_validation/20261027T111433Z/` yielded 4,608 valid, exactly correct observations with all compiled models reporting `NPU`. `scripts/analyze_phase8_beir_validation.py` checked the frozen config/prediction hashes, input digests, replication counts, method set, numerical correctness, and device placement. The prespecified *zero-overhead* shape-rule/tree-choice latency ratio was **1.0973×**, with session-cluster bootstrap 95% interval **[1.0938, 1.1001]** and two-sided exact sign-flip **p=0.03125**. It passed the preregistered 1.05× necessary-condition gate.
+
+The complete choice file shows why that is not evidence for score-dependent prediction. The tree and shape rule disagree only for the eight SciFact `N=5183,K=4` queries. For every such query, the tree chooses fixed hierarchy and the original shape rule chooses geometric refinement. All other 24 query/`K` choices agree. Across this holdout, the tree's output is therefore a function of `N,K` alone. A zero-cost static map formed from its frozen pre-timing choices reproduces every decision exactly. The SciFact `K=4` zero-overhead subgroup ratio is 1.450×; the three other dataset/`K` subgroup ratios are exactly 1 because the methods are identical. This is a correction to one shape choice, not demonstrated per-query predictive validity.
+
+## Integrated end-to-end check
+
+Because the zero-overhead gate passed, `scripts/bench_phase8_integrated_dispatch.py` measured three arms on the same BEIR holdout inputs in three separately initiated exploratory sessions: (1) actual score sketch + tree inference + selected exact NPU method, (2) the original frozen shape rule, and (3) a static `N,K` mapping that reproduces the tree's frozen choices. The arms shared the same prepared method objects for each case, so compilation was excluded equally. Each timed call included host-input to host-index selection, and the dynamic arm additionally included score inspection and model inference. Arm order was shuffled within blocks. All **1,728** observations were exact, without skips, and reported strict NPU placement. The analyzer is `scripts/analyze_phase8_integrated_dispatch.py`; raw files and the output report are under `results/phase8/`.
+
+| Exploratory integrated comparison | Geometric-mean baseline/tree latency | Interpretation |
+|---|---:|---|
+| Original shape rule / dynamic tree | 0.9240 | Dynamic tree is about 8.2% slower |
+| Equivalent static map / dynamic tree | 0.8357 | Dynamic tree is about 19.7% slower |
+
+The three session-level original-shape/tree ratios were 0.9166, 0.9344, and 0.9209. The dynamic dispatch component had median **0.461 ms** and P95 **1.158 ms** in context, compared with 0.175 ms in the isolated development microbenchmark. The integrated experiment was planned after seeing the zero-overhead result and has only three sessions, so these are descriptive measurements, not a new confirmatory significance claim. Nevertheless, the same-method static comparator and positive decision cost directly expose why the model's selection win did not become a practical win.
+
+## Correctness and inference limits
+
+Let `A_j(x,k)` be each exact candidate and `T(x,k)` the stable score/index Top-K. If every `A_j(x,k)=T(x,k)` on a declared domain, then the dispatcher `A_{f(x,N,K)}(x,k)=T(x,k)` for any prediction function `f`. This closure argument adds no new selection theorem and does not prove the opaque NPU local primitive correct. The backend has known FP16-subnormal counterexamples; it performs measured host validation on rows containing subnormals and rejects detected wrong NPU rankings rather than silently substituting a CPU result. All reported benchmark inputs passed independent full-result checks. A universal exactness claim over *all* finite FP16 inputs is not established.
+
+The historical 1.666× Phase 7 NPU speedup also includes an avoidable CPU tie-repair cost in the old reference helper. Revision `fdb5e1c` fixes that helper without changing the locked Phase 7 source or data; see `docs/STATISTICAL_VALIDATION.md`. Thus neither the old magnitude nor this tree's zero-overhead BEIR ratio should be presented as an intrinsic algorithmic gain.
+
+**Phase 8 decision:** The tested predictor does not satisfy predictive validity or practical latency benefit on unseen real workloads. The frozen BEIR test alone looked favorable, but the gain is reproducible by a static choice and disappears once decision overhead is measured. No paper-level systems contribution is established. Further confirmatory runs of this model, new SIFT1M holdout generation, or a production dispatcher are not justified without a different mechanism that first passes a stronger development screen.

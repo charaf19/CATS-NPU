@@ -53,3 +53,9 @@ A defensible novelty claim would require at least one of:
 - broader evidence showing a repeatable regime that prior GPU/TPU/NPU approaches do not address.
 
 Until then, the research gate is **partially supported for systems insight and failed for a demonstrated novel algorithm**.
+
+## Phase 8 predictive assessment (2026-10-27)
+
+The project's proposed score-sketch decision tree did not supply the missing differentiator. A separately frozen six-session BEIR holdout showed a 1.097× *zero-overhead* advantage over its original shape-only comparator, but all eight differing decisions were the same fixed-hierarchy choice for SciFact `N=5183,K=4`. Every other choice agreed. Thus the tree's choices on the unseen BEIR queries were representable by a zero-cost `N,K` map, with no evidence of score-sensitive method selection. Three subsequent integrated exploratory sessions measured a 0.461 ms median decision cost and original-shape/dynamic-tree ratio 0.924×; an equivalent static map/dynamic-tree ratio was 0.836×. The latter comparisons are descriptive, not confirmatory. Full method, input, and device checks appear in `docs/PREDICTIVE_FEASIBILITY.md`.
+
+These observations strengthen the **NO-GO** judgment for this predictor as a journal contribution. They do not establish that all possible predictive strategies fail. The static-shape NPU setting and host certification behavior remain worthy systems observations, but the submitted mechanism would need more than a corrected per-shape method choice to distinguish itself from the cost-aware Top-K and adaptive-dispatch literature above. See `docs/PUBLICATION_GO_NO_GO.md` for the six-criterion decision.

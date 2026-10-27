@@ -1,5 +1,7 @@
 # Iterative research checkpoints
 
+**Historical checkpoint:** this checklist records the 2026-10-23 setup state and is not the current project status. The current evidence ledger is `docs/RESEARCH_PROGRESS.md`; the 2026-10-27 publication decision is `docs/PUBLICATION_GO_NO_GO.md`. Preserve the old checklist as a record of earlier gates.
+
 **Current decision (2026-10-23, after setup repair):** full suite 111 passed /
 1 skipped. Native TopK execution on explicit NPU is observed for small cases,
 but finite-input exactness remains open. Bitonic host construction is repaired
