@@ -10,8 +10,8 @@ def test_fp16_encoding_respects_every_representable_finite_score():
     scores = bits.view(np.float16)
     scores = scores[np.isfinite(scores)]
     keys, info = encode(scores)
-    expected = exact_topk(scores, 100)
-    np.testing.assert_array_equal(np.argsort(-keys.astype(np.int64), kind="stable")[:100], expected)
+    expected = np.lexsort((np.arange(len(scores)), -scores.astype(np.float64)))
+    np.testing.assert_array_equal(np.argsort(-keys.astype(np.int64), kind="stable"), expected)
     assert info["ordered_fp16_span"] > 0
 
 

@@ -21,3 +21,16 @@ def test_stable_integer_graph_cpu_handles_subnormals_and_ties(k):
     np.testing.assert_array_equal(np.asarray(output_values).reshape(-1), score_codes(scores)[ids])
     ids = ids[np.lexsort((ids, -scores[ids].astype(np.float64)))]
     np.testing.assert_array_equal(ids, exact_topk(scores, k))
+
+
+@pytest.mark.parametrize("n,k,width", [(256, 10, 256), (513, 0, 256),
+                                      (513, 257, 256), (513, 10, 0),
+                                      (2**31 - 1, 10, 256)])
+def test_stable_integer_graph_rejects_unsupported_sizes_before_allocation(n, k, width):
+    with pytest.raises(ValueError):
+        graph(n, k, width)
+
+
+def test_stable_integer_graph_rejects_boolean_shape():
+    with pytest.raises(TypeError):
+        graph(True, 1, 1)

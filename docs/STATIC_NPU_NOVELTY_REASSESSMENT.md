@@ -1,5 +1,7 @@
 # Reassessment: a representation-aware exact Top-K path
 
+**Closed on 2026-10-28:** `docs/FINAL_RESEARCH_CONTRIBUTION.md` records the final NO-GO after the mechanism-equivalence and compiler-source audit. The conditional assessment below is retained as the 2026-10-27 research record.
+
 **2026-10-27 — Research status: CONDITIONAL GO for a bounded systems investigation, not a publication claim.** The earlier `STATIC_NPU_EXECUTION_FEASIBILITY.md` NO-GO applies to a plain FP16 two-level graph. New physical probes identify a narrower possible contribution: lowering finite-FP16 stable Top-K into an integer-ordered, static NPU graph when the native FP16 and some wider/narrower integer paths do not preserve the required order. No manuscript or TeX work has begun.
 
 ## Proposed novelty frame

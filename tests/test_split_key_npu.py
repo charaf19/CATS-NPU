@@ -12,7 +12,10 @@ def test_score_code_preserves_all_finite_fp16_values():
     scores = scores[np.isfinite(scores)]
     codes = score_codes(scores)
     order = np.lexsort((np.arange(len(scores)), -codes.astype(np.int64)))
-    np.testing.assert_array_equal(order[:100], exact_topk(scores, 100))
+    expected = np.lexsort((np.arange(len(scores)), -scores.astype(np.float64)))
+    np.testing.assert_array_equal(order, expected)
+    assert np.unique(codes).size == 63487  # the two zeros intentionally coincide
+    assert np.array_equal(score_codes(np.array([-0.0, 0.0], dtype=np.float16)), [32768, 32768])
     assert int(codes.min()) > 0  # zero is reserved for padding
 
 

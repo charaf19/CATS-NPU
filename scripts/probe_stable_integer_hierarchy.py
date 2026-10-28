@@ -18,7 +18,16 @@ from cats_npu.workloads import load_input
 
 
 def graph(n: int, k: int, width: int, dtype=np.int32):
+    if any(isinstance(v, (bool, np.bool_)) or not isinstance(v, (int, np.integer))
+           for v in (n, k, width)):
+        raise TypeError("N, K, and width must be integers")
+    if not 1 <= k <= width < n:
+        raise ValueError("Require N > width >= K >= 1")
     m = math.ceil(n / width)
+    if m * width > np.iinfo(np.int32).max:
+        raise ValueError("Padded size exceeds the graph's signed INT32 index/shape domain")
+    if np.dtype(dtype) not in (np.dtype(np.int16), np.dtype(np.int32)):
+        raise ValueError("This probe supports INT32 keys and the historical INT16 ablation only")
     inp = ops.parameter([m, width], dtype=dtype)
     local = ops.topk(inp, k, 1, "max", "value", index_element_type="i32", stable=True)
     bases = ops.constant((np.arange(m, dtype=np.int32) * width).reshape(m, 1))
@@ -70,6 +79,8 @@ def main():
         ci = np.asarray(cpu_ids).reshape(-1)
         result["cpu_correct"] = bool(np.array_equal(
             ci[np.lexsort((ci, -scores[ci].astype(np.float64)))], expected))
+        if not result["cpu_correct"]:
+            raise RuntimeError("CPU graph preflight failed; NPU execution cancelled")
         compiled = ov.Core().compile_model(model, "NPU", {"NPU_COMPILER_TYPE": "PLUGIN"})
         d = compiled.get_property("EXECUTION_DEVICES")
         result["execution_devices"] = [d] if isinstance(d, str) else list(d)
