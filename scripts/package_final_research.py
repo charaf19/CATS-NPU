@@ -90,7 +90,12 @@ history through the package commit, including the historical probe revisions.
 Other dataset arrays can be regenerated using their provenance manifests.
 
 Verify every payload file against manifest.json before using the evidence.
-From source/, with the repository dependencies installed, run:
+In the freshly extracted source/ folder, restore the included Git history:
+git init
+git fetch results/final_research/20261028/source_history.bundle HEAD
+git reset --mixed FETCH_HEAD
+This reset updates the fresh repository index/HEAD and preserves its files.
+Then, with the repository dependencies installed, run:
 python scripts/audit_final_research.py --out results/reproduced/final_audit.json
 python -m pytest -q
 
