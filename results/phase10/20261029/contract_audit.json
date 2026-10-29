@@ -1,0 +1,192 @@
+{
+  "timestamp_utc": "2026-10-29T13:59:44.135516+00:00",
+  "source_base_commit": "83e9ed46cad8e201ab383bfafaef825f2bb62d3a",
+  "source_sha256": {
+    "scripts/audit_contract_lowering.py": "85dbaf6bba5721694ebab99cd58212c3ba0e37f64d5f9d63d2d2572f19dd686c",
+    "src/cats_npu/order_encoding.py": "e8b4eb4c7cd46e70fc8d77555ff210340dd45319d6b677f45dd149bbcdd7b30f",
+    "scripts/probe_stable_integer_hierarchy.py": "8aa8d7bc1cfb8d2c8742f97b8ea842678b09125a66df9be0e7482e94b97281da",
+    "src/cats_npu/static_graph.py": "bbc4b9f2799239036322882077f0f757db2ad53762788c0e724592a969fdad19",
+    "results/final_research/20261028/upstream/adjust_software_ops_precision.cpp": "ffeff92ca50a1b06f0b0fdaeb31c66833742fab250b6bb38d00069fba32927ab",
+    "results/final_research/20261028/upstream/convert_precision_to_i32.cpp": "988c31c6ef9f05c983e8bda8dcfbf881ca594e6d4af937169d7d87b742b7d4cf"
+  },
+  "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "hardware_experiment": false,
+  "historical_evidence": [
+    {
+      "manifest": "results/phase9/manifest.json",
+      "manifest_sha256": "fc277b3e8555d104c6f9d144d3546f0de5260ef4f299e1171c1631930fada9c5",
+      "source_commit": "0d86a8c59ec679b18146b1d6894b225e70e90760",
+      "raw_files_checked": 17,
+      "raw_hash_failures": [],
+      "source_revision_available": true
+    },
+    {
+      "manifest": "results/phase9_novelty/manifest.json",
+      "manifest_sha256": "1a9e12049295bfd278ff9c42682867d4066b2f0d7669166d4e6316f6ba61fbef",
+      "source_commit": "fe7efd912fbcafa50691f65cb1ca1eea25e7cb8f",
+      "raw_files_checked": 32,
+      "raw_hash_failures": [],
+      "source_revision_available": true
+    }
+  ],
+  "models": {
+    "manual_int32_identity": {
+      "enumerated_words": 63488,
+      "distinct_source_values": 63487,
+      "distinct_target_values": 63487,
+      "adjacent_distinct_score_collisions": 0,
+      "adjacent_order_inversions": 0,
+      "adjacent_equal_score_splits": 0,
+      "preserves_enumerated_rank_contract": true,
+      "counterexample": null
+    },
+    "int32_codes_to_fp32_model": {
+      "enumerated_words": 63488,
+      "distinct_source_values": 63487,
+      "distinct_target_values": 63487,
+      "adjacent_distinct_score_collisions": 0,
+      "adjacent_order_inversions": 0,
+      "adjacent_equal_score_splits": 0,
+      "preserves_enumerated_rank_contract": true,
+      "counterexample": null
+    },
+    "centered_int16_identity": {
+      "enumerated_words": 63488,
+      "distinct_source_values": 63487,
+      "distinct_target_values": 63487,
+      "adjacent_distinct_score_collisions": 0,
+      "adjacent_order_inversions": 0,
+      "adjacent_equal_score_splits": 0,
+      "preserves_enumerated_rank_contract": true,
+      "counterexample": null
+    },
+    "centered_int16_via_fp16_model": {
+      "enumerated_words": 63488,
+      "distinct_source_values": 63487,
+      "distinct_target_values": 12160,
+      "adjacent_distinct_score_collisions": 51327,
+      "adjacent_order_inversions": 0,
+      "adjacent_equal_score_splits": 0,
+      "preserves_enumerated_rank_contract": false,
+      "counterexample": {
+        "source_scores": [
+          -65504.0,
+          -65472.0
+        ],
+        "mapped_scores": [
+          -31744.0,
+          -31744.0
+        ],
+        "expected_ids_k1": [
+          1
+        ],
+        "model_ids_k1": [
+          0
+        ],
+        "source_binary16_words": [
+          "0xfbff",
+          "0xfbfe"
+        ]
+      }
+    },
+    "unnormalized_zero_order_codes": {
+      "enumerated_words": 63488,
+      "distinct_source_values": 63487,
+      "distinct_target_values": 63488,
+      "adjacent_distinct_score_collisions": 0,
+      "adjacent_order_inversions": 0,
+      "adjacent_equal_score_splits": 1,
+      "preserves_enumerated_rank_contract": false,
+      "counterexample": {
+        "source_scores": [
+          -0.0,
+          0.0
+        ],
+        "mapped_scores": [
+          32767.0,
+          32768.0
+        ],
+        "expected_ids_k1": [
+          0
+        ],
+        "model_ids_k1": [
+          1
+        ],
+        "source_binary16_words": [
+          "0x8000",
+          "0x0000"
+        ]
+      }
+    },
+    "hypothetical_fp16_flush_to_zero_model": {
+      "enumerated_words": 63488,
+      "distinct_source_values": 63487,
+      "distinct_target_values": 61441,
+      "adjacent_distinct_score_collisions": 2046,
+      "adjacent_order_inversions": 0,
+      "adjacent_equal_score_splits": 0,
+      "preserves_enumerated_rank_contract": false,
+      "counterexample": {
+        "source_scores": [
+          -6.097555160522461e-05,
+          -6.091594696044922e-05
+        ],
+        "mapped_scores": [
+          0.0,
+          0.0
+        ],
+        "expected_ids_k1": [
+          1
+        ],
+        "model_ids_k1": [
+          0
+        ],
+        "source_binary16_words": [
+          "0x83ff",
+          "0x83fe"
+        ]
+      }
+    },
+    "int64_to_signed32_bounded_witness_domain": {
+      "enumerated_words": 4,
+      "distinct_source_values": 4,
+      "distinct_target_values": 3,
+      "adjacent_distinct_score_collisions": 0,
+      "adjacent_order_inversions": 1,
+      "adjacent_equal_score_splits": 0,
+      "preserves_enumerated_rank_contract": false,
+      "counterexample": {
+        "source_scores": [
+          2147483647.0,
+          2147483648.0
+        ],
+        "mapped_scores": [
+          2147483647.0,
+          -2147483648.0
+        ],
+        "expected_ids_k1": [
+          1
+        ],
+        "model_ids_k1": [
+          0
+        ]
+      }
+    }
+  },
+  "internal_checks": {
+    "finite_domain_size": true,
+    "numeric_classes": true,
+    "expected_models_only_are_safe": true,
+    "int16_via_fp16_target_classes": true,
+    "int16_via_fp16_adjacent_merges": true
+  },
+  "all_audit_checks_passed": true,
+  "limitations": [
+    "Scalar models are supplied, not extracted from the executable.",
+    "Flush-to-zero is hypothetical; no FP16 root cause is inferred.",
+    "INT64 is a bounded witness domain, not exhaustive enumeration.",
+    "No physical inference, timing, synthesis or compiler validation.",
+    "No scientific originality decision is computed by this script."
+  ]
+}

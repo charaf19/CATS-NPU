@@ -1,0 +1,21 @@
+{
+  "source_base_commit": "83e9ed46cad8e201ab383bfafaef825f2bb62d3a",
+  "phase": "10",
+  "client_date": "2026-10-29",
+  "decision": "NO-GO",
+  "hardware_experiment": false,
+  "baseline_and_locked_evidence_unchanged": true,
+  "relative_report_links_checked": true,
+  "final_audit_source_hashes_match": true,
+  "files_sha256": {
+    "docs/CONTRACT_LOWERING_FEASIBILITY.md": "7f7d9df3a0294b6926e32bab74a56d122b654cd529903e7d5ee4c2aa341fb52a",
+    "docs/RESEARCH_PROGRESS.md": "eefae752b8ccd868a5e03e6e079553e95bf3f06b9c780f89e4fd97acc1183e4e",
+    "scripts/audit_contract_lowering.py": "8256d57ea9b187cf7875d95b0bd2a986ec9c0ad1a81d3022e925ee9b1d9ffe88",
+    "tests/test_contract_lowering_audit.py": "4173ce2e2dc97181093b72d885bca22ca5e305e6f2d7bdad415900d54041ff16",
+    "results/phase10/20261029/contract_audit.json": "893ffbd7403e6a98bbe381292baec55a15d1333b8f0a80782c4517f9ef405688",
+    "results/phase10/20261029/contract_audit_final.json": "6516861ea96aa205b2d5d0d28afc289ac3f1f1c0849264f261da93ae187c34a8",
+    "results/phase10/20261029/prior_art_review.json": "8c5703f323d6dc357cc1a838ded9674011f45f03916231a817db312616c2425f",
+    "results/phase10/20261029/validation.json": "6445fc470a22931c3de0c1b16ab051a8b605ecb813488f30d824bf79419668f2",
+    "results/phase10/20261029/development_source/audit_contract_lowering.py": "85dbaf6bba5721694ebab99cd58212c3ba0e37f64d5f9d63d2d2572f19dd686c"
+  }
+}

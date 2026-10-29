@@ -1,6 +1,6 @@
 # Research progress and evidence ledger
 
-Last updated: 2026-10-27
+Last updated: 2026-10-29
 
 This ledger records completed work, evidence strength, limitations, and the next gate. Research outputs and figures are stored under `results/`. Manuscript and TeX work is outside the repository scope for this execution.
 
@@ -13,6 +13,16 @@ This ledger records completed work, evidence strength, limitations, and the next
 | Phase 6: final comparison | Descriptive comparison complete | C++, stable CUDA, direct NPU, fixed NPU, geometric and submission-aware NPU through 1M scores | NPU-internal crossover supported descriptively; CPU/GPU competitiveness failed |
 | Phase 7: confirmatory statistics | Complete for the locked SIFT1M question | Six sessions, 2,880 valid observations; direct/geometric NPU speedup 1.666×, CI 1.646–1.685×, exact p=0.03125; 1.370× in a post-hoc no-tie sensitivity | Narrow within-NPU advantage passed; tie effect and one-machine scope limit interpretation |
 | Phase 8: predictive contribution and go/no-go | Complete for tested predictor | 48 real and 16 synthetic development cases; frozen six-session BEIR test with 4,608 correct observations; three integrated sessions with 1,728 correct observations | **NO-GO for the tested predictive contribution and a Q2 manuscript now:** zero-overhead method selection gain does not survive decision overhead and is reproducible by a static shape map |
+| Phase 9: static execution and integer semantics | Closed by October 28 final audit | Physical static graphs, numerical/type counterexamples, tested stable INT32 remedy, exhaustive scalar encoding analysis | **NO-GO for the investigated original mechanism:** known encoding, hierarchy, stability and instance checking; see `FINAL_RESEARCH_CONTRIBUTION.md` |
+| Phase 10: contract-guided lowering | Feasibility investigation complete, 2026-10-29 | Primary compiler/verification/synthesis comparison; CPU scalar conversion analysis; 49 prior raw hashes verified; 24 targeted regression tests passed | **NO-GO:** no distinct lowering/verification capability beyond established techniques and the manual INT32 baseline; no new physical experiment or confirmation campaign |
+
+## Phase 10 decision record
+
+The proposed RankGuard compiler was evaluated before substantial development. Automatic selection of the existing integer graph, guarded conversion rejection, counterexample-guided repair, and result certification reduce to established mechanisms. No new compiled-executable proof, trust reduction, accepted numerical domain, or systems property was established. The existing host rank certificate remains exact-or-reject under its documented host assumptions.
+
+A new CPU-only audit enumerates all finite FP16 words through supplied scalar models. The centered INT16-to-FP16 path has only 12,160 reachable numerical values for 63,487 source numerical classes and 51,327 adjacent rank collisions. Independent two-element witnesses expose incorrect stable selection. These are mathematical model diagnostics, not new physical observations or proof of the installed compiler's behavior. The known FP16 failure's root cause remains unisolated.
+
+The full decision, scope of proofs, primary references, hardware evidence boundary, and reproducible commands are in [CONTRACT_LOWERING_FEASIBILITY.md](CONTRACT_LOWERING_FEASIBILITY.md). New artifacts are under `results/phase10/20261029/`. Gate A failed before a new graph was justified; earlier hardware evidence is not attributed to RankGuard. No single identified hardware/timing follow-up resolves that originality failure. Historical Phase 7–9 records and production baselines are unchanged.
 
 ## Verified Phase 2 baseline
 

@@ -1,0 +1,137 @@
+{
+  "access_date": "2026-10-29",
+  "source_base_commit": "83e9ed46cad8e201ab383bfafaef825f2bb62d3a",
+  "review_type": "targeted primary-paper and source mechanism comparison; not an exhaustive systematic review",
+  "external_tools_built_or_run": false,
+  "software_implementation_inspections": [
+    {
+      "repository": "rutgers-apl/alive-nj",
+      "commit": "d582fcdda6f4edb37e851567f5318be3dcbcaed2",
+      "path": "alive/precondition/inference.py",
+      "blob_sha": "873d95388a882103c79caf2949cf5515e1af7e8d",
+      "url": "https://github.com/rutgers-apl/alive-nj/blob/d582fcdda6f4edb37e851567f5318be3dcbcaed2/alive/precondition/inference.py",
+      "inspected_lines": [
+        1295,
+        1320
+      ],
+      "observation": "Generated preconditions are checked by check_refinement; counterexamples extend the negative set and restart inference. Existing implementation is not an FP16 TopK compiler."
+    },
+    {
+      "repository": "jiazhihao/TASO",
+      "commit": "f11782c4db180ad7d1e7ff7f4bb82e574ac3b6b8",
+      "path": "verify/verify.py",
+      "blob_sha": "4110fc4230bad9b8a51ed78ea61264719058b61e",
+      "url": "https://github.com/jiazhihao/TASO/blob/f11782c4db180ad7d1e7ff7f4bb82e574ac3b6b8/verify/verify.py",
+      "inspected_lines": [
+        95,
+        118,
+        604,
+        621
+      ],
+      "observation": "Z3 equivalence queries rely on operator axioms, including addition associativity. This is not a bit-exact IEEE model or installed NPU executable validation."
+    },
+    {
+      "repository": "cucapra/diospyros",
+      "commit": "3597eb39fb9ed5ba20d78d53b1a792051820eea5",
+      "path": "src/translation-validation.rkt",
+      "blob_sha": "15bf9b9a13b8cb0c301185976f06431866cb574f",
+      "url": "https://github.com/cucapra/diospyros/blob/3597eb39fb9ed5ba20d78d53b1a792051820eea5/src/translation-validation.rkt",
+      "inspected_lines": [
+        144,
+        195
+      ],
+      "observation": "Shared symbolic inputs and interpreted source/target outputs are checked with Rosette verify. This validates the modeled vector IR, not Intel NPU hardware."
+    }
+  ],
+  "additional_documentation": [
+    {
+      "repository": "AliveToolkit/alive2",
+      "commit": "adacbd5180ccf95075e9867c4f0c259f59c9fef2",
+      "path": "README.md",
+      "url": "https://github.com/AliveToolkit/alive2/blob/adacbd5180ccf95075e9867c4f0c259f59c9fef2/README.md"
+    },
+    {
+      "repository": "rutgers-apl/alive-nj",
+      "commit": "d582fcdda6f4edb37e851567f5318be3dcbcaed2",
+      "path": "README.md",
+      "url": "https://github.com/rutgers-apl/alive-nj/blob/d582fcdda6f4edb37e851567f5318be3dcbcaed2/README.md"
+    },
+    {
+      "repository": "cucapra/diospyros",
+      "commit": "3597eb39fb9ed5ba20d78d53b1a792051820eea5",
+      "path": "evaluation/README.md",
+      "url": "https://github.com/cucapra/diospyros/blob/3597eb39fb9ed5ba20d78d53b1a792051820eea5/evaluation/README.md"
+    },
+    {
+      "repository": "jiazhihao/TASO",
+      "commit": "f11782c4db180ad7d1e7ff7f4bb82e574ac3b6b8",
+      "path": "README.md",
+      "url": "https://github.com/jiazhihao/TASO/blob/f11782c4db180ad7d1e7ff7f4bb82e574ac3b6b8/README.md"
+    }
+  ],
+  "new_primary_references": [
+    {
+      "title": "Alive2: Bounded Translation Validation for LLVM",
+      "doi": "10.1145/3453483.3454030",
+      "url": "https://pldi21.sigplan.org/details/pldi-2021-papers/5/Alive2-Bounded-Translation-Validation-for-LLVM"
+    },
+    {
+      "title": "Alive-FP: Automated Verification of Floating Point Based Peephole Optimizations in LLVM",
+      "doi": "10.1007/978-3-662-53413-7_16",
+      "url": "https://people.cs.rutgers.edu/~sn349/papers/alive-fp-sas16.pdf"
+    },
+    {
+      "title": "ALIVE-INFER: Data-Driven Precondition Inference for Peephole Optimizations in LLVM",
+      "doi": "10.1145/3062341.3062372",
+      "url": "https://people.cs.rutgers.edu/~santosh.nagarakatte/papers/pldi2017-alive-infer.pdf"
+    },
+    {
+      "title": "TASO: Optimizing Deep Learning Computation with Automatic Generation of Graph Substitutions",
+      "doi": "10.1145/3341301.3359630",
+      "url": "https://cs.stanford.edu/~zhihao/papers/sosp19.pdf"
+    },
+    {
+      "title": "Equality Saturation for Tensor Graph Superoptimization",
+      "url": "https://arxiv.org/abs/2101.01332v2"
+    },
+    {
+      "title": "Verifying and Improving Halide's Term Rewriting System with Program Synthesis",
+      "doi": "10.1145/3428234",
+      "url": "https://inst.eecs.berkeley.edu/~cs294-260/sp24/papers/verifying-halide-trs.pdf"
+    },
+    {
+      "title": "Program Sketching",
+      "doi": "10.1007/s10009-012-0249-7",
+      "url": "https://dspace.mit.edu/entities/publication/ba8c3c2f-ab29-4334-bcb1-abcb8da0f6a9"
+    },
+    {
+      "title": "Vectorization for Digital Signal Processors via Equality Saturation",
+      "doi": "10.1145/3445814.3446707",
+      "url": "https://doi.org/10.1145/3445814.3446707"
+    },
+    {
+      "title": "Daisy - Framework for Analysis and Optimization of Numerical Programs",
+      "url": "https://malyzajko.github.io/papers/tacas18_daisy_toolpaper.pdf"
+    },
+    {
+      "title": "Verification of Compiler-to-Accelerator Mappings for Machine Learning Accelerators",
+      "status": "preprint",
+      "version": "2609.30651v1",
+      "url": "https://arxiv.org/html/2609.30651v1"
+    },
+    {
+      "title": "NNSmith: Generating Diverse and Valid Test Cases for Deep Learning Compilers",
+      "doi": "10.1145/3575693.3575707",
+      "url": "https://lingming.cs.illinois.edu/publications/asplos2023.pdf"
+    },
+    {
+      "title": "Abstract Interpretation: A Unified Lattice Model for Static Analysis of Programs by Construction or Approximation of Fixpoints",
+      "url": "https://www.di.ens.fr/~cousot/COUSOTpapers/POPL77.shtml"
+    }
+  ],
+  "existing_source_audit": "results/final_research/20261028/upstream/sources.json",
+  "rechecked_specification": "https://docs.openvino.ai/2026/documentation/openvino-ir-format/operation-sets/operation-specs/sort/top-k-11.html",
+  "decision": "NO-GO for investigated Phase 10 mechanism",
+  "decision_basis": "No distinct lowering/verification capability was established over existing synthesis/validation and the manual stable INT32 graph with host checking.",
+  "no_go_is_not": "An impossibility or exhaustive non-novelty theorem for every possible rank-aware compiler."
+}

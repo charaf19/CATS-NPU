@@ -1,0 +1,15 @@
+{
+  "source_base_commit": "83e9ed46cad8e201ab383bfafaef825f2bb62d3a",
+  "scope": "CPU diagnostic and existing encoding/graph/checker regression subset",
+  "commands": [
+    ".\\.venv\\Scripts\\python.exe -m scripts.audit_contract_lowering",
+    ".\\.venv\\Scripts\\python.exe -m pytest -q tests/test_contract_lowering_audit.py tests/test_order_encoded_npu.py tests/test_stable_integer_hierarchy.py tests/test_static_graph.py",
+    ".\\.venv\\Scripts\\python.exe -m ruff check scripts/audit_contract_lowering.py tests/test_contract_lowering_audit.py"
+  ],
+  "audit_output": "{\r\n  \"out\": \"results\\\\phase10\\\\20261029\\\\contract_audit_final.json\",\r\n  \"all_audit_checks_passed\": true,\r\n  \"historical_raw_files_verified\": 49,\r\n  \"hardware_experiment\": false\r\n}\r\n",
+  "pytest_and_ruff_output": "........................                                                 [100%]\r\n24 passed in 1.00s\r\nAll checks passed!\n",
+  "test_process_exit_code": 0,
+  "test_count": 24,
+  "hardware_experiment": false,
+  "scope_limit": "Passing tests validate the CPU diagnostic and regression subset; no universal compiled-executable or hardware proof."
+}
