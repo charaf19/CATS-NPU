@@ -1,0 +1,168 @@
+{
+  "timestamp_utc": "2026-10-29T20:32:45.303527+00:00",
+  "source_base_commit": "345c24cebd717b57e167ca6e696bbcd1e819b2d4",
+  "audit_script_sha256": "5a072c770db5daf2f0de6289743dad8b8a79c8e5d74eb4ac09b0ebe3e4e9739b",
+  "hardware_inference_experiment": false,
+  "real_retrieval_experiment": false,
+  "new_method_implemented": false,
+  "inventory": {
+    "datasets": {
+      "scifact": {
+        "manifest": "results\\phase5\\beir\\scifact\\dataset_manifest.json",
+        "manifest_sha256": "025496922077e69acd03268544af41fd7875b032d728f1f0aeae46097b6b20f7",
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "corpus_size": 5183,
+        "dimension": 384,
+        "historical_development_query_ids": [
+          "1",
+          "3",
+          "5",
+          "13"
+        ],
+        "historical_confirmation_label_does_not_mean_unused": true,
+        "archive_sha256_matches": true,
+        "archive_md5_matches": true,
+        "extracted_corpus_files": [
+          "data\\extracted\\beir\\scifact\\scifact\\corpus.jsonl"
+        ],
+        "extracted_query_files": [
+          "data\\extracted\\beir\\scifact\\scifact\\queries.jsonl"
+        ],
+        "stored_phase5_arrays_are_score_vectors": true,
+        "score_array_contents_read_in_this_audit": false,
+        "relevance_judgments_read": false
+      },
+      "fiqa": {
+        "manifest": "results\\phase5\\beir\\fiqa\\dataset_manifest.json",
+        "manifest_sha256": "5e440a4c2cfc6e3302958ded3c6c7efba8d7dee5dc9b8a73946fbba4d63e60e6",
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "corpus_size": 57638,
+        "dimension": 384,
+        "historical_development_query_ids": [
+          "8",
+          "15",
+          "18",
+          "26"
+        ],
+        "historical_confirmation_label_does_not_mean_unused": true,
+        "archive_sha256_matches": true,
+        "archive_md5_matches": true,
+        "extracted_corpus_files": [
+          "data\\extracted\\beir\\fiqa\\fiqa\\corpus.jsonl"
+        ],
+        "extracted_query_files": [
+          "data\\extracted\\beir\\fiqa\\fiqa\\queries.jsonl"
+        ],
+        "stored_phase5_arrays_are_score_vectors": true,
+        "score_array_contents_read_in_this_audit": false,
+        "relevance_judgments_read": false
+      }
+    },
+    "package_versions": {
+      "numpy": "2.4.6",
+      "openvino": "2026.4.1",
+      "torch": "2.11.0+cu128",
+      "sentence-transformers": "5.1.2"
+    },
+    "device_inventory": {
+      "enumeration_only": true,
+      "inference_executed": false,
+      "available_devices": [
+        "CPU",
+        "GPU.0",
+        "GPU.1",
+        "NPU"
+      ],
+      "FULL_DEVICE_NAME": "Intel(R) AI Boost",
+      "DEVICE_ARCHITECTURE": "3720",
+      "NPU_DRIVER_VERSION": "1004512",
+      "NPU_COMPILER_VERSION": "458778"
+    },
+    "pinned_model_cache_directory_present": true,
+    "data_npy_npz_files": [],
+    "source_inventory_sha256": {
+      "scripts/prepare_beir_scores.py": "52e815e6a71fb308f45451130a28d88a088a1d3ff9c0908fde30c0e3f607b8fc",
+      "src/cats_npu/data_import.py": "9d53183e36f9ac31413275cc2613a7ed3ab05dd5fa72a08906cbcb3b8a4ff91d",
+      "docs/FINAL_RESEARCH_CONTRIBUTION.md": "cb31de2b69b949ea77e479ecc74e58a6036ea7a0f9436a4940d716cbd65b59f7",
+      "docs/CONTRACT_LOWERING_FEASIBILITY.md": "7f7d9df3a0294b6926e32bab74a56d122b654cd529903e7d5ee4c2aa341fb52a",
+      "results/phase9/manifest.json": "fc277b3e8555d104c6f9d144d3546f0de5260ef4f299e1171c1631930fada9c5",
+      "results/phase9_novelty/manifest.json": "1a9e12049295bfd278ff9c42682867d4066b2f0d7669166d4e6316f6ba61fbef",
+      "results/phase10/20261029/manifest.json": "c2e1dd51532387112f7321ddaaf12c0d2edeb96808ebf844042ab4872737a2a6"
+    },
+    "regeneration_performed": false,
+    "dataset_scope": "SciFact/FiQA source inventory only"
+  },
+  "analytical_checks": {
+    "output_rounding_witness": {
+      "source_scores": [
+        0.50006103515625,
+        0.5001220703125
+      ],
+      "fp16_output_scores": [
+        0.5,
+        0.5
+      ],
+      "reference_k1_id": 1,
+      "rounded_k1_id": 0,
+      "different_winner": true,
+      "scope": "Analytical scalar counterexample, not a real retrieval/NPU observation"
+    },
+    "dyadic_scaling_probes": [
+      {
+        "power_of_two_exponent": -4,
+        "eligible_scalar_cases": 153594,
+        "mismatches": 0
+      },
+      {
+        "power_of_two_exponent": -3,
+        "eligible_scalar_cases": 159738,
+        "mismatches": 0
+      },
+      {
+        "power_of_two_exponent": -2,
+        "eligible_scalar_cases": 165882,
+        "mismatches": 0
+      },
+      {
+        "power_of_two_exponent": -1,
+        "eligible_scalar_cases": 172026,
+        "mismatches": 0
+      },
+      {
+        "power_of_two_exponent": 0,
+        "eligible_scalar_cases": 178170,
+        "mismatches": 0
+      },
+      {
+        "power_of_two_exponent": 1,
+        "eligible_scalar_cases": 172026,
+        "mismatches": 0
+      },
+      {
+        "power_of_two_exponent": 2,
+        "eligible_scalar_cases": 165882,
+        "mismatches": 0
+      },
+      {
+        "power_of_two_exponent": 3,
+        "eligible_scalar_cases": 159738,
+        "mismatches": 0
+      },
+      {
+        "power_of_two_exponent": 4,
+        "eligible_scalar_cases": 153594,
+        "mismatches": 0
+      }
+    ],
+    "checks": {
+      "exact_dyadic_scores_are_distinct": true,
+      "fp32_stores_both_exactly": true,
+      "output_rounding_changes_stable_top1": true,
+      "normal_range_homogeneity_probes_pass": true
+    },
+    "scope": "CPU analytical checks; not a universal hardware proof or a calibration benchmark"
+  },
+  "all_audit_checks_passed": true
+}

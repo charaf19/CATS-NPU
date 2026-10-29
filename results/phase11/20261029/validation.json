@@ -1,0 +1,22 @@
+{
+  "source_base_commit": "345c24cebd717b57e167ca6e696bbcd1e819b2d4",
+  "client_date": "2026-10-29",
+  "decision": "NO-GO",
+  "originality_gate": "FAIL",
+  "hardware_inference_experiment": false,
+  "real_retrieval_experiment": false,
+  "confirmatory_protocol_frozen": false,
+  "final_holdout_accessed": false,
+  "new_method_implemented": false,
+  "relative_report_links_valid": true,
+  "analytical_assertions_passed": {
+    "exact_dyadic_scores_are_distinct": true,
+    "fp32_stores_both_exactly": true,
+    "output_rounding_changes_stable_top1": true,
+    "normal_range_homogeneity_probes_pass": true
+  },
+  "historical_phase9_raw_hashes_verified": 49,
+  "historical_source_and_evidence_unchanged": true,
+  "audit_source_hash_matches": true,
+  "scope_limit": "Validation of assessment artifacts and CPU analytical checks; no calibration or physical-scoring validation."
+}

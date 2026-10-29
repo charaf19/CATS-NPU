@@ -1,0 +1,158 @@
+{
+  "client_date": "2026-10-29",
+  "source_base_commit": "345c24cebd717b57e167ca6e696bbcd1e819b2d4",
+  "review_scope": "Targeted primary-source investigation through current date, not a systematic or exhaustive novelty proof.",
+  "references": [
+    {
+      "id": "R1",
+      "title": "SpinQuant: LLM Quantization with Learned Rotations",
+      "url": "https://arxiv.org/html/2405.16406v4",
+      "inspection_scope": "Primary paper and pinned training/optimizer source inspected."
+    },
+    {
+      "id": "R2",
+      "title": "QuaRot: Outlier-Free 4-Bit Inference in Rotated LLMs",
+      "url": "https://arxiv.org/abs/2404.00456v2",
+      "inspection_scope": "Primary proceedings paper and pinned rotation source inspected."
+    },
+    {
+      "id": "R3",
+      "title": "TORQUE: Optimizing What (not) to Quantize Before and After Rotation",
+      "url": "https://arxiv.org/html/2609.36032v1",
+      "inspection_scope": "September 2026 preprint; no peer-reviewed acceptance or execution reproduction assumed."
+    },
+    {
+      "id": "R4",
+      "title": "Optimized Product Quantization for Approximate Nearest Neighbor Search",
+      "url": "https://openaccess.thecvf.com/content_cvpr_2013/html/Ge_Optimized_Product_Quantization_2013_CVPR_paper.html",
+      "inspection_scope": "Official paper record and primary PDF inspected."
+    },
+    {
+      "id": "R5",
+      "title": "Pairwise Quantization",
+      "url": "https://arxiv.org/pdf/1606.01550",
+      "inspection_scope": "2016 author preprint inspected."
+    },
+    {
+      "id": "R6",
+      "title": "Accelerating Large-Scale Inference with Anisotropic Vector Quantization",
+      "url": "https://proceedings.mlr.press/v119/guo20h.html",
+      "inspection_scope": "Official proceedings and author abstract inspected."
+    },
+    {
+      "id": "R7",
+      "title": "Distill-VQ: Learning Retrieval Oriented Vector Quantization By Distilling Knowledge from Dense Embeddings",
+      "url": "https://arxiv.org/html/2204.00185v2",
+      "inspection_scope": "Primary paper, margin/rank-loss discussion and pinned implementation inspected."
+    },
+    {
+      "id": "R8",
+      "title": "Matching-oriented Embedding Quantization For Ad-hoc Retrieval",
+      "url": "https://aclanthology.org/2021.emnlp-main.640/",
+      "inspection_scope": "Official abstract and bibliography; not reproduced."
+    },
+    {
+      "id": "R9",
+      "title": "Reliable Evaluation Protocol for Low-Precision Retrieval",
+      "url": "https://aclanthology.org/2026.acl-short.33/",
+      "inspection_scope": "Official abstract and bibliography only; PDF requests timed out."
+    },
+    {
+      "id": "R10",
+      "title": "The Undetected Damage of Quantization on Retrieval and How to Fix It",
+      "url": "https://arxiv.org/pdf/2609.24322",
+      "inspection_scope": "September 2026 preprint and author page inspected; encoder-versus-index distinction retained."
+    },
+    {
+      "id": "R11",
+      "title": "Teacher-guided Residual Calibration for Product-quantized Cross-modal Retrieval",
+      "url": "https://doi.org/10.1016/j.knosys.2026.116763",
+      "inspection_scope": "Publisher searchable snippets; full text 403; no code/equivalence assertion."
+    },
+    {
+      "id": "R12",
+      "title": "Improving the Accuracy of Dense Retrieval on the Quantized Indexes via Gradient Optimization of the Target Embeddings",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40601",
+      "inspection_scope": "Official proceedings abstract/bibliography."
+    },
+    {
+      "id": "R13",
+      "title": "All the News That Fits in Bits: Learned Rotation-Aware Binary Projections for Efficient News Retrieval at NDTV",
+      "url": "https://doi.org/10.1145/3805712.3808484",
+      "inspection_scope": "Publisher abstract/bibliography available through search; direct open inaccessible; not reproduced."
+    },
+    {
+      "id": "R14",
+      "title": "SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models",
+      "url": "https://proceedings.mlr.press/v202/xiao23c.html",
+      "inspection_scope": "Official paper and reciprocal-scaling formulation inspected."
+    },
+    {
+      "id": "R15",
+      "title": "Mixed Precision Block Fused Multiply-Add: Error Analysis and Application to GPU Tensor Cores",
+      "url": "https://epubs.siam.org/doi/abs/10.1137/19M1289546",
+      "inspection_scope": "Primary publisher/author manuscript; not treated as an Intel NPU arithmetic model."
+    }
+  ],
+  "software_inspections": [
+    {
+      "repository": "facebookresearch/SpinQuant",
+      "commit": "8f47aa3f00e8662caf1a484153920a07e5281c3a",
+      "path": "optimize_rotation.py",
+      "lines": [
+        66,
+        109
+      ],
+      "observation": "Base parameters frozen; only rotation parameters passed to SGDG with stiefel=True.",
+      "blob_sha": "2405b3249466c8dc13412861b4cc6bfa9e2d3fe9",
+      "url": "https://github.com/facebookresearch/SpinQuant/blob/8f47aa3f00e8662caf1a484153920a07e5281c3a/optimize_rotation.py"
+    },
+    {
+      "repository": "facebookresearch/SpinQuant",
+      "commit": "8f47aa3f00e8662caf1a484153920a07e5281c3a",
+      "path": "train_utils/optimizer.py",
+      "lines": [
+        8,
+        33,
+        168
+      ],
+      "observation": "Cayley-style Stiefel optimizer implemented; not a new optimizer supplied by CATS-NPU.",
+      "blob_sha": "06a24435f8d145f17d7571a8c78a037c1cf6d220",
+      "url": "https://github.com/facebookresearch/SpinQuant/blob/8f47aa3f00e8662caf1a484153920a07e5281c3a/train_utils/optimizer.py"
+    },
+    {
+      "repository": "spcl/QuaRot",
+      "commit": "5008669b08c1f11f9b64d52d16fddd47ca754c5a",
+      "path": "fake_quant/rotation_utils.py",
+      "lines": [
+        88,
+        111,
+        291,
+        292
+      ],
+      "observation": "Random/structured rotations and paired query/key transforms in existing implementation.",
+      "blob_sha": "97a73ef4e63b2409d280770839b7066223bc522c",
+      "url": "https://github.com/spcl/QuaRot/blob/5008669b08c1f11f9b64d52d16fddd47ca754c5a/fake_quant/rotation_utils.py"
+    },
+    {
+      "repository": "staoxiao/LibVQ",
+      "commit": "ad65c28b75a7434ea073a9750d01142added6d5f",
+      "path": "LibVQ/models/learnable_vq.py",
+      "lines": [
+        92,
+        116
+      ],
+      "observation": "Inspected implementation uses softmax teacher/student cross-entropy; alternative margin/RankNet discussion verified from paper, not assumed present here.",
+      "blob_sha": "4ab5da4cd6aa6acff7db3830121d41b290da6bfd",
+      "url": "https://github.com/staoxiao/LibVQ/blob/ad65c28b75a7434ea073a9750d01142added6d5f/LibVQ/models/learnable_vq.py"
+    }
+  ],
+  "candidate": "Frozen-encoder orthogonal calibration with pairwise rank/margin distillation.",
+  "falsified_distinction": "Optimizing correlated pairwise score errors supplies a capability beyond ordinary rank-aware rotation; the objective is the same pairwise margin discrepancy.",
+  "alternative_checked": "Reciprocal dyadic scaling: no change to normal-range quantized coordinate products under explicit binary-rounding assumptions.",
+  "originality_gate": "FAIL for investigated candidates",
+  "decision": "NO-GO",
+  "hardware_scoring_evidence": "Not collected; novelty stopping rule applied before method/scoring development.",
+  "external_training_tools_executed": false,
+  "reference_lookup_correction": "QuaRot verified as arXiv:2404.00456; unrelated arXiv:2403.10077 encountered during lookup is excluded from the review."
+}

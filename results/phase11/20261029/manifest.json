@@ -1,0 +1,22 @@
+{
+  "phase": 11,
+  "client_date": "2026-10-29",
+  "source_base_commit": "345c24cebd717b57e167ca6e696bbcd1e819b2d4",
+  "decision": "NO-GO for investigated candidates at originality gate",
+  "hardware_inference_experiment": false,
+  "real_retrieval_experiment": false,
+  "new_method_implemented": false,
+  "confirmatory_protocol_frozen": false,
+  "files_sha256": {
+    "docs/PHASE11_EXPERIMENTAL_PROTOCOL.md": "9758ba586c8187fbd21d55a2b599983db34305a95bcc140ed8abd26f172796a3",
+    "docs/PHASE11_FINAL_RESEARCH_DECISION.md": "59b54a5a6e56f9fc0b3e6b14bb4d48d1eed7c6c5a1b68884d0de7cadd13696d6",
+    "docs/PHASE11_MATHEMATICAL_FOUNDATION.md": "e3ce44ceaa8157337aae0aafb0dfd3c383028eb09b0196d963e66526858931d3",
+    "docs/PHASE11_NOVELTY_ASSESSMENT.md": "847b0179ad7e3fc8012fc6877f9ee4a061eb444b337a6db3d580749be1c51011",
+    "docs/PHASE11_NUMERICAL_FEASIBILITY.md": "7c2e45d07fddfc6bfe06beb64ec9d8d5cd984716f11736e1e100e5db3e0541e0",
+    "docs/RESEARCH_PROGRESS.md": "31f653eed10a7503c845ae5d6b488950e97ffeecdad233537c977c0c9cac3368",
+    "results/phase11/20261029/audit_phase11_basis.py": "5a072c770db5daf2f0de6289743dad8b8a79c8e5d74eb4ac09b0ebe3e4e9739b",
+    "results/phase11/20261029/basis_audit.json": "e188055293b93f2e40f90d8962a7dc3459023482db888a383137bdbc28083c03",
+    "results/phase11/20261029/literature_review.json": "0cb339566a9468993c40e7f1ee3e40a1985bdbbbd7c4c254bc1f7ef6b0160b5e",
+    "results/phase11/20261029/validation.json": "11359dc45e707642a0e72840dc6755570c59584425d69e3862d1d216acbf32aa"
+  }
+}
