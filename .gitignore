@@ -5,7 +5,7 @@ __pycache__/
 *.egg-info/
 build/
 dist/
-results/
+
 data/raw/
 data/extracted/
 *.pyc

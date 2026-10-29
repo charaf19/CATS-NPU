@@ -1,0 +1,10 @@
+{
+  "session_id": "20261023T213924Z_DESKTOP-33Q7GQP_4428",
+  "observations": 1920,
+  "skipped": 0,
+  "wrong_results": 0,
+  "completed": true,
+  "valid_for_inference": true,
+  "results_file": "results\\phase2_pilot\\npu_plugin_b32_strict\\observations_20261023T213924Z_DESKTOP-33Q7GQP_4428.jsonl",
+  "skips_file": "results\\phase2_pilot\\npu_plugin_b32_strict\\skips_20261023T213924Z_DESKTOP-33Q7GQP_4428.jsonl"
+}

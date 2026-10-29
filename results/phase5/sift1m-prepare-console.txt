@@ -1,0 +1,21 @@
+query 1/16: scores generated
+query 2/16: scores generated
+query 3/16: scores generated
+query 4/16: scores generated
+query 5/16: scores generated
+query 6/16: scores generated
+query 7/16: scores generated
+query 8/16: scores generated
+query 9/16: scores generated
+query 10/16: scores generated
+query 11/16: scores generated
+query 12/16: scores generated
+query 13/16: scores generated
+query 14/16: scores generated
+query 15/16: scores generated
+query 16/16: scores generated
+{
+  "queries": 16,
+  "arrays": 64,
+  "manifest": "results\\phase5\\sift1m\\dataset_manifest.json"
+}

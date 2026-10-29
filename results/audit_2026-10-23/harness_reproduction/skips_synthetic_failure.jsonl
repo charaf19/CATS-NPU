@@ -1,0 +1,1 @@
+{"block_id": 0, "case_id": "N16_K2_normal_f16_T16_B1_S42", "error": "INFERENCE: RuntimeError: SYNTHETIC injected runtime failure", "iteration": 1, "method": "cpu_exact", "session_id": "synthetic_failure"}

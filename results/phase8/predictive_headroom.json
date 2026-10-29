@@ -1,0 +1,843 @@
+{
+  "status": "exploratory predictive feasibility; no held-out Phase 7 data read",
+  "case_count": 48,
+  "strategy_definitions": {
+    "oracle": "Minimum of all four measured NPU method medians for each query; impossible at runtime",
+    "leave_one_query_out_shape_only": "Best peer-query median for the same N/K shape; zero runtime overhead assumed"
+  },
+  "strategies": {
+    "ov_npu_native_direct": {
+      "case_count": 48,
+      "oracle_hit_rate": 0.25,
+      "geomean_regret": 1.296618461243188,
+      "mean_regret": 1.329933230524154,
+      "median_regret": 1.3027101970983788,
+      "max_regret": 2.240047450168104,
+      "geomean_headroom_to_oracle": 1.296618461243188,
+      "chosen_methods": {
+        "ov_npu_native_direct": 48
+      }
+    },
+    "ov_npu_native_batched_hier": {
+      "case_count": 48,
+      "oracle_hit_rate": 0.14583333333333334,
+      "geomean_regret": 1.2026577596867445,
+      "mean_regret": 1.2115464771165154,
+      "median_regret": 1.2129763232901873,
+      "max_regret": 1.5970700089117325,
+      "geomean_headroom_to_oracle": 1.2026577596867445,
+      "chosen_methods": {
+        "ov_npu_native_batched_hier": 48
+      }
+    },
+    "ov_npu_native_batched_adaptive": {
+      "case_count": 48,
+      "oracle_hit_rate": 0.25,
+      "geomean_regret": 1.364778613701732,
+      "mean_regret": 1.5398817736986319,
+      "median_regret": 1.1067636562978265,
+      "max_regret": 4.888762091077057,
+      "geomean_headroom_to_oracle": 1.364778613701732,
+      "chosen_methods": {
+        "ov_npu_native_batched_adaptive": 48
+      }
+    },
+    "ov_npu_native_batched_costadaptive": {
+      "case_count": 48,
+      "oracle_hit_rate": 0.3541666666666667,
+      "geomean_regret": 1.3278568984777293,
+      "mean_regret": 1.4195008982206703,
+      "median_regret": 1.0872867608232313,
+      "max_regret": 3.2958512456621953,
+      "geomean_headroom_to_oracle": 1.3278568984777293,
+      "chosen_methods": {
+        "ov_npu_native_batched_costadaptive": 48
+      }
+    },
+    "leave_one_query_out_shape_only": {
+      "case_count": 48,
+      "oracle_hit_rate": 0.7083333333333334,
+      "geomean_regret": 1.0482894516781518,
+      "mean_regret": 1.0559109651748715,
+      "median_regret": 1.0,
+      "max_regret": 1.8500848503548288,
+      "geomean_headroom_to_oracle": 1.0482894516781518,
+      "chosen_methods": {
+        "ov_npu_native_batched_adaptive": 10,
+        "ov_npu_native_batched_costadaptive": 17,
+        "ov_npu_native_batched_hier": 7,
+        "ov_npu_native_direct": 14
+      }
+    }
+  },
+  "cases": [
+    {
+      "n": 1024,
+      "k": 4,
+      "query": "sift1m_q0004",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 0.98785,
+        "ov_npu_native_batched_hier": 1.1957499999999999,
+        "ov_npu_native_batched_adaptive": 1.17145,
+        "ov_npu_native_batched_costadaptive": 1.19235
+      },
+      "oracle_method": "ov_npu_native_direct",
+      "oracle_ms": 0.98785,
+      "shape_choice": "ov_npu_native_direct",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 1024,
+      "k": 4,
+      "query": "sift1m_q0005",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 0.93805,
+        "ov_npu_native_batched_hier": 1.24315,
+        "ov_npu_native_batched_adaptive": 2.2957,
+        "ov_npu_native_batched_costadaptive": 2.336
+      },
+      "oracle_method": "ov_npu_native_direct",
+      "oracle_ms": 0.93805,
+      "shape_choice": "ov_npu_native_direct",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 1024,
+      "k": 4,
+      "query": "sift1m_q0006",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 0.9151,
+        "ov_npu_native_batched_hier": 1.1867,
+        "ov_npu_native_batched_adaptive": 2.3236,
+        "ov_npu_native_batched_costadaptive": 2.24925
+      },
+      "oracle_method": "ov_npu_native_direct",
+      "oracle_ms": 0.9151,
+      "shape_choice": "ov_npu_native_direct",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 1024,
+      "k": 4,
+      "query": "sift1m_q0007",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 0.9653499999999999,
+        "ov_npu_native_batched_hier": 1.3301500000000002,
+        "ov_npu_native_batched_adaptive": 2.67905,
+        "ov_npu_native_batched_costadaptive": 3.18165
+      },
+      "oracle_method": "ov_npu_native_direct",
+      "oracle_ms": 0.9653499999999999,
+      "shape_choice": "ov_npu_native_direct",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 1024,
+      "k": 10,
+      "query": "sift1m_q0004",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 0.99375,
+        "ov_npu_native_batched_hier": 1.3187,
+        "ov_npu_native_batched_adaptive": 3.4729,
+        "ov_npu_native_batched_costadaptive": 2.4194
+      },
+      "oracle_method": "ov_npu_native_direct",
+      "oracle_ms": 0.99375,
+      "shape_choice": "ov_npu_native_direct",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 1024,
+      "k": 10,
+      "query": "sift1m_q0005",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 0.9201,
+        "ov_npu_native_batched_hier": 1.29175,
+        "ov_npu_native_batched_adaptive": 4.49815,
+        "ov_npu_native_batched_costadaptive": 2.2470499999999998
+      },
+      "oracle_method": "ov_npu_native_direct",
+      "oracle_ms": 0.9201,
+      "shape_choice": "ov_npu_native_direct",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 1024,
+      "k": 10,
+      "query": "sift1m_q0006",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 0.9593,
+        "ov_npu_native_batched_hier": 1.20455,
+        "ov_npu_native_batched_adaptive": 4.39775,
+        "ov_npu_native_batched_costadaptive": 2.3210499999999996
+      },
+      "oracle_method": "ov_npu_native_direct",
+      "oracle_ms": 0.9593,
+      "shape_choice": "ov_npu_native_direct",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 1024,
+      "k": 10,
+      "query": "sift1m_q0007",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 0.9614,
+        "ov_npu_native_batched_hier": 1.245,
+        "ov_npu_native_batched_adaptive": 4.4338,
+        "ov_npu_native_batched_costadaptive": 2.3296
+      },
+      "oracle_method": "ov_npu_native_direct",
+      "oracle_ms": 0.9614,
+      "shape_choice": "ov_npu_native_direct",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 5183,
+      "k": 4,
+      "query": "beir_scifact_q0004",
+      "dataset": "SciFact",
+      "times_ms": {
+        "ov_npu_native_direct": 2.9795499999999997,
+        "ov_npu_native_batched_hier": 2.0703,
+        "ov_npu_native_batched_adaptive": 1.5035,
+        "ov_npu_native_batched_costadaptive": 1.5611
+      },
+      "oracle_method": "ov_npu_native_batched_adaptive",
+      "oracle_ms": 1.5035,
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "shape_regret": 1.03831060857998
+    },
+    {
+      "n": 5183,
+      "k": 4,
+      "query": "beir_scifact_q0005",
+      "dataset": "SciFact",
+      "times_ms": {
+        "ov_npu_native_direct": 1.7717,
+        "ov_npu_native_batched_hier": 1.24715,
+        "ov_npu_native_batched_adaptive": 1.2079499999999999,
+        "ov_npu_native_batched_costadaptive": 1.22365
+      },
+      "oracle_method": "ov_npu_native_batched_adaptive",
+      "oracle_ms": 1.2079499999999999,
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 5183,
+      "k": 4,
+      "query": "beir_scifact_q0006",
+      "dataset": "SciFact",
+      "times_ms": {
+        "ov_npu_native_direct": 1.8545500000000001,
+        "ov_npu_native_batched_hier": 1.6721,
+        "ov_npu_native_batched_adaptive": 1.2991000000000001,
+        "ov_npu_native_batched_costadaptive": 1.2546
+      },
+      "oracle_method": "ov_npu_native_batched_costadaptive",
+      "oracle_ms": 1.2546,
+      "shape_choice": "ov_npu_native_batched_hier",
+      "shape_regret": 1.3327753865773952
+    },
+    {
+      "n": 5183,
+      "k": 4,
+      "query": "beir_scifact_q0007",
+      "dataset": "SciFact",
+      "times_ms": {
+        "ov_npu_native_direct": 1.77075,
+        "ov_npu_native_batched_hier": 1.2964,
+        "ov_npu_native_batched_adaptive": 2.3815999999999997,
+        "ov_npu_native_batched_costadaptive": 2.39845
+      },
+      "oracle_method": "ov_npu_native_batched_hier",
+      "oracle_ms": 1.2964,
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "shape_regret": 1.8500848503548288
+    },
+    {
+      "n": 5183,
+      "k": 10,
+      "query": "beir_scifact_q0004",
+      "dataset": "SciFact",
+      "times_ms": {
+        "ov_npu_native_direct": 1.95415,
+        "ov_npu_native_batched_hier": 1.6392,
+        "ov_npu_native_batched_adaptive": 2.4193,
+        "ov_npu_native_batched_costadaptive": 3.30085
+      },
+      "oracle_method": "ov_npu_native_batched_hier",
+      "oracle_ms": 1.6392,
+      "shape_choice": "ov_npu_native_batched_hier",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 5183,
+      "k": 10,
+      "query": "beir_scifact_q0005",
+      "dataset": "SciFact",
+      "times_ms": {
+        "ov_npu_native_direct": 2.73925,
+        "ov_npu_native_batched_hier": 1.37395,
+        "ov_npu_native_batched_adaptive": 2.4231,
+        "ov_npu_native_batched_costadaptive": 2.6685
+      },
+      "oracle_method": "ov_npu_native_batched_hier",
+      "oracle_ms": 1.37395,
+      "shape_choice": "ov_npu_native_batched_hier",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 5183,
+      "k": 10,
+      "query": "beir_scifact_q0006",
+      "dataset": "SciFact",
+      "times_ms": {
+        "ov_npu_native_direct": 1.8881999999999999,
+        "ov_npu_native_batched_hier": 1.43765,
+        "ov_npu_native_batched_adaptive": 2.3696,
+        "ov_npu_native_batched_costadaptive": 2.6054500000000003
+      },
+      "oracle_method": "ov_npu_native_batched_hier",
+      "oracle_ms": 1.43765,
+      "shape_choice": "ov_npu_native_batched_hier",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 5183,
+      "k": 10,
+      "query": "beir_scifact_q0007",
+      "dataset": "SciFact",
+      "times_ms": {
+        "ov_npu_native_direct": 1.83075,
+        "ov_npu_native_batched_hier": 1.48795,
+        "ov_npu_native_batched_adaptive": 2.55275,
+        "ov_npu_native_batched_costadaptive": 2.66235
+      },
+      "oracle_method": "ov_npu_native_batched_hier",
+      "oracle_ms": 1.48795,
+      "shape_choice": "ov_npu_native_batched_hier",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 16384,
+      "k": 4,
+      "query": "sift1m_q0004",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 2.7133000000000003,
+        "ov_npu_native_batched_hier": 2.46765,
+        "ov_npu_native_batched_adaptive": 3.44435,
+        "ov_npu_native_batched_costadaptive": 3.93075
+      },
+      "oracle_method": "ov_npu_native_batched_hier",
+      "oracle_ms": 2.46765,
+      "shape_choice": "ov_npu_native_direct",
+      "shape_regret": 1.0995481531011289
+    },
+    {
+      "n": 16384,
+      "k": 4,
+      "query": "sift1m_q0005",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 2.6921999999999997,
+        "ov_npu_native_batched_hier": 3.22455,
+        "ov_npu_native_batched_adaptive": 3.8634,
+        "ov_npu_native_batched_costadaptive": 5.03205
+      },
+      "oracle_method": "ov_npu_native_direct",
+      "oracle_ms": 2.6921999999999997,
+      "shape_choice": "ov_npu_native_batched_hier",
+      "shape_regret": 1.1977379095163807
+    },
+    {
+      "n": 16384,
+      "k": 4,
+      "query": "sift1m_q0006",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 2.8657500000000002,
+        "ov_npu_native_batched_hier": 3.275,
+        "ov_npu_native_batched_adaptive": 2.3909000000000002,
+        "ov_npu_native_batched_costadaptive": 2.3038
+      },
+      "oracle_method": "ov_npu_native_batched_costadaptive",
+      "oracle_ms": 2.3038,
+      "shape_choice": "ov_npu_native_batched_hier",
+      "shape_regret": 1.4215643719072837
+    },
+    {
+      "n": 16384,
+      "k": 4,
+      "query": "sift1m_q0007",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 2.7188499999999998,
+        "ov_npu_native_batched_hier": 2.45355,
+        "ov_npu_native_batched_adaptive": 3.66275,
+        "ov_npu_native_batched_costadaptive": 3.73495
+      },
+      "oracle_method": "ov_npu_native_batched_hier",
+      "oracle_ms": 2.45355,
+      "shape_choice": "ov_npu_native_direct",
+      "shape_regret": 1.1081290375170672
+    },
+    {
+      "n": 16384,
+      "k": 10,
+      "query": "sift1m_q0004",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 2.74415,
+        "ov_npu_native_batched_hier": 3.135,
+        "ov_npu_native_batched_adaptive": 3.9757499999999997,
+        "ov_npu_native_batched_costadaptive": 3.5911
+      },
+      "oracle_method": "ov_npu_native_direct",
+      "oracle_ms": 2.74415,
+      "shape_choice": "ov_npu_native_direct",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 16384,
+      "k": 10,
+      "query": "sift1m_q0005",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 2.71,
+        "ov_npu_native_batched_hier": 2.8537,
+        "ov_npu_native_batched_adaptive": 4.0915,
+        "ov_npu_native_batched_costadaptive": 4.7933
+      },
+      "oracle_method": "ov_npu_native_direct",
+      "oracle_ms": 2.71,
+      "shape_choice": "ov_npu_native_direct",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 16384,
+      "k": 10,
+      "query": "sift1m_q0006",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 2.7883500000000003,
+        "ov_npu_native_batched_hier": 2.7756,
+        "ov_npu_native_batched_adaptive": 2.2615499999999997,
+        "ov_npu_native_batched_costadaptive": 2.31355
+      },
+      "oracle_method": "ov_npu_native_batched_adaptive",
+      "oracle_ms": 2.2615499999999997,
+      "shape_choice": "ov_npu_native_direct",
+      "shape_regret": 1.2329375870531276
+    },
+    {
+      "n": 16384,
+      "k": 10,
+      "query": "sift1m_q0007",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 2.69985,
+        "ov_npu_native_batched_hier": 2.87365,
+        "ov_npu_native_batched_adaptive": 3.4856,
+        "ov_npu_native_batched_costadaptive": 3.6415499999999996
+      },
+      "oracle_method": "ov_npu_native_direct",
+      "oracle_ms": 2.69985,
+      "shape_choice": "ov_npu_native_direct",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 57638,
+      "k": 4,
+      "query": "beir_fiqa_q0004",
+      "dataset": "FiQA",
+      "times_ms": {
+        "ov_npu_native_direct": 14.936499999999999,
+        "ov_npu_native_batched_hier": 11.287749999999999,
+        "ov_npu_native_batched_adaptive": 13.26465,
+        "ov_npu_native_batched_costadaptive": 10.4069
+      },
+      "oracle_method": "ov_npu_native_batched_costadaptive",
+      "oracle_ms": 10.4069,
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 57638,
+      "k": 4,
+      "query": "beir_fiqa_q0005",
+      "dataset": "FiQA",
+      "times_ms": {
+        "ov_npu_native_direct": 18.22245,
+        "ov_npu_native_batched_hier": 10.316600000000001,
+        "ov_npu_native_batched_adaptive": 9.623149999999999,
+        "ov_npu_native_batched_costadaptive": 8.13485
+      },
+      "oracle_method": "ov_npu_native_batched_costadaptive",
+      "oracle_ms": 8.13485,
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 57638,
+      "k": 4,
+      "query": "beir_fiqa_q0006",
+      "dataset": "FiQA",
+      "times_ms": {
+        "ov_npu_native_direct": 16.5036,
+        "ov_npu_native_batched_hier": 10.70685,
+        "ov_npu_native_batched_adaptive": 10.4967,
+        "ov_npu_native_batched_costadaptive": 9.92155
+      },
+      "oracle_method": "ov_npu_native_batched_costadaptive",
+      "oracle_ms": 9.92155,
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 57638,
+      "k": 4,
+      "query": "beir_fiqa_q0007",
+      "dataset": "FiQA",
+      "times_ms": {
+        "ov_npu_native_direct": 16.961550000000003,
+        "ov_npu_native_batched_hier": 12.15315,
+        "ov_npu_native_batched_adaptive": 10.8396,
+        "ov_npu_native_batched_costadaptive": 9.0851
+      },
+      "oracle_method": "ov_npu_native_batched_costadaptive",
+      "oracle_ms": 9.0851,
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 57638,
+      "k": 10,
+      "query": "beir_fiqa_q0004",
+      "dataset": "FiQA",
+      "times_ms": {
+        "ov_npu_native_direct": 12.72265,
+        "ov_npu_native_batched_hier": 11.056899999999999,
+        "ov_npu_native_batched_adaptive": 8.84985,
+        "ov_npu_native_batched_costadaptive": 10.32975
+      },
+      "oracle_method": "ov_npu_native_batched_adaptive",
+      "oracle_ms": 8.84985,
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 57638,
+      "k": 10,
+      "query": "beir_fiqa_q0005",
+      "dataset": "FiQA",
+      "times_ms": {
+        "ov_npu_native_direct": 17.11085,
+        "ov_npu_native_batched_hier": 11.4788,
+        "ov_npu_native_batched_adaptive": 8.707550000000001,
+        "ov_npu_native_batched_costadaptive": 11.28655
+      },
+      "oracle_method": "ov_npu_native_batched_adaptive",
+      "oracle_ms": 8.707550000000001,
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 57638,
+      "k": 10,
+      "query": "beir_fiqa_q0006",
+      "dataset": "FiQA",
+      "times_ms": {
+        "ov_npu_native_direct": 13.8331,
+        "ov_npu_native_batched_hier": 9.79215,
+        "ov_npu_native_batched_adaptive": 7.3084,
+        "ov_npu_native_batched_costadaptive": 8.7539
+      },
+      "oracle_method": "ov_npu_native_batched_adaptive",
+      "oracle_ms": 7.3084,
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 57638,
+      "k": 10,
+      "query": "beir_fiqa_q0007",
+      "dataset": "FiQA",
+      "times_ms": {
+        "ov_npu_native_direct": 14.75405,
+        "ov_npu_native_batched_hier": 10.06795,
+        "ov_npu_native_batched_adaptive": 8.283000000000001,
+        "ov_npu_native_batched_costadaptive": 9.3073
+      },
+      "oracle_method": "ov_npu_native_batched_adaptive",
+      "oracle_ms": 8.283000000000001,
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 131072,
+      "k": 4,
+      "query": "sift1m_q0004",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 17.83655,
+        "ov_npu_native_batched_hier": 16.3568,
+        "ov_npu_native_batched_adaptive": 15.635449999999999,
+        "ov_npu_native_batched_costadaptive": 13.6456
+      },
+      "oracle_method": "ov_npu_native_batched_costadaptive",
+      "oracle_ms": 13.6456,
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 131072,
+      "k": 4,
+      "query": "sift1m_q0005",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 18.06025,
+        "ov_npu_native_batched_hier": 16.5386,
+        "ov_npu_native_batched_adaptive": 15.4758,
+        "ov_npu_native_batched_costadaptive": 15.51635
+      },
+      "oracle_method": "ov_npu_native_batched_adaptive",
+      "oracle_ms": 15.4758,
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "shape_regret": 1.0026202199563188
+    },
+    {
+      "n": 131072,
+      "k": 4,
+      "query": "sift1m_q0006",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 17.958399999999997,
+        "ov_npu_native_batched_hier": 18.63955,
+        "ov_npu_native_batched_adaptive": 16.2119,
+        "ov_npu_native_batched_costadaptive": 17.323900000000002
+      },
+      "oracle_method": "ov_npu_native_batched_adaptive",
+      "oracle_ms": 16.2119,
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "shape_regret": 1.0685915901282392
+    },
+    {
+      "n": 131072,
+      "k": 4,
+      "query": "sift1m_q0007",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 18.13195,
+        "ov_npu_native_batched_hier": 17.818199999999997,
+        "ov_npu_native_batched_adaptive": 16.12715,
+        "ov_npu_native_batched_costadaptive": 15.3179
+      },
+      "oracle_method": "ov_npu_native_batched_costadaptive",
+      "oracle_ms": 15.3179,
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 131072,
+      "k": 10,
+      "query": "sift1m_q0004",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 17.86385,
+        "ov_npu_native_batched_hier": 20.5124,
+        "ov_npu_native_batched_adaptive": 14.383199999999999,
+        "ov_npu_native_batched_costadaptive": 13.7595
+      },
+      "oracle_method": "ov_npu_native_batched_costadaptive",
+      "oracle_ms": 13.7595,
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 131072,
+      "k": 10,
+      "query": "sift1m_q0005",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 18.1652,
+        "ov_npu_native_batched_hier": 18.5642,
+        "ov_npu_native_batched_adaptive": 15.4829,
+        "ov_npu_native_batched_costadaptive": 15.23585
+      },
+      "oracle_method": "ov_npu_native_batched_costadaptive",
+      "oracle_ms": 15.23585,
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 131072,
+      "k": 10,
+      "query": "sift1m_q0006",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 17.5304,
+        "ov_npu_native_batched_hier": 18.81085,
+        "ov_npu_native_batched_adaptive": 13.0341,
+        "ov_npu_native_batched_costadaptive": 12.43235
+      },
+      "oracle_method": "ov_npu_native_batched_costadaptive",
+      "oracle_ms": 12.43235,
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 131072,
+      "k": 10,
+      "query": "sift1m_q0007",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 18.127450000000003,
+        "ov_npu_native_batched_hier": 21.3014,
+        "ov_npu_native_batched_adaptive": 16.892400000000002,
+        "ov_npu_native_batched_costadaptive": 16.50975
+      },
+      "oracle_method": "ov_npu_native_batched_costadaptive",
+      "oracle_ms": 16.50975,
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 1000000,
+      "k": 4,
+      "query": "sift1m_q0004",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 133.5235,
+        "ov_npu_native_batched_hier": 114.7813,
+        "ov_npu_native_batched_adaptive": 100.8229,
+        "ov_npu_native_batched_costadaptive": 98.55359999999999
+      },
+      "oracle_method": "ov_npu_native_batched_costadaptive",
+      "oracle_ms": 98.55359999999999,
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 1000000,
+      "k": 4,
+      "query": "sift1m_q0005",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 133.6661,
+        "ov_npu_native_batched_hier": 106.15379999999999,
+        "ov_npu_native_batched_adaptive": 92.79695000000001,
+        "ov_npu_native_batched_costadaptive": 102.63175
+      },
+      "oracle_method": "ov_npu_native_batched_adaptive",
+      "oracle_ms": 92.79695000000001,
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "shape_regret": 1.1059819315182233
+    },
+    {
+      "n": 1000000,
+      "k": 4,
+      "query": "sift1m_q0006",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 133.897,
+        "ov_npu_native_batched_hier": 102.78935,
+        "ov_npu_native_batched_adaptive": 96.36775,
+        "ov_npu_native_batched_costadaptive": 95.3003
+      },
+      "oracle_method": "ov_npu_native_batched_costadaptive",
+      "oracle_ms": 95.3003,
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 1000000,
+      "k": 4,
+      "query": "sift1m_q0007",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 133.00645,
+        "ov_npu_native_batched_hier": 114.37985,
+        "ov_npu_native_batched_adaptive": 104.21065,
+        "ov_npu_native_batched_costadaptive": 93.9271
+      },
+      "oracle_method": "ov_npu_native_batched_costadaptive",
+      "oracle_ms": 93.9271,
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "shape_regret": 1.10948437671343
+    },
+    {
+      "n": 1000000,
+      "k": 10,
+      "query": "sift1m_q0004",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 134.23225000000002,
+        "ov_npu_native_batched_hier": 119.2091,
+        "ov_npu_native_batched_adaptive": 96.73805,
+        "ov_npu_native_batched_costadaptive": 102.21600000000001
+      },
+      "oracle_method": "ov_npu_native_batched_adaptive",
+      "oracle_ms": 96.73805,
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 1000000,
+      "k": 10,
+      "query": "sift1m_q0005",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 134.16805,
+        "ov_npu_native_batched_hier": 154.12045,
+        "ov_npu_native_batched_adaptive": 97.65205,
+        "ov_npu_native_batched_costadaptive": 96.502
+      },
+      "oracle_method": "ov_npu_native_batched_costadaptive",
+      "oracle_ms": 96.502,
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "shape_regret": 1.0119173695881951
+    },
+    {
+      "n": 1000000,
+      "k": 10,
+      "query": "sift1m_q0006",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 133.6719,
+        "ov_npu_native_batched_hier": 118.1699,
+        "ov_npu_native_batched_adaptive": 98.20325,
+        "ov_npu_native_batched_costadaptive": 103.55605
+      },
+      "oracle_method": "ov_npu_native_batched_adaptive",
+      "oracle_ms": 98.20325,
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "shape_regret": 1.0
+    },
+    {
+      "n": 1000000,
+      "k": 10,
+      "query": "sift1m_q0007",
+      "dataset": "SIFT1M",
+      "times_ms": {
+        "ov_npu_native_direct": 133.0297,
+        "ov_npu_native_batched_hier": 119.23685,
+        "ov_npu_native_batched_adaptive": 110.57945000000001,
+        "ov_npu_native_batched_costadaptive": 100.15865
+      },
+      "oracle_method": "ov_npu_native_batched_costadaptive",
+      "oracle_ms": 100.15865,
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "shape_regret": 1.104042935882223
+    }
+  ]
+}

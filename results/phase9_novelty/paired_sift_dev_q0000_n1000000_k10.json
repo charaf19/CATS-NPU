@@ -1,0 +1,182 @@
+{
+  "timestamp_utc": "2026-10-27T12:26:37.616156+00:00",
+  "status": "exploratory interleaved one-process pilot; not independent sessions",
+  "input": "results\\phase5\\sift1m\\q0000_n1000000_neg_l2_f16.npy",
+  "input_sha256": "880030a910a4da705dd99771342704af9279fb0357554f4a489192b9429f3db2",
+  "n": 1000000,
+  "k": 10,
+  "width": 256,
+  "repeats": 5,
+  "input_residency": "host FP16 scores",
+  "output_residency": "host stable IDs",
+  "compilation_and_first_inference_excluded": true,
+  "execution_devices": {
+    "split_key_npu": [
+      "NPU"
+    ],
+    "fp16_static_npu": [
+      "NPU"
+    ],
+    "direct_npu": {
+      "requested": "NPU",
+      "kernel": "native",
+      "compiler_type_requested": "PLUGIN",
+      "reported_execution_devices": {
+        "11": [
+          "NPU"
+        ]
+      },
+      "reported_compiler_type": {
+        "11": "CompilerType.PLUGIN"
+      },
+      "prepared_k": [
+        11
+      ],
+      "execution_mode": "batched",
+      "tile_batch": 1,
+      "adaptive_policy": "fixed"
+    }
+  },
+  "samples": {
+    "split_key_npu": [
+      {
+        "elapsed_ms": 41.25,
+        "encoding_ms": 5.4113,
+        "staging_and_infer_ms": 30.2433,
+        "verification_and_copy_ms": 5.5954,
+        "device_submissions": 1,
+        "staged_input_bytes": 4000768,
+        "retrieved_output_bytes": 80,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 45.3742,
+        "encoding_ms": 12.026,
+        "staging_and_infer_ms": 29.186,
+        "verification_and_copy_ms": 4.1622,
+        "device_submissions": 1,
+        "staged_input_bytes": 4000768,
+        "retrieved_output_bytes": 80,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 42.8703,
+        "encoding_ms": 9.5785,
+        "staging_and_infer_ms": 29.523,
+        "verification_and_copy_ms": 3.7688,
+        "device_submissions": 1,
+        "staged_input_bytes": 4000768,
+        "retrieved_output_bytes": 80,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 44.6645,
+        "encoding_ms": 6.7392,
+        "staging_and_infer_ms": 29.0946,
+        "verification_and_copy_ms": 8.8307,
+        "device_submissions": 1,
+        "staged_input_bytes": 4000768,
+        "retrieved_output_bytes": 80,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 49.4316,
+        "encoding_ms": 13.1908,
+        "staging_and_infer_ms": 29.674,
+        "verification_and_copy_ms": 6.5668,
+        "device_submissions": 1,
+        "staged_input_bytes": 4000768,
+        "retrieved_output_bytes": 80,
+        "correct": true
+      }
+    ],
+    "fp16_static_npu": [
+      {
+        "elapsed_ms": 26.9805,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 33.6999,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 32.6525,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 29.8197,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 37.3682,
+        "correct": true
+      }
+    ],
+    "direct_npu": [
+      {
+        "elapsed_ms": 133.2101,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 135.0546,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 135.8001,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 142.3825,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 141.1411,
+        "correct": true
+      }
+    ],
+    "cpp_exact": [
+      {
+        "elapsed_ms": 15.9305,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 29.3591,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 15.5135,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 15.4044,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 33.2691,
+        "correct": true
+      }
+    ],
+    "torch_cuda_stable": [
+      {
+        "elapsed_ms": 3.8684,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 2.6976,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 6.3768,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 4.4829,
+        "correct": true
+      },
+      {
+        "elapsed_ms": 4.3792,
+        "correct": true
+      }
+    ]
+  }
+}

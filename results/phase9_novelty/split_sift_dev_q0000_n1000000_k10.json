@@ -1,0 +1,90 @@
+{
+  "timestamp_utc": "2026-10-27T12:23:55.318191+00:00",
+  "status": "exploratory physical NPU split-key graph probe",
+  "input": "results\\phase5\\sift1m\\q0000_n1000000_neg_l2_f16.npy",
+  "input_sha256": "880030a910a4da705dd99771342704af9279fb0357554f4a489192b9429f3db2",
+  "n": 1000000,
+  "k": 10,
+  "width": 256,
+  "correct": true,
+  "samples": [
+    {
+      "encoding_ms": 5.6806,
+      "staging_ms": 0.1375,
+      "infer_sync_ms": 61.9725,
+      "copy_ms": 0.0449,
+      "verification_ms": 3.9585,
+      "end_to_end_ms": 71.794,
+      "correct": true
+    },
+    {
+      "encoding_ms": 5.5773,
+      "staging_ms": 0.1598,
+      "infer_sync_ms": 48.2293,
+      "copy_ms": 0.0297,
+      "verification_ms": 4.5739,
+      "end_to_end_ms": 58.57,
+      "correct": true
+    },
+    {
+      "encoding_ms": 5.4,
+      "staging_ms": 0.1321,
+      "infer_sync_ms": 37.0502,
+      "copy_ms": 0.025,
+      "verification_ms": 3.1579,
+      "end_to_end_ms": 45.7652,
+      "correct": true
+    },
+    {
+      "encoding_ms": 5.4959,
+      "staging_ms": 0.139,
+      "infer_sync_ms": 30.8771,
+      "copy_ms": 0.0244,
+      "verification_ms": 2.7066,
+      "end_to_end_ms": 39.243,
+      "correct": true
+    },
+    {
+      "encoding_ms": 6.0247,
+      "staging_ms": 0.1573,
+      "infer_sync_ms": 28.6429,
+      "copy_ms": 0.0304,
+      "verification_ms": 6.5846,
+      "end_to_end_ms": 41.4399,
+      "correct": true
+    }
+  ],
+  "independent_sessions": false,
+  "cpu_graph_correct": true,
+  "compile_ms": 148.1174,
+  "execution_devices": [
+    "NPU"
+  ],
+  "submissions_per_query": 1,
+  "staged_input_bytes": 4000768,
+  "retrieved_output_bytes": 80,
+  "selected_ids": [
+    932085,
+    934876,
+    561813,
+    708177,
+    706771,
+    695756,
+    435345,
+    701258,
+    455537,
+    872728
+  ],
+  "expected_ids": [
+    932085,
+    934876,
+    561813,
+    708177,
+    706771,
+    695756,
+    435345,
+    701258,
+    455537,
+    872728
+  ]
+}

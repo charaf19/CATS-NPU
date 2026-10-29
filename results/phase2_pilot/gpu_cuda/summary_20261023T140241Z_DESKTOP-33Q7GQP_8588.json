@@ -1,0 +1,10 @@
+{
+  "session_id": "20261023T140241Z_DESKTOP-33Q7GQP_8588",
+  "observations": 1480,
+  "skipped": 22,
+  "wrong_results": 0,
+  "completed": true,
+  "valid_for_inference": false,
+  "results_file": "results\\phase2_pilot\\gpu_cuda\\observations_20261023T140241Z_DESKTOP-33Q7GQP_8588.jsonl",
+  "skips_file": "results\\phase2_pilot\\gpu_cuda\\skips_20261023T140241Z_DESKTOP-33Q7GQP_8588.jsonl"
+}

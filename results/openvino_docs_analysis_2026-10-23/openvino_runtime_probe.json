@@ -1,0 +1,1433 @@
+{
+  "timestamp_utc": "2026-10-23T13:20:57.514506+00:00",
+  "openvino_version": "2026.4.1-22982-e213a147257-releases/2026/4",
+  "available_devices": [
+    "CPU",
+    "GPU.0",
+    "GPU.1",
+    "NPU"
+  ],
+  "npu_properties": {
+    "FULL_DEVICE_NAME": "Intel(R) AI Boost",
+    "DEVICE_ARCHITECTURE": "3720",
+    "NPU_DRIVER_VERSION": 1004512,
+    "NPU_COMPILER_TYPE": "CompilerType.DRIVER",
+    "NPU_COMPILER_VERSION": 458778,
+    "OPTIMIZATION_CAPABILITIES": [
+      "FP16",
+      "INT8",
+      "EXPORT_IMPORT"
+    ],
+    "INFERENCE_PRECISION_HINT": "<Type: 'float16'>",
+    "EXECUTION_MODE_HINT": "ExecutionMode.PERFORMANCE",
+    "PERFORMANCE_HINT": "PerformanceMode.LATENCY"
+  },
+  "topk": [
+    {
+      "label": "cpu_f16_subnormals_control",
+      "device": "CPU",
+      "model_dtype": "f16",
+      "config": {},
+      "input": [
+        0.0,
+        5.960464477539063e-08,
+        1.1920928955078125e-07,
+        1.7881393432617188e-07,
+        2.384185791015625e-07,
+        2.980232238769531e-07,
+        3.5762786865234375e-07,
+        4.172325134277344e-07,
+        4.76837158203125e-07,
+        5.364418029785156e-07,
+        5.960464477539062e-07,
+        6.556510925292969e-07,
+        7.152557373046875e-07,
+        7.748603820800781e-07,
+        8.344650268554688e-07,
+        8.940696716308594e-07
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": [
+          "CPU"
+        ],
+        "execution_devices_normalized": [
+          "CPU"
+        ],
+        "npu_compiler_type": {
+          "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\compiled_model.cpp:145:\nException from src\\plugins\\intel_cpu\\src\\compiled_model.cpp:420:\nUnsupported property: NPU_COMPILER_TYPE\n\n"
+        },
+        "npu_compiler_version": {
+          "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\compiled_model.cpp:145:\nException from src\\plugins\\intel_cpu\\src\\compiled_model.cpp:420:\nUnsupported property: NPU_COMPILER_VERSION\n\n"
+        },
+        "inference_precision_hint": "<Type: 'float32'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_values": [
+        8.940696716308594e-07,
+        8.344650268554688e-07,
+        7.748603820800781e-07,
+        7.152557373046875e-07
+      ],
+      "actual_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "correct_indices": true,
+      "values_match_returned_indices": true
+    },
+    {
+      "label": "cpu_f32_one_ulp_control",
+      "device": "CPU",
+      "model_dtype": "f32",
+      "config": {},
+      "input": [
+        1.0,
+        1.0000001192092896,
+        1.000000238418579,
+        1.0000003576278687,
+        1.0000004768371582,
+        1.0000005960464478,
+        1.0000007152557373,
+        1.0000008344650269,
+        1.0000009536743164,
+        1.000001072883606,
+        1.0000011920928955,
+        1.000001311302185,
+        1.0000014305114746,
+        1.0000015497207642,
+        1.0000016689300537,
+        1.0000017881393433
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": [
+          "CPU"
+        ],
+        "execution_devices_normalized": [
+          "CPU"
+        ],
+        "npu_compiler_type": {
+          "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\compiled_model.cpp:145:\nException from src\\plugins\\intel_cpu\\src\\compiled_model.cpp:420:\nUnsupported property: NPU_COMPILER_TYPE\n\n"
+        },
+        "npu_compiler_version": {
+          "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\compiled_model.cpp:145:\nException from src\\plugins\\intel_cpu\\src\\compiled_model.cpp:420:\nUnsupported property: NPU_COMPILER_VERSION\n\n"
+        },
+        "inference_precision_hint": "<Type: 'float32'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_values": [
+        1.0000017881393433,
+        1.0000016689300537,
+        1.0000015497207642,
+        1.0000014305114746
+      ],
+      "actual_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "correct_indices": true,
+      "values_match_returned_indices": true
+    },
+    {
+      "label": "npu_f16_subnormals_default",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {},
+      "input": [
+        0.0,
+        5.960464477539063e-08,
+        1.1920928955078125e-07,
+        1.7881393432617188e-07,
+        2.384185791015625e-07,
+        2.980232238769531e-07,
+        3.5762786865234375e-07,
+        4.172325134277344e-07,
+        4.76837158203125e-07,
+        5.364418029785156e-07,
+        5.960464477539062e-07,
+        6.556510925292969e-07,
+        7.152557373046875e-07,
+        7.748603820800781e-07,
+        8.344650268554688e-07,
+        8.940696716308594e-07
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.DRIVER",
+        "npu_compiler_version": 458778,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_values": [
+        0.0,
+        5.960464477539063e-08,
+        1.1920928955078125e-07,
+        1.7881393432617188e-07
+      ],
+      "actual_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "correct_indices": false,
+      "values_match_returned_indices": true
+    },
+    {
+      "label": "npu_f32_one_ulp_default",
+      "device": "NPU",
+      "model_dtype": "f32",
+      "config": {},
+      "input": [
+        1.0,
+        1.0000001192092896,
+        1.000000238418579,
+        1.0000003576278687,
+        1.0000004768371582,
+        1.0000005960464478,
+        1.0000007152557373,
+        1.0000008344650269,
+        1.0000009536743164,
+        1.000001072883606,
+        1.0000011920928955,
+        1.000001311302185,
+        1.0000014305114746,
+        1.0000015497207642,
+        1.0000016689300537,
+        1.0000017881393433
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.DRIVER",
+        "npu_compiler_version": 458778,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "actual_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "correct_indices": false,
+      "values_match_returned_indices": false
+    },
+    {
+      "label": "npu_f16_subnormals_prefer_plugin",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {
+        "NPU_COMPILER_TYPE": "PREFER_PLUGIN"
+      },
+      "input": [
+        0.0,
+        5.960464477539063e-08,
+        1.1920928955078125e-07,
+        1.7881393432617188e-07,
+        2.384185791015625e-07,
+        2.980232238769531e-07,
+        3.5762786865234375e-07,
+        4.172325134277344e-07,
+        4.76837158203125e-07,
+        5.364418029785156e-07,
+        5.960464477539062e-07,
+        6.556510925292969e-07,
+        7.152557373046875e-07,
+        7.748603820800781e-07,
+        8.344650268554688e-07,
+        8.940696716308594e-07
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.DRIVER",
+        "npu_compiler_version": 458778,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_values": [
+        0.0,
+        5.960464477539063e-08,
+        1.1920928955078125e-07,
+        1.7881393432617188e-07
+      ],
+      "actual_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "correct_indices": false,
+      "values_match_returned_indices": true
+    },
+    {
+      "label": "npu_f32_one_ulp_prefer_plugin",
+      "device": "NPU",
+      "model_dtype": "f32",
+      "config": {
+        "NPU_COMPILER_TYPE": "PREFER_PLUGIN"
+      },
+      "input": [
+        1.0,
+        1.0000001192092896,
+        1.000000238418579,
+        1.0000003576278687,
+        1.0000004768371582,
+        1.0000005960464478,
+        1.0000007152557373,
+        1.0000008344650269,
+        1.0000009536743164,
+        1.000001072883606,
+        1.0000011920928955,
+        1.000001311302185,
+        1.0000014305114746,
+        1.0000015497207642,
+        1.0000016689300537,
+        1.0000017881393433
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.DRIVER",
+        "npu_compiler_version": 458778,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "actual_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "correct_indices": false,
+      "values_match_returned_indices": false
+    },
+    {
+      "label": "npu_f16_subnormals_accuracy",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {
+        "EXECUTION_MODE_HINT": "ACCURACY"
+      },
+      "input": [
+        0.0,
+        5.960464477539063e-08,
+        1.1920928955078125e-07,
+        1.7881393432617188e-07,
+        2.384185791015625e-07,
+        2.980232238769531e-07,
+        3.5762786865234375e-07,
+        4.172325134277344e-07,
+        4.76837158203125e-07,
+        5.364418029785156e-07,
+        5.960464477539062e-07,
+        6.556510925292969e-07,
+        7.152557373046875e-07,
+        7.748603820800781e-07,
+        8.344650268554688e-07,
+        8.940696716308594e-07
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.DRIVER",
+        "npu_compiler_version": 458778,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.ACCURACY"
+      },
+      "actual_values": [
+        0.0,
+        5.960464477539063e-08,
+        1.1920928955078125e-07,
+        1.7881393432617188e-07
+      ],
+      "actual_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "correct_indices": false,
+      "values_match_returned_indices": true
+    },
+    {
+      "label": "npu_f32_one_ulp_accuracy",
+      "device": "NPU",
+      "model_dtype": "f32",
+      "config": {
+        "EXECUTION_MODE_HINT": "ACCURACY"
+      },
+      "input": [
+        1.0,
+        1.0000001192092896,
+        1.000000238418579,
+        1.0000003576278687,
+        1.0000004768371582,
+        1.0000005960464478,
+        1.0000007152557373,
+        1.0000008344650269,
+        1.0000009536743164,
+        1.000001072883606,
+        1.0000011920928955,
+        1.000001311302185,
+        1.0000014305114746,
+        1.0000015497207642,
+        1.0000016689300537,
+        1.0000017881393433
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.DRIVER",
+        "npu_compiler_version": 458778,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.ACCURACY"
+      },
+      "actual_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "actual_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "correct_indices": false,
+      "values_match_returned_indices": false
+    },
+    {
+      "label": "npu_f16_subnormals_plugin",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {
+        "NPU_COMPILER_TYPE": "PLUGIN"
+      },
+      "input": [
+        0.0,
+        5.960464477539063e-08,
+        1.1920928955078125e-07,
+        1.7881393432617188e-07,
+        2.384185791015625e-07,
+        2.980232238769531e-07,
+        3.5762786865234375e-07,
+        4.172325134277344e-07,
+        4.76837158203125e-07,
+        5.364418029785156e-07,
+        5.960464477539062e-07,
+        6.556510925292969e-07,
+        7.152557373046875e-07,
+        7.748603820800781e-07,
+        8.344650268554688e-07,
+        8.940696716308594e-07
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.PLUGIN",
+        "npu_compiler_version": 524292,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_values": [
+        0.0,
+        5.960464477539063e-08,
+        1.1920928955078125e-07,
+        1.7881393432617188e-07
+      ],
+      "actual_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "correct_indices": false,
+      "values_match_returned_indices": true
+    },
+    {
+      "label": "npu_f32_one_ulp_plugin",
+      "device": "NPU",
+      "model_dtype": "f32",
+      "config": {
+        "NPU_COMPILER_TYPE": "PLUGIN"
+      },
+      "input": [
+        1.0,
+        1.0000001192092896,
+        1.000000238418579,
+        1.0000003576278687,
+        1.0000004768371582,
+        1.0000005960464478,
+        1.0000007152557373,
+        1.0000008344650269,
+        1.0000009536743164,
+        1.000001072883606,
+        1.0000011920928955,
+        1.000001311302185,
+        1.0000014305114746,
+        1.0000015497207642,
+        1.0000016689300537,
+        1.0000017881393433
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.PLUGIN",
+        "npu_compiler_version": 524292,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "actual_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "correct_indices": false,
+      "values_match_returned_indices": false
+    },
+    {
+      "label": "npu_f16_subnormals_plugin_accuracy",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {
+        "NPU_COMPILER_TYPE": "PLUGIN",
+        "EXECUTION_MODE_HINT": "ACCURACY"
+      },
+      "input": [
+        0.0,
+        5.960464477539063e-08,
+        1.1920928955078125e-07,
+        1.7881393432617188e-07,
+        2.384185791015625e-07,
+        2.980232238769531e-07,
+        3.5762786865234375e-07,
+        4.172325134277344e-07,
+        4.76837158203125e-07,
+        5.364418029785156e-07,
+        5.960464477539062e-07,
+        6.556510925292969e-07,
+        7.152557373046875e-07,
+        7.748603820800781e-07,
+        8.344650268554688e-07,
+        8.940696716308594e-07
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.PLUGIN",
+        "npu_compiler_version": 524292,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.ACCURACY"
+      },
+      "actual_values": [
+        0.0,
+        5.960464477539063e-08,
+        1.1920928955078125e-07,
+        1.7881393432617188e-07
+      ],
+      "actual_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "correct_indices": false,
+      "values_match_returned_indices": true
+    },
+    {
+      "label": "npu_f32_one_ulp_plugin_accuracy",
+      "device": "NPU",
+      "model_dtype": "f32",
+      "config": {
+        "NPU_COMPILER_TYPE": "PLUGIN",
+        "EXECUTION_MODE_HINT": "ACCURACY"
+      },
+      "input": [
+        1.0,
+        1.0000001192092896,
+        1.000000238418579,
+        1.0000003576278687,
+        1.0000004768371582,
+        1.0000005960464478,
+        1.0000007152557373,
+        1.0000008344650269,
+        1.0000009536743164,
+        1.000001072883606,
+        1.0000011920928955,
+        1.000001311302185,
+        1.0000014305114746,
+        1.0000015497207642,
+        1.0000016689300537,
+        1.0000017881393433
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.PLUGIN",
+        "npu_compiler_version": 524292,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.ACCURACY"
+      },
+      "actual_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "actual_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "correct_indices": false,
+      "values_match_returned_indices": false
+    },
+    {
+      "label": "npu_f16_subnormals_f32_hint",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {
+        "INFERENCE_PRECISION_HINT": "<Type: 'float32'>"
+      },
+      "input": [
+        0.0,
+        5.960464477539063e-08,
+        1.1920928955078125e-07,
+        1.7881393432617188e-07,
+        2.384185791015625e-07,
+        2.980232238769531e-07,
+        3.5762786865234375e-07,
+        4.172325134277344e-07,
+        4.76837158203125e-07,
+        5.364418029785156e-07,
+        5.960464477539062e-07,
+        6.556510925292969e-07,
+        7.152557373046875e-07,
+        7.748603820800781e-07,
+        8.344650268554688e-07,
+        8.940696716308594e-07
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": false,
+      "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nException from src\\plugins\\intel_npu\\src\\al\\include\\intel_npu/config/config.hpp:398:\nFailed to parse 'INFERENCE_PRECISION_HINT' option : Exception from src\\plugins\\intel_npu\\src\\al\\include\\intel_npu/config/options.hpp:159:\nWrong value f32 for property key INFERENCE_PRECISION_HINT. Supported values: f16, i8\n\n\n\n"
+    },
+    {
+      "label": "npu_f32_one_ulp_f32_hint",
+      "device": "NPU",
+      "model_dtype": "f32",
+      "config": {
+        "INFERENCE_PRECISION_HINT": "<Type: 'float32'>"
+      },
+      "input": [
+        1.0,
+        1.0000001192092896,
+        1.000000238418579,
+        1.0000003576278687,
+        1.0000004768371582,
+        1.0000005960464478,
+        1.0000007152557373,
+        1.0000008344650269,
+        1.0000009536743164,
+        1.000001072883606,
+        1.0000011920928955,
+        1.000001311302185,
+        1.0000014305114746,
+        1.0000015497207642,
+        1.0000016689300537,
+        1.0000017881393433
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": false,
+      "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nException from src\\plugins\\intel_npu\\src\\al\\include\\intel_npu/config/config.hpp:398:\nFailed to parse 'INFERENCE_PRECISION_HINT' option : Exception from src\\plugins\\intel_npu\\src\\al\\include\\intel_npu/config/options.hpp:159:\nWrong value f32 for property key INFERENCE_PRECISION_HINT. Supported values: f16, i8\n\n\n\n"
+    },
+    {
+      "label": "npu_f16_subnormals_plugin_f32_hint",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {
+        "NPU_COMPILER_TYPE": "PLUGIN",
+        "INFERENCE_PRECISION_HINT": "<Type: 'float32'>"
+      },
+      "input": [
+        0.0,
+        5.960464477539063e-08,
+        1.1920928955078125e-07,
+        1.7881393432617188e-07,
+        2.384185791015625e-07,
+        2.980232238769531e-07,
+        3.5762786865234375e-07,
+        4.172325134277344e-07,
+        4.76837158203125e-07,
+        5.364418029785156e-07,
+        5.960464477539062e-07,
+        6.556510925292969e-07,
+        7.152557373046875e-07,
+        7.748603820800781e-07,
+        8.344650268554688e-07,
+        8.940696716308594e-07
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": false,
+      "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nException from src\\plugins\\intel_npu\\src\\al\\include\\intel_npu/config/config.hpp:398:\nFailed to parse 'INFERENCE_PRECISION_HINT' option : Exception from src\\plugins\\intel_npu\\src\\al\\include\\intel_npu/config/options.hpp:159:\nWrong value f32 for property key INFERENCE_PRECISION_HINT. Supported values: f16, i8\n\n\n\n"
+    },
+    {
+      "label": "npu_f32_one_ulp_plugin_f32_hint",
+      "device": "NPU",
+      "model_dtype": "f32",
+      "config": {
+        "NPU_COMPILER_TYPE": "PLUGIN",
+        "INFERENCE_PRECISION_HINT": "<Type: 'float32'>"
+      },
+      "input": [
+        1.0,
+        1.0000001192092896,
+        1.000000238418579,
+        1.0000003576278687,
+        1.0000004768371582,
+        1.0000005960464478,
+        1.0000007152557373,
+        1.0000008344650269,
+        1.0000009536743164,
+        1.000001072883606,
+        1.0000011920928955,
+        1.000001311302185,
+        1.0000014305114746,
+        1.0000015497207642,
+        1.0000016689300537,
+        1.0000017881393433
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": false,
+      "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nException from src\\plugins\\intel_npu\\src\\al\\include\\intel_npu/config/config.hpp:398:\nFailed to parse 'INFERENCE_PRECISION_HINT' option : Exception from src\\plugins\\intel_npu\\src\\al\\include\\intel_npu/config/options.hpp:159:\nWrong value f32 for property key INFERENCE_PRECISION_HINT. Supported values: f16, i8\n\n\n\n"
+    },
+    {
+      "label": "npu_f16_subnormals_accuracy_f32_hint",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {
+        "EXECUTION_MODE_HINT": "ACCURACY",
+        "INFERENCE_PRECISION_HINT": "<Type: 'float32'>"
+      },
+      "input": [
+        0.0,
+        5.960464477539063e-08,
+        1.1920928955078125e-07,
+        1.7881393432617188e-07,
+        2.384185791015625e-07,
+        2.980232238769531e-07,
+        3.5762786865234375e-07,
+        4.172325134277344e-07,
+        4.76837158203125e-07,
+        5.364418029785156e-07,
+        5.960464477539062e-07,
+        6.556510925292969e-07,
+        7.152557373046875e-07,
+        7.748603820800781e-07,
+        8.344650268554688e-07,
+        8.940696716308594e-07
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": false,
+      "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nException from src\\plugins\\intel_npu\\src\\al\\include\\intel_npu/config/config.hpp:398:\nFailed to parse 'INFERENCE_PRECISION_HINT' option : Exception from src\\plugins\\intel_npu\\src\\al\\include\\intel_npu/config/options.hpp:159:\nWrong value f32 for property key INFERENCE_PRECISION_HINT. Supported values: f16, i8\n\n\n\n"
+    },
+    {
+      "label": "npu_f32_one_ulp_accuracy_f32_hint",
+      "device": "NPU",
+      "model_dtype": "f32",
+      "config": {
+        "EXECUTION_MODE_HINT": "ACCURACY",
+        "INFERENCE_PRECISION_HINT": "<Type: 'float32'>"
+      },
+      "input": [
+        1.0,
+        1.0000001192092896,
+        1.000000238418579,
+        1.0000003576278687,
+        1.0000004768371582,
+        1.0000005960464478,
+        1.0000007152557373,
+        1.0000008344650269,
+        1.0000009536743164,
+        1.000001072883606,
+        1.0000011920928955,
+        1.000001311302185,
+        1.0000014305114746,
+        1.0000015497207642,
+        1.0000016689300537,
+        1.0000017881393433
+      ],
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": false,
+      "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nException from src\\plugins\\intel_npu\\src\\al\\include\\intel_npu/config/config.hpp:398:\nFailed to parse 'INFERENCE_PRECISION_HINT' option : Exception from src\\plugins\\intel_npu\\src\\al\\include\\intel_npu/config/options.hpp:159:\nWrong value f32 for property key INFERENCE_PRECISION_HINT. Supported values: f16, i8\n\n\n\n"
+    }
+  ],
+  "bitonic": [
+    {
+      "variant": "current_boolean_select",
+      "label": "regular_values",
+      "device": "CPU",
+      "model_dtype": "f16",
+      "config": {},
+      "expected_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": [
+          "CPU"
+        ],
+        "execution_devices_normalized": [
+          "CPU"
+        ],
+        "npu_compiler_type": {
+          "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\compiled_model.cpp:145:\nException from src\\plugins\\intel_cpu\\src\\compiled_model.cpp:420:\nUnsupported property: NPU_COMPILER_TYPE\n\n"
+        },
+        "npu_compiler_version": {
+          "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\compiled_model.cpp:145:\nException from src\\plugins\\intel_cpu\\src\\compiled_model.cpp:420:\nUnsupported property: NPU_COMPILER_VERSION\n\n"
+        },
+        "inference_precision_hint": "<Type: 'float32'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "actual_values": [
+        10.0,
+        9.0,
+        8.0,
+        7.0
+      ],
+      "correct_indices": true
+    },
+    {
+      "variant": "equal_xnor",
+      "label": "regular_values",
+      "device": "CPU",
+      "model_dtype": "f16",
+      "config": {},
+      "expected_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": [
+          "CPU"
+        ],
+        "execution_devices_normalized": [
+          "CPU"
+        ],
+        "npu_compiler_type": {
+          "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\compiled_model.cpp:145:\nException from src\\plugins\\intel_cpu\\src\\compiled_model.cpp:420:\nUnsupported property: NPU_COMPILER_TYPE\n\n"
+        },
+        "npu_compiler_version": {
+          "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\compiled_model.cpp:145:\nException from src\\plugins\\intel_cpu\\src\\compiled_model.cpp:420:\nUnsupported property: NPU_COMPILER_VERSION\n\n"
+        },
+        "inference_precision_hint": "<Type: 'float32'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "actual_values": [
+        10.0,
+        9.0,
+        8.0,
+        7.0
+      ],
+      "correct_indices": true
+    },
+    {
+      "variant": "current_boolean_select",
+      "label": "regular_values",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {},
+      "expected_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "compiled": false,
+      "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nException from src\\plugins\\intel_npu\\src\\plugin\\src\\plugin.cpp:560:\nException from src\\plugins\\intel_npu\\src\\compiler_adapter\\src\\ze_graph_ext_wrappers.cpp:433:\nCompilation failed. Level0 pfnCreate2 result: ZE_RESULT_ERROR_INVALID_ARGUMENT, code 0x78000004 - generic error code for invalid arguments . [NPU_VCL] Compiler returned msg:\nFailed to create a valid MLIR module for the IR model\n\n\n\n",
+      "scenario": "default"
+    },
+    {
+      "variant": "equal_xnor",
+      "label": "regular_values",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {},
+      "expected_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "compiled": false,
+      "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nException from src\\plugins\\intel_npu\\src\\plugin\\src\\plugin.cpp:560:\nException from src\\plugins\\intel_npu\\src\\compiler_adapter\\src\\ze_graph_ext_wrappers.cpp:433:\nCompilation failed. Level0 pfnCreate2 result: ZE_RESULT_ERROR_INVALID_ARGUMENT, code 0x78000004 - generic error code for invalid arguments . [NPU_VCL] Compiler returned msg:\nFailed to create a valid MLIR module for the IR model\n\n\n\n",
+      "scenario": "default"
+    },
+    {
+      "variant": "i32_equal_xnor",
+      "label": "regular_values",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {},
+      "expected_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.DRIVER",
+        "npu_compiler_version": 458778,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_indices": [
+        0,
+        0,
+        2147483647,
+        0
+      ],
+      "actual_values": [
+        10.0,
+        9.0,
+        8.0,
+        7.0
+      ],
+      "correct_indices": false,
+      "scenario": "default"
+    },
+    {
+      "variant": "current_boolean_select",
+      "label": "regular_values",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {
+        "NPU_COMPILER_TYPE": "PREFER_PLUGIN"
+      },
+      "expected_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "compiled": false,
+      "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nException from src\\plugins\\intel_npu\\src\\plugin\\src\\plugin.cpp:560:\nException from src\\plugins\\intel_npu\\src\\compiler_adapter\\src\\ze_graph_ext_wrappers.cpp:433:\nCompilation failed. Level0 pfnCreate2 result: ZE_RESULT_ERROR_INVALID_ARGUMENT, code 0x78000004 - generic error code for invalid arguments . [NPU_VCL] Compiler returned msg:\nFailed to create a valid MLIR module for the IR model\n\n\n\n",
+      "scenario": "prefer_plugin"
+    },
+    {
+      "variant": "equal_xnor",
+      "label": "regular_values",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {
+        "NPU_COMPILER_TYPE": "PREFER_PLUGIN"
+      },
+      "expected_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "compiled": false,
+      "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nException from src\\plugins\\intel_npu\\src\\plugin\\src\\plugin.cpp:560:\nException from src\\plugins\\intel_npu\\src\\compiler_adapter\\src\\ze_graph_ext_wrappers.cpp:433:\nCompilation failed. Level0 pfnCreate2 result: ZE_RESULT_ERROR_INVALID_ARGUMENT, code 0x78000004 - generic error code for invalid arguments . [NPU_VCL] Compiler returned msg:\nFailed to create a valid MLIR module for the IR model\n\n\n\n",
+      "scenario": "prefer_plugin"
+    },
+    {
+      "variant": "i32_equal_xnor",
+      "label": "regular_values",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {
+        "NPU_COMPILER_TYPE": "PREFER_PLUGIN"
+      },
+      "expected_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.DRIVER",
+        "npu_compiler_version": 458778,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_indices": [
+        0,
+        0,
+        2147483647,
+        0
+      ],
+      "actual_values": [
+        10.0,
+        9.0,
+        8.0,
+        7.0
+      ],
+      "correct_indices": false,
+      "scenario": "prefer_plugin"
+    },
+    {
+      "variant": "current_boolean_select",
+      "label": "regular_values",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {
+        "NPU_COMPILER_TYPE": "PLUGIN"
+      },
+      "expected_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.PLUGIN",
+        "npu_compiler_version": 524292,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "actual_values": [
+        10.0,
+        9.0,
+        8.0,
+        7.0
+      ],
+      "correct_indices": true,
+      "scenario": "plugin"
+    },
+    {
+      "variant": "equal_xnor",
+      "label": "regular_values",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {
+        "NPU_COMPILER_TYPE": "PLUGIN"
+      },
+      "expected_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.PLUGIN",
+        "npu_compiler_version": 524292,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "actual_values": [
+        10.0,
+        9.0,
+        8.0,
+        7.0
+      ],
+      "correct_indices": true,
+      "scenario": "plugin"
+    },
+    {
+      "variant": "i32_equal_xnor",
+      "label": "regular_values",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {
+        "NPU_COMPILER_TYPE": "PLUGIN"
+      },
+      "expected_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.PLUGIN",
+        "npu_compiler_version": 524292,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "actual_values": [
+        10.0,
+        9.0,
+        8.0,
+        7.0
+      ],
+      "correct_indices": true,
+      "scenario": "plugin"
+    },
+    {
+      "variant": "current_boolean_select",
+      "label": "regular_values",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {
+        "NPU_COMPILER_TYPE": "DRIVER"
+      },
+      "expected_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "compiled": false,
+      "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nException from src\\plugins\\intel_npu\\src\\plugin\\src\\plugin.cpp:560:\nException from src\\plugins\\intel_npu\\src\\compiler_adapter\\src\\ze_graph_ext_wrappers.cpp:433:\nCompilation failed. Level0 pfnCreate2 result: ZE_RESULT_ERROR_INVALID_ARGUMENT, code 0x78000004 - generic error code for invalid arguments . [NPU_VCL] Compiler returned msg:\nFailed to create a valid MLIR module for the IR model\n\n\n\n",
+      "scenario": "driver"
+    },
+    {
+      "variant": "equal_xnor",
+      "label": "regular_values",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {
+        "NPU_COMPILER_TYPE": "DRIVER"
+      },
+      "expected_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "compiled": false,
+      "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nException from src\\plugins\\intel_npu\\src\\plugin\\src\\plugin.cpp:560:\nException from src\\plugins\\intel_npu\\src\\compiler_adapter\\src\\ze_graph_ext_wrappers.cpp:433:\nCompilation failed. Level0 pfnCreate2 result: ZE_RESULT_ERROR_INVALID_ARGUMENT, code 0x78000004 - generic error code for invalid arguments . [NPU_VCL] Compiler returned msg:\nFailed to create a valid MLIR module for the IR model\n\n\n\n",
+      "scenario": "driver"
+    },
+    {
+      "variant": "i32_equal_xnor",
+      "label": "regular_values",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {
+        "NPU_COMPILER_TYPE": "DRIVER"
+      },
+      "expected_indices": [
+        15,
+        6,
+        8,
+        2
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.DRIVER",
+        "npu_compiler_version": 458778,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_indices": [
+        0,
+        0,
+        2147483647,
+        0
+      ],
+      "actual_values": [
+        10.0,
+        9.0,
+        8.0,
+        7.0
+      ],
+      "correct_indices": false,
+      "scenario": "driver"
+    },
+    {
+      "variant": "current_boolean_select",
+      "label": "f16_subnormals",
+      "device": "NPU",
+      "model_dtype": "f16",
+      "config": {
+        "NPU_COMPILER_TYPE": "PLUGIN"
+      },
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.PLUGIN",
+        "npu_compiler_version": 524292,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "actual_values": [
+        0.0,
+        5.960464477539063e-08,
+        0.0,
+        0.0
+      ],
+      "correct_indices": false
+    },
+    {
+      "variant": "current_boolean_select",
+      "label": "f32_one_ulp",
+      "device": "NPU",
+      "model_dtype": "f32",
+      "config": {
+        "NPU_COMPILER_TYPE": "PLUGIN"
+      },
+      "expected_indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "compiled": true,
+      "properties": {
+        "execution_devices_raw": "NPU",
+        "execution_devices_normalized": [
+          "NPU"
+        ],
+        "npu_compiler_type": "CompilerType.PLUGIN",
+        "npu_compiler_version": 524292,
+        "inference_precision_hint": "<Type: 'float16'>",
+        "execution_mode_hint": "ExecutionMode.PERFORMANCE"
+      },
+      "actual_indices": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "actual_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "correct_indices": false
+    }
+  ]
+}

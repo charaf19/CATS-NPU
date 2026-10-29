@@ -1,0 +1,10 @@
+{
+  "session_id": "phase5_20261024T210937Z_sift_q0005_n131072",
+  "observations": 20,
+  "skipped": 0,
+  "wrong_results": 0,
+  "completed": true,
+  "valid_for_inference": true,
+  "results_file": "results\\phase6\\direct_npu_sift1m\\20261024T210937Z\\sift_q0005_n131072\\observations_phase5_20261024T210937Z_sift_q0005_n131072.jsonl",
+  "skips_file": "results\\phase6\\direct_npu_sift1m\\20261024T210937Z\\sift_q0005_n131072\\skips_phase5_20261024T210937Z_sift_q0005_n131072.jsonl"
+}

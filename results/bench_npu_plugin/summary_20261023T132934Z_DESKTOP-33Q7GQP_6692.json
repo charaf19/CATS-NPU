@@ -1,0 +1,8 @@
+{
+  "session_id": "20261023T132934Z_DESKTOP-33Q7GQP_6692",
+  "observations": 3200,
+  "skipped": 0,
+  "wrong_results": 0,
+  "results_file": "results\\bench_npu_plugin\\observations_20261023T132934Z_DESKTOP-33Q7GQP_6692.jsonl",
+  "skips_file": "results\\bench_npu_plugin\\skips_20261023T132934Z_DESKTOP-33Q7GQP_6692.jsonl"
+}

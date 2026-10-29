@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#111827}.small{font-size:12px}.label{font-size:14px}.title{font-size:18px;font-weight:600}</style>
+<text class="title" x="20" y="30">Recommended configuration latency breakdown</text>
+<text class="small" x="20" y="50">Host wall-clock components; sync inference includes submission, transfers, execution, synchronization, and waiting.</text>
+<text class="label" x="20" y="109">fixed hierarchical — T256_TB32_QB1</text>
+<rect x="300.0" y="90" width="217.1" height="28" fill="#2563eb"/>
+<text class="small" text-anchor="middle" x="408.5" y="109" fill="white">1.37</text>
+<rect x="517.1" y="90" width="100.8" height="28" fill="#059669"/>
+<text class="small" text-anchor="middle" x="567.5" y="109" fill="white">0.63</text>
+<rect x="617.9" y="90" width="21.2" height="28" fill="#d97706"/>
+<rect x="639.1" y="90" width="6.7" height="28" fill="#7c3aed"/>
+<rect x="645.8" y="90" width="3.6" height="28" fill="#db2777"/>
+<rect x="649.4" y="90" width="4.4" height="28" fill="#64748b"/>
+<rect x="653.9" y="90" width="18.2" height="28" fill="#cbd5e1"/>
+<text class="small" x="680.1" y="109">2.34 ms median-of-cases</text>
+<text class="label" x="20" y="185">geometric adaptive — T256_TB32_QB1</text>
+<rect x="300.0" y="166" width="419.6" height="28" fill="#2563eb"/>
+<text class="small" text-anchor="middle" x="509.8" y="185" fill="white">2.64</text>
+<rect x="719.6" y="166" width="80.1" height="28" fill="#059669"/>
+<text class="small" text-anchor="middle" x="759.7" y="185" fill="white">0.50</text>
+<rect x="799.7" y="166" width="40.0" height="28" fill="#d97706"/>
+<rect x="839.6" y="166" width="16.2" height="28" fill="#7c3aed"/>
+<rect x="855.9" y="166" width="5.8" height="28" fill="#db2777"/>
+<rect x="861.7" y="166" width="12.8" height="28" fill="#64748b"/>
+<rect x="874.5" y="166" width="25.5" height="28" fill="#cbd5e1"/>
+<text class="small" x="908.0" y="185">3.78 ms median-of-cases</text>
+<rect x="20" y="254" width="14" height="14" fill="#2563eb"/>
+<text class="small" x="40" y="266">sync inference</text>
+<rect x="250" y="254" width="14" height="14" fill="#059669"/>
+<text class="small" x="270" y="266">candidate extraction</text>
+<rect x="480" y="254" width="14" height="14" fill="#d97706"/>
+<text class="small" x="500" y="266">validation</text>
+<rect x="710" y="254" width="14" height="14" fill="#7c3aed"/>
+<text class="small" x="730" y="266">merge</text>
+<rect x="20" y="278" width="14" height="14" fill="#db2777"/>
+<text class="small" x="40" y="290">input preparation</text>
+<rect x="250" y="278" width="14" height="14" fill="#64748b"/>
+<text class="small" x="270" y="290">other measured</text>
+<rect x="480" y="278" width="14" height="14" fill="#cbd5e1"/>
+<text class="small" x="500" y="290">unattributed</text>
+</svg>

@@ -1,0 +1,39 @@
+{
+  "session_id": "phase8_20261027T111433Z_session04",
+  "timestamp_utc": "2026-10-27T11:18:07.665694+00:00",
+  "host": "DESKTOP-33Q7GQP",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "git_commit": "fdb5e1c5a7dd9e5a92c58d3609cc47edb9e2cb97",
+  "methods": [
+    "ov_npu_native_batched_hier",
+    "ov_npu_native_batched_adaptive",
+    "ov_npu_native_batched_costadaptive",
+    "ov_npu_native_direct"
+  ],
+  "ns": [
+    57638
+  ],
+  "ks": [
+    4,
+    10
+  ],
+  "distributions": [
+    "beir_fiqa_q0010"
+  ],
+  "dtype": "f16",
+  "seed": 42,
+  "tile": 256,
+  "batch": 32,
+  "initial_budget": 1,
+  "warmup": 2,
+  "repeats": 3,
+  "compiler_type": "PLUGIN",
+  "blocks": 2,
+  "input_path": "results\\phase5\\beir\\fiqa\\q0010_94_n57638_cosine_f16.npy",
+  "scope": "Top-K operator (scores provided)",
+  "measurement": "host input to host indices; compilation and warmup excluded",
+  "individual_blocks_independent_sessions": false,
+  "openvino": "2026.4.1-22982-e213a147257-releases/2026/4"
+}

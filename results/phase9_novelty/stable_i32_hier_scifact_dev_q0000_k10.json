@@ -1,0 +1,74 @@
+{
+  "purpose": "stable integer TopK two-level ablation",
+  "input": "results\\phase5\\beir\\scifact\\q0000_1_n5183_cosine_f16.npy",
+  "n": 5183,
+  "k": 10,
+  "width": 256,
+  "key_dtype": "i32",
+  "correct": true,
+  "samples": [
+    {
+      "encoding_ms": 0.1181,
+      "infer_and_staging_ms": 4.4687,
+      "verification_ms": 0.2629,
+      "end_to_end_ms": 4.8497,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.0476,
+      "infer_and_staging_ms": 0.9322,
+      "verification_ms": 0.1153,
+      "end_to_end_ms": 1.0951,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.0251,
+      "infer_and_staging_ms": 0.8437,
+      "verification_ms": 0.0831,
+      "end_to_end_ms": 0.9519,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.0216,
+      "infer_and_staging_ms": 0.8635,
+      "verification_ms": 0.081,
+      "end_to_end_ms": 0.9661,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.0227,
+      "infer_and_staging_ms": 0.8576,
+      "verification_ms": 0.0751,
+      "end_to_end_ms": 0.9554,
+      "correct": true
+    }
+  ],
+  "cpu_correct": true,
+  "execution_devices": [
+    "NPU"
+  ],
+  "selected_ids": [
+    4132,
+    766,
+    697,
+    1838,
+    4241,
+    2723,
+    5115,
+    166,
+    2981,
+    320
+  ],
+  "expected_ids": [
+    4132,
+    766,
+    697,
+    1838,
+    4241,
+    2723,
+    5115,
+    166,
+    2981,
+    320
+  ]
+}

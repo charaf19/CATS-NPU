@@ -1,0 +1,71 @@
+{
+  "source_npu": "results/phase2_pilot/npu_plugin_b32_strict",
+  "normal_k10": {
+    "512": {
+      "cpp": 0.03075,
+      "cuda": 0.19415,
+      "seq_hier": 15.92935,
+      "batch_hier": 1.056,
+      "seq_adaptive": 15.412749999999999,
+      "batch_adaptive": 1.3869500000000001,
+      "hier_batching_speedup": 15.084611742424242,
+      "adaptive_batching_speedup": 11.112693319874543,
+      "batched_adaptive_over_hier_speedup": 0.7613828905151592,
+      "batch_hier_execute_sync_ms": 0.4999,
+      "batch_hier_candidate_extraction_ms": 0.34265,
+      "batch_hier_cpu_exact_validation_rows": 1.0,
+      "batch_adaptive_execute_sync_ms": 0.8038,
+      "batch_adaptive_candidate_extraction_ms": 0.2644,
+      "batch_adaptive_cpu_exact_validation_rows": 1.0
+    },
+    "4096": {
+      "cpp": 0.06785,
+      "cuda": 0.20550000000000002,
+      "seq_hier": 96.3364,
+      "batch_hier": 8.2136,
+      "seq_adaptive": 96.3465,
+      "batch_adaptive": 5.9602,
+      "hier_batching_speedup": 11.7288886724457,
+      "adaptive_batching_speedup": 16.164977685312575,
+      "batched_adaptive_over_hier_speedup": 1.3780745612563334,
+      "batch_hier_execute_sync_ms": 4.21225,
+      "batch_hier_candidate_extraction_ms": 2.67355,
+      "batch_hier_cpu_exact_validation_rows": 1.0,
+      "batch_adaptive_execute_sync_ms": 2.79775,
+      "batch_adaptive_candidate_extraction_ms": 2.1075,
+      "batch_adaptive_cpu_exact_validation_rows": 1.0
+    },
+    "16384": {
+      "cpp": 0.14129999999999998,
+      "cuda": 0.24545,
+      "seq_hier": 382.9819,
+      "batch_hier": 29.8215,
+      "seq_adaptive": 375.95165,
+      "batch_adaptive": 26.241500000000002,
+      "hier_batching_speedup": 12.84247606592559,
+      "adaptive_batching_speedup": 14.326606710744429,
+      "batched_adaptive_over_hier_speedup": 1.13642512813673,
+      "batch_hier_execute_sync_ms": 12.7413,
+      "batch_hier_candidate_extraction_ms": 12.0256,
+      "batch_hier_cpu_exact_validation_rows": 2.0,
+      "batch_adaptive_execute_sync_ms": 13.17435,
+      "batch_adaptive_candidate_extraction_ms": 8.71745,
+      "batch_adaptive_cpu_exact_validation_rows": 2.0
+    }
+  },
+  "all_24_cases": {
+    "hier_speedup_min_median_max": [
+      9.818391574087434,
+      12.706345283509213,
+      18.131509404632368
+    ],
+    "adaptive_speedup_min_median_max": [
+      4.821304402463033,
+      13.119227333460486,
+      16.266582655516096
+    ],
+    "adaptive_over_hier_median": 1.0538459778731974,
+    "adaptive_faster_cases": 15,
+    "case_count": 24
+  }
+}

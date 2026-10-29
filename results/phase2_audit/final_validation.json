@@ -1,0 +1,39 @@
+{
+  "timestamp_utc": "2026-10-23T21:43:08.722279+00:00",
+  "track_assessment": "Level 2 systems improvement established for the exploratory pilot; Level 3 research contribution and NPU competitiveness are not established.",
+  "default_tests": {
+    "passed": 123,
+    "skipped_physical": 3
+  },
+  "physical_tests": {
+    "passed": 124,
+    "strict_xfailed_known_bitonic_defects": 2
+  },
+  "strict_npu_pilot": {
+    "session_id": "20261023T213924Z_DESKTOP-33Q7GQP_4428",
+    "observations": 1920,
+    "skipped": 0,
+    "wrong_results": 0,
+    "completed": true,
+    "valid_for_inference": true,
+    "results_file": "results\\phase2_pilot\\npu_plugin_b32_strict\\observations_20261023T213924Z_DESKTOP-33Q7GQP_4428.jsonl",
+    "skips_file": "results\\phase2_pilot\\npu_plugin_b32_strict\\skips_20261023T213924Z_DESKTOP-33Q7GQP_4428.jsonl"
+  },
+  "strict_metrics": "results/phase2_pilot/key_metrics_strict.json",
+  "npu_smokes": [
+    "results/phase2_audit/smoke_npu_batched_hier_final.json",
+    "results/phase2_audit/smoke_npu_batched_adaptive_final.json"
+  ],
+  "remaining_blockers": [
+    "no full-domain native NPU exactness for FP32 or FP16 subnormals without measured host validation",
+    "bitonic DRIVER repeats wrong indices and PLUGIN changes a selected FP16 subnormal",
+    "only one strict NPU performance session; no confirmatory inference",
+    "CPU and CUDA controls remain substantially faster"
+  ],
+  "recommended_next_experiment": "Ablate tile widths 16/64/128/256 and tile batches 8/32 at N=4096 and N=16384; freeze one configuration before independent sessions.",
+  "paper_or_tex_files_in_source_snapshot": [],
+  "paper_or_tex_policy": "No paper, manuscript, TeX, or bibliography file was added to the project source snapshot.",
+  "source_after_manifest": "results/phase2_audit/source_after_phase2_manifest.json",
+  "source_after_aggregate_sha256": "3f17a8edf57257316d03d7b3b1b0b0c9a2dc4712fde32b7eadec80f81bb4aabc",
+  "source_change_summary": "results/phase2_audit/source_change_summary.json"
+}

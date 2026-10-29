@@ -1,0 +1,59 @@
+{
+  "purpose": "stable integer TopK two-level ablation",
+  "input": "results\\phase9_novelty\\boundary_tie_n5183.npy",
+  "n": 5183,
+  "k": 10,
+  "width": 256,
+  "correct": true,
+  "samples": [
+    {
+      "encoding_ms": 0.1007,
+      "infer_and_staging_ms": 4.4893,
+      "verification_ms": 0.2324,
+      "end_to_end_ms": 4.8224,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.0518,
+      "infer_and_staging_ms": 0.9493,
+      "verification_ms": 0.1107,
+      "end_to_end_ms": 1.1118,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.0348,
+      "infer_and_staging_ms": 0.8238,
+      "verification_ms": 0.0924,
+      "end_to_end_ms": 0.951,
+      "correct": true
+    }
+  ],
+  "cpu_correct": true,
+  "execution_devices": [
+    "NPU"
+  ],
+  "selected_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "expected_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}

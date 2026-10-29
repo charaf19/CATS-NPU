@@ -1,0 +1,33 @@
+{
+  "operating_system": {
+    "Caption": "Microsoft Windows 11 Pro",
+    "Version": "10.0.26200",
+    "BuildNumber": "26200"
+  },
+  "machine": {
+    "TotalPhysicalMemory": 33713807360
+  },
+  "processor": {
+    "Name": "Intel(R) Core(TM) Ultra 7 255H",
+    "NumberOfCores": 16,
+    "NumberOfLogicalProcessors": 16
+  },
+  "drivers": [
+    {
+      "DeviceName": "Intel(R) AI Boost",
+      "DriverVersion": "32.0.100.4512",
+      "DriverDate": "2025-12-09T01:00:00+01:00"
+    },
+    {
+      "DeviceName": "Intel(R) Arc(TM) 140T GPU (16GB)",
+      "DriverVersion": "32.0.101.8424",
+      "DriverDate": "2026-01-06T00:00:00+00:00"
+    },
+    {
+      "DeviceName": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "DriverVersion": "32.0.15.9282",
+      "DriverDate": "2026-06-03T01:00:00+01:00"
+    }
+  ],
+  "build_tools": []
+}

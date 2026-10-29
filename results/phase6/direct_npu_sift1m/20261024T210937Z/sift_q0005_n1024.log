@@ -1,0 +1,18 @@
+CASE N1024_K4_sift1m_q0005_f16_T256_B32_S42: preparing 1 methods
+  PREP N1024_K4_sift1m_q0005_f16_T256_B32_S42 ov_npu_native_direct
+  N1024_K4_sift1m_q0005_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N1024_K4_sift1m_q0005_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+CASE N1024_K10_sift1m_q0005_f16_T256_B32_S42: preparing 1 methods
+  PREP N1024_K10_sift1m_q0005_f16_T256_B32_S42 ov_npu_native_direct
+  N1024_K10_sift1m_q0005_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N1024_K10_sift1m_q0005_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+{
+  "session_id": "phase5_20261024T210937Z_sift_q0005_n1024",
+  "observations": 20,
+  "skipped": 0,
+  "wrong_results": 0,
+  "completed": true,
+  "valid_for_inference": true,
+  "results_file": "results\\phase6\\direct_npu_sift1m\\20261024T210937Z\\sift_q0005_n1024\\observations_phase5_20261024T210937Z_sift_q0005_n1024.jsonl",
+  "skips_file": "results\\phase6\\direct_npu_sift1m\\20261024T210937Z\\sift_q0005_n1024\\skips_phase5_20261024T210937Z_sift_q0005_n1024.jsonl"
+}

@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "ef5b6c3eb15bdcde550c12079c705aa2efe063f85668cea64e2b3366b2297cdd",
+  "source_commit": "b64962cc4ef80c9e7ac4ad1d91739e1b6ebbcea3",
+  "portable_audit_exit_code": 0,
+  "portable_audit_stdout": "{\n  \"out\": \"results\\\\reproduced\\\\audit.json\",\n  \"raw_files_checked\": 49,\n  \"all_audit_checks_passed\": true,\n  \"finite_bit_patterns\": 63488\n}\n",
+  "portable_audit_stderr": "",
+  "hardware_experiment": false,
+  "payload_files_verified": 801,
+  "upstream_blob_shas_verified": true,
+  "extraction": "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\results\\final_research_validation\\20261028_verified",
+  "all_audit_checks_passed": true,
+  "raw_files_checked": 49
+}

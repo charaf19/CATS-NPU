@@ -1,0 +1,60 @@
+[
+  {
+    "method": "ov_cpu_native_hier",
+    "n": 65,
+    "k": 10,
+    "tile": 16,
+    "initial_budget": 1,
+    "error": "RuntimeError: K=2 not prepared; precompile outside timing"
+  },
+  {
+    "method": "ov_cpu_native_adaptive",
+    "n": 65,
+    "k": 10,
+    "tile": 16,
+    "initial_budget": 3,
+    "error": "RuntimeError: K=2 not prepared; precompile outside timing"
+  },
+  {
+    "method": "ov_npu_native_adaptive",
+    "n": 64,
+    "k": 4,
+    "tile": 16,
+    "initial_budget": 1,
+    "actual": [
+      51,
+      50,
+      49,
+      48
+    ],
+    "expected": [
+      63,
+      62,
+      61,
+      60
+    ],
+    "correct": false,
+    "certificate": "strict_omission_bound",
+    "rounds": 3,
+    "backend_calls": 5,
+    "candidate_count": 12,
+    "cpu_tie_repairs": 0,
+    "backend_ns": 12535900,
+    "host_routing_and_merge": true
+  },
+  {
+    "case": "xor",
+    "dtype": "int32",
+    "dtype_char": "i",
+    "dtype_num": 5,
+    "constructed": false,
+    "error": "Check 'ov_type_it != dtype_map.end()' failed at core\\common.cpp:92:\nUnsupported data type: int32\n"
+  },
+  {
+    "case": "cast",
+    "dtype": "int32",
+    "dtype_char": "l",
+    "dtype_num": 7,
+    "constructed": true
+  }
+]

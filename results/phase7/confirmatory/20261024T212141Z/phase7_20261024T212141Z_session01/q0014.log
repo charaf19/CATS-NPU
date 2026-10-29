@@ -1,0 +1,29 @@
+CASE N1000000_K10_sift1m_q0014_f16_T256_B32_S42: preparing 6 methods
+  PREP N1000000_K10_sift1m_q0014_f16_T256_B32_S42 cpp_exact
+  PREP N1000000_K10_sift1m_q0014_f16_T256_B32_S42 torch_cuda_stable
+  PREP N1000000_K10_sift1m_q0014_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N1000000_K10_sift1m_q0014_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N1000000_K10_sift1m_q0014_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N1000000_K10_sift1m_q0014_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N1000000_K10_sift1m_q0014_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N1000000_K10_sift1m_q0014_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N1000000_K10_sift1m_q0014_f16_T256_B32_S42 block=1/2 torch_cuda_stable: measured
+  N1000000_K10_sift1m_q0014_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N1000000_K10_sift1m_q0014_f16_T256_B32_S42 block=1/2 cpp_exact: measured
+  N1000000_K10_sift1m_q0014_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N1000000_K10_sift1m_q0014_f16_T256_B32_S42 block=2/2 torch_cuda_stable: measured
+  N1000000_K10_sift1m_q0014_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+  N1000000_K10_sift1m_q0014_f16_T256_B32_S42 block=2/2 cpp_exact: measured
+  N1000000_K10_sift1m_q0014_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+  N1000000_K10_sift1m_q0014_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+  N1000000_K10_sift1m_q0014_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+{
+  "session_id": "phase7_20261024T212141Z_session01",
+  "observations": 60,
+  "skipped": 0,
+  "wrong_results": 0,
+  "completed": true,
+  "valid_for_inference": true,
+  "results_file": "results\\phase7\\confirmatory\\20261024T212141Z\\phase7_20261024T212141Z_session01\\q0014\\observations_phase7_20261024T212141Z_session01.jsonl",
+  "skips_file": "results\\phase7\\confirmatory\\20261024T212141Z\\phase7_20261024T212141Z_session01\\q0014\\skips_phase7_20261024T212141Z_session01.jsonl"
+}

@@ -1,0 +1,90 @@
+{
+  "timestamp_utc": "2026-10-27T12:24:03.425033+00:00",
+  "status": "exploratory physical NPU split-key graph probe",
+  "input": "results\\phase5\\beir\\scifact\\q0000_1_n5183_cosine_f16.npy",
+  "input_sha256": "22cf8c479f223b646d38726a7d3e26f82120047e2e530227431f646ff1f38d44",
+  "n": 5183,
+  "k": 10,
+  "width": 256,
+  "correct": true,
+  "samples": [
+    {
+      "encoding_ms": 0.1467,
+      "staging_ms": 0.0091,
+      "infer_sync_ms": 4.4058,
+      "copy_ms": 0.017,
+      "verification_ms": 0.218,
+      "end_to_end_ms": 4.7966,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.0344,
+      "staging_ms": 0.002,
+      "infer_sync_ms": 1.1033,
+      "copy_ms": 0.0099,
+      "verification_ms": 0.0851,
+      "end_to_end_ms": 1.2347,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.0232,
+      "staging_ms": 0.0016,
+      "infer_sync_ms": 1.0026,
+      "copy_ms": 0.0092,
+      "verification_ms": 0.0738,
+      "end_to_end_ms": 1.1104,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.02,
+      "staging_ms": 0.0014,
+      "infer_sync_ms": 0.9897,
+      "copy_ms": 0.0162,
+      "verification_ms": 0.0742,
+      "end_to_end_ms": 1.1015,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.0196,
+      "staging_ms": 0.001,
+      "infer_sync_ms": 0.9848,
+      "copy_ms": 0.0165,
+      "verification_ms": 0.068,
+      "end_to_end_ms": 1.0899,
+      "correct": true
+    }
+  ],
+  "independent_sessions": false,
+  "cpu_graph_correct": true,
+  "compile_ms": 112.7017,
+  "execution_devices": [
+    "NPU"
+  ],
+  "submissions_per_query": 1,
+  "staged_input_bytes": 21504,
+  "retrieved_output_bytes": 80,
+  "selected_ids": [
+    4132,
+    766,
+    697,
+    1838,
+    4241,
+    2723,
+    5115,
+    166,
+    2981,
+    320
+  ],
+  "expected_ids": [
+    4132,
+    766,
+    697,
+    1838,
+    4241,
+    2723,
+    5115,
+    166,
+    2981,
+    320
+  ]
+}

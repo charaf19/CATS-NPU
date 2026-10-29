@@ -1,0 +1,76 @@
+{
+  "method": "ov_npu_native_batched_adaptive",
+  "correct": true,
+  "expected": [
+    846,
+    3304,
+    2863,
+    3141,
+    1616,
+    139,
+    248,
+    2053,
+    3732,
+    3424
+  ],
+  "actual": [
+    846,
+    3304,
+    2863,
+    3141,
+    1616,
+    139,
+    248,
+    2053,
+    3732,
+    3424
+  ],
+  "compile_ms_excluded": 158.3592,
+  "device_info": {
+    "requested": "NPU",
+    "kernel": "native",
+    "compiler_type_requested": "PLUGIN",
+    "reported_execution_devices": {
+      "4": [
+        "NPU"
+      ],
+      "7": [
+        "NPU"
+      ],
+      "11": [
+        "NPU"
+      ]
+    },
+    "reported_compiler_type": {
+      "4": "CompilerType.PLUGIN",
+      "7": "CompilerType.PLUGIN",
+      "11": "CompilerType.PLUGIN"
+    },
+    "prepared_k": [
+      4,
+      7,
+      11
+    ],
+    "execution_mode": "batched",
+    "tile_batch": 32
+  },
+  "certificate": "strict_omission_bound",
+  "rounds": 1,
+  "backend_calls": 8,
+  "candidate_count": 768,
+  "cpu_tie_repairs": 0,
+  "backend_ns": 8709400,
+  "host_routing_and_merge": true,
+  "host_input_preparation_ns": 138600,
+  "backend_input_cast_ns": 6800,
+  "backend_execute_sync_ns": 7960900,
+  "backend_output_copy_ns": 94600,
+  "backend_validation_ns": 467700,
+  "cpu_exact_validation_rows": 1,
+  "candidate_extraction_ns": 2377200,
+  "merge_ns": 134500,
+  "certification_ns": 33000,
+  "device_submissions": 8,
+  "staged_input_bytes": 8192,
+  "retrieved_output_bytes": 6144
+}

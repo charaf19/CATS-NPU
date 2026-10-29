@@ -1,0 +1,10 @@
+{
+  "session_id": "phase8_20261027T111433Z_session05",
+  "observations": 48,
+  "skipped": 0,
+  "wrong_results": 0,
+  "completed": true,
+  "valid_for_inference": true,
+  "results_file": "results\\phase8\\beir_validation\\20261027T111433Z\\phase8_20261027T111433Z_session05\\scifact_q0009\\observations_phase8_20261027T111433Z_session05.jsonl",
+  "skips_file": "results\\phase8\\beir_validation\\20261027T111433Z\\phase8_20261027T111433Z_session05\\scifact_q0009\\skips_phase8_20261027T111433Z_session05.jsonl"
+}

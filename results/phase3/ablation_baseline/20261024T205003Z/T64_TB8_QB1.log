@@ -1,0 +1,90 @@
+CASE N4096_K4_normal_f16_T64_B8_S42: preparing 2 methods
+  PREP N4096_K4_normal_f16_T64_B8_S42 ov_npu_native_batched_hier
+  PREP N4096_K4_normal_f16_T64_B8_S42 ov_npu_native_batched_adaptive
+  N4096_K4_normal_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_adaptive: measured
+  N4096_K4_normal_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_hier: measured
+CASE N4096_K4_tied_f16_T64_B8_S42: preparing 2 methods
+  PREP N4096_K4_tied_f16_T64_B8_S42 ov_npu_native_batched_hier
+  PREP N4096_K4_tied_f16_T64_B8_S42 ov_npu_native_batched_adaptive
+  N4096_K4_tied_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_hier: measured
+  N4096_K4_tied_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_adaptive: measured
+CASE N4096_K4_clustered_f16_T64_B8_S42: preparing 2 methods
+  PREP N4096_K4_clustered_f16_T64_B8_S42 ov_npu_native_batched_hier
+  PREP N4096_K4_clustered_f16_T64_B8_S42 ov_npu_native_batched_adaptive
+  N4096_K4_clustered_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_hier: measured
+  N4096_K4_clustered_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_adaptive: measured
+CASE N4096_K4_adversarial_f16_T64_B8_S42: preparing 2 methods
+  PREP N4096_K4_adversarial_f16_T64_B8_S42 ov_npu_native_batched_hier
+  PREP N4096_K4_adversarial_f16_T64_B8_S42 ov_npu_native_batched_adaptive
+  N4096_K4_adversarial_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_adaptive: measured
+  N4096_K4_adversarial_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_hier: measured
+CASE N4096_K10_normal_f16_T64_B8_S42: preparing 2 methods
+  PREP N4096_K10_normal_f16_T64_B8_S42 ov_npu_native_batched_hier
+  PREP N4096_K10_normal_f16_T64_B8_S42 ov_npu_native_batched_adaptive
+  N4096_K10_normal_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_hier: measured
+  N4096_K10_normal_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_adaptive: measured
+CASE N4096_K10_tied_f16_T64_B8_S42: preparing 2 methods
+  PREP N4096_K10_tied_f16_T64_B8_S42 ov_npu_native_batched_hier
+  PREP N4096_K10_tied_f16_T64_B8_S42 ov_npu_native_batched_adaptive
+  N4096_K10_tied_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_hier: measured
+  N4096_K10_tied_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_adaptive: measured
+CASE N4096_K10_clustered_f16_T64_B8_S42: preparing 2 methods
+  PREP N4096_K10_clustered_f16_T64_B8_S42 ov_npu_native_batched_hier
+  PREP N4096_K10_clustered_f16_T64_B8_S42 ov_npu_native_batched_adaptive
+  N4096_K10_clustered_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_adaptive: measured
+  N4096_K10_clustered_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_hier: measured
+CASE N4096_K10_adversarial_f16_T64_B8_S42: preparing 2 methods
+  PREP N4096_K10_adversarial_f16_T64_B8_S42 ov_npu_native_batched_hier
+  PREP N4096_K10_adversarial_f16_T64_B8_S42 ov_npu_native_batched_adaptive
+  N4096_K10_adversarial_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_adaptive: measured
+  N4096_K10_adversarial_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_hier: measured
+CASE N16384_K4_normal_f16_T64_B8_S42: preparing 2 methods
+  PREP N16384_K4_normal_f16_T64_B8_S42 ov_npu_native_batched_hier
+  PREP N16384_K4_normal_f16_T64_B8_S42 ov_npu_native_batched_adaptive
+  N16384_K4_normal_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_adaptive: measured
+  N16384_K4_normal_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_hier: measured
+CASE N16384_K4_tied_f16_T64_B8_S42: preparing 2 methods
+  PREP N16384_K4_tied_f16_T64_B8_S42 ov_npu_native_batched_hier
+  PREP N16384_K4_tied_f16_T64_B8_S42 ov_npu_native_batched_adaptive
+  N16384_K4_tied_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_adaptive: measured
+  N16384_K4_tied_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_hier: measured
+CASE N16384_K4_clustered_f16_T64_B8_S42: preparing 2 methods
+  PREP N16384_K4_clustered_f16_T64_B8_S42 ov_npu_native_batched_hier
+  PREP N16384_K4_clustered_f16_T64_B8_S42 ov_npu_native_batched_adaptive
+  N16384_K4_clustered_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_adaptive: measured
+  N16384_K4_clustered_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_hier: measured
+CASE N16384_K4_adversarial_f16_T64_B8_S42: preparing 2 methods
+  PREP N16384_K4_adversarial_f16_T64_B8_S42 ov_npu_native_batched_hier
+  PREP N16384_K4_adversarial_f16_T64_B8_S42 ov_npu_native_batched_adaptive
+  N16384_K4_adversarial_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_adaptive: measured
+  N16384_K4_adversarial_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_hier: measured
+CASE N16384_K10_normal_f16_T64_B8_S42: preparing 2 methods
+  PREP N16384_K10_normal_f16_T64_B8_S42 ov_npu_native_batched_hier
+  PREP N16384_K10_normal_f16_T64_B8_S42 ov_npu_native_batched_adaptive
+  N16384_K10_normal_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_hier: measured
+  N16384_K10_normal_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_adaptive: measured
+CASE N16384_K10_tied_f16_T64_B8_S42: preparing 2 methods
+  PREP N16384_K10_tied_f16_T64_B8_S42 ov_npu_native_batched_hier
+  PREP N16384_K10_tied_f16_T64_B8_S42 ov_npu_native_batched_adaptive
+  N16384_K10_tied_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_hier: measured
+  N16384_K10_tied_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_adaptive: measured
+CASE N16384_K10_clustered_f16_T64_B8_S42: preparing 2 methods
+  PREP N16384_K10_clustered_f16_T64_B8_S42 ov_npu_native_batched_hier
+  PREP N16384_K10_clustered_f16_T64_B8_S42 ov_npu_native_batched_adaptive
+  N16384_K10_clustered_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_adaptive: measured
+  N16384_K10_clustered_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_hier: measured
+CASE N16384_K10_adversarial_f16_T64_B8_S42: preparing 2 methods
+  PREP N16384_K10_adversarial_f16_T64_B8_S42 ov_npu_native_batched_hier
+  PREP N16384_K10_adversarial_f16_T64_B8_S42 ov_npu_native_batched_adaptive
+  N16384_K10_adversarial_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_adaptive: measured
+  N16384_K10_adversarial_f16_T64_B8_S42 block=1/1 ov_npu_native_batched_hier: measured
+{
+  "session_id": "phase3_baseline_20261024T205003Z_T64_TB8_QB1",
+  "observations": 96,
+  "skipped": 0,
+  "wrong_results": 0,
+  "completed": true,
+  "valid_for_inference": true,
+  "results_file": "results\\phase3\\ablation_baseline\\20261024T205003Z\\T64_TB8_QB1\\observations_phase3_baseline_20261024T205003Z_T64_TB8_QB1.jsonl",
+  "skips_file": "results\\phase3\\ablation_baseline\\20261024T205003Z\\T64_TB8_QB1\\skips_phase3_baseline_20261024T205003Z_T64_TB8_QB1.jsonl"
+}

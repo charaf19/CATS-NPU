@@ -1,0 +1,33 @@
+{
+  "before_aggregate_sha256": "ac2f655f492b3441e02d2b7904be80d3bc9456be5833ec5fdbd28f4f84dd86ca",
+  "after_aggregate_sha256": "3f17a8edf57257316d03d7b3b1b0b0c9a2dc4712fde32b7eadec80f81bb4aabc",
+  "added": [
+    "configs/phase2_pilot.json",
+    "docs/PHASE2_ENGINEERING.md",
+    "scripts/10_pilot_npu.ps1",
+    "scripts/11_pilot_gpu.ps1",
+    "scripts/12_analyze_phase2.ps1",
+    "scripts/summarize_phase2.py",
+    "tests/test_torch_optional.py"
+  ],
+  "removed": [],
+  "modified": [
+    "README.md",
+    "docs/RESEARCH_CHARTER.md",
+    "native/CMakeLists.txt",
+    "pyproject.toml",
+    "scripts/08_build_cpp.ps1",
+    "src/cats_npu/algorithms.py",
+    "src/cats_npu/backends.py",
+    "src/cats_npu/benchmark.py",
+    "src/cats_npu/cli.py",
+    "src/cats_npu/native.py",
+    "src/cats_npu/statistics.py",
+    "tests/test_algorithms.py",
+    "tests/test_benchmark.py",
+    "tests/test_native_optional.py",
+    "tests/test_openvino_optional.py",
+    "tests/test_statistics.py"
+  ],
+  "paper_or_tex_changes": []
+}

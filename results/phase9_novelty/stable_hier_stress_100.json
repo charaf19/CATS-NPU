@@ -1,0 +1,19 @@
+{
+  "purpose": "same-process adversarial stress of documented stable int32 TopK on physical NPU",
+  "n": 512,
+  "k": 10,
+  "cases": 100,
+  "categories": {
+    "all_equal": 20,
+    "coarse_ties": 20,
+    "boundary_ties": 20,
+    "signed_zero_subnormal": 20,
+    "random_fp16": 20
+  },
+  "execution_devices": [
+    "NPU"
+  ],
+  "failure_count": 0,
+  "failures": [],
+  "independent_sessions": false
+}

@@ -1,0 +1,230 @@
+{
+  "protocol": "phase7-confirmatory-sift1m-direct-vs-certified-v1",
+  "observation_count": 2880,
+  "sessions": [
+    "phase7_20261024T212141Z_session01",
+    "phase7_20261024T212141Z_session02",
+    "phase7_20261024T212141Z_session03",
+    "phase7_20261024T212141Z_session04",
+    "phase7_20261024T212141Z_session05",
+    "phase7_20261024T212141Z_session06"
+  ],
+  "queries": [
+    "sift1m_q0008",
+    "sift1m_q0009",
+    "sift1m_q0010",
+    "sift1m_q0011",
+    "sift1m_q0012",
+    "sift1m_q0013",
+    "sift1m_q0014",
+    "sift1m_q0015"
+  ],
+  "all_correct": true,
+  "method_summaries": [
+    {
+      "method": "cpp_exact",
+      "observations": 480,
+      "median_ms": 14.183,
+      "p95_ms": 27.78271499999999,
+      "median_million_scores_per_second": 70.506944934076,
+      "p05_million_scores_per_second": 35.993602497092176
+    },
+    {
+      "method": "torch_cuda_stable",
+      "observations": 480,
+      "median_ms": 2.663,
+      "p95_ms": 471.99392499999965,
+      "median_million_scores_per_second": 375.5163349605708,
+      "p05_million_scores_per_second": 2.1186713367126506
+    },
+    {
+      "method": "ov_npu_native_direct",
+      "observations": 480,
+      "median_ms": 135.00435,
+      "p95_ms": 635.0635149999998,
+      "median_million_scores_per_second": 7.407168731970489,
+      "p05_million_scores_per_second": 1.5746456478451611
+    },
+    {
+      "method": "ov_npu_native_batched_hier",
+      "observations": 480,
+      "median_ms": 122.8356,
+      "p95_ms": 154.505705,
+      "median_million_scores_per_second": 8.140962392010135,
+      "p05_million_scores_per_second": 6.472252917780608
+    },
+    {
+      "method": "ov_npu_native_batched_adaptive",
+      "observations": 480,
+      "median_ms": 96.55574999999999,
+      "p95_ms": 117.41859999999998,
+      "median_million_scores_per_second": 10.356711019281606,
+      "p05_million_scores_per_second": 8.516538265658083
+    },
+    {
+      "method": "ov_npu_native_batched_costadaptive",
+      "observations": 480,
+      "median_ms": 97.64439999999999,
+      "p95_ms": 125.11209499999997,
+      "median_million_scores_per_second": 10.24124271335581,
+      "p05_million_scores_per_second": 7.992832347663911
+    }
+  ],
+  "primary": {
+    "baseline": "ov_npu_native_direct",
+    "method": "ov_npu_native_batched_adaptive",
+    "unit": "session mean log speedup across eight paired queries",
+    "session_count": 6,
+    "geomean_speedup": 1.6655759660979796,
+    "median_session_speedup": 1.6689080242502392,
+    "mean_log_speedup": 0.5101709891983192,
+    "ci95_session_cluster_bootstrap": [
+      1.6455946432304225,
+      1.6848727151693208
+    ],
+    "query_pair_speedup_min_median_max": [
+      1.1132478067718947,
+      1.3980031287849415,
+      7.217816088318464
+    ],
+    "session_speedups": [
+      1.6815276265175978,
+      1.6481593828751055,
+      1.6592187124167965,
+      1.6255357276625484,
+      1.678597336083682,
+      1.7015188810827107
+    ],
+    "paired_query_win_fraction": 1.0,
+    "inferential_status": "primary",
+    "two_sided_exact_sign_flip_p": 0.03125,
+    "statistically_supported": true,
+    "practically_meaningful": true,
+    "decision": "supported_and_practically_meaningful"
+  },
+  "secondary": [
+    {
+      "baseline": "ov_npu_native_batched_hier",
+      "method": "ov_npu_native_batched_adaptive",
+      "unit": "session mean log speedup across eight paired queries",
+      "session_count": 6,
+      "geomean_speedup": 1.2556058966274024,
+      "median_session_speedup": 1.2636947844199242,
+      "mean_log_speedup": 0.2276182422372993,
+      "ci95_session_cluster_bootstrap": [
+        1.2384309380366645,
+        1.2714289959041487
+      ],
+      "query_pair_speedup_min_median_max": [
+        1.1122908294777814,
+        1.2478875343568578,
+        1.4291935867117755
+      ],
+      "session_speedups": [
+        1.2741725776497608,
+        1.2667160903262262,
+        1.2606734785136224,
+        1.2239240555778221,
+        1.2781951333274306,
+        1.2310006760958287
+      ],
+      "paired_query_win_fraction": 1.0,
+      "inferential_status": "secondary_exploratory"
+    },
+    {
+      "baseline": "ov_npu_native_batched_adaptive",
+      "method": "ov_npu_native_batched_costadaptive",
+      "unit": "session mean log speedup across eight paired queries",
+      "session_count": 6,
+      "geomean_speedup": 0.9895028065802062,
+      "median_session_speedup": 0.9906835006301944,
+      "mean_log_speedup": -0.010552677581531838,
+      "ci95_session_cluster_bootstrap": [
+        0.9764320071041811,
+        1.0018167443458206
+      ],
+      "query_pair_speedup_min_median_max": [
+        0.8093341287240794,
+        0.9867659568881073,
+        1.2394948391367586
+      ],
+      "session_speedups": [
+        0.9883076455093623,
+        0.9866364782101178,
+        0.9931912714691503,
+        1.0144153989674167,
+        0.9621192943577203,
+        0.9930593557510263
+      ],
+      "paired_query_win_fraction": 0.4166666666666667,
+      "inferential_status": "secondary_exploratory"
+    },
+    {
+      "baseline": "torch_cuda_stable",
+      "method": "ov_npu_native_batched_adaptive",
+      "unit": "session mean log speedup across eight paired queries",
+      "session_count": 6,
+      "geomean_speedup": 0.051178554627388156,
+      "median_session_speedup": 0.051608403499133974,
+      "mean_log_speedup": -2.97243468961473,
+      "ci95_session_cluster_bootstrap": [
+        0.04831052535187675,
+        0.05440733413730201
+      ],
+      "query_pair_speedup_min_median_max": [
+        0.01932689357631379,
+        0.026065291525465564,
+        5.772490941054892
+      ],
+      "session_speedups": [
+        0.045726060480937226,
+        0.052822376536431556,
+        0.05039443046183639,
+        0.05323908066179279,
+        0.04795411882873897,
+        0.057823898943922133
+      ],
+      "paired_query_win_fraction": 0.125,
+      "inferential_status": "secondary_exploratory"
+    },
+    {
+      "baseline": "cpp_exact",
+      "method": "ov_npu_native_batched_adaptive",
+      "unit": "session mean log speedup across eight paired queries",
+      "session_count": 6,
+      "geomean_speedup": 0.13927604494297294,
+      "median_session_speedup": 0.1396094589384737,
+      "mean_log_speedup": -1.9712973803715925,
+      "ci95_session_cluster_bootstrap": [
+        0.1346840432687184,
+        0.14399276739439507
+      ],
+      "query_pair_speedup_min_median_max": [
+        0.07286983010661793,
+        0.14302029122061632,
+        0.23731550657042208
+      ],
+      "session_speedups": [
+        0.14877258110673167,
+        0.1305186345905726,
+        0.1348889083195363,
+        0.13814343866456288,
+        0.14298981266708066,
+        0.14107547921238453
+      ],
+      "paired_query_win_fraction": 0.0,
+      "inferential_status": "secondary_exploratory"
+    }
+  ],
+  "artifacts": {
+    "session_query_medians_csv": "results\\phase7\\confirmatory_analysis.csv",
+    "method_summary_csv": "results\\phase7\\confirmatory_analysis_method_summary.csv",
+    "primary_speedup_figure": "results\\phase7\\confirmatory_analysis_primary_speedup.svg",
+    "latency_figure": "results\\phase7\\confirmatory_analysis_latency.svg"
+  },
+  "limitations": [
+    "Six sessions give coarse exact-test resolution.",
+    "Sessions share one machine and may retain slow thermal/OS correlations.",
+    "Secondary comparisons are exploratory and have no multiplicity-adjusted tests."
+  ]
+}

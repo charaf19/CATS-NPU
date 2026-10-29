@@ -1,0 +1,8 @@
+{
+  "session_id": "synthetic_failure",
+  "observations": 1,
+  "skipped": 1,
+  "wrong_results": 0,
+  "results_file": "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\results\\audit_2026-10-23\\harness_reproduction\\observations_synthetic_failure.jsonl",
+  "skips_file": "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\results\\audit_2026-10-23\\harness_reproduction\\skips_synthetic_failure.jsonl"
+}

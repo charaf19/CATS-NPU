@@ -1,0 +1,492 @@
+{
+  "timestamp_utc": "2026-10-27T11:58:03.071584+00:00",
+  "status": "exploratory; one process, no inferential statistics",
+  "source": "results\\phase5\\sift1m\\q0000_n1000000_neg_l2_f16.npy",
+  "input_sha256": "880030a910a4da705dd99771342704af9279fb0357554f4a489192b9429f3db2",
+  "n": 1000000,
+  "k": 100,
+  "width": 256,
+  "batch": 8,
+  "input_residency": "host FP16 scores",
+  "output_residency": "host stable Top-K indices",
+  "compilation_and_warmup_excluded": true,
+  "samples_within_one_process_are_not_independent_sessions": true,
+  "methods": {
+    "static_npu_rank_certified": {
+      "samples": [
+        {
+          "elapsed_ms": 120.136,
+          "correct": true,
+          "device_submissions": 1,
+          "sync_boundaries": 1,
+          "input_preparation_ms": 0.6701,
+          "infer_sync_ms": 115.0264,
+          "output_copy_ms": 0.0341,
+          "certificate_ms": 3.2613,
+          "staged_input_bytes": 2000384,
+          "retrieved_output_bytes": 600
+        },
+        {
+          "elapsed_ms": 130.3401,
+          "correct": true,
+          "device_submissions": 1,
+          "sync_boundaries": 1,
+          "input_preparation_ms": 0.544,
+          "infer_sync_ms": 121.7226,
+          "output_copy_ms": 0.0247,
+          "certificate_ms": 7.1564,
+          "staged_input_bytes": 2000384,
+          "retrieved_output_bytes": 600
+        },
+        {
+          "elapsed_ms": 121.3058,
+          "correct": true,
+          "device_submissions": 1,
+          "sync_boundaries": 1,
+          "input_preparation_ms": 1.2327,
+          "infer_sync_ms": 115.1618,
+          "output_copy_ms": 0.0249,
+          "certificate_ms": 3.0638,
+          "staged_input_bytes": 2000384,
+          "retrieved_output_bytes": 600
+        }
+      ],
+      "execution_devices": [
+        "NPU"
+      ],
+      "compile_ms": 100.4099
+    },
+    "ov_npu_native_batched_direct": {
+      "samples": [
+        {
+          "elapsed_ms": 199.7637,
+          "correct": true,
+          "certificate": "local_k_exact",
+          "rounds": 1,
+          "backend_calls": 1,
+          "candidate_count": 100,
+          "cpu_tie_repairs": 0,
+          "backend_ns": 197548300,
+          "host_routing_and_merge": true,
+          "host_input_preparation_ns": 392700,
+          "backend_input_cast_ns": 4800,
+          "backend_execute_sync_ns": 185817000,
+          "backend_output_copy_ns": 43600,
+          "backend_validation_ns": 3798000,
+          "cpu_exact_validation_rows": 0,
+          "candidate_extraction_ns": 172200,
+          "merge_ns": 53800,
+          "certification_ns": 2100,
+          "device_submissions": 1,
+          "staged_input_bytes": 2000000,
+          "retrieved_output_bytes": 606,
+          "adaptive_policy": "fixed",
+          "cost_aware_jumps": 0,
+          "cost_model_launch_ns": 0,
+          "cost_model_extra_candidate_ns": 0
+        },
+        {
+          "elapsed_ms": 139.0252,
+          "correct": true,
+          "certificate": "local_k_exact",
+          "rounds": 1,
+          "backend_calls": 1,
+          "candidate_count": 100,
+          "cpu_tie_repairs": 0,
+          "backend_ns": 136494900,
+          "host_routing_and_merge": true,
+          "host_input_preparation_ns": 537900,
+          "backend_input_cast_ns": 3200,
+          "backend_execute_sync_ns": 122804300,
+          "backend_output_copy_ns": 43900,
+          "backend_validation_ns": 6058800,
+          "cpu_exact_validation_rows": 0,
+          "candidate_extraction_ns": 348800,
+          "merge_ns": 118800,
+          "certification_ns": 4000,
+          "device_submissions": 1,
+          "staged_input_bytes": 2000000,
+          "retrieved_output_bytes": 606,
+          "adaptive_policy": "fixed",
+          "cost_aware_jumps": 0,
+          "cost_model_launch_ns": 0,
+          "cost_model_extra_candidate_ns": 0
+        },
+        {
+          "elapsed_ms": 138.786,
+          "correct": true,
+          "certificate": "local_k_exact",
+          "rounds": 1,
+          "backend_calls": 1,
+          "candidate_count": 100,
+          "cpu_tie_repairs": 0,
+          "backend_ns": 133487000,
+          "host_routing_and_merge": true,
+          "host_input_preparation_ns": 841000,
+          "backend_input_cast_ns": 2700,
+          "backend_execute_sync_ns": 122755700,
+          "backend_output_copy_ns": 45000,
+          "backend_validation_ns": 4183400,
+          "cpu_exact_validation_rows": 0,
+          "candidate_extraction_ns": 608800,
+          "merge_ns": 426600,
+          "certification_ns": 5000,
+          "device_submissions": 1,
+          "staged_input_bytes": 2000000,
+          "retrieved_output_bytes": 606,
+          "adaptive_policy": "fixed",
+          "cost_aware_jumps": 0,
+          "cost_model_launch_ns": 0,
+          "cost_model_extra_candidate_ns": 0
+        }
+      ],
+      "device_info": {
+        "requested": "NPU",
+        "kernel": "native",
+        "compiler_type_requested": "PLUGIN",
+        "reported_execution_devices": {
+          "101": [
+            "NPU"
+          ]
+        },
+        "reported_compiler_type": {
+          "101": "CompilerType.PLUGIN"
+        },
+        "prepared_k": [
+          101
+        ],
+        "execution_mode": "batched",
+        "tile_batch": 1,
+        "adaptive_policy": "fixed"
+      },
+      "compile_ms": 44.9892
+    },
+    "ov_npu_native_batched_costadaptive": {
+      "samples": [
+        {
+          "elapsed_ms": 257.0792,
+          "correct": true,
+          "certificate": "strict_omission_bound",
+          "rounds": 2,
+          "backend_calls": 490,
+          "candidate_count": 3913,
+          "cpu_tie_repairs": 0,
+          "backend_ns": 205906900,
+          "host_routing_and_merge": true,
+          "host_input_preparation_ns": 3581000,
+          "backend_input_cast_ns": 190300,
+          "backend_execute_sync_ns": 175229400,
+          "backend_output_copy_ns": 4572900,
+          "backend_validation_ns": 16552800,
+          "cpu_exact_validation_rows": 0,
+          "candidate_extraction_ns": 36342400,
+          "merge_ns": 3290600,
+          "certification_ns": 1611500,
+          "device_submissions": 490,
+          "staged_input_bytes": 2007040,
+          "retrieved_output_bytes": 47088,
+          "adaptive_policy": "submission_aware",
+          "cost_aware_jumps": 0,
+          "cost_model_launch_ns": 357447,
+          "cost_model_extra_candidate_ns": 5455652
+        },
+        {
+          "elapsed_ms": 352.5259,
+          "correct": true,
+          "certificate": "strict_omission_bound",
+          "rounds": 2,
+          "backend_calls": 490,
+          "candidate_count": 3913,
+          "cpu_tie_repairs": 0,
+          "backend_ns": 233792800,
+          "host_routing_and_merge": true,
+          "host_input_preparation_ns": 3884300,
+          "backend_input_cast_ns": 202100,
+          "backend_execute_sync_ns": 198645100,
+          "backend_output_copy_ns": 5407000,
+          "backend_validation_ns": 19554700,
+          "cpu_exact_validation_rows": 0,
+          "candidate_extraction_ns": 38305000,
+          "merge_ns": 5313300,
+          "certification_ns": 2173900,
+          "device_submissions": 490,
+          "staged_input_bytes": 2007040,
+          "retrieved_output_bytes": 47088,
+          "adaptive_policy": "submission_aware",
+          "cost_aware_jumps": 0,
+          "cost_model_launch_ns": 405390,
+          "cost_model_extra_candidate_ns": 5751850
+        },
+        {
+          "elapsed_ms": 273.7793,
+          "correct": true,
+          "certificate": "strict_omission_bound",
+          "rounds": 2,
+          "backend_calls": 490,
+          "candidate_count": 3913,
+          "cpu_tie_repairs": 0,
+          "backend_ns": 213785300,
+          "host_routing_and_merge": true,
+          "host_input_preparation_ns": 3597300,
+          "backend_input_cast_ns": 315500,
+          "backend_execute_sync_ns": 181595100,
+          "backend_output_copy_ns": 5379300,
+          "backend_validation_ns": 17131100,
+          "cpu_exact_validation_rows": 0,
+          "candidate_extraction_ns": 36165300,
+          "merge_ns": 6318400,
+          "certification_ns": 2786900,
+          "device_submissions": 490,
+          "staged_input_bytes": 2007040,
+          "retrieved_output_bytes": 47088,
+          "adaptive_policy": "submission_aware",
+          "cost_aware_jumps": 0,
+          "cost_model_launch_ns": 369219,
+          "cost_model_extra_candidate_ns": 5422889
+        }
+      ],
+      "device_info": {
+        "requested": "NPU",
+        "kernel": "native",
+        "compiler_type_requested": "PLUGIN",
+        "reported_execution_devices": {
+          "2": [
+            "NPU"
+          ],
+          "3": [
+            "NPU"
+          ],
+          "5": [
+            "NPU"
+          ],
+          "9": [
+            "NPU"
+          ],
+          "17": [
+            "NPU"
+          ],
+          "33": [
+            "NPU"
+          ],
+          "65": [
+            "NPU"
+          ],
+          "101": [
+            "NPU"
+          ]
+        },
+        "reported_compiler_type": {
+          "2": "CompilerType.PLUGIN",
+          "3": "CompilerType.PLUGIN",
+          "5": "CompilerType.PLUGIN",
+          "9": "CompilerType.PLUGIN",
+          "17": "CompilerType.PLUGIN",
+          "33": "CompilerType.PLUGIN",
+          "65": "CompilerType.PLUGIN",
+          "101": "CompilerType.PLUGIN"
+        },
+        "prepared_k": [
+          2,
+          3,
+          5,
+          9,
+          17,
+          33,
+          65,
+          101
+        ],
+        "execution_mode": "batched",
+        "tile_batch": 8,
+        "adaptive_policy": "submission_aware"
+      },
+      "compile_ms": 357.9462
+    },
+    "cpp_exact": {
+      "samples": [
+        {
+          "elapsed_ms": 16.5213,
+          "correct": true,
+          "certificate": "cpp_nth_element_exact",
+          "rounds": 1,
+          "backend_calls": 1,
+          "candidate_count": 100,
+          "cpu_tie_repairs": 0,
+          "backend_ns": 0,
+          "host_routing_and_merge": true,
+          "host_input_preparation_ns": 0,
+          "backend_input_cast_ns": 0,
+          "backend_execute_sync_ns": 0,
+          "backend_output_copy_ns": 0,
+          "backend_validation_ns": 0,
+          "cpu_exact_validation_rows": 0,
+          "candidate_extraction_ns": 0,
+          "merge_ns": 0,
+          "certification_ns": 0,
+          "device_submissions": 0,
+          "staged_input_bytes": 0,
+          "retrieved_output_bytes": 0,
+          "adaptive_policy": "fixed",
+          "cost_aware_jumps": 0,
+          "cost_model_launch_ns": 0,
+          "cost_model_extra_candidate_ns": 0
+        },
+        {
+          "elapsed_ms": 16.0068,
+          "correct": true,
+          "certificate": "cpp_nth_element_exact",
+          "rounds": 1,
+          "backend_calls": 1,
+          "candidate_count": 100,
+          "cpu_tie_repairs": 0,
+          "backend_ns": 0,
+          "host_routing_and_merge": true,
+          "host_input_preparation_ns": 0,
+          "backend_input_cast_ns": 0,
+          "backend_execute_sync_ns": 0,
+          "backend_output_copy_ns": 0,
+          "backend_validation_ns": 0,
+          "cpu_exact_validation_rows": 0,
+          "candidate_extraction_ns": 0,
+          "merge_ns": 0,
+          "certification_ns": 0,
+          "device_submissions": 0,
+          "staged_input_bytes": 0,
+          "retrieved_output_bytes": 0,
+          "adaptive_policy": "fixed",
+          "cost_aware_jumps": 0,
+          "cost_model_launch_ns": 0,
+          "cost_model_extra_candidate_ns": 0
+        },
+        {
+          "elapsed_ms": 14.2038,
+          "correct": true,
+          "certificate": "cpp_nth_element_exact",
+          "rounds": 1,
+          "backend_calls": 1,
+          "candidate_count": 100,
+          "cpu_tie_repairs": 0,
+          "backend_ns": 0,
+          "host_routing_and_merge": true,
+          "host_input_preparation_ns": 0,
+          "backend_input_cast_ns": 0,
+          "backend_execute_sync_ns": 0,
+          "backend_output_copy_ns": 0,
+          "backend_validation_ns": 0,
+          "cpu_exact_validation_rows": 0,
+          "candidate_extraction_ns": 0,
+          "merge_ns": 0,
+          "certification_ns": 0,
+          "device_submissions": 0,
+          "staged_input_bytes": 0,
+          "retrieved_output_bytes": 0,
+          "adaptive_policy": "fixed",
+          "cost_aware_jumps": 0,
+          "cost_model_launch_ns": 0,
+          "cost_model_extra_candidate_ns": 0
+        }
+      ],
+      "device_info": {
+        "requested": "CPU",
+        "library": "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\native\\build\\cats_topk.dll"
+      },
+      "compile_ms": 0.0
+    },
+    "torch_cuda_stable": {
+      "samples": [
+        {
+          "elapsed_ms": 2.2679,
+          "correct": true,
+          "certificate": "torch_topk_host_canonical_order",
+          "rounds": 1,
+          "backend_calls": 1,
+          "candidate_count": 100,
+          "cpu_tie_repairs": 0,
+          "backend_ns": 752000,
+          "host_routing_and_merge": true,
+          "host_input_preparation_ns": 0,
+          "backend_input_cast_ns": 0,
+          "backend_execute_sync_ns": 752000,
+          "backend_output_copy_ns": 0,
+          "backend_validation_ns": 0,
+          "cpu_exact_validation_rows": 0,
+          "candidate_extraction_ns": 1002400,
+          "merge_ns": 0,
+          "certification_ns": 0,
+          "device_submissions": 1,
+          "staged_input_bytes": 2000000,
+          "retrieved_output_bytes": 800,
+          "adaptive_policy": "fixed",
+          "cost_aware_jumps": 0,
+          "cost_model_launch_ns": 0,
+          "cost_model_extra_candidate_ns": 0
+        },
+        {
+          "elapsed_ms": 4.7787,
+          "correct": true,
+          "certificate": "torch_topk_host_canonical_order",
+          "rounds": 1,
+          "backend_calls": 1,
+          "candidate_count": 100,
+          "cpu_tie_repairs": 0,
+          "backend_ns": 1274600,
+          "host_routing_and_merge": true,
+          "host_input_preparation_ns": 0,
+          "backend_input_cast_ns": 0,
+          "backend_execute_sync_ns": 1274600,
+          "backend_output_copy_ns": 0,
+          "backend_validation_ns": 0,
+          "cpu_exact_validation_rows": 0,
+          "candidate_extraction_ns": 2087700,
+          "merge_ns": 0,
+          "certification_ns": 0,
+          "device_submissions": 1,
+          "staged_input_bytes": 2000000,
+          "retrieved_output_bytes": 800,
+          "adaptive_policy": "fixed",
+          "cost_aware_jumps": 0,
+          "cost_model_launch_ns": 0,
+          "cost_model_extra_candidate_ns": 0
+        },
+        {
+          "elapsed_ms": 2.3421,
+          "correct": true,
+          "certificate": "torch_topk_host_canonical_order",
+          "rounds": 1,
+          "backend_calls": 1,
+          "candidate_count": 100,
+          "cpu_tie_repairs": 0,
+          "backend_ns": 724800,
+          "host_routing_and_merge": true,
+          "host_input_preparation_ns": 0,
+          "backend_input_cast_ns": 0,
+          "backend_execute_sync_ns": 724800,
+          "backend_output_copy_ns": 0,
+          "backend_validation_ns": 0,
+          "cpu_exact_validation_rows": 0,
+          "candidate_extraction_ns": 985600,
+          "merge_ns": 0,
+          "certification_ns": 0,
+          "device_submissions": 1,
+          "staged_input_bytes": 2000000,
+          "retrieved_output_bytes": 800,
+          "adaptive_policy": "fixed",
+          "cost_aware_jumps": 0,
+          "cost_model_launch_ns": 0,
+          "cost_model_extra_candidate_ns": 0
+        }
+      ],
+      "device_info": {
+        "requested": "cuda",
+        "torch_version": "2.11.0+cu128",
+        "stable_tie_policy": true,
+        "device_index": 0,
+        "device_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+        "compute_capability": [
+          12,
+          0
+        ]
+      },
+      "compile_ms": 0.0
+    }
+  }
+}

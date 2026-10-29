@@ -1,0 +1,57 @@
+{
+  "purpose": "test whether NPU integer TopK retains unit differences above FP32 exact-integer range",
+  "variants": {
+    "int32": {
+      "execution_devices": [
+        "N",
+        "P",
+        "U"
+      ],
+      "got_indices": [
+        511,
+        510,
+        509,
+        508
+      ],
+      "expected_indices": [
+        511,
+        510,
+        509,
+        508
+      ],
+      "exact": true,
+      "got_values": [
+        536871423,
+        536871422,
+        536871421,
+        536871420
+      ]
+    },
+    "int64": {
+      "execution_devices": [
+        "N",
+        "P",
+        "U"
+      ],
+      "got_indices": [
+        511,
+        510,
+        509,
+        508
+      ],
+      "expected_indices": [
+        511,
+        510,
+        509,
+        508
+      ],
+      "exact": true,
+      "got_values": [
+        511,
+        510,
+        509,
+        508
+      ]
+    }
+  }
+}

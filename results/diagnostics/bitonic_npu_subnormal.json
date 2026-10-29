@@ -1,0 +1,63 @@
+{
+  "timestamp_utc": "2026-10-23T13:38:27.650144+00:00",
+  "openvino": "2026.4.1-22982-e213a147257-releases/2026/4",
+  "device": "NPU",
+  "compiler_type_requested": "PLUGIN",
+  "kernel": "bitonic",
+  "dtype": "f16",
+  "case_id": "N512_K10_normal_f16_T16_B1_S42",
+  "tile_start": 256,
+  "requested_local_k": 11,
+  "reported_execution_devices": [
+    "NPU"
+  ],
+  "device_indices": [
+    9,
+    8,
+    0,
+    11,
+    15,
+    6,
+    10,
+    12,
+    13,
+    2,
+    4
+  ],
+  "device_values": [
+    0.3037109375,
+    0.1414794921875,
+    0.13037109375,
+    0.10552978515625,
+    0.094970703125,
+    0.06964111328125,
+    0.046630859375,
+    0.0159454345703125,
+    0.0,
+    -0.0401611328125,
+    -0.07147216796875
+  ],
+  "host_values_at_device_indices": [
+    0.3037109375,
+    0.1414794921875,
+    0.13037109375,
+    0.10552978515625,
+    0.094970703125,
+    0.06964111328125,
+    0.046630859375,
+    0.0159454345703125,
+    2.5331974029541016e-05,
+    -0.0401611328125,
+    -0.07147216796875
+  ],
+  "mismatches": [
+    {
+      "row": 0,
+      "column": 8,
+      "device_value": 0.0,
+      "host_value": 2.5331974029541016e-05,
+      "local_index": 13
+    }
+  ],
+  "interpretation": "NPU PLUGIN bitonic value output flushed a positive FP16 subnormal to zero; strict validation rejected the method for this case."
+}

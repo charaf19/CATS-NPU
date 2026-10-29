@@ -1,0 +1,44 @@
+{
+  "session_id": "20261023T134106Z_DESKTOP-33Q7GQP_4448",
+  "timestamp_utc": "2026-10-23T13:41:06.962652+00:00",
+  "host": "DESKTOP-33Q7GQP",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "git_commit": null,
+  "methods": [
+    "cpu_exact",
+    "numpy_hier",
+    "numpy_adaptive",
+    "ov_npu_bitonic_hier",
+    "ov_npu_bitonic_adaptive"
+  ],
+  "ns": [
+    512,
+    4096
+  ],
+  "ks": [
+    4,
+    10
+  ],
+  "distributions": [
+    "normal",
+    "tied",
+    "clustered",
+    "adversarial"
+  ],
+  "dtype": "f16",
+  "seed": 42,
+  "tile": 16,
+  "batch": 1,
+  "initial_budget": 1,
+  "warmup": 3,
+  "repeats": 20,
+  "compiler_type": "PLUGIN",
+  "blocks": 2,
+  "input_path": null,
+  "scope": "Top-K operator (scores provided)",
+  "measurement": "host input to host indices; compilation and warmup excluded",
+  "individual_blocks_independent_sessions": false,
+  "openvino": "2026.4.1-22982-e213a147257-releases/2026/4"
+}

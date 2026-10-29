@@ -1,0 +1,72 @@
+{
+  "timestamp_utc": "2026-10-27T12:24:30.961681+00:00",
+  "status": "exploratory physical NPU split-key graph probe",
+  "input": "results\\phase9_novelty\\boundary_tie_n5183.npy",
+  "input_sha256": "527db065e54eb7e0e21bd7adc0b51b3481a2dd5e07f29004ee5315b4d06a203b",
+  "n": 5183,
+  "k": 10,
+  "width": 256,
+  "correct": true,
+  "samples": [
+    {
+      "encoding_ms": 0.1147,
+      "staging_ms": 0.0069,
+      "infer_sync_ms": 4.9431,
+      "copy_ms": 0.0151,
+      "verification_ms": 0.1727,
+      "end_to_end_ms": 5.2525,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.0262,
+      "staging_ms": 0.0019,
+      "infer_sync_ms": 0.9773,
+      "copy_ms": 0.0065,
+      "verification_ms": 0.0634,
+      "end_to_end_ms": 1.0753,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.0226,
+      "staging_ms": 0.0014,
+      "infer_sync_ms": 0.951,
+      "copy_ms": 0.0061,
+      "verification_ms": 0.0595,
+      "end_to_end_ms": 1.0406,
+      "correct": true
+    }
+  ],
+  "independent_sessions": false,
+  "cpu_graph_correct": true,
+  "compile_ms": 122.3005,
+  "execution_devices": [
+    "NPU"
+  ],
+  "submissions_per_query": 1,
+  "staged_input_bytes": 21504,
+  "retrieved_output_bytes": 80,
+  "selected_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "expected_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "status": "exploratory integrated dispatcher, not a locked confirmatory test",
+  "sessions": 3,
+  "cases_per_session": 32,
+  "observation_count": 1728,
+  "all_correct": true,
+  "all_reported_npu": true,
+  "tree_choice_constant_within_shape": true,
+  "dispatch_ms": {
+    "median": 0.4607,
+    "p95": 1.1579
+  },
+  "comparisons": {
+    "shape": {
+      "geomean_baseline_over_tree": 0.9239634283636513,
+      "session_speedups": [
+        0.9166446061838238,
+        0.9344487993564441,
+        0.920890191544701
+      ]
+    },
+    "static": {
+      "geomean_baseline_over_tree": 0.8356891735121471,
+      "session_speedups": [
+        0.8477619859668886,
+        0.8465188435298504,
+        0.8132494137472105
+      ]
+    }
+  },
+  "session_summaries": [
+    {
+      "session_id": "phase8_integrated_20261027T112202Z_00",
+      "shape_over_tree": 0.9166446061838238,
+      "static_over_tree": 0.8477619859668886
+    },
+    {
+      "session_id": "phase8_integrated_20261027T112231Z_01",
+      "shape_over_tree": 0.9344487993564441,
+      "static_over_tree": 0.8465188435298504
+    },
+    {
+      "session_id": "phase8_integrated_20261027T112253Z_02",
+      "shape_over_tree": 0.920890191544701,
+      "static_over_tree": 0.8132494137472105
+    }
+  ],
+  "limitations": [
+    "Three separately initiated sessions on one laptop, exploratory.",
+    "No inferential p-value or confirmatory performance claim.",
+    "The static comparator is derived from frozen pre-timing tree choices; it uses only N and K on these datasets."
+  ]
+}

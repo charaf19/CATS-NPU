@@ -1,0 +1,35 @@
+{
+  "access_date": "2026-10-28",
+  "description": "Unmodified upstream source snapshots. The pinned public source is not identified as the installed compiler binary's exact source revision.",
+  "compiler": [
+    {
+      "repository": "openvinotoolkit/npu_compiler",
+      "commit": "c74b1265f28dc5a8f08dd50babd2a063cb59ac6e",
+      "path": "src/vpux_compiler/src/dialect/IE/transforms/passes/adjust_software_ops_precision.cpp",
+      "blob_sha": "1323b5be88bbb41b14965206bbbdaf236a022829",
+      "url": "https://github.com/openvinotoolkit/npu_compiler/blob/c74b1265f28dc5a8f08dd50babd2a063cb59ac6e/src/vpux_compiler/src/dialect/IE/transforms/passes/adjust_software_ops_precision.cpp",
+      "snapshot": "adjust_software_ops_precision.cpp"
+    },
+    {
+      "repository": "openvinotoolkit/npu_compiler",
+      "commit": "c74b1265f28dc5a8f08dd50babd2a063cb59ac6e",
+      "path": "src/vpux_compiler/src/dialect/IE/transforms/passes/convert_precision_to_i32.cpp",
+      "blob_sha": "1f33c83e1beb6b0740e4641d30baa941a501c3da",
+      "url": "https://github.com/openvinotoolkit/npu_compiler/blob/c74b1265f28dc5a8f08dd50babd2a063cb59ac6e/src/vpux_compiler/src/dialect/IE/transforms/passes/convert_precision_to_i32.cpp",
+      "snapshot": "convert_precision_to_i32.cpp"
+    },
+    {
+      "repository": "openvinotoolkit/npu_compiler",
+      "commit": "c74b1265f28dc5a8f08dd50babd2a063cb59ac6e",
+      "path": "LICENSE",
+      "blob_sha": "10d3af172fc224c141beb1d27059c1bef54c2045",
+      "url": "https://github.com/openvinotoolkit/npu_compiler/blob/c74b1265f28dc5a8f08dd50babd2a063cb59ac6e/LICENSE",
+      "snapshot": "LICENSE"
+    }
+  ],
+  "other_verified_source_revisions": {
+    "cccl": "eaf7eb1d26f5fab88cf347af33f739e0812d782b",
+    "DeepSelect": "bfa4507d935f17ebfc3d0f00ff7d3c9a4d0e5c18",
+    "PyTorch": "dd50eb629ec04a7e5d340be55a66058157291cf3"
+  }
+}

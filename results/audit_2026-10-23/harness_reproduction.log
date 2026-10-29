@@ -1,0 +1,30 @@
+  RUNTIME FAIL cpu_exact: RuntimeError: SYNTHETIC injected runtime failure
+  N16_K2_normal_f16_T16_B1_S42 block=1/1 cpu_exact: measured
+{
+  "purpose": "synthetic failure-handling demonstration; not benchmark data",
+  "benchmark_error": "Experiment contained failures; see C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\results\\audit_2026-10-23\\harness_reproduction\\skips_synthetic_failure.jsonl and C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\results\\audit_2026-10-23\\harness_reproduction\\mismatches. Stats: {'session_id': 'synthetic_failure', 'observations': 1, 'skipped': 1, 'wrong_results': 0, 'results_file': 'C:\\\\Users\\\\pc\\\\Desktop\\\\CATS-NPU-research-v0.1\\\\results\\\\audit_2026-10-23\\\\harness_reproduction\\\\observations_synthetic_failure.jsonl', 'skips_file': 'C:\\\\Users\\\\pc\\\\Desktop\\\\CATS-NPU-research-v0.1\\\\results\\\\audit_2026-10-23\\\\harness_reproduction\\\\skips_synthetic_failure.jsonl'}",
+  "analysis": {
+    "baseline": "cpu_exact",
+    "unit_of_inference": "independent session_id (not iterations or blocks)",
+    "minimum_sessions_for_tests": 6,
+    "cases": {
+      "N16_K2_normal_f16_T16_B1_S42": {
+        "methods": {
+          "cpu_exact": {
+            "n_observations": 1,
+            "n_independent_sessions": 1,
+            "median_ms": 0.0221,
+            "p95_ms": 0.0221,
+            "incorrect_runs": 0,
+            "valid_for_inference": true
+          }
+        },
+        "comparisons_vs_baseline": {}
+      }
+    },
+    "warnings": [
+      "Timing distributions are not proof of hardware superiority without comparable devices/configurations.",
+      "Incorrect Top-K runs are excluded and counted explicitly."
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "timestamp_utc": "2026-10-27T11:54:03.593244+00:00",
+  "status": "exploratory physical feasibility probe",
+  "n": 1000000,
+  "k": 10,
+  "width": 256,
+  "tiles": 3907,
+  "distribution": "normal",
+  "input_sha256": "98ceded27756b45fa1f1992153c2a5fb60bd4a3ad20a751f49bbba4b05953536",
+  "contains_subnormal": true,
+  "npu_compiler_type_requested": "PLUGIN",
+  "cpu_graph_correct": true,
+  "npu_compiled": true,
+  "npu_executed": true,
+  "npu_exact": true,
+  "one_infer_request_per_topk": true,
+  "returned_values_per_query": 23,
+  "cpu_min_local_gap": 0.0,
+  "cpu_final_gap": 0.009765625,
+  "compile_ms": 132.1146,
+  "execution_devices": [
+    "NPU"
+  ],
+  "inference_ms": [
+    64.3029,
+    47.9057,
+    35.9511
+  ],
+  "npu_min_local_gap": 0.0,
+  "npu_final_gap": 0.009765625,
+  "tie_free_boundaries": false,
+  "selected_ids": [
+    436746,
+    774882,
+    958306,
+    58738,
+    542524,
+    540171,
+    397944,
+    137989,
+    841771,
+    292999
+  ],
+  "expected_ids": [
+    436746,
+    774882,
+    958306,
+    58738,
+    542524,
+    540171,
+    397944,
+    137989,
+    841771,
+    292999
+  ]
+}

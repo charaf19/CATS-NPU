@@ -1,0 +1,92 @@
+{
+  "purpose": "physical i64 TopK precision and wrap check",
+  "execution_devices": [
+    "NPU"
+  ],
+  "cases": {
+    "unit_delta_high_base": {
+      "got_indices": [
+        511,
+        510,
+        509,
+        508
+      ],
+      "expected_indices": [
+        511,
+        510,
+        509,
+        508
+      ],
+      "got_values": [
+        511,
+        510,
+        509,
+        508
+      ],
+      "expected_values": [
+        1099511628287,
+        1099511628286,
+        1099511628285,
+        1099511628284
+      ],
+      "indices_exact": true,
+      "values_exact": false
+    },
+    "across_32bit_boundary": {
+      "got_indices": [
+        511,
+        510,
+        509,
+        508
+      ],
+      "expected_indices": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "got_values": [
+        507,
+        506,
+        505,
+        504
+      ],
+      "expected_values": [
+        4294967297,
+        4294967296,
+        4294967295,
+        4294967294
+      ],
+      "indices_exact": false,
+      "values_exact": true
+    },
+    "negative_64bit": {
+      "got_indices": [
+        511,
+        510,
+        509,
+        508
+      ],
+      "expected_indices": [
+        511,
+        510,
+        509,
+        508
+      ],
+      "got_values": [
+        511,
+        510,
+        509,
+        508
+      ],
+      "expected_values": [
+        -1099511627265,
+        -1099511627266,
+        -1099511627267,
+        -1099511627268
+      ],
+      "indices_exact": true,
+      "values_exact": false
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="262" height="380" viewBox="0 0 262 380">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#111827}.small{font-size:12px}.label{font-size:13px}.title{font-size:18px;font-weight:600}</style>
+<text class="title" x="20" y="28">Fixed Hierarchical</text>
+<text class="small" x="20" y="48">Geometric mean slowdown vs the fastest valid configuration in each workload (lower is better)</text>
+<text class="label" text-anchor="middle" x="166.0" y="64">tile batch 32</text>
+<text class="label" text-anchor="end" x="100" y="107">width 256</text>
+<rect x="112" y="78" width="108" height="50" rx="5" fill="#50be78"/>
+<text class="label" text-anchor="middle" x="166.0" y="107">1.00x</text>
+<text class="title" x="20" y="218">Geometric Adaptive</text>
+<text class="small" x="20" y="238">Geometric mean slowdown vs the fastest valid configuration in each workload (lower is better)</text>
+<text class="label" text-anchor="middle" x="166.0" y="254">tile batch 32</text>
+<text class="label" text-anchor="end" x="100" y="297">width 256</text>
+<rect x="112" y="268" width="108" height="50" rx="5" fill="#50be78"/>
+<text class="label" text-anchor="middle" x="166.0" y="297">1.00x</text>
+</svg>

@@ -1,0 +1,174 @@
+{
+  "timestamp_utc": "2026-10-27T11:57:03.670081+00:00",
+  "status": "exploratory physical NPU edge probes",
+  "cases": {
+    "positive_negative_subnormal": {
+      "n": 512,
+      "k": 4,
+      "expected": [
+        63,
+        62,
+        61,
+        60
+      ],
+      "execution_devices": [
+        "NPU"
+      ],
+      "correct": false,
+      "error": "StaticGraphMismatch: Boundary rank 64 differs from K=4"
+    },
+    "one_ulp_at_one": {
+      "n": 512,
+      "k": 4,
+      "expected": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "execution_devices": [
+        "NPU"
+      ],
+      "indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "correct": true,
+      "infer_ms": 3.1597
+    },
+    "all_equal": {
+      "n": 513,
+      "k": 10,
+      "expected": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "execution_devices": [
+        "NPU"
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "correct": true,
+      "infer_ms": 3.7841
+    },
+    "signed_zero": {
+      "n": 513,
+      "k": 10,
+      "expected": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "execution_devices": [
+        "NPU"
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "correct": true,
+      "infer_ms": 3.1913
+    },
+    "boundary_tie": {
+      "n": 5183,
+      "k": 10,
+      "expected": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "execution_devices": [
+        "NPU"
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "correct": true,
+      "infer_ms": 3.0572
+    },
+    "irregular_single_padded_tile": {
+      "n": 257,
+      "k": 10,
+      "expected": [
+        256,
+        255,
+        254,
+        253,
+        252,
+        251,
+        250,
+        249,
+        248,
+        247
+      ],
+      "execution_devices": [
+        "NPU"
+      ],
+      "indices": [
+        256,
+        255,
+        254,
+        253,
+        252,
+        251,
+        250,
+        249,
+        248,
+        247
+      ],
+      "correct": true,
+      "infer_ms": 2.8248
+    }
+  }
+}

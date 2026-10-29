@@ -1,0 +1,25 @@
+{
+  "purpose": "test exact signed-int16 score-code TopK on known FP16-subnormal counterexample",
+  "expected": [
+    63,
+    62,
+    61,
+    60
+  ],
+  "execution_devices": [
+    "NPU"
+  ],
+  "ids": [
+    63,
+    62,
+    61,
+    60
+  ],
+  "values": [
+    31,
+    30,
+    29,
+    28
+  ],
+  "correct": true
+}

@@ -1,0 +1,47 @@
+{
+  "constants": [
+    {
+      "case": "arange_i32",
+      "dtype": "int32",
+      "dtype_char": "l",
+      "dtype_num": 7,
+      "dtype_type": "<class 'numpy.int32'>",
+      "constructed": true
+    },
+    {
+      "case": "xor_stride",
+      "dtype": "int32",
+      "dtype_char": "i",
+      "dtype_num": 5,
+      "dtype_type": "<class 'numpy.intc'>",
+      "constructed": false,
+      "error": "Check 'ov_type_it != dtype_map.end()' failed at core\\common.cpp:92:\nUnsupported data type: int32\n"
+    },
+    {
+      "case": "xor_explicit_i32",
+      "dtype": "int32",
+      "dtype_char": "l",
+      "dtype_num": 7,
+      "dtype_type": "<class 'numpy.int32'>",
+      "constructed": true
+    },
+    {
+      "case": "xor_cast_i32",
+      "dtype": "int32",
+      "dtype_char": "l",
+      "dtype_num": 7,
+      "dtype_type": "<class 'numpy.int32'>",
+      "constructed": true
+    },
+    {
+      "case": "arange_i64",
+      "dtype": "int64",
+      "dtype_char": "q",
+      "dtype_num": 9,
+      "dtype_type": "<class 'numpy.int64'>",
+      "constructed": true
+    }
+  ],
+  "execution_devices_raw": "NPU",
+  "execution_devices_python_type": "str"
+}

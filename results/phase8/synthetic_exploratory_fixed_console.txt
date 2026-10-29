@@ -1,0 +1,218 @@
+CASE N4096_K4_normal_f16_T256_B32_S42: preparing 4 methods
+  PREP N4096_K4_normal_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N4096_K4_normal_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N4096_K4_normal_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N4096_K4_normal_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N4096_K4_normal_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N4096_K4_normal_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N4096_K4_normal_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N4096_K4_normal_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N4096_K4_normal_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+  N4096_K4_normal_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+  N4096_K4_normal_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+  N4096_K4_normal_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+CASE N4096_K4_tied_f16_T256_B32_S42: preparing 4 methods
+  PREP N4096_K4_tied_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N4096_K4_tied_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N4096_K4_tied_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N4096_K4_tied_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N4096_K4_tied_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N4096_K4_tied_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N4096_K4_tied_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N4096_K4_tied_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N4096_K4_tied_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+  N4096_K4_tied_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+  N4096_K4_tied_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+  N4096_K4_tied_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+CASE N4096_K4_clustered_f16_T256_B32_S42: preparing 4 methods
+  PREP N4096_K4_clustered_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N4096_K4_clustered_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N4096_K4_clustered_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N4096_K4_clustered_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N4096_K4_clustered_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N4096_K4_clustered_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N4096_K4_clustered_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N4096_K4_clustered_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N4096_K4_clustered_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+  N4096_K4_clustered_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+  N4096_K4_clustered_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+  N4096_K4_clustered_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+CASE N4096_K4_adversarial_f16_T256_B32_S42: preparing 4 methods
+  PREP N4096_K4_adversarial_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N4096_K4_adversarial_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N4096_K4_adversarial_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N4096_K4_adversarial_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N4096_K4_adversarial_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N4096_K4_adversarial_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N4096_K4_adversarial_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N4096_K4_adversarial_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N4096_K4_adversarial_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+  N4096_K4_adversarial_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+  N4096_K4_adversarial_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+  N4096_K4_adversarial_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+CASE N4096_K10_normal_f16_T256_B32_S42: preparing 4 methods
+  PREP N4096_K10_normal_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N4096_K10_normal_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N4096_K10_normal_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N4096_K10_normal_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N4096_K10_normal_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N4096_K10_normal_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N4096_K10_normal_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N4096_K10_normal_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N4096_K10_normal_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+  N4096_K10_normal_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+  N4096_K10_normal_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+  N4096_K10_normal_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+CASE N4096_K10_tied_f16_T256_B32_S42: preparing 4 methods
+  PREP N4096_K10_tied_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N4096_K10_tied_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N4096_K10_tied_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N4096_K10_tied_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N4096_K10_tied_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N4096_K10_tied_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N4096_K10_tied_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N4096_K10_tied_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N4096_K10_tied_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+  N4096_K10_tied_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+  N4096_K10_tied_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+  N4096_K10_tied_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+CASE N4096_K10_clustered_f16_T256_B32_S42: preparing 4 methods
+  PREP N4096_K10_clustered_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N4096_K10_clustered_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N4096_K10_clustered_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N4096_K10_clustered_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N4096_K10_clustered_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N4096_K10_clustered_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N4096_K10_clustered_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N4096_K10_clustered_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N4096_K10_clustered_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+  N4096_K10_clustered_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+  N4096_K10_clustered_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+  N4096_K10_clustered_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+CASE N4096_K10_adversarial_f16_T256_B32_S42: preparing 4 methods
+  PREP N4096_K10_adversarial_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N4096_K10_adversarial_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N4096_K10_adversarial_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N4096_K10_adversarial_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N4096_K10_adversarial_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N4096_K10_adversarial_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N4096_K10_adversarial_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N4096_K10_adversarial_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N4096_K10_adversarial_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+  N4096_K10_adversarial_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+  N4096_K10_adversarial_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+  N4096_K10_adversarial_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+CASE N16384_K4_normal_f16_T256_B32_S42: preparing 4 methods
+  PREP N16384_K4_normal_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N16384_K4_normal_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N16384_K4_normal_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N16384_K4_normal_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N16384_K4_normal_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N16384_K4_normal_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N16384_K4_normal_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N16384_K4_normal_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N16384_K4_normal_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+  N16384_K4_normal_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+  N16384_K4_normal_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+  N16384_K4_normal_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+CASE N16384_K4_tied_f16_T256_B32_S42: preparing 4 methods
+  PREP N16384_K4_tied_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N16384_K4_tied_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N16384_K4_tied_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N16384_K4_tied_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N16384_K4_tied_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N16384_K4_tied_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N16384_K4_tied_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N16384_K4_tied_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N16384_K4_tied_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+  N16384_K4_tied_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+  N16384_K4_tied_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+  N16384_K4_tied_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+CASE N16384_K4_clustered_f16_T256_B32_S42: preparing 4 methods
+  PREP N16384_K4_clustered_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N16384_K4_clustered_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N16384_K4_clustered_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N16384_K4_clustered_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N16384_K4_clustered_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N16384_K4_clustered_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N16384_K4_clustered_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N16384_K4_clustered_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N16384_K4_clustered_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+  N16384_K4_clustered_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+  N16384_K4_clustered_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+  N16384_K4_clustered_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+CASE N16384_K4_adversarial_f16_T256_B32_S42: preparing 4 methods
+  PREP N16384_K4_adversarial_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N16384_K4_adversarial_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N16384_K4_adversarial_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N16384_K4_adversarial_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N16384_K4_adversarial_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N16384_K4_adversarial_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N16384_K4_adversarial_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N16384_K4_adversarial_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N16384_K4_adversarial_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+  N16384_K4_adversarial_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+  N16384_K4_adversarial_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+  N16384_K4_adversarial_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+CASE N16384_K10_normal_f16_T256_B32_S42: preparing 4 methods
+  PREP N16384_K10_normal_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N16384_K10_normal_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N16384_K10_normal_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N16384_K10_normal_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N16384_K10_normal_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N16384_K10_normal_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N16384_K10_normal_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N16384_K10_normal_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N16384_K10_normal_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+  N16384_K10_normal_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+  N16384_K10_normal_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+  N16384_K10_normal_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+CASE N16384_K10_tied_f16_T256_B32_S42: preparing 4 methods
+  PREP N16384_K10_tied_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N16384_K10_tied_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N16384_K10_tied_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N16384_K10_tied_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N16384_K10_tied_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N16384_K10_tied_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N16384_K10_tied_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N16384_K10_tied_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N16384_K10_tied_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+  N16384_K10_tied_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+  N16384_K10_tied_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+  N16384_K10_tied_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+CASE N16384_K10_clustered_f16_T256_B32_S42: preparing 4 methods
+  PREP N16384_K10_clustered_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N16384_K10_clustered_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N16384_K10_clustered_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N16384_K10_clustered_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N16384_K10_clustered_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N16384_K10_clustered_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N16384_K10_clustered_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N16384_K10_clustered_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N16384_K10_clustered_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+  N16384_K10_clustered_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+  N16384_K10_clustered_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+  N16384_K10_clustered_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+CASE N16384_K10_adversarial_f16_T256_B32_S42: preparing 4 methods
+  PREP N16384_K10_adversarial_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N16384_K10_adversarial_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N16384_K10_adversarial_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N16384_K10_adversarial_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N16384_K10_adversarial_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N16384_K10_adversarial_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N16384_K10_adversarial_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N16384_K10_adversarial_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N16384_K10_adversarial_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+  N16384_K10_adversarial_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+  N16384_K10_adversarial_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+  N16384_K10_adversarial_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+{
+  "session_id": "phase8_exploratory_fixed_20261027",
+  "observations": 384,
+  "skipped": 0,
+  "wrong_results": 0,
+  "completed": true,
+  "valid_for_inference": true,
+  "results_file": "results\\phase8\\synthetic_exploratory_fixed\\observations_phase8_exploratory_fixed_20261027.jsonl",
+  "skips_file": "results\\phase8\\synthetic_exploratory_fixed\\skips_phase8_exploratory_fixed_20261027.jsonl"
+}

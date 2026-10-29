@@ -1,0 +1,60 @@
+{
+  "timestamp_utc": "2026-10-27T11:58:15.426522+00:00",
+  "status": "exploratory; one process, no inferential statistics",
+  "source": "results\\phase5\\sift1m\\q0000_n1000000_neg_l2_f16.npy",
+  "input_sha256": "880030a910a4da705dd99771342704af9279fb0357554f4a489192b9429f3db2",
+  "n": 1000000,
+  "k": 10,
+  "width": 128,
+  "batch": 8,
+  "input_residency": "host FP16 scores",
+  "output_residency": "host stable Top-K indices",
+  "compilation_and_warmup_excluded": true,
+  "samples_within_one_process_are_not_independent_sessions": true,
+  "methods": {
+    "static_npu_rank_certified": {
+      "samples": [
+        {
+          "elapsed_ms": 60.298,
+          "correct": true,
+          "device_submissions": 1,
+          "sync_boundaries": 1,
+          "input_preparation_ms": 0.4858,
+          "infer_sync_ms": 54.1455,
+          "output_copy_ms": 0.0413,
+          "certificate_ms": 4.978,
+          "staged_input_bytes": 2000128,
+          "retrieved_output_bytes": 60
+        },
+        {
+          "elapsed_ms": 45.6937,
+          "correct": true,
+          "device_submissions": 1,
+          "sync_boundaries": 1,
+          "input_preparation_ms": 0.4939,
+          "infer_sync_ms": 39.3241,
+          "output_copy_ms": 0.026,
+          "certificate_ms": 5.0034,
+          "staged_input_bytes": 2000128,
+          "retrieved_output_bytes": 60
+        },
+        {
+          "elapsed_ms": 39.0344,
+          "correct": true,
+          "device_submissions": 1,
+          "sync_boundaries": 1,
+          "input_preparation_ms": 0.4915,
+          "infer_sync_ms": 33.9878,
+          "output_copy_ms": 0.0456,
+          "certificate_ms": 3.8399,
+          "staged_input_bytes": 2000128,
+          "retrieved_output_bytes": 60
+        }
+      ],
+      "execution_devices": [
+        "NPU"
+      ],
+      "compile_ms": 98.245
+    }
+  }
+}

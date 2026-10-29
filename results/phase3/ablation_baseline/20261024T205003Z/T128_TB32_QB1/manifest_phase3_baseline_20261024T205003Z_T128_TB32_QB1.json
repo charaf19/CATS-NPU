@@ -1,0 +1,41 @@
+{
+  "session_id": "phase3_baseline_20261024T205003Z_T128_TB32_QB1",
+  "timestamp_utc": "2026-10-24T20:53:37.897300+00:00",
+  "host": "DESKTOP-33Q7GQP",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "git_commit": "49c5a378315fe9d6c4fbcfe8a24fe94612801bb6",
+  "methods": [
+    "ov_npu_native_batched_hier",
+    "ov_npu_native_batched_adaptive"
+  ],
+  "ns": [
+    4096,
+    16384
+  ],
+  "ks": [
+    4,
+    10
+  ],
+  "distributions": [
+    "normal",
+    "tied",
+    "clustered",
+    "adversarial"
+  ],
+  "dtype": "f16",
+  "seed": 42,
+  "tile": 128,
+  "batch": 32,
+  "initial_budget": 1,
+  "warmup": 1,
+  "repeats": 3,
+  "compiler_type": "PLUGIN",
+  "blocks": 1,
+  "input_path": null,
+  "scope": "Top-K operator (scores provided)",
+  "measurement": "host input to host indices; compilation and warmup excluded",
+  "individual_blocks_independent_sessions": false,
+  "openvino": "2026.4.1-22982-e213a147257-releases/2026/4"
+}

@@ -1,0 +1,10 @@
+{
+  "session_id": "direct_n1m_feasibility",
+  "observations": 2,
+  "skipped": 0,
+  "wrong_results": 0,
+  "completed": true,
+  "valid_for_inference": true,
+  "results_file": "results\\phase6\\direct_feasibility\\observations_direct_n1m_feasibility.jsonl",
+  "skips_file": "results\\phase6\\direct_feasibility\\skips_direct_n1m_feasibility.jsonl"
+}

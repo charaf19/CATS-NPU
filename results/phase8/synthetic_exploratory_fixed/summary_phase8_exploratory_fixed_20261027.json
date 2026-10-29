@@ -1,0 +1,10 @@
+{
+  "session_id": "phase8_exploratory_fixed_20261027",
+  "observations": 384,
+  "skipped": 0,
+  "wrong_results": 0,
+  "completed": true,
+  "valid_for_inference": true,
+  "results_file": "results\\phase8\\synthetic_exploratory_fixed\\observations_phase8_exploratory_fixed_20261027.jsonl",
+  "skips_file": "results\\phase8\\synthetic_exploratory_fixed\\skips_phase8_exploratory_fixed_20261027.jsonl"
+}

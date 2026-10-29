@@ -1,0 +1,60 @@
+{
+  "purpose": "stable integer TopK two-level ablation",
+  "input": "results\\phase9_novelty\\all_finite_fp16.npy",
+  "n": 63488,
+  "k": 10,
+  "width": 256,
+  "key_dtype": "i32",
+  "correct": true,
+  "samples": [
+    {
+      "encoding_ms": 0.4234,
+      "infer_and_staging_ms": 13.0734,
+      "verification_ms": 0.3657,
+      "end_to_end_ms": 13.8625,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.1835,
+      "infer_and_staging_ms": 9.7021,
+      "verification_ms": 0.338,
+      "end_to_end_ms": 10.2236,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.1645,
+      "infer_and_staging_ms": 9.6568,
+      "verification_ms": 0.3424,
+      "end_to_end_ms": 10.1637,
+      "correct": true
+    }
+  ],
+  "cpu_correct": true,
+  "execution_devices": [
+    "NPU"
+  ],
+  "selected_ids": [
+    31743,
+    31742,
+    31741,
+    31740,
+    31739,
+    31738,
+    31737,
+    31736,
+    31735,
+    31734
+  ],
+  "expected_ids": [
+    31743,
+    31742,
+    31741,
+    31740,
+    31739,
+    31738,
+    31737,
+    31736,
+    31735,
+    31734
+  ]
+}

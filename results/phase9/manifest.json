@@ -1,0 +1,37 @@
+{
+  "purpose": "Phase 9 exploratory static-graph physical NPU feasibility; not confirmatory",
+  "source_commit": "0d86a8c59ec679b18146b1d6894b225e70e90760",
+  "source_sha256": {
+    "src/cats_npu/static_graph.py": "bbc4b9f2799239036322882077f0f757db2ad53762788c0e724592a969fdad19",
+    "scripts/benchmark_static_feasibility.py": "2187a383a73aec42c8d291e921617fc0d906c52e0aec0f923992ab6ed06e9714",
+    "scripts/check_static_graph_edges.py": "863e4bf7ed4aa0dd7e279772467535ac65332edc9d6122eba7e810192e4709e7",
+    "scripts/probe_static_npu_graph.py": "3d057bd921b91b083ee4193079bf3416ecdc15648722ae0a32d26d5d1a94afd3",
+    "tests/test_static_graph.py": "58f0af6b42146c9a569c348ef2ce626e49cb29523c0b98e68bd4b79356d4e36e",
+    "docs/STATIC_NPU_EXECUTION_FEASIBILITY.md": "8ee8ff59d3db5df81baa421a0efa4760be937629bf2e3770b6366174bd2a8b4d"
+  },
+  "raw_sha256": {
+    "bench_fiqa_dev_q0000_k10.json": "cf1bfbc8e937bf32b4e4f314be292293fe2b00b50c4dd5d5aa0e3a19706c3dab",
+    "bench_near_ties_n16385_k100.json": "73d905740edf37f631a976947a31aef7c1ab875d79730865daa0a25f938ff317",
+    "bench_scifact_dev_q0000_k10.json": "2f20fbc2746c77bf910703f41d03eb736169e496fb1d41d49e5f815b0a0efb09",
+    "bench_sift_dev_q0000_n1000000_k1.json": "e5ec647497228eee9742486937e491bde602ef659870dfe443eab742371e46c0",
+    "bench_sift_dev_q0000_n1000000_k10.json": "7b87ec525742038fb23f8ad7548dbc2572501e274c0b1d9ea3ac78bb14ef3b54",
+    "bench_sift_dev_q0000_n1000000_k100.json": "60d0b9130d0710294928c26e98c5ccb4be93f629aba372b1a6cc2195c1f0aeb4",
+    "bench_sift_dev_q0000_n1000000_k10_w128.json": "42c29c7df7d261ecede4dbf31d7d4b5808f204265b4c68995845a300ea53635f",
+    "bench_sift_dev_q0000_n1000000_k10_w512.json": "6e5ce5b143207b7a1acf3ab456cae5dee68bcc74ccec06d1c4e2a6452ba57931",
+    "bench_sift_dev_q0000_n16384_k10.json": "845d70dcab5e28712ed849ba6c33993fbb04a9c053299f73e451e92d23fe11ac",
+    "bench_tied_n16385_k10.json": "5b63c16b601ffc6e50f387a0553bd022f17fb3bd77ac65373148928fa8903c49",
+    "probe_n1000000_console.txt": "4dee3001d02da0d2f1a6dcfc5796f1c92bac054d63faa9b4f3f0295bba5560e3",
+    "probe_n1000000_k10_w256_normal.json": "4dee3001d02da0d2f1a6dcfc5796f1c92bac054d63faa9b4f3f0295bba5560e3",
+    "probe_n131072_k10_w256_normal.json": "64ca67564d4816bf04e6fd0729010227152663cae46db57b1c7a004baf60e09d",
+    "probe_n16384_k10_w256_normal.json": "8aec0899e8ba9e08605fdec2960d5eba6f6a934770c80352ce2737d5efb25691",
+    "probe_n4096_k10_w256_normal.json": "43892443eec0afa12e1f4eaf32a46facb86f129aa1d336db4a9f5a47e2e1d9ed",
+    "probe_n4096_k10_w256_normal_v2.json": "f4abbe8e4731ea6aef750c9d0ea22a1506fb3fd82581f1090a628be3ff6e1161",
+    "static_graph_edge_cases.json": "3d158269efcd8a29797643b513751f72412340724b73f3cd6f2034c1dc5a3c24"
+  },
+  "environment_sha256": "05696c95604380ec0848462ff075b88d8fee59c8114a9ead683136efb28e33f7",
+  "dataset_manifest_sha256": {
+    "results/phase5/sift1m/dataset_manifest.json": "fb458f0b39268353dc37de88caeb06a97bc3c4040359a99786e4ece369498d80",
+    "results/phase5/beir/scifact/dataset_manifest.json": "025496922077e69acd03268544af41fd7875b032d728f1f0aeae46097b6b20f7",
+    "results/phase5/beir/fiqa/dataset_manifest.json": "5e440a4c2cfc6e3302958ded3c6c7efba8d7dee5dc9b8a73946fbba4d63e60e6"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "purpose": "bounded NPU split-key threshold and stable tie resolution graph",
+  "n": 16,
+  "k": 4,
+  "expected": [
+    0,
+    2,
+    7,
+    3
+  ],
+  "ranks": [
+    9,
+    1,
+    9,
+    8,
+    8,
+    8,
+    8,
+    9,
+    0,
+    2,
+    8,
+    3,
+    8,
+    7,
+    8,
+    8
+  ],
+  "execution_devices": [
+    "NPU"
+  ],
+  "threshold": [
+    8
+  ],
+  "ids": [
+    0,
+    2,
+    7,
+    3
+  ],
+  "exact": true
+}

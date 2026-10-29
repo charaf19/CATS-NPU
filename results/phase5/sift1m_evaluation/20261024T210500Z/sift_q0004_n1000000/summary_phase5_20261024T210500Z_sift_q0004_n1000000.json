@@ -1,0 +1,10 @@
+{
+  "session_id": "phase5_20261024T210500Z_sift_q0004_n1000000",
+  "observations": 120,
+  "skipped": 0,
+  "wrong_results": 0,
+  "completed": true,
+  "valid_for_inference": true,
+  "results_file": "results\\phase5\\sift1m_evaluation\\20261024T210500Z\\sift_q0004_n1000000\\observations_phase5_20261024T210500Z_sift_q0004_n1000000.jsonl",
+  "skips_file": "results\\phase5\\sift1m_evaluation\\20261024T210500Z\\sift_q0004_n1000000\\skips_phase5_20261024T210500Z_sift_q0004_n1000000.jsonl"
+}

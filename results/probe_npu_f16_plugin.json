@@ -1,0 +1,126 @@
+{
+  "timestamp_utc": "2026-10-23T13:24:45.974110+00:00",
+  "device_requested": "NPU",
+  "available_devices": [
+    "CPU",
+    "GPU.0",
+    "GPU.1",
+    "NPU"
+  ],
+  "openvino": "2026.4.1-22982-e213a147257-releases/2026/4",
+  "dtype": "f16",
+  "compiler_type_requested": "PLUGIN",
+  "operations": {
+    "TopK": {
+      "compiled": true,
+      "inferred": true,
+      "correct": true,
+      "execution_devices": [
+        "NPU"
+      ],
+      "compile_ms": 66.9835,
+      "inference_ms": 4.0381,
+      "compiler_type_used": "CompilerType.PLUGIN",
+      "indices": [
+        15,
+        14,
+        13,
+        12
+      ]
+    },
+    "ReduceMax": {
+      "compiled": true,
+      "inferred": true,
+      "correct": true,
+      "execution_devices": [
+        "NPU"
+      ],
+      "compile_ms": 40.8497,
+      "inference_ms": 2.3516,
+      "compiler_type_used": "CompilerType.PLUGIN",
+      "output_shape": [
+        1,
+        1
+      ]
+    },
+    "GreaterSelect": {
+      "compiled": true,
+      "inferred": true,
+      "correct": true,
+      "execution_devices": [
+        "NPU"
+      ],
+      "compile_ms": 47.8488,
+      "inference_ms": 2.7149,
+      "compiler_type_used": "CompilerType.PLUGIN",
+      "output_shape": [
+        1,
+        16
+      ]
+    },
+    "ReduceSum": {
+      "compiled": true,
+      "inferred": true,
+      "correct": true,
+      "execution_devices": [
+        "NPU"
+      ],
+      "compile_ms": 42.6319,
+      "inference_ms": 2.6554,
+      "compiler_type_used": "CompilerType.PLUGIN",
+      "output_shape": [
+        1,
+        1
+      ]
+    },
+    "Gather": {
+      "compiled": true,
+      "inferred": true,
+      "correct": true,
+      "execution_devices": [
+        "NPU"
+      ],
+      "compile_ms": 43.0981,
+      "inference_ms": 2.3806,
+      "compiler_type_used": "CompilerType.PLUGIN",
+      "output_shape": [
+        1,
+        3
+      ]
+    },
+    "Concat": {
+      "compiled": true,
+      "inferred": true,
+      "correct": true,
+      "execution_devices": [
+        "NPU"
+      ],
+      "compile_ms": 37.4129,
+      "inference_ms": 2.8436,
+      "compiler_type_used": "CompilerType.PLUGIN",
+      "output_shape": [
+        1,
+        32
+      ]
+    },
+    "Bitonic": {
+      "compiled": true,
+      "inferred": true,
+      "correct": true,
+      "execution_devices": [
+        "NPU"
+      ],
+      "compile_ms": 265.9564,
+      "inference_ms": 4.3561,
+      "compiler_type_used": "CompilerType.PLUGIN",
+      "indices": [
+        15,
+        14,
+        13,
+        12
+      ]
+    }
+  },
+  "all_passed": true,
+  "warning": "Every row includes actual inference and a deterministic smoke-input check. Passing this probe is not adversarial numerical-exactness proof."
+}

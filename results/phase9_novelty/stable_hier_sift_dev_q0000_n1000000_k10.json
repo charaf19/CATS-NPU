@@ -1,0 +1,73 @@
+{
+  "purpose": "stable integer TopK two-level ablation",
+  "input": "results\\phase5\\sift1m\\q0000_n1000000_neg_l2_f16.npy",
+  "n": 1000000,
+  "k": 10,
+  "width": 256,
+  "correct": true,
+  "samples": [
+    {
+      "encoding_ms": 5.766,
+      "infer_and_staging_ms": 47.0631,
+      "verification_ms": 2.9513,
+      "end_to_end_ms": 55.7804,
+      "correct": true
+    },
+    {
+      "encoding_ms": 6.5237,
+      "infer_and_staging_ms": 40.4692,
+      "verification_ms": 2.8982,
+      "end_to_end_ms": 49.8911,
+      "correct": true
+    },
+    {
+      "encoding_ms": 6.0383,
+      "infer_and_staging_ms": 30.3933,
+      "verification_ms": 4.5375,
+      "end_to_end_ms": 40.9691,
+      "correct": true
+    },
+    {
+      "encoding_ms": 5.9754,
+      "infer_and_staging_ms": 25.9238,
+      "verification_ms": 3.3675,
+      "end_to_end_ms": 35.2667,
+      "correct": true
+    },
+    {
+      "encoding_ms": 5.876,
+      "infer_and_staging_ms": 22.5176,
+      "verification_ms": 4.8199,
+      "end_to_end_ms": 33.2135,
+      "correct": true
+    }
+  ],
+  "cpu_correct": true,
+  "execution_devices": [
+    "NPU"
+  ],
+  "selected_ids": [
+    932085,
+    934876,
+    561813,
+    708177,
+    706771,
+    695756,
+    435345,
+    701258,
+    455537,
+    872728
+  ],
+  "expected_ids": [
+    932085,
+    934876,
+    561813,
+    708177,
+    706771,
+    695756,
+    435345,
+    701258,
+    455537,
+    872728
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "purpose": "stable integer TopK two-level ablation",
+  "input": "results\\phase5\\sift1m\\q0000_n1000000_neg_l2_f16.npy",
+  "n": 1000000,
+  "k": 10,
+  "width": 256,
+  "key_dtype": "i16",
+  "correct": false,
+  "samples": [],
+  "cpu_correct": true,
+  "execution_devices": [
+    "NPU"
+  ],
+  "error": "RuntimeError: NPU output values or IDs disagree with input"
+}

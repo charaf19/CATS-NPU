@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="598" height="812" viewBox="0 0 598 812">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#111827}.small{font-size:12px}.label{font-size:13px}.title{font-size:18px;font-weight:600}</style>
+<text class="title" x="20" y="28">Fixed Hierarchical</text>
+<text class="small" x="20" y="48">Geometric mean slowdown vs the fastest valid configuration in each workload (lower is better)</text>
+<text class="label" text-anchor="middle" x="166.0" y="64">tile batch 1</text>
+<text class="label" text-anchor="middle" x="278.0" y="64">tile batch 8</text>
+<text class="label" text-anchor="middle" x="390.0" y="64">tile batch 32</text>
+<text class="label" text-anchor="middle" x="502.0" y="64">tile batch 64</text>
+<text class="label" text-anchor="end" x="100" y="107">width 16</text>
+<rect x="112" y="78" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="166.0" y="107">94.74x</text>
+<rect x="224" y="78" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="278.0" y="107">21.35x</text>
+<rect x="336" y="78" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="390.0" y="107">9.22x</text>
+<rect x="448" y="78" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="502.0" y="107">7.20x</text>
+<text class="label" text-anchor="end" x="100" y="161">width 32</text>
+<rect x="112" y="132" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="166.0" y="161">54.30x</text>
+<rect x="224" y="132" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="278.0" y="161">10.37x</text>
+<rect x="336" y="132" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="390.0" y="161">5.10x</text>
+<rect x="448" y="132" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="502.0" y="161">3.72x</text>
+<text class="label" text-anchor="end" x="100" y="215">width 64</text>
+<rect x="112" y="186" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="166.0" y="215">27.24x</text>
+<rect x="224" y="186" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="278.0" y="215">6.16x</text>
+<rect x="336" y="186" width="108" height="50" rx="5" fill="#d76978"/>
+<text class="label" text-anchor="middle" x="390.0" y="215">2.69x</text>
+<rect x="448" y="186" width="108" height="50" rx="5" fill="#ab8478"/>
+<text class="label" text-anchor="middle" x="502.0" y="215">2.15x</text>
+<text class="label" text-anchor="end" x="100" y="269">width 128</text>
+<rect x="112" y="240" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="166.0" y="269">15.86x</text>
+<rect x="224" y="240" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="278.0" y="269">3.24x</text>
+<rect x="336" y="240" width="108" height="50" rx="5" fill="#7ea178"/>
+<text class="label" text-anchor="middle" x="390.0" y="269">1.58x</text>
+<rect x="448" y="240" width="108" height="50" rx="5" fill="#79a478"/>
+<text class="label" text-anchor="middle" x="502.0" y="269">1.52x</text>
+<text class="label" text-anchor="end" x="100" y="323">width 256</text>
+<rect x="112" y="294" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="166.0" y="323">8.40x</text>
+<rect x="224" y="294" width="108" height="50" rx="5" fill="#909578"/>
+<text class="label" text-anchor="middle" x="278.0" y="323">1.80x</text>
+<rect x="336" y="294" width="108" height="50" rx="5" fill="#57b978"/>
+<text class="label" text-anchor="middle" x="390.0" y="323">1.10x</text>
+<rect x="448" y="294" width="108" height="50" rx="5" fill="#5fb478"/>
+<text class="label" text-anchor="middle" x="502.0" y="323">1.20x</text>
+<text class="title" x="20" y="434">Geometric Adaptive</text>
+<text class="small" x="20" y="454">Geometric mean slowdown vs the fastest valid configuration in each workload (lower is better)</text>
+<text class="label" text-anchor="middle" x="166.0" y="470">tile batch 1</text>
+<text class="label" text-anchor="middle" x="278.0" y="470">tile batch 8</text>
+<text class="label" text-anchor="middle" x="390.0" y="470">tile batch 32</text>
+<text class="label" text-anchor="middle" x="502.0" y="470">tile batch 64</text>
+<text class="label" text-anchor="end" x="100" y="513">width 16</text>
+<rect x="112" y="484" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="166.0" y="513">61.12x</text>
+<rect x="224" y="484" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="278.0" y="513">13.11x</text>
+<rect x="336" y="484" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="390.0" y="513">5.36x</text>
+<rect x="448" y="484" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="502.0" y="513">3.91x</text>
+<text class="label" text-anchor="end" x="100" y="567">width 32</text>
+<rect x="112" y="538" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="166.0" y="567">33.96x</text>
+<rect x="224" y="538" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="278.0" y="567">6.74x</text>
+<rect x="336" y="538" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="390.0" y="567">3.10x</text>
+<rect x="448" y="538" width="108" height="50" rx="5" fill="#a88678"/>
+<text class="label" text-anchor="middle" x="502.0" y="567">2.11x</text>
+<text class="label" text-anchor="end" x="100" y="621">width 64</text>
+<rect x="112" y="592" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="166.0" y="621">17.13x</text>
+<rect x="224" y="592" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="278.0" y="621">4.04x</text>
+<rect x="336" y="592" width="108" height="50" rx="5" fill="#8b9878"/>
+<text class="label" text-anchor="middle" x="390.0" y="621">1.74x</text>
+<rect x="448" y="592" width="108" height="50" rx="5" fill="#6cac78"/>
+<text class="label" text-anchor="middle" x="502.0" y="621">1.36x</text>
+<text class="label" text-anchor="end" x="100" y="675">width 128</text>
+<rect x="112" y="646" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="166.0" y="675">10.48x</text>
+<rect x="224" y="646" width="108" height="50" rx="5" fill="#bc7a78"/>
+<text class="label" text-anchor="middle" x="278.0" y="675">2.35x</text>
+<rect x="336" y="646" width="108" height="50" rx="5" fill="#69ae78"/>
+<text class="label" text-anchor="middle" x="390.0" y="675">1.32x</text>
+<rect x="448" y="646" width="108" height="50" rx="5" fill="#69ae78"/>
+<text class="label" text-anchor="middle" x="502.0" y="675">1.32x</text>
+<text class="label" text-anchor="end" x="100" y="729">width 256</text>
+<rect x="112" y="700" width="108" height="50" rx="5" fill="#f05a78"/>
+<text class="label" text-anchor="middle" x="166.0" y="729">6.34x</text>
+<rect x="224" y="700" width="108" height="50" rx="5" fill="#7ea078"/>
+<text class="label" text-anchor="middle" x="278.0" y="729">1.59x</text>
+<rect x="336" y="700" width="108" height="50" rx="5" fill="#61b378"/>
+<text class="label" text-anchor="middle" x="390.0" y="729">1.21x</text>
+<rect x="448" y="700" width="108" height="50" rx="5" fill="#6eab78"/>
+<text class="label" text-anchor="middle" x="502.0" y="729">1.38x</text>
+</svg>

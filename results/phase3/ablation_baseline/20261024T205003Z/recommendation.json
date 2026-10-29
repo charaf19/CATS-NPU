@@ -1,0 +1,25 @@
+{
+  "generated_utc": "2026-10-24T20:54:27.365944+00:00",
+  "basis": "lowest geometric mean per-workload slowdown among fully valid development configurations",
+  "confirmatory_status": "tuned on development sweep; must be frozen before held-out sessions",
+  "query_batch": 1,
+  "query_batch_supported": false,
+  "by_algorithm": {
+    "fixed_hierarchical": {
+      "config_id": "T256_TB32_QB1",
+      "tile_width": 256,
+      "tile_batch": 32,
+      "query_batch": 1,
+      "geomean_case_slowdown": 1.0952956986071267,
+      "median_case_latency_ms": 2.3424500000000004
+    },
+    "geometric_adaptive": {
+      "config_id": "T256_TB32_QB1",
+      "tile_width": 256,
+      "tile_batch": 32,
+      "query_batch": 1,
+      "geomean_case_slowdown": 1.2130417718737418,
+      "median_case_latency_ms": 3.77745
+    }
+  }
+}

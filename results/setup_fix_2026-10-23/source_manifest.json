@@ -1,0 +1,49 @@
+{
+  "git_commit": null,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "1611eee8770503807e3dd3791fa7ac6d6a0de39ec2526ec96a5d45649b35485a"
+    },
+    {
+      "path": "docs/AUDIT_2026-10-23.md",
+      "sha256": "7625cc2ed5c3dc9bf4e48a1c309e5544d1b196f4cc3bba5e856744c1ce80e6db"
+    },
+    {
+      "path": "docs/MATHEMATICAL_SPECIFICATION.md",
+      "sha256": "5b8f479a49ee47cbbb51a43cfb4256cedbe36444ceab47517dbf875f58cdd7c0"
+    },
+    {
+      "path": "docs/METHODOLOGY.md",
+      "sha256": "2ad9b99494622288f38faa53c25216768f6de8658e3caa10e5f89ac793e3416f"
+    },
+    {
+      "path": "docs/NOTES_AND_LIMITATIONS.md",
+      "sha256": "48208700525727582a43c49e4697f1ca3710003a3324805449c20f4382d2bb83"
+    },
+    {
+      "path": "docs/RESEARCH_CHARTER.md",
+      "sha256": "d87c0606080232a5e09f44a376be231e10895157bb45b578b2b4757eaadfeb88"
+    },
+    {
+      "path": "docs/RESEARCH_GATES.md",
+      "sha256": "f3fcfc6f75f584c42c5908492120aaf51b054939cb299b184627512374ffd63e"
+    },
+    {
+      "path": "docs/SETUP_FIX_2026-10-23.md",
+      "sha256": "ba5d2573bba77a05cdee42a55044db04d6b11f1e020d26b3b2ef5f4ab760d821"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "sha256": "27b0ffd4287f943e6badd69b470c1444b4f16d1287f49dfe2b4a9a0a8c73fb51"
+    },
+    {
+      "path": "src/cats_npu/backends.py",
+      "sha256": "1c3818992b4fa3a680e0eb0702cc8ebe94d57a9754dd79273392bc13e8c27bfe"
+    },
+    {
+      "path": "tests/test_openvino_optional.py",
+      "sha256": "593b89a1f50b326a1041bab11ed272d0bd29e37ede849c3e964acd128df4e551"
+    }
+  ]
+}

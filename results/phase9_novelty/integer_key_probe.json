@@ -1,0 +1,45 @@
+{
+  "purpose": "bounded integer-key NPU TopK feasibility on known FP16-subnormal counterexample",
+  "n": 512,
+  "k": 4,
+  "expected": [
+    63,
+    62,
+    61,
+    60
+  ],
+  "key_range": [
+    8929791,
+    16826335
+  ],
+  "variants": {
+    "int32": {
+      "compile_ms": 106.8107,
+      "execution_devices": [
+        "NPU"
+      ],
+      "infer_ms": 4.1774,
+      "indices": [
+        63,
+        62,
+        61,
+        60
+      ],
+      "exact": true
+    },
+    "int64": {
+      "compile_ms": 47.8943,
+      "execution_devices": [
+        "NPU"
+      ],
+      "infer_ms": 2.7615,
+      "indices": [
+        63,
+        62,
+        61,
+        60
+      ],
+      "exact": true
+    }
+  }
+}

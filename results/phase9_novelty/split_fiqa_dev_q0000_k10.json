@@ -1,0 +1,90 @@
+{
+  "timestamp_utc": "2026-10-27T12:24:06.646408+00:00",
+  "status": "exploratory physical NPU split-key graph probe",
+  "input": "results\\phase5\\beir\\fiqa\\q0000_8_n57638_cosine_f16.npy",
+  "input_sha256": "6150aebcb11bb7b3a1b3aee0631ef0e7d83b3101f55efb842f534c3489f587dc",
+  "n": 57638,
+  "k": 10,
+  "width": 256,
+  "correct": true,
+  "samples": [
+    {
+      "encoding_ms": 0.5064,
+      "staging_ms": 0.0218,
+      "infer_sync_ms": 7.113,
+      "copy_ms": 0.1241,
+      "verification_ms": 1.4669,
+      "end_to_end_ms": 9.2322,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.2265,
+      "staging_ms": 0.0176,
+      "infer_sync_ms": 4.3711,
+      "copy_ms": 0.0174,
+      "verification_ms": 0.5193,
+      "end_to_end_ms": 5.1519,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.1621,
+      "staging_ms": 0.0481,
+      "infer_sync_ms": 4.0489,
+      "copy_ms": 0.0522,
+      "verification_ms": 0.4778,
+      "end_to_end_ms": 4.7891,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.1147,
+      "staging_ms": 0.0097,
+      "infer_sync_ms": 4.3924,
+      "copy_ms": 0.0315,
+      "verification_ms": 0.6421,
+      "end_to_end_ms": 5.1904,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.1422,
+      "staging_ms": 0.0106,
+      "infer_sync_ms": 5.5657,
+      "copy_ms": 0.0103,
+      "verification_ms": 0.4654,
+      "end_to_end_ms": 6.1942,
+      "correct": true
+    }
+  ],
+  "independent_sessions": false,
+  "cpu_graph_correct": true,
+  "compile_ms": 115.2374,
+  "execution_devices": [
+    "NPU"
+  ],
+  "submissions_per_query": 1,
+  "staged_input_bytes": 231424,
+  "retrieved_output_bytes": 80,
+  "selected_ids": [
+    6307,
+    48971,
+    25310,
+    56704,
+    18222,
+    29901,
+    47099,
+    54227,
+    25529,
+    39709
+  ],
+  "expected_ids": [
+    6307,
+    48971,
+    25310,
+    56704,
+    18222,
+    29901,
+    47099,
+    54227,
+    25529,
+    39709
+  ]
+}

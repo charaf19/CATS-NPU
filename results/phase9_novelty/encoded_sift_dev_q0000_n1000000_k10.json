@@ -1,0 +1,94 @@
+{
+  "timestamp_utc": "2026-10-27T12:20:48.730085+00:00",
+  "status": "exploratory physical NPU order-encoding probe",
+  "input": "results\\phase5\\sift1m\\q0000_n1000000_neg_l2_f16.npy",
+  "n": 1000000,
+  "k": 10,
+  "width": 256,
+  "input_sha256": "880030a910a4da705dd99771342704af9279fb0357554f4a489192b9429f3db2",
+  "correct": true,
+  "samples": [
+    {
+      "encoding_ms": 22.6013,
+      "staging_ms": 0.1281,
+      "infer_sync_ms": 46.719,
+      "copy_ms": 0.0282,
+      "verification_ms": 3.3611,
+      "end_to_end_ms": 72.8377,
+      "correct": true
+    },
+    {
+      "encoding_ms": 22.9239,
+      "staging_ms": 0.1468,
+      "infer_sync_ms": 41.214,
+      "copy_ms": 0.063,
+      "verification_ms": 5.8006,
+      "end_to_end_ms": 70.1483,
+      "correct": true
+    },
+    {
+      "encoding_ms": 23.1284,
+      "staging_ms": 0.2084,
+      "infer_sync_ms": 35.1955,
+      "copy_ms": 0.0284,
+      "verification_ms": 3.2025,
+      "end_to_end_ms": 61.7632,
+      "correct": true
+    },
+    {
+      "encoding_ms": 24.0057,
+      "staging_ms": 0.1445,
+      "infer_sync_ms": 30.9791,
+      "copy_ms": 0.042,
+      "verification_ms": 4.7898,
+      "end_to_end_ms": 59.9611,
+      "correct": true
+    },
+    {
+      "encoding_ms": 27.4839,
+      "staging_ms": 0.1361,
+      "infer_sync_ms": 27.6547,
+      "copy_ms": 0.0246,
+      "verification_ms": 2.8692,
+      "end_to_end_ms": 58.1685,
+      "correct": true
+    }
+  ],
+  "host_input_to_host_indices": true,
+  "independent_sessions": false,
+  "ordered_fp16_span": 3208,
+  "max_unsigned_key": 3208003206,
+  "int32_capacity_span": 4294,
+  "initial_encoding_ms": 23.8624,
+  "compile_ms": 96.4359,
+  "execution_devices": [
+    "NPU"
+  ],
+  "selected_ids": [
+    932085,
+    934876,
+    561813,
+    708177,
+    706771,
+    695756,
+    435345,
+    701258,
+    455537,
+    872728
+  ],
+  "expected_ids": [
+    932085,
+    934876,
+    561813,
+    708177,
+    706771,
+    695756,
+    435345,
+    701258,
+    455537,
+    872728
+  ],
+  "submissions_per_query": 1,
+  "staged_input_bytes": 4000768,
+  "retrieved_output_bytes": 80
+}

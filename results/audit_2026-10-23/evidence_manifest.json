@@ -1,0 +1,1254 @@
+{
+  "files": [
+    {
+      "path": "audit_verification.json",
+      "bytes": 1521,
+      "sha256": "7ecce290632a6cb68728a88acf2929ae331774e0b2c0875c6ddf5d58426e76f7"
+    },
+    {
+      "path": "doctor.json",
+      "bytes": 1142,
+      "sha256": "c238d42d8ffcacdc4ce7cb5a82292edc4258b6a86c811340722ec3ddb93bd430"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N33_K33_adversarial.npz",
+      "bytes": 844,
+      "sha256": "e82eed37120d976a15799fe08ca9f9dfe87c4778390d35f0185b649fcffbf51a"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N33_K33_all_equal.npz",
+      "bytes": 844,
+      "sha256": "e2629e08d01c18dfe9e7b3444c96d3d105b4f8ded429e0a9c45d64d227188b61"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N33_K33_clustered.npz",
+      "bytes": 844,
+      "sha256": "b07bc3c4574a741209560636abe5e2ed0fd3624445473d0849ff03f21f712115"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N33_K33_extreme.npz",
+      "bytes": 844,
+      "sha256": "865296b7a00ea0087d6d683e0619fc2f729717b7aeeb63e8ac20b4885f699db5"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N33_K33_near_ties.npz",
+      "bytes": 844,
+      "sha256": "d62751836c30ee2b6eda6e8df2ffa1a97a60290dc9b78b657c20db3b7a7d99a5"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N33_K33_normal.npz",
+      "bytes": 844,
+      "sha256": "bb22a6333c7f308975c0650e9ab2c4937fe8af52f7af373e4998129e53bbaadb"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N33_K33_signed_zero.npz",
+      "bytes": 844,
+      "sha256": "568f1f62d8400834f97baa270644edb5b6d7f915244d1ede89d8e9bff0285e64"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N33_K33_subnormal.npz",
+      "bytes": 844,
+      "sha256": "05deeb337798af340b5ed36a5093cc62b05b348c92fb53ed9cef7af986785c8e"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N33_K33_tied.npz",
+      "bytes": 844,
+      "sha256": "d02bef934e5b72c79ebc52ac43a9771e8c2dee780ff8923ee2059af1054c945c"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N33_K33_uniform.npz",
+      "bytes": 844,
+      "sha256": "87c00a83ff5ef20fe9df42c7d2974c7004d96150a626cccec6a04ec6173b9809"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N65_K10_adversarial.npz",
+      "bytes": 724,
+      "sha256": "7578ba3e91576a469e28e15d6b10a150eb73d352a5051d966f21835864917820"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N65_K10_all_equal.npz",
+      "bytes": 724,
+      "sha256": "df99d9b3c3a2b36dbd8960af9bbc131a7910dfb073f449e229168d9baf4bd94f"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N65_K10_clustered.npz",
+      "bytes": 724,
+      "sha256": "ef5833e0aa3dec88d36743158d8086881c684bbd143f1539ada451f4c1661b5e"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N65_K10_extreme.npz",
+      "bytes": 724,
+      "sha256": "9189e0c54367ad6419a5ec66afa35a43c9bcb68d1c65c3b7a3bae667e56b64df"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N65_K10_near_ties.npz",
+      "bytes": 724,
+      "sha256": "8140222a88762542618afb89bdda9801b5d8735694ba23f966877a533c24a1c0"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N65_K10_normal.npz",
+      "bytes": 724,
+      "sha256": "bd9bcec2838f7666412c8b6b65ccf667c2d2bb07d647075a0bf771c72faa6d84"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N65_K10_signed_zero.npz",
+      "bytes": 724,
+      "sha256": "761daf10a4837fda6b6bd620c5d9284da5848c7fa73ac4e08e85c5e1fc85483f"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N65_K10_subnormal.npz",
+      "bytes": 724,
+      "sha256": "2b769d80fa5f2fbd3b1b5a4f01f4eb8127412c146feec3664582767d3d4ae247"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N65_K10_tied.npz",
+      "bytes": 724,
+      "sha256": "380555650359cd6adcf8446744dd4900733c5bbb3b2943aea13ef81889af5ecd"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f16_N65_K10_uniform.npz",
+      "bytes": 724,
+      "sha256": "1515f07dadd30c5ee98d794c6cd270b4470db724384c69aa0f20493dda0d5077"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N33_K33_adversarial.npz",
+      "bytes": 910,
+      "sha256": "37928f3f1827f1fb40d99d47a8f04c6f5bc74c4f9728d7c36f26947d04965254"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N33_K33_all_equal.npz",
+      "bytes": 910,
+      "sha256": "2f8513cd9c0d441f094e0552c23f6d22286d37a7b34ba93b2a5bd20f052a7c6c"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N33_K33_clustered.npz",
+      "bytes": 910,
+      "sha256": "142f0b5f6723c7aa15a4eaba959519d38034cbcbc53150327dcda3cb54e3a4b9"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N33_K33_extreme.npz",
+      "bytes": 910,
+      "sha256": "a9aa547ed5bb344120794b0c654f2b02222ae00dbf0a02b94ef2198ce657856a"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N33_K33_near_ties.npz",
+      "bytes": 910,
+      "sha256": "24e49ce5cc5368e4e709466b59e117bac7aec4c852a9c18b2620807710b41291"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N33_K33_normal.npz",
+      "bytes": 910,
+      "sha256": "2e429c054ca3e75367ac88c28c9e23c9fd79ae71bf6d8d3a420e5a9e3fa2ecfe"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N33_K33_signed_zero.npz",
+      "bytes": 910,
+      "sha256": "ad156350613c1c44881366f543e1f2c8dce3f265a2b6b229a3dc8ad4c2d42735"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N33_K33_subnormal.npz",
+      "bytes": 910,
+      "sha256": "c9e782f46023efaa8988d92a8e15a8257f7c1191a6a805a31ae5393de30ff17c"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N33_K33_tied.npz",
+      "bytes": 910,
+      "sha256": "41eee8033cadf6c4d08b1b24274031e6ace67352a4f9ff9225387ee0ac8a50df"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N33_K33_uniform.npz",
+      "bytes": 910,
+      "sha256": "5e39b704005f6a37e9c04f57fcb8047848245afcf679d63ffe39c010a46a6bf3"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N65_K10_adversarial.npz",
+      "bytes": 854,
+      "sha256": "1002cf6d47f8e84630ede4fd2b096f15b7c08790c5172a8d60fcd0e205694f5a"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N65_K10_all_equal.npz",
+      "bytes": 854,
+      "sha256": "c45a337e5646d4c7b41a2be1df0d96ccc6f4bd6de26f43228984abdccaa6f990"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N65_K10_clustered.npz",
+      "bytes": 854,
+      "sha256": "416579b7f2e369f96dbc9025cd2b6109991be8817098ab76c30d55b6b8bb5868"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N65_K10_extreme.npz",
+      "bytes": 854,
+      "sha256": "72a20d3f0da4c52d65681e3a16861c82d78e29b245022c0fcbfb4e84922881b3"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N65_K10_near_ties.npz",
+      "bytes": 854,
+      "sha256": "5bf11b4e1d09afddd9c76e6b1e09137b34f996f65ad103ec522fb8280c9fc0f2"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N65_K10_normal.npz",
+      "bytes": 854,
+      "sha256": "5a053c1a73b49526c1670bcd7928f4a94a16d498736c9a4325c2beca70b5fe71"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N65_K10_signed_zero.npz",
+      "bytes": 854,
+      "sha256": "36c3c1c1d1eb61616b7f442b1dbdb5434dc53e6a932d35f6407cd868a8800fe1"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N65_K10_subnormal.npz",
+      "bytes": 854,
+      "sha256": "5dc7b8ee05f90b975428a3c0756c17e0feda8754d5fa3112dee2cb6097d76ac9"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N65_K10_tied.npz",
+      "bytes": 854,
+      "sha256": "42bb6e08b0eca976b26cc8fae9dcab35895a27b8d323991820a4f289654d6f16"
+    },
+    {
+      "path": "failure_ov_cpu_native_hier_f32_N65_K10_uniform.npz",
+      "bytes": 854,
+      "sha256": "c691cb5a2262578cc08d5cbd4b171b9ed92404777e5c8d26c01b2a7495cb29fb"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f16_N64_K4_subnormal.npz",
+      "bytes": 674,
+      "sha256": "b1a2986b9e2edf5021f9a4e7f2687da4e2d06d6da7cfa76c9c95b5fdc78788e4"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f16_N65_K10_adversarial.npz",
+      "bytes": 724,
+      "sha256": "7578ba3e91576a469e28e15d6b10a150eb73d352a5051d966f21835864917820"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f16_N65_K10_all_equal.npz",
+      "bytes": 724,
+      "sha256": "df99d9b3c3a2b36dbd8960af9bbc131a7910dfb073f449e229168d9baf4bd94f"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f16_N65_K10_clustered.npz",
+      "bytes": 724,
+      "sha256": "ef5833e0aa3dec88d36743158d8086881c684bbd143f1539ada451f4c1661b5e"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f16_N65_K10_extreme.npz",
+      "bytes": 724,
+      "sha256": "9189e0c54367ad6419a5ec66afa35a43c9bcb68d1c65c3b7a3bae667e56b64df"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f16_N65_K10_near_ties.npz",
+      "bytes": 724,
+      "sha256": "8140222a88762542618afb89bdda9801b5d8735694ba23f966877a533c24a1c0"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f16_N65_K10_normal.npz",
+      "bytes": 724,
+      "sha256": "bd9bcec2838f7666412c8b6b65ccf667c2d2bb07d647075a0bf771c72faa6d84"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f16_N65_K10_signed_zero.npz",
+      "bytes": 724,
+      "sha256": "761daf10a4837fda6b6bd620c5d9284da5848c7fa73ac4e08e85c5e1fc85483f"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f16_N65_K10_subnormal.npz",
+      "bytes": 724,
+      "sha256": "2b769d80fa5f2fbd3b1b5a4f01f4eb8127412c146feec3664582767d3d4ae247"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f16_N65_K10_tied.npz",
+      "bytes": 724,
+      "sha256": "380555650359cd6adcf8446744dd4900733c5bbb3b2943aea13ef81889af5ecd"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f16_N65_K10_uniform.npz",
+      "bytes": 724,
+      "sha256": "1515f07dadd30c5ee98d794c6cd270b4470db724384c69aa0f20493dda0d5077"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N17_K1_adversarial.npz",
+      "bytes": 590,
+      "sha256": "bb8213d2c5466e563aeb70df41399a964a9b9eff3fe08debb6b6350dc720802e"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N17_K1_clustered.npz",
+      "bytes": 590,
+      "sha256": "c93edc57f9efe17451aaa4655222a8da1406e367bd78403da342865c254b84f5"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N17_K1_extreme.npz",
+      "bytes": 590,
+      "sha256": "daba3f077e7fa051c78726371aaef44393c893fbe6960457df64b21212c4df40"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N17_K1_near_ties.npz",
+      "bytes": 590,
+      "sha256": "1d8b4bc186f87fdade5cf987ed086ef5f930fe101c47cbce931ad5363942921c"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N17_K1_normal.npz",
+      "bytes": 590,
+      "sha256": "599243e5f8feac704d2c7d0295daefcda558a30dba17be76b02b042cef4f1585"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N17_K1_subnormal.npz",
+      "bytes": 590,
+      "sha256": "3b221ffd86fd143ba7005c8d2a7bf6ab8d800b5bde5f9f7cf5f74f76929c8aba"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N17_K1_tied.npz",
+      "bytes": 590,
+      "sha256": "2fc4d84d9f39a45cebcbd4f35ef8e74858247d16778f600a2e74787cd6419f14"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N17_K1_uniform.npz",
+      "bytes": 590,
+      "sha256": "98db1360ae575ed42fa49e2207181bdbca6efcd3e4b5c0d41bbe3fbf8a961ca9"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N33_K33_adversarial.npz",
+      "bytes": 910,
+      "sha256": "37928f3f1827f1fb40d99d47a8f04c6f5bc74c4f9728d7c36f26947d04965254"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N33_K33_clustered.npz",
+      "bytes": 910,
+      "sha256": "142f0b5f6723c7aa15a4eaba959519d38034cbcbc53150327dcda3cb54e3a4b9"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N33_K33_extreme.npz",
+      "bytes": 910,
+      "sha256": "a9aa547ed5bb344120794b0c654f2b02222ae00dbf0a02b94ef2198ce657856a"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N33_K33_near_ties.npz",
+      "bytes": 910,
+      "sha256": "24e49ce5cc5368e4e709466b59e117bac7aec4c852a9c18b2620807710b41291"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N33_K33_normal.npz",
+      "bytes": 910,
+      "sha256": "2e429c054ca3e75367ac88c28c9e23c9fd79ae71bf6d8d3a420e5a9e3fa2ecfe"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N33_K33_subnormal.npz",
+      "bytes": 910,
+      "sha256": "c9e782f46023efaa8988d92a8e15a8257f7c1191a6a805a31ae5393de30ff17c"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N33_K33_tied.npz",
+      "bytes": 910,
+      "sha256": "41eee8033cadf6c4d08b1b24274031e6ace67352a4f9ff9225387ee0ac8a50df"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N33_K33_uniform.npz",
+      "bytes": 910,
+      "sha256": "5e39b704005f6a37e9c04f57fcb8047848245afcf679d63ffe39c010a46a6bf3"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N64_K4_adversarial.npz",
+      "bytes": 802,
+      "sha256": "dee63dd45fee19aeae5784d9895c4e0d5d1e3ac4a7e9b91f0f6f577329611ccf"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N64_K4_clustered.npz",
+      "bytes": 802,
+      "sha256": "db3f71b8fd7520a215c0d67045b019cfbd0832953a8cb4fa6d9d96aeec2c96eb"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N64_K4_extreme.npz",
+      "bytes": 802,
+      "sha256": "4f66e5b295d6346393bca8e7b63c37f03c0baaa14d80baa5c094c7b9a094558f"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N64_K4_near_ties.npz",
+      "bytes": 802,
+      "sha256": "e179737088cad0b951c59c7b73fd30cc3a5cfc7c09d29434d61f4744a47432fc"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N64_K4_normal.npz",
+      "bytes": 802,
+      "sha256": "9805d431c832fa86dec311e369899ae3da1bb350aa30578cca48041e49a20f3f"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N64_K4_subnormal.npz",
+      "bytes": 802,
+      "sha256": "85a1ebf8e0e7823bbdcdcf8130d59a668d2c7b609b6b536f6a3abd9f4eeaed4e"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N64_K4_tied.npz",
+      "bytes": 802,
+      "sha256": "69d183a8b7d14388ff79982f41a8fb44114e77f9eb34c64065d69c16aeec6517"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N64_K4_uniform.npz",
+      "bytes": 802,
+      "sha256": "4b4e208d50ad3d7994f1299782dbd14d6d213b599c1662451dd987387cfb4af5"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N65_K10_adversarial.npz",
+      "bytes": 854,
+      "sha256": "1002cf6d47f8e84630ede4fd2b096f15b7c08790c5172a8d60fcd0e205694f5a"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N65_K10_all_equal.npz",
+      "bytes": 854,
+      "sha256": "c45a337e5646d4c7b41a2be1df0d96ccc6f4bd6de26f43228984abdccaa6f990"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N65_K10_clustered.npz",
+      "bytes": 854,
+      "sha256": "416579b7f2e369f96dbc9025cd2b6109991be8817098ab76c30d55b6b8bb5868"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N65_K10_extreme.npz",
+      "bytes": 854,
+      "sha256": "72a20d3f0da4c52d65681e3a16861c82d78e29b245022c0fcbfb4e84922881b3"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N65_K10_near_ties.npz",
+      "bytes": 854,
+      "sha256": "5bf11b4e1d09afddd9c76e6b1e09137b34f996f65ad103ec522fb8280c9fc0f2"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N65_K10_normal.npz",
+      "bytes": 854,
+      "sha256": "5a053c1a73b49526c1670bcd7928f4a94a16d498736c9a4325c2beca70b5fe71"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N65_K10_signed_zero.npz",
+      "bytes": 854,
+      "sha256": "36c3c1c1d1eb61616b7f442b1dbdb5434dc53e6a932d35f6407cd868a8800fe1"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N65_K10_subnormal.npz",
+      "bytes": 854,
+      "sha256": "5dc7b8ee05f90b975428a3c0756c17e0feda8754d5fa3112dee2cb6097d76ac9"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N65_K10_tied.npz",
+      "bytes": 854,
+      "sha256": "42bb6e08b0eca976b26cc8fae9dcab35895a27b8d323991820a4f289654d6f16"
+    },
+    {
+      "path": "failure_ov_npu_native_adaptive_f32_N65_K10_uniform.npz",
+      "bytes": 854,
+      "sha256": "c691cb5a2262578cc08d5cbd4b171b9ed92404777e5c8d26c01b2a7495cb29fb"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f16_N17_K1_subnormal.npz",
+      "bytes": 556,
+      "sha256": "cd46a960a82add1612048b9510b969f53f9fde5cc928285a516ea346a3c78338"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f16_N64_K4_subnormal.npz",
+      "bytes": 674,
+      "sha256": "b1a2986b9e2edf5021f9a4e7f2687da4e2d06d6da7cfa76c9c95b5fdc78788e4"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f16_N65_K10_subnormal.npz",
+      "bytes": 724,
+      "sha256": "2b769d80fa5f2fbd3b1b5a4f01f4eb8127412c146feec3664582767d3d4ae247"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N17_K1_adversarial.npz",
+      "bytes": 590,
+      "sha256": "bb8213d2c5466e563aeb70df41399a964a9b9eff3fe08debb6b6350dc720802e"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N17_K1_clustered.npz",
+      "bytes": 590,
+      "sha256": "c93edc57f9efe17451aaa4655222a8da1406e367bd78403da342865c254b84f5"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N17_K1_extreme.npz",
+      "bytes": 590,
+      "sha256": "daba3f077e7fa051c78726371aaef44393c893fbe6960457df64b21212c4df40"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N17_K1_near_ties.npz",
+      "bytes": 590,
+      "sha256": "1d8b4bc186f87fdade5cf987ed086ef5f930fe101c47cbce931ad5363942921c"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N17_K1_normal.npz",
+      "bytes": 590,
+      "sha256": "599243e5f8feac704d2c7d0295daefcda558a30dba17be76b02b042cef4f1585"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N17_K1_subnormal.npz",
+      "bytes": 590,
+      "sha256": "3b221ffd86fd143ba7005c8d2a7bf6ab8d800b5bde5f9f7cf5f74f76929c8aba"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N17_K1_tied.npz",
+      "bytes": 590,
+      "sha256": "2fc4d84d9f39a45cebcbd4f35ef8e74858247d16778f600a2e74787cd6419f14"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N17_K1_uniform.npz",
+      "bytes": 590,
+      "sha256": "98db1360ae575ed42fa49e2207181bdbca6efcd3e4b5c0d41bbe3fbf8a961ca9"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N33_K33_adversarial.npz",
+      "bytes": 910,
+      "sha256": "37928f3f1827f1fb40d99d47a8f04c6f5bc74c4f9728d7c36f26947d04965254"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N33_K33_clustered.npz",
+      "bytes": 910,
+      "sha256": "142f0b5f6723c7aa15a4eaba959519d38034cbcbc53150327dcda3cb54e3a4b9"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N33_K33_extreme.npz",
+      "bytes": 910,
+      "sha256": "a9aa547ed5bb344120794b0c654f2b02222ae00dbf0a02b94ef2198ce657856a"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N33_K33_near_ties.npz",
+      "bytes": 910,
+      "sha256": "24e49ce5cc5368e4e709466b59e117bac7aec4c852a9c18b2620807710b41291"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N33_K33_normal.npz",
+      "bytes": 910,
+      "sha256": "2e429c054ca3e75367ac88c28c9e23c9fd79ae71bf6d8d3a420e5a9e3fa2ecfe"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N33_K33_subnormal.npz",
+      "bytes": 910,
+      "sha256": "c9e782f46023efaa8988d92a8e15a8257f7c1191a6a805a31ae5393de30ff17c"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N33_K33_tied.npz",
+      "bytes": 910,
+      "sha256": "41eee8033cadf6c4d08b1b24274031e6ace67352a4f9ff9225387ee0ac8a50df"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N33_K33_uniform.npz",
+      "bytes": 910,
+      "sha256": "5e39b704005f6a37e9c04f57fcb8047848245afcf679d63ffe39c010a46a6bf3"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N64_K4_adversarial.npz",
+      "bytes": 802,
+      "sha256": "dee63dd45fee19aeae5784d9895c4e0d5d1e3ac4a7e9b91f0f6f577329611ccf"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N64_K4_clustered.npz",
+      "bytes": 802,
+      "sha256": "db3f71b8fd7520a215c0d67045b019cfbd0832953a8cb4fa6d9d96aeec2c96eb"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N64_K4_extreme.npz",
+      "bytes": 802,
+      "sha256": "4f66e5b295d6346393bca8e7b63c37f03c0baaa14d80baa5c094c7b9a094558f"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N64_K4_near_ties.npz",
+      "bytes": 802,
+      "sha256": "e179737088cad0b951c59c7b73fd30cc3a5cfc7c09d29434d61f4744a47432fc"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N64_K4_normal.npz",
+      "bytes": 802,
+      "sha256": "9805d431c832fa86dec311e369899ae3da1bb350aa30578cca48041e49a20f3f"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N64_K4_subnormal.npz",
+      "bytes": 802,
+      "sha256": "85a1ebf8e0e7823bbdcdcf8130d59a668d2c7b609b6b536f6a3abd9f4eeaed4e"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N64_K4_tied.npz",
+      "bytes": 802,
+      "sha256": "69d183a8b7d14388ff79982f41a8fb44114e77f9eb34c64065d69c16aeec6517"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N64_K4_uniform.npz",
+      "bytes": 802,
+      "sha256": "4b4e208d50ad3d7994f1299782dbd14d6d213b599c1662451dd987387cfb4af5"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N65_K10_adversarial.npz",
+      "bytes": 854,
+      "sha256": "1002cf6d47f8e84630ede4fd2b096f15b7c08790c5172a8d60fcd0e205694f5a"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N65_K10_clustered.npz",
+      "bytes": 854,
+      "sha256": "416579b7f2e369f96dbc9025cd2b6109991be8817098ab76c30d55b6b8bb5868"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N65_K10_extreme.npz",
+      "bytes": 854,
+      "sha256": "72a20d3f0da4c52d65681e3a16861c82d78e29b245022c0fcbfb4e84922881b3"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N65_K10_near_ties.npz",
+      "bytes": 854,
+      "sha256": "5bf11b4e1d09afddd9c76e6b1e09137b34f996f65ad103ec522fb8280c9fc0f2"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N65_K10_normal.npz",
+      "bytes": 854,
+      "sha256": "5a053c1a73b49526c1670bcd7928f4a94a16d498736c9a4325c2beca70b5fe71"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N65_K10_subnormal.npz",
+      "bytes": 854,
+      "sha256": "5dc7b8ee05f90b975428a3c0756c17e0feda8754d5fa3112dee2cb6097d76ac9"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N65_K10_tied.npz",
+      "bytes": 854,
+      "sha256": "42bb6e08b0eca976b26cc8fae9dcab35895a27b8d323991820a4f289654d6f16"
+    },
+    {
+      "path": "failure_ov_npu_native_direct_f32_N65_K10_uniform.npz",
+      "bytes": 854,
+      "sha256": "c691cb5a2262578cc08d5cbd4b171b9ed92404777e5c8d26c01b2a7495cb29fb"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N33_K33_adversarial.npz",
+      "bytes": 844,
+      "sha256": "e82eed37120d976a15799fe08ca9f9dfe87c4778390d35f0185b649fcffbf51a"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N33_K33_all_equal.npz",
+      "bytes": 844,
+      "sha256": "e2629e08d01c18dfe9e7b3444c96d3d105b4f8ded429e0a9c45d64d227188b61"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N33_K33_clustered.npz",
+      "bytes": 844,
+      "sha256": "b07bc3c4574a741209560636abe5e2ed0fd3624445473d0849ff03f21f712115"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N33_K33_extreme.npz",
+      "bytes": 844,
+      "sha256": "865296b7a00ea0087d6d683e0619fc2f729717b7aeeb63e8ac20b4885f699db5"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N33_K33_near_ties.npz",
+      "bytes": 844,
+      "sha256": "d62751836c30ee2b6eda6e8df2ffa1a97a60290dc9b78b657c20db3b7a7d99a5"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N33_K33_normal.npz",
+      "bytes": 844,
+      "sha256": "bb22a6333c7f308975c0650e9ab2c4937fe8af52f7af373e4998129e53bbaadb"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N33_K33_signed_zero.npz",
+      "bytes": 844,
+      "sha256": "568f1f62d8400834f97baa270644edb5b6d7f915244d1ede89d8e9bff0285e64"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N33_K33_subnormal.npz",
+      "bytes": 844,
+      "sha256": "05deeb337798af340b5ed36a5093cc62b05b348c92fb53ed9cef7af986785c8e"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N33_K33_tied.npz",
+      "bytes": 844,
+      "sha256": "d02bef934e5b72c79ebc52ac43a9771e8c2dee780ff8923ee2059af1054c945c"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N33_K33_uniform.npz",
+      "bytes": 844,
+      "sha256": "87c00a83ff5ef20fe9df42c7d2974c7004d96150a626cccec6a04ec6173b9809"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N64_K4_subnormal.npz",
+      "bytes": 674,
+      "sha256": "b1a2986b9e2edf5021f9a4e7f2687da4e2d06d6da7cfa76c9c95b5fdc78788e4"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N65_K10_adversarial.npz",
+      "bytes": 724,
+      "sha256": "7578ba3e91576a469e28e15d6b10a150eb73d352a5051d966f21835864917820"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N65_K10_all_equal.npz",
+      "bytes": 724,
+      "sha256": "df99d9b3c3a2b36dbd8960af9bbc131a7910dfb073f449e229168d9baf4bd94f"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N65_K10_clustered.npz",
+      "bytes": 724,
+      "sha256": "ef5833e0aa3dec88d36743158d8086881c684bbd143f1539ada451f4c1661b5e"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N65_K10_extreme.npz",
+      "bytes": 724,
+      "sha256": "9189e0c54367ad6419a5ec66afa35a43c9bcb68d1c65c3b7a3bae667e56b64df"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N65_K10_near_ties.npz",
+      "bytes": 724,
+      "sha256": "8140222a88762542618afb89bdda9801b5d8735694ba23f966877a533c24a1c0"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N65_K10_normal.npz",
+      "bytes": 724,
+      "sha256": "bd9bcec2838f7666412c8b6b65ccf667c2d2bb07d647075a0bf771c72faa6d84"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N65_K10_signed_zero.npz",
+      "bytes": 724,
+      "sha256": "761daf10a4837fda6b6bd620c5d9284da5848c7fa73ac4e08e85c5e1fc85483f"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N65_K10_subnormal.npz",
+      "bytes": 724,
+      "sha256": "2b769d80fa5f2fbd3b1b5a4f01f4eb8127412c146feec3664582767d3d4ae247"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N65_K10_tied.npz",
+      "bytes": 724,
+      "sha256": "380555650359cd6adcf8446744dd4900733c5bbb3b2943aea13ef81889af5ecd"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f16_N65_K10_uniform.npz",
+      "bytes": 724,
+      "sha256": "1515f07dadd30c5ee98d794c6cd270b4470db724384c69aa0f20493dda0d5077"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N17_K1_adversarial.npz",
+      "bytes": 590,
+      "sha256": "bb8213d2c5466e563aeb70df41399a964a9b9eff3fe08debb6b6350dc720802e"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N17_K1_clustered.npz",
+      "bytes": 590,
+      "sha256": "c93edc57f9efe17451aaa4655222a8da1406e367bd78403da342865c254b84f5"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N17_K1_extreme.npz",
+      "bytes": 590,
+      "sha256": "daba3f077e7fa051c78726371aaef44393c893fbe6960457df64b21212c4df40"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N17_K1_near_ties.npz",
+      "bytes": 590,
+      "sha256": "1d8b4bc186f87fdade5cf987ed086ef5f930fe101c47cbce931ad5363942921c"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N17_K1_normal.npz",
+      "bytes": 590,
+      "sha256": "599243e5f8feac704d2c7d0295daefcda558a30dba17be76b02b042cef4f1585"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N17_K1_subnormal.npz",
+      "bytes": 590,
+      "sha256": "3b221ffd86fd143ba7005c8d2a7bf6ab8d800b5bde5f9f7cf5f74f76929c8aba"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N17_K1_tied.npz",
+      "bytes": 590,
+      "sha256": "2fc4d84d9f39a45cebcbd4f35ef8e74858247d16778f600a2e74787cd6419f14"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N17_K1_uniform.npz",
+      "bytes": 590,
+      "sha256": "98db1360ae575ed42fa49e2207181bdbca6efcd3e4b5c0d41bbe3fbf8a961ca9"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N33_K33_adversarial.npz",
+      "bytes": 910,
+      "sha256": "37928f3f1827f1fb40d99d47a8f04c6f5bc74c4f9728d7c36f26947d04965254"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N33_K33_all_equal.npz",
+      "bytes": 910,
+      "sha256": "2f8513cd9c0d441f094e0552c23f6d22286d37a7b34ba93b2a5bd20f052a7c6c"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N33_K33_clustered.npz",
+      "bytes": 910,
+      "sha256": "142f0b5f6723c7aa15a4eaba959519d38034cbcbc53150327dcda3cb54e3a4b9"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N33_K33_extreme.npz",
+      "bytes": 910,
+      "sha256": "a9aa547ed5bb344120794b0c654f2b02222ae00dbf0a02b94ef2198ce657856a"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N33_K33_near_ties.npz",
+      "bytes": 910,
+      "sha256": "24e49ce5cc5368e4e709466b59e117bac7aec4c852a9c18b2620807710b41291"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N33_K33_normal.npz",
+      "bytes": 910,
+      "sha256": "2e429c054ca3e75367ac88c28c9e23c9fd79ae71bf6d8d3a420e5a9e3fa2ecfe"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N33_K33_signed_zero.npz",
+      "bytes": 910,
+      "sha256": "ad156350613c1c44881366f543e1f2c8dce3f265a2b6b229a3dc8ad4c2d42735"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N33_K33_subnormal.npz",
+      "bytes": 910,
+      "sha256": "c9e782f46023efaa8988d92a8e15a8257f7c1191a6a805a31ae5393de30ff17c"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N33_K33_tied.npz",
+      "bytes": 910,
+      "sha256": "41eee8033cadf6c4d08b1b24274031e6ace67352a4f9ff9225387ee0ac8a50df"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N33_K33_uniform.npz",
+      "bytes": 910,
+      "sha256": "5e39b704005f6a37e9c04f57fcb8047848245afcf679d63ffe39c010a46a6bf3"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N64_K4_adversarial.npz",
+      "bytes": 802,
+      "sha256": "dee63dd45fee19aeae5784d9895c4e0d5d1e3ac4a7e9b91f0f6f577329611ccf"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N64_K4_clustered.npz",
+      "bytes": 802,
+      "sha256": "db3f71b8fd7520a215c0d67045b019cfbd0832953a8cb4fa6d9d96aeec2c96eb"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N64_K4_extreme.npz",
+      "bytes": 802,
+      "sha256": "4f66e5b295d6346393bca8e7b63c37f03c0baaa14d80baa5c094c7b9a094558f"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N64_K4_near_ties.npz",
+      "bytes": 802,
+      "sha256": "e179737088cad0b951c59c7b73fd30cc3a5cfc7c09d29434d61f4744a47432fc"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N64_K4_normal.npz",
+      "bytes": 802,
+      "sha256": "9805d431c832fa86dec311e369899ae3da1bb350aa30578cca48041e49a20f3f"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N64_K4_subnormal.npz",
+      "bytes": 802,
+      "sha256": "85a1ebf8e0e7823bbdcdcf8130d59a668d2c7b609b6b536f6a3abd9f4eeaed4e"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N64_K4_tied.npz",
+      "bytes": 802,
+      "sha256": "69d183a8b7d14388ff79982f41a8fb44114e77f9eb34c64065d69c16aeec6517"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N64_K4_uniform.npz",
+      "bytes": 802,
+      "sha256": "4b4e208d50ad3d7994f1299782dbd14d6d213b599c1662451dd987387cfb4af5"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N65_K10_adversarial.npz",
+      "bytes": 854,
+      "sha256": "1002cf6d47f8e84630ede4fd2b096f15b7c08790c5172a8d60fcd0e205694f5a"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N65_K10_all_equal.npz",
+      "bytes": 854,
+      "sha256": "c45a337e5646d4c7b41a2be1df0d96ccc6f4bd6de26f43228984abdccaa6f990"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N65_K10_clustered.npz",
+      "bytes": 854,
+      "sha256": "416579b7f2e369f96dbc9025cd2b6109991be8817098ab76c30d55b6b8bb5868"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N65_K10_extreme.npz",
+      "bytes": 854,
+      "sha256": "72a20d3f0da4c52d65681e3a16861c82d78e29b245022c0fcbfb4e84922881b3"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N65_K10_near_ties.npz",
+      "bytes": 854,
+      "sha256": "5bf11b4e1d09afddd9c76e6b1e09137b34f996f65ad103ec522fb8280c9fc0f2"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N65_K10_normal.npz",
+      "bytes": 854,
+      "sha256": "5a053c1a73b49526c1670bcd7928f4a94a16d498736c9a4325c2beca70b5fe71"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N65_K10_signed_zero.npz",
+      "bytes": 854,
+      "sha256": "36c3c1c1d1eb61616b7f442b1dbdb5434dc53e6a932d35f6407cd868a8800fe1"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N65_K10_subnormal.npz",
+      "bytes": 854,
+      "sha256": "5dc7b8ee05f90b975428a3c0756c17e0feda8754d5fa3112dee2cb6097d76ac9"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N65_K10_tied.npz",
+      "bytes": 854,
+      "sha256": "42bb6e08b0eca976b26cc8fae9dcab35895a27b8d323991820a4f289654d6f16"
+    },
+    {
+      "path": "failure_ov_npu_native_hier_f32_N65_K10_uniform.npz",
+      "bytes": 854,
+      "sha256": "c691cb5a2262578cc08d5cbd4b171b9ed92404777e5c8d26c01b2a7495cb29fb"
+    },
+    {
+      "path": "harness_reproduction/manifest_synthetic_failure.json",
+      "bytes": 830,
+      "sha256": "0f80c5da63a63c24be0bc9e33560caad3b9a787ddc941120d54050b932b279aa"
+    },
+    {
+      "path": "harness_reproduction/observations_synthetic_failure.jsonl",
+      "bytes": 576,
+      "sha256": "2840ba8e25c7ae217802270bdf81a9b7d17100514aba94b8482b18ceec88a6ff"
+    },
+    {
+      "path": "harness_reproduction/skips_synthetic_failure.jsonl",
+      "bytes": 206,
+      "sha256": "f1e3602282393f9c62c53d927a1b7a88d6f4ebaf7a864fa8816035354a493674"
+    },
+    {
+      "path": "harness_reproduction/summary_synthetic_failure.json",
+      "bytes": 408,
+      "sha256": "b65bdea5d089158cb86a2592ceb0bfd2077bec5f79e588a4cf186980ab22f08f"
+    },
+    {
+      "path": "harness_reproduction.json",
+      "bytes": 1585,
+      "sha256": "e40d489b55f564ab10dbc892d83d9302d53231593547a15dbb0f15874422d876"
+    },
+    {
+      "path": "harness_reproduction.log",
+      "bytes": 1723,
+      "sha256": "82cf5f5f687b38e11388550f8a0800ce0d3766dc138e0b2b6b651acbc90646d0"
+    },
+    {
+      "path": "minimal_counterexamples.json",
+      "bytes": 1254,
+      "sha256": "d047575f775d59b223280562f7c2b8fb2b6808577e9664b4c99fccc6e00bf6ad"
+    },
+    {
+      "path": "minimal_counterexamples.log",
+      "bytes": 1254,
+      "sha256": "d047575f775d59b223280562f7c2b8fb2b6808577e9664b4c99fccc6e00bf6ad"
+    },
+    {
+      "path": "probe_npu_f16.json",
+      "bytes": 2566,
+      "sha256": "62aff3fc31087760815647efb71c84aac50a0625d71990dc7e96c7b890139c0c"
+    },
+    {
+      "path": "probe_npu_f16.log",
+      "bytes": 2647,
+      "sha256": "8e2b48547da06832a6598a6631a471832492ed72fe6338bd5aab5ea0ac92709c"
+    },
+    {
+      "path": "pytest_initial.log",
+      "bytes": 9982,
+      "sha256": "c09e6d5c8a3dc1b94b41cd19f9d95b06b8752f51fd727a0279ca34da1f0434f0"
+    },
+    {
+      "path": "pytest_initial_exit.txt",
+      "bytes": 3,
+      "sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 981,
+      "sha256": "339520e01d1bf15dfe5d18b4b1d7ac13b200bd6b918890cbfff79c8f6752feb2"
+    },
+    {
+      "path": "report/docs/AUDIT_2026-10-23.md",
+      "bytes": 23289,
+      "sha256": "7625cc2ed5c3dc9bf4e48a1c309e5544d1b196f4cc3bba5e856744c1ce80e6db"
+    },
+    {
+      "path": "report/docs/MATHEMATICAL_SPECIFICATION.md",
+      "bytes": 3878,
+      "sha256": "5b8f479a49ee47cbbb51a43cfb4256cedbe36444ceab47517dbf875f58cdd7c0"
+    },
+    {
+      "path": "report/docs/METHODOLOGY.md",
+      "bytes": 6146,
+      "sha256": "2ad9b99494622288f38faa53c25216768f6de8658e3caa10e5f89ac793e3416f"
+    },
+    {
+      "path": "report/docs/NOTES_AND_LIMITATIONS.md",
+      "bytes": 3329,
+      "sha256": "707733574e6e52396469b9d45b8dd7eed889291ed80253f59633fc5b640df93d"
+    },
+    {
+      "path": "report/docs/RESEARCH_CHARTER.md",
+      "bytes": 11838,
+      "sha256": "42aca6d5b7d18dda24ce91fd78f6c9583621d30e3a70b013017e31beca7c05d3"
+    },
+    {
+      "path": "report/docs/RESEARCH_GATES.md",
+      "bytes": 2989,
+      "sha256": "c29e863c0ba20c97012a6562f8c48d8b76e47f7ece4162b27665f92665fb9a0b"
+    },
+    {
+      "path": "report/docs/VALIDATION.md",
+      "bytes": 2607,
+      "sha256": "0c9adaa0cfec2b0f6c9afd3e32ecdea6fced78f729976c9dba0eaead6ff13b58"
+    },
+    {
+      "path": "report/README.md",
+      "bytes": 11116,
+      "sha256": "472aeb38a9b969a45f1cf897cdb743c22e552994e3fca3486bd9f7a430838a43"
+    },
+    {
+      "path": "reproduce_blockers.py",
+      "bytes": 1646,
+      "sha256": "b87ef7a401ed6c77686391ce52f803796450397f67bc69e1e0a68ea3f6357964"
+    },
+    {
+      "path": "reproduce_harness.py",
+      "bytes": 1285,
+      "sha256": "364e29a136a340ef32285044420ba05b52909d7305f3664879e68009510325e3"
+    },
+    {
+      "path": "requirements-installed.txt",
+      "bytes": 287,
+      "sha256": "6d2912a7bb2be38c89d8d03a6d866f62fae07b9ca67793bff5b5ed0f79190c5d"
+    },
+    {
+      "path": "runtime_diagnostics.json",
+      "bytes": 1189,
+      "sha256": "8419b4da87f16afc6d1208a05c30b3d45ced1f95f201c9d1790d126694122be1"
+    },
+    {
+      "path": "source_snapshot/.gitignore",
+      "bytes": 118,
+      "sha256": "e4a06d1d21629691adaf402384622e9aa1002a71e0c4c23ff97f990d28f132e7"
+    },
+    {
+      "path": "source_snapshot/configs/pilot.json",
+      "bytes": 934,
+      "sha256": "f754f9119e3efd512610c4627c3b07aa30303440c677cc843e9649435b636b03"
+    },
+    {
+      "path": "source_snapshot/docs/MATHEMATICAL_SPECIFICATION.md",
+      "bytes": 3495,
+      "sha256": "623a1e75d75673c6135f6e8ab074f0bace3581f75714e71095a5c86fd363fcb4"
+    },
+    {
+      "path": "source_snapshot/docs/METHODOLOGY.md",
+      "bytes": 6146,
+      "sha256": "2ad9b99494622288f38faa53c25216768f6de8658e3caa10e5f89ac793e3416f"
+    },
+    {
+      "path": "source_snapshot/docs/NOTES_AND_LIMITATIONS.md",
+      "bytes": 2897,
+      "sha256": "3ca3b5e474dff628a2d2b623928615651769eb8fcbc0ac4aa9c030986881cdf0"
+    },
+    {
+      "path": "source_snapshot/docs/RESEARCH_GATES.md",
+      "bytes": 2571,
+      "sha256": "d10781b77a41d7dca64a3af7c180f3d1518990e33a38b76d76accf01d4c8eb76"
+    },
+    {
+      "path": "source_snapshot/docs/VALIDATION.md",
+      "bytes": 1698,
+      "sha256": "df16e8a79a5983cb933e738fbf62e5162ca48be9d5da8eb97d6ac8f26e6ed1f1"
+    },
+    {
+      "path": "source_snapshot/LICENSE",
+      "bytes": 1074,
+      "sha256": "76aa2e2bb6038d78db1369ea101eb11b74ae9240ae6e3fdaa63a2594e34abbef"
+    },
+    {
+      "path": "source_snapshot/native/CMakeLists.txt",
+      "bytes": 385,
+      "sha256": "b1f53badc6b86bd180b7ba7fcc2512264e3b03ca8f0cb63a049251529d760ad2"
+    },
+    {
+      "path": "source_snapshot/native/topk.cpp",
+      "bytes": 1432,
+      "sha256": "02fe71fdc9265a644d8c139e851ab8a6cdd877e8c210e06c6ba48a86e38c10d2"
+    },
+    {
+      "path": "source_snapshot/pyproject.toml",
+      "bytes": 785,
+      "sha256": "5bff1aefc8daa882f3daf8da93409813494ed6c2cc9266965e51df6d23341482"
+    },
+    {
+      "path": "source_snapshot/README.md",
+      "bytes": 10639,
+      "sha256": "e9648e4157139e0f58685409b826995f888f0f2e4dbf7ec1f563ec9df9e2d95c"
+    },
+    {
+      "path": "source_snapshot/scripts/00_setup.ps1",
+      "bytes": 809,
+      "sha256": "05c30fe98be36bc84f23b57b0d153f1ec0df25885e960bc9c2fa9fde511eaeec"
+    },
+    {
+      "path": "source_snapshot/scripts/01_doctor.ps1",
+      "bytes": 298,
+      "sha256": "12acf2c66833759a537e21cd33eecfc7160d1e7223743cbd52759105a55f1b23"
+    },
+    {
+      "path": "source_snapshot/scripts/02_probe_npu.ps1",
+      "bytes": 581,
+      "sha256": "5f1522d57b28e6cdee3e6f52ed152efb5597d68d7b8790309cac8e1e65efaecf"
+    },
+    {
+      "path": "source_snapshot/scripts/03_smoke_cpu.ps1",
+      "bytes": 471,
+      "sha256": "1842091d1b1405a621e9fc47d9214e6adb8900b1bb5f9ad51b59324813ebf64f"
+    },
+    {
+      "path": "source_snapshot/scripts/04_smoke_npu.ps1",
+      "bytes": 601,
+      "sha256": "02658e927e320a320d0ece643e4a5a548f1d87adbad300e9314ea604758c3c53"
+    },
+    {
+      "path": "source_snapshot/scripts/05_benchmark_cpu.ps1",
+      "bytes": 577,
+      "sha256": "797489a409ed7d34abc309f42eca025ab72f5083aeac1f1dc6035e8c26175c74"
+    },
+    {
+      "path": "source_snapshot/scripts/06_benchmark_npu.ps1",
+      "bytes": 653,
+      "sha256": "b439901a64df2b55a38bb6052f3736434c74701da9798aba5f9a16c056922b64"
+    },
+    {
+      "path": "source_snapshot/scripts/07_analyze.ps1",
+      "bytes": 551,
+      "sha256": "ac081c681fbb0373b0d23c4993bed6deb6ec1f58c40a219de06994f23feb39d9"
+    },
+    {
+      "path": "source_snapshot/scripts/08_build_cpp.ps1",
+      "bytes": 442,
+      "sha256": "4b33361ca209830023ac00d37355be62b481b87b995364052b4186e9517a2664"
+    },
+    {
+      "path": "source_snapshot/scripts/09_freeze_environment.ps1",
+      "bytes": 638,
+      "sha256": "2347e86f913991099a9e9696efc017dd55b2aaae9515c43263855c604f7b5d7a"
+    },
+    {
+      "path": "source_snapshot/src/cats_npu/__init__.py",
+      "bytes": 179,
+      "sha256": "9256ae64e3df05e2e5a9dabcbad29f1b1f5da274275963d1a44a9c6382c56862"
+    },
+    {
+      "path": "source_snapshot/src/cats_npu/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "source_snapshot/src/cats_npu/algorithms.py",
+      "bytes": 11920,
+      "sha256": "25a9bfe4b441d8cd7ffe434c89ebd19b39c69e17bfbb56565e24569c714a9fb4"
+    },
+    {
+      "path": "source_snapshot/src/cats_npu/backends.py",
+      "bytes": 9962,
+      "sha256": "1e280c57517f25cef74f2a0b20324d838db6e17294502e274bb4d539c47d33c7"
+    },
+    {
+      "path": "source_snapshot/src/cats_npu/benchmark.py",
+      "bytes": 8236,
+      "sha256": "bf043cac92cae581d369ef5f3be2073ea23da3af786aa433fbd9fb16ab0c48cf"
+    },
+    {
+      "path": "source_snapshot/src/cats_npu/cli.py",
+      "bytes": 8329,
+      "sha256": "1a2a472bc210388015d1dfbbd90729afac637fcd0b25aba8d49dd3dd2a87315d"
+    },
+    {
+      "path": "source_snapshot/src/cats_npu/data_import.py",
+      "bytes": 2802,
+      "sha256": "9d53183e36f9ac31413275cc2613a7ed3ab05dd5fa72a08906cbcb3b8a4ff91d"
+    },
+    {
+      "path": "source_snapshot/src/cats_npu/native.py",
+      "bytes": 2060,
+      "sha256": "e1d6c193570b9a5156e7e3598e65fc2ffba173b5e2f847b7e12b6813f3a05859"
+    },
+    {
+      "path": "source_snapshot/src/cats_npu/probe.py",
+      "bytes": 6389,
+      "sha256": "e3c3beb7b09bba275ce8ad6594cd858dddd2d1104a7638ae21691291d4856bd9"
+    },
+    {
+      "path": "source_snapshot/src/cats_npu/reference.py",
+      "bytes": 2882,
+      "sha256": "243a9d89ce20b6c763c1ba2bd37de5a42738e3d325dcc9f3d1dbc492e66c0860"
+    },
+    {
+      "path": "source_snapshot/src/cats_npu/statistics.py",
+      "bytes": 6919,
+      "sha256": "a117d1f3a47fc28bd45101cc879c82a04abfd494fcff9c0e598a22f926e13238"
+    },
+    {
+      "path": "source_snapshot/src/cats_npu/workloads.py",
+      "bytes": 1977,
+      "sha256": "0313f03e164e7a08ddff6cfb53e1eeecda9ebd918ad33b10d223e282cb4513a1"
+    },
+    {
+      "path": "source_snapshot/tests/test_algorithms.py",
+      "bytes": 2698,
+      "sha256": "db0abc45edb05bf801d6d223d12c4105ebbef2e932fa5350449eb0346bad8a20"
+    },
+    {
+      "path": "source_snapshot/tests/test_benchmark.py",
+      "bytes": 796,
+      "sha256": "1ef133f86c406665608e985562fd6a8680dcceb8871f4a40cbf0378dff86bf9b"
+    },
+    {
+      "path": "source_snapshot/tests/test_data_import.py",
+      "bytes": 682,
+      "sha256": "b49101d9b0b6e0b18769b02bf335ed48a2d68ea69a5b5bad699f957aa60f02b7"
+    },
+    {
+      "path": "source_snapshot/tests/test_native_optional.py",
+      "bytes": 650,
+      "sha256": "0d02e692c512b2afd1375eaffad38af3c2f270bba260192acd9318e18b58dade"
+    },
+    {
+      "path": "source_snapshot/tests/test_openvino_optional.py",
+      "bytes": 893,
+      "sha256": "74985aa81bb0b86032bb70c4f99c77626bb86799e20bdd609424be9e85c2a07b"
+    },
+    {
+      "path": "source_snapshot/tests/test_reference.py",
+      "bytes": 1214,
+      "sha256": "6a53e4142a94498b61d01d398ba0fec1051403f67c0c688a9ae91fb35a655a07"
+    },
+    {
+      "path": "source_snapshot/tests/test_statistics.py",
+      "bytes": 2465,
+      "sha256": "f242f787cbcd1358a6be4fa95e0d3c4dc8f37246797046eb21525c5745cd5139"
+    },
+    {
+      "path": "source_snapshot.json",
+      "bytes": 6837,
+      "sha256": "bcf51d91695c67d258b570dd759872ee3b7f69e4dfaa73153d1e4177946376d0"
+    },
+    {
+      "path": "targeted_correctness.json",
+      "bytes": 305168,
+      "sha256": "c0a921ef7ffaac9b90d62fb344ac9ba03b507531a8ca32a0a610cead0292640a"
+    },
+    {
+      "path": "targeted_correctness.log",
+      "bytes": 34612,
+      "sha256": "35c2e99a8fd4d116ef2ec5d264e599e2e02d146ab154bb408feb8e7a8dd76bc1"
+    },
+    {
+      "path": "validate_snapshot.py",
+      "bytes": 5883,
+      "sha256": "61dbcd12678b427cdcfb0909638de529ee0e3b2417c654081216fb6fc970c3d7"
+    },
+    {
+      "path": "windows_hardware.json",
+      "bytes": 849,
+      "sha256": "1bcbd2072512e2da222b070283c6b9327215991ad53aec1573e3b19edd76101f"
+    }
+  ]
+}

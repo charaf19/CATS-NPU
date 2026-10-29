@@ -1,0 +1,59 @@
+{
+  "observation_count": 1120,
+  "case_count": 16,
+  "all_correct": true,
+  "query_count": 8,
+  "session_interpretation": "descriptive; query subprocesses are not time-separated sessions",
+  "cost_over_geometric_speedup_min_median_max": [
+    0.7329324264962055,
+    0.9609681508691923,
+    1.2746014663348355
+  ],
+  "cost_over_fixed_speedup_min_median_max": [
+    0.49659936077071054,
+    1.0747723523486874,
+    1.3377012911250288
+  ],
+  "geometric_over_fixed_speedup_min_median_max": [
+    0.5443399395364461,
+    1.0522561390902971,
+    1.3769870302627203
+  ],
+  "fixed_vs_cpp_slowdown_min_median_max": [
+    8.606131386861314,
+    16.086951805966926,
+    26.96260387811634
+  ],
+  "cost_vs_cpp_slowdown_min_median_max": [
+    6.7861105318039625,
+    16.3469274138766,
+    46.787384833451455
+  ],
+  "fixed_vs_cuda_slowdown_min_median_max": [
+    5.542539546814878,
+    9.581926804215097,
+    23.97159862169782
+  ],
+  "cost_vs_cuda_slowdown_min_median_max": [
+    4.831889081455806,
+    13.258757844414323,
+    23.57011590268351
+  ],
+  "direct_vs_cpp_slowdown_min_median_max": [
+    15.20120959332638,
+    22.620859314283067,
+    41.56031226391337
+  ],
+  "direct_vs_cuda_slowdown_min_median_max": [
+    7.142499518582708,
+    15.493032673082247,
+    35.733214994257075
+  ],
+  "geometric_over_direct_speedup_min_median_max": [
+    0.7171677602585447,
+    1.4521558587727719,
+    1.981742600598603
+  ],
+  "submission_aware_faster_than_geometric_cases": 5,
+  "geometric_faster_than_fixed_cases": 10
+}

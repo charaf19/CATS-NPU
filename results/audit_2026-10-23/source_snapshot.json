@@ -1,0 +1,212 @@
+{
+  "git_commit": null,
+  "reason": "extracted workspace has no .git",
+  "manifest_sha256": "7414e17e4b44f2dc096d826084a67ff7ff585739e1dd2a50b9293322de81ecc3",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 118,
+      "sha256": "e4a06d1d21629691adaf402384622e9aa1002a71e0c4c23ff97f990d28f132e7"
+    },
+    {
+      "path": "configs/pilot.json",
+      "bytes": 934,
+      "sha256": "f754f9119e3efd512610c4627c3b07aa30303440c677cc843e9649435b636b03"
+    },
+    {
+      "path": "docs/MATHEMATICAL_SPECIFICATION.md",
+      "bytes": 3495,
+      "sha256": "623a1e75d75673c6135f6e8ab074f0bace3581f75714e71095a5c86fd363fcb4"
+    },
+    {
+      "path": "docs/METHODOLOGY.md",
+      "bytes": 6146,
+      "sha256": "2ad9b99494622288f38faa53c25216768f6de8658e3caa10e5f89ac793e3416f"
+    },
+    {
+      "path": "docs/NOTES_AND_LIMITATIONS.md",
+      "bytes": 2897,
+      "sha256": "3ca3b5e474dff628a2d2b623928615651769eb8fcbc0ac4aa9c030986881cdf0"
+    },
+    {
+      "path": "docs/RESEARCH_GATES.md",
+      "bytes": 2571,
+      "sha256": "d10781b77a41d7dca64a3af7c180f3d1518990e33a38b76d76accf01d4c8eb76"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 1698,
+      "sha256": "df16e8a79a5983cb933e738fbf62e5162ca48be9d5da8eb97d6ac8f26e6ed1f1"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1074,
+      "sha256": "76aa2e2bb6038d78db1369ea101eb11b74ae9240ae6e3fdaa63a2594e34abbef"
+    },
+    {
+      "path": "native/CMakeLists.txt",
+      "bytes": 385,
+      "sha256": "b1f53badc6b86bd180b7ba7fcc2512264e3b03ca8f0cb63a049251529d760ad2"
+    },
+    {
+      "path": "native/topk.cpp",
+      "bytes": 1432,
+      "sha256": "02fe71fdc9265a644d8c139e851ab8a6cdd877e8c210e06c6ba48a86e38c10d2"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 785,
+      "sha256": "5bff1aefc8daa882f3daf8da93409813494ed6c2cc9266965e51df6d23341482"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10639,
+      "sha256": "e9648e4157139e0f58685409b826995f888f0f2e4dbf7ec1f563ec9df9e2d95c"
+    },
+    {
+      "path": "scripts/00_setup.ps1",
+      "bytes": 809,
+      "sha256": "05c30fe98be36bc84f23b57b0d153f1ec0df25885e960bc9c2fa9fde511eaeec"
+    },
+    {
+      "path": "scripts/01_doctor.ps1",
+      "bytes": 298,
+      "sha256": "12acf2c66833759a537e21cd33eecfc7160d1e7223743cbd52759105a55f1b23"
+    },
+    {
+      "path": "scripts/02_probe_npu.ps1",
+      "bytes": 581,
+      "sha256": "5f1522d57b28e6cdee3e6f52ed152efb5597d68d7b8790309cac8e1e65efaecf"
+    },
+    {
+      "path": "scripts/03_smoke_cpu.ps1",
+      "bytes": 471,
+      "sha256": "1842091d1b1405a621e9fc47d9214e6adb8900b1bb5f9ad51b59324813ebf64f"
+    },
+    {
+      "path": "scripts/04_smoke_npu.ps1",
+      "bytes": 601,
+      "sha256": "02658e927e320a320d0ece643e4a5a548f1d87adbad300e9314ea604758c3c53"
+    },
+    {
+      "path": "scripts/05_benchmark_cpu.ps1",
+      "bytes": 577,
+      "sha256": "797489a409ed7d34abc309f42eca025ab72f5083aeac1f1dc6035e8c26175c74"
+    },
+    {
+      "path": "scripts/06_benchmark_npu.ps1",
+      "bytes": 653,
+      "sha256": "b439901a64df2b55a38bb6052f3736434c74701da9798aba5f9a16c056922b64"
+    },
+    {
+      "path": "scripts/07_analyze.ps1",
+      "bytes": 551,
+      "sha256": "ac081c681fbb0373b0d23c4993bed6deb6ec1f58c40a219de06994f23feb39d9"
+    },
+    {
+      "path": "scripts/08_build_cpp.ps1",
+      "bytes": 442,
+      "sha256": "4b33361ca209830023ac00d37355be62b481b87b995364052b4186e9517a2664"
+    },
+    {
+      "path": "scripts/09_freeze_environment.ps1",
+      "bytes": 638,
+      "sha256": "2347e86f913991099a9e9696efc017dd55b2aaae9515c43263855c604f7b5d7a"
+    },
+    {
+      "path": "src/cats_npu/__init__.py",
+      "bytes": 179,
+      "sha256": "9256ae64e3df05e2e5a9dabcbad29f1b1f5da274275963d1a44a9c6382c56862"
+    },
+    {
+      "path": "src/cats_npu/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "src/cats_npu/algorithms.py",
+      "bytes": 11920,
+      "sha256": "25a9bfe4b441d8cd7ffe434c89ebd19b39c69e17bfbb56565e24569c714a9fb4"
+    },
+    {
+      "path": "src/cats_npu/backends.py",
+      "bytes": 9962,
+      "sha256": "1e280c57517f25cef74f2a0b20324d838db6e17294502e274bb4d539c47d33c7"
+    },
+    {
+      "path": "src/cats_npu/benchmark.py",
+      "bytes": 8236,
+      "sha256": "bf043cac92cae581d369ef5f3be2073ea23da3af786aa433fbd9fb16ab0c48cf"
+    },
+    {
+      "path": "src/cats_npu/cli.py",
+      "bytes": 8329,
+      "sha256": "1a2a472bc210388015d1dfbbd90729afac637fcd0b25aba8d49dd3dd2a87315d"
+    },
+    {
+      "path": "src/cats_npu/data_import.py",
+      "bytes": 2802,
+      "sha256": "9d53183e36f9ac31413275cc2613a7ed3ab05dd5fa72a08906cbcb3b8a4ff91d"
+    },
+    {
+      "path": "src/cats_npu/native.py",
+      "bytes": 2060,
+      "sha256": "e1d6c193570b9a5156e7e3598e65fc2ffba173b5e2f847b7e12b6813f3a05859"
+    },
+    {
+      "path": "src/cats_npu/probe.py",
+      "bytes": 6389,
+      "sha256": "e3c3beb7b09bba275ce8ad6594cd858dddd2d1104a7638ae21691291d4856bd9"
+    },
+    {
+      "path": "src/cats_npu/reference.py",
+      "bytes": 2882,
+      "sha256": "243a9d89ce20b6c763c1ba2bd37de5a42738e3d325dcc9f3d1dbc492e66c0860"
+    },
+    {
+      "path": "src/cats_npu/statistics.py",
+      "bytes": 6919,
+      "sha256": "a117d1f3a47fc28bd45101cc879c82a04abfd494fcff9c0e598a22f926e13238"
+    },
+    {
+      "path": "src/cats_npu/workloads.py",
+      "bytes": 1977,
+      "sha256": "0313f03e164e7a08ddff6cfb53e1eeecda9ebd918ad33b10d223e282cb4513a1"
+    },
+    {
+      "path": "tests/test_algorithms.py",
+      "bytes": 2698,
+      "sha256": "db0abc45edb05bf801d6d223d12c4105ebbef2e932fa5350449eb0346bad8a20"
+    },
+    {
+      "path": "tests/test_benchmark.py",
+      "bytes": 796,
+      "sha256": "1ef133f86c406665608e985562fd6a8680dcceb8871f4a40cbf0378dff86bf9b"
+    },
+    {
+      "path": "tests/test_data_import.py",
+      "bytes": 682,
+      "sha256": "b49101d9b0b6e0b18769b02bf335ed48a2d68ea69a5b5bad699f957aa60f02b7"
+    },
+    {
+      "path": "tests/test_native_optional.py",
+      "bytes": 650,
+      "sha256": "0d02e692c512b2afd1375eaffad38af3c2f270bba260192acd9318e18b58dade"
+    },
+    {
+      "path": "tests/test_openvino_optional.py",
+      "bytes": 893,
+      "sha256": "74985aa81bb0b86032bb70c4f99c77626bb86799e20bdd609424be9e85c2a07b"
+    },
+    {
+      "path": "tests/test_reference.py",
+      "bytes": 1214,
+      "sha256": "6a53e4142a94498b61d01d398ba0fec1051403f67c0c688a9ae91fb35a655a07"
+    },
+    {
+      "path": "tests/test_statistics.py",
+      "bytes": 2465,
+      "sha256": "f242f787cbcd1358a6be4fa95e0d3c4dc8f37246797046eb21525c5745cd5139"
+    }
+  ]
+}

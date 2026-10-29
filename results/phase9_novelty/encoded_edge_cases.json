@@ -1,0 +1,150 @@
+{
+  "purpose": "physical integer-encoded stable TopK edge probes",
+  "cases": {
+    "all_equal": {
+      "n": 513,
+      "k": 10,
+      "ordered_fp16_span": 1,
+      "max_unsigned_key": 512,
+      "int32_capacity_span": 8355967,
+      "execution_devices": [
+        "NPU"
+      ],
+      "ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "expected": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "correct": true
+    },
+    "signed_zero": {
+      "n": 513,
+      "k": 10,
+      "ordered_fp16_span": 1,
+      "max_unsigned_key": 512,
+      "int32_capacity_span": 8355967,
+      "execution_devices": [
+        "NPU"
+      ],
+      "ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "expected": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "correct": true
+    },
+    "boundary_tie": {
+      "n": 5183,
+      "k": 10,
+      "ordered_fp16_span": 30722,
+      "max_unsigned_key": 159262846,
+      "int32_capacity_span": 828504,
+      "execution_devices": [
+        "NPU"
+      ],
+      "ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "expected": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "correct": true
+    },
+    "irregular_n257": {
+      "n": 257,
+      "k": 10,
+      "ordered_fp16_span": 23553,
+      "max_unsigned_key": 6076672,
+      "int32_capacity_span": 16647160,
+      "execution_devices": [
+        "NPU"
+      ],
+      "ids": [
+        256,
+        255,
+        254,
+        253,
+        252,
+        251,
+        250,
+        249,
+        248,
+        247
+      ],
+      "expected": [
+        256,
+        255,
+        254,
+        253,
+        252,
+        251,
+        250,
+        249,
+        248,
+        247
+      ],
+      "correct": true
+    },
+    "unsupported_wide_span": {
+      "n": 1000000,
+      "k": 10,
+      "error": "ValueError: FP16 order span 63488 exceeds exact int32 key domain at N=1000000"
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "timestamp_utc": "2026-10-23T13:24:43.723423+00:00",
+  "device_requested": "NPU",
+  "available_devices": [
+    "CPU",
+    "GPU.0",
+    "GPU.1",
+    "NPU"
+  ],
+  "openvino": "2026.4.1-22982-e213a147257-releases/2026/4",
+  "dtype": "f16",
+  "compiler_type_requested": "DRIVER",
+  "operations": {
+    "TopK": {
+      "compiled": true,
+      "inferred": true,
+      "correct": true,
+      "execution_devices": [
+        "NPU"
+      ],
+      "compile_ms": 10.2407,
+      "inference_ms": 4.5018,
+      "compiler_type_used": "CompilerType.DRIVER",
+      "indices": [
+        15,
+        14,
+        13,
+        12
+      ]
+    },
+    "ReduceMax": {
+      "compiled": true,
+      "inferred": true,
+      "correct": true,
+      "execution_devices": [
+        "NPU"
+      ],
+      "compile_ms": 2.3617,
+      "inference_ms": 2.2751,
+      "compiler_type_used": "CompilerType.DRIVER",
+      "output_shape": [
+        1,
+        1
+      ]
+    },
+    "GreaterSelect": {
+      "compiled": true,
+      "inferred": true,
+      "correct": true,
+      "execution_devices": [
+        "NPU"
+      ],
+      "compile_ms": 2.0911,
+      "inference_ms": 2.0844,
+      "compiler_type_used": "CompilerType.DRIVER",
+      "output_shape": [
+        1,
+        16
+      ]
+    },
+    "ReduceSum": {
+      "compiled": true,
+      "inferred": true,
+      "correct": true,
+      "execution_devices": [
+        "NPU"
+      ],
+      "compile_ms": 1.659,
+      "inference_ms": 2.287,
+      "compiler_type_used": "CompilerType.DRIVER",
+      "output_shape": [
+        1,
+        1
+      ]
+    },
+    "Gather": {
+      "compiled": true,
+      "inferred": true,
+      "correct": true,
+      "execution_devices": [
+        "NPU"
+      ],
+      "compile_ms": 1.9315,
+      "inference_ms": 2.1264,
+      "compiler_type_used": "CompilerType.DRIVER",
+      "output_shape": [
+        1,
+        3
+      ]
+    },
+    "Concat": {
+      "compiled": true,
+      "inferred": true,
+      "correct": true,
+      "execution_devices": [
+        "NPU"
+      ],
+      "compile_ms": 1.9282,
+      "inference_ms": 2.1278,
+      "compiler_type_used": "CompilerType.DRIVER",
+      "output_shape": [
+        1,
+        32
+      ]
+    },
+    "Bitonic": {
+      "compiled": false,
+      "inferred": false,
+      "correct": false,
+      "execution_devices": [],
+      "compile_ms": null,
+      "inference_ms": null,
+      "error": "RuntimeError: Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nException from src\\plugins\\intel_npu\\src\\plugin\\src\\plugin.cpp:560:\nException from src\\plugins\\intel_npu\\src\\compiler_adapter\\src\\ze_graph_ext_wrappers.cpp:433:\nCompilation failed. Level0 pfnCreate2 result: ZE_RESULT_ERROR_INVALID_ARGUMENT, code 0x78000004 - generic error code for invalid arguments . [NPU_VCL] Compiler returned msg:\nFailed to create a valid MLIR module for the IR model\n\n\n\n"
+    }
+  },
+  "all_passed": false,
+  "warning": "Every row includes actual inference and a deterministic smoke-input check. Passing this probe is not adversarial numerical-exactness proof."
+}

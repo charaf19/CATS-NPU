@@ -1,0 +1,58 @@
+{
+  "method": "torch_cuda_stable",
+  "correct": true,
+  "expected": [
+    846,
+    3304,
+    2863,
+    3141,
+    1616,
+    139,
+    248,
+    2053,
+    3732,
+    3424
+  ],
+  "actual": [
+    846,
+    3304,
+    2863,
+    3141,
+    1616,
+    139,
+    248,
+    2053,
+    3732,
+    3424
+  ],
+  "compile_ms_excluded": 0.0,
+  "device_info": {
+    "requested": "cuda",
+    "torch_version": "2.11.0+cu128",
+    "stable_tie_policy": true,
+    "device_index": 0,
+    "device_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "compute_capability": [
+      12,
+      0
+    ]
+  },
+  "certificate": "torch_topk_host_canonical_order",
+  "rounds": 1,
+  "backend_calls": 1,
+  "candidate_count": 10,
+  "cpu_tie_repairs": 0,
+  "backend_ns": 128266400,
+  "host_routing_and_merge": true,
+  "host_input_preparation_ns": 0,
+  "backend_input_cast_ns": 0,
+  "backend_execute_sync_ns": 128266400,
+  "backend_output_copy_ns": 0,
+  "backend_validation_ns": 0,
+  "candidate_extraction_ns": 54500,
+  "merge_ns": 0,
+  "certification_ns": 0,
+  "device_submissions": 1,
+  "staged_input_bytes": 8192,
+  "retrieved_output_bytes": 80
+}

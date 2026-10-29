@@ -1,0 +1,47 @@
+{
+  "purpose": "stable integer TopK two-level ablation",
+  "input": "None",
+  "n": 512,
+  "k": 4,
+  "width": 256,
+  "correct": true,
+  "samples": [
+    {
+      "encoding_ms": 0.0706,
+      "infer_and_staging_ms": 4.4894,
+      "verification_ms": 0.2163,
+      "end_to_end_ms": 4.7763,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.0222,
+      "infer_and_staging_ms": 0.6753,
+      "verification_ms": 0.0964,
+      "end_to_end_ms": 0.7939,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.0141,
+      "infer_and_staging_ms": 0.6301,
+      "verification_ms": 0.0772,
+      "end_to_end_ms": 0.7214,
+      "correct": true
+    }
+  ],
+  "cpu_correct": true,
+  "execution_devices": [
+    "NPU"
+  ],
+  "selected_ids": [
+    63,
+    62,
+    61,
+    60
+  ],
+  "expected_ids": [
+    63,
+    62,
+    61,
+    60
+  ]
+}

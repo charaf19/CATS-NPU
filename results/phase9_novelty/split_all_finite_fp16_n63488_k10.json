@@ -1,0 +1,72 @@
+{
+  "timestamp_utc": "2026-10-27T12:24:22.411986+00:00",
+  "status": "exploratory physical NPU split-key graph probe",
+  "input": "results\\phase9_novelty\\all_finite_fp16.npy",
+  "input_sha256": "2da4a859a17780f673138e72e4e2e6959131ff59f8f5c34d4f68598e722885fe",
+  "n": 63488,
+  "k": 10,
+  "width": 256,
+  "correct": true,
+  "samples": [
+    {
+      "encoding_ms": 0.3157,
+      "staging_ms": 0.0212,
+      "infer_sync_ms": 13.3948,
+      "copy_ms": 0.0297,
+      "verification_ms": 0.3774,
+      "end_to_end_ms": 14.1388,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.1934,
+      "staging_ms": 0.0175,
+      "infer_sync_ms": 10.3414,
+      "copy_ms": 0.0163,
+      "verification_ms": 0.3053,
+      "end_to_end_ms": 10.8739,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.1778,
+      "staging_ms": 0.0162,
+      "infer_sync_ms": 10.2403,
+      "copy_ms": 0.0056,
+      "verification_ms": 0.2012,
+      "end_to_end_ms": 10.6411,
+      "correct": true
+    }
+  ],
+  "independent_sessions": false,
+  "cpu_graph_correct": true,
+  "compile_ms": 134.0419,
+  "execution_devices": [
+    "NPU"
+  ],
+  "submissions_per_query": 1,
+  "staged_input_bytes": 253952,
+  "retrieved_output_bytes": 80,
+  "selected_ids": [
+    31743,
+    31742,
+    31741,
+    31740,
+    31739,
+    31738,
+    31737,
+    31736,
+    31735,
+    31734
+  ],
+  "expected_ids": [
+    31743,
+    31742,
+    31741,
+    31740,
+    31739,
+    31738,
+    31737,
+    31736,
+    31735,
+    31734
+  ]
+}

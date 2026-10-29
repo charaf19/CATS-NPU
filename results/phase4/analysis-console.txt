@@ -1,0 +1,189 @@
+{
+  "case_count": 16,
+  "submission_aware_faster_than_geometric": 13,
+  "submission_aware_slower_than_geometric": 3,
+  "cost_over_geometric_speedup_min_median_max": [
+    0.9276426432585422,
+    1.2723017716818341,
+    2.263061791924306
+  ],
+  "median_jumps": 1.0,
+  "interpretation": "development pilot only; one process is not an independent-session study"
+}
+Report written: results/phase4/policy_analysis.json
+
+N16384_K10_adversarial_f16_T256_B32_S42
+  cpp_exact                      median=0.20655 ms p95=0.6674300000000001 ms invalid=0
+  cpu_exact                      median=0.98935 ms p95=1.176635 ms invalid=0
+  ov_npu_native_batched_adaptive median=6.937049999999999 ms p95=7.83768 ms invalid=0
+  ov_npu_native_batched_costadaptive median=3.4389000000000003 ms p95=5.104105 ms invalid=0
+  ov_npu_native_batched_hier     median=2.8899 ms p95=3.86839 ms invalid=0
+    vs cpp_exact: cpu_exact speedup=0.209 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_adaptive speedup=0.030 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_costadaptive speedup=0.060 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_hier speedup=0.071 sessions=1 status=exploratory_insufficient_sessions
+
+N16384_K10_clustered_f16_T256_B32_S42
+  cpp_exact                      median=0.1495 ms p95=0.49452 ms invalid=0
+  cpu_exact                      median=1.2851 ms p95=4.7485100000000005 ms invalid=0
+  ov_npu_native_batched_adaptive median=6.028700000000001 ms p95=7.29128 ms invalid=0
+  ov_npu_native_batched_costadaptive median=3.85415 ms p95=5.612960000000001 ms invalid=0
+  ov_npu_native_batched_hier     median=3.59665 ms p95=6.046615000000002 ms invalid=0
+    vs cpp_exact: cpu_exact speedup=0.116 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_adaptive speedup=0.025 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_costadaptive speedup=0.039 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_hier speedup=0.042 sessions=1 status=exploratory_insufficient_sessions
+
+N16384_K10_normal_f16_T256_B32_S42
+  cpp_exact                      median=0.1515 ms p95=0.368715 ms invalid=0
+  cpu_exact                      median=1.4636 ms p95=3.3523000000000005 ms invalid=0
+  ov_npu_native_batched_adaptive median=4.2751 ms p95=5.06871 ms invalid=0
+  ov_npu_native_batched_costadaptive median=3.5585500000000003 ms p95=4.088075 ms invalid=0
+  ov_npu_native_batched_hier     median=3.09715 ms p95=4.537640000000002 ms invalid=0
+    vs cpp_exact: cpu_exact speedup=0.104 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_adaptive speedup=0.035 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_costadaptive speedup=0.043 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_hier speedup=0.049 sessions=1 status=exploratory_insufficient_sessions
+
+N16384_K10_tied_f16_T256_B32_S42
+  cpp_exact                      median=0.19915 ms p95=0.5045000000000002 ms invalid=0
+  cpu_exact                      median=1.4952 ms p95=4.54115 ms invalid=0
+  ov_npu_native_batched_adaptive median=3.6986 ms p95=4.400145 ms invalid=0
+  ov_npu_native_batched_costadaptive median=3.65215 ms p95=4.30682 ms invalid=0
+  ov_npu_native_batched_hier     median=4.1922 ms p95=6.44641 ms invalid=0
+    vs cpp_exact: cpu_exact speedup=0.133 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_adaptive speedup=0.054 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_costadaptive speedup=0.055 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_hier speedup=0.048 sessions=1 status=exploratory_insufficient_sessions
+
+N16384_K4_adversarial_f16_T256_B32_S42
+  cpp_exact                      median=0.18964999999999999 ms p95=0.3031350000000002 ms invalid=0
+  cpu_exact                      median=1.8022 ms p95=4.12751 ms invalid=0
+  ov_npu_native_batched_adaptive median=4.6198 ms p95=5.846215 ms invalid=0
+  ov_npu_native_batched_costadaptive median=4.57485 ms p95=5.312795 ms invalid=0
+  ov_npu_native_batched_hier     median=2.48645 ms p95=3.4695350000000005 ms invalid=0
+    vs cpp_exact: cpu_exact speedup=0.105 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_adaptive speedup=0.041 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_costadaptive speedup=0.041 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_hier speedup=0.076 sessions=1 status=exploratory_insufficient_sessions
+
+N16384_K4_clustered_f16_T256_B32_S42
+  cpp_exact                      median=0.1394 ms p95=0.51903 ms invalid=0
+  cpu_exact                      median=1.21675 ms p95=3.4543150000000007 ms invalid=0
+  ov_npu_native_batched_adaptive median=5.56855 ms p95=7.6781700000000015 ms invalid=0
+  ov_npu_native_batched_costadaptive median=4.1456 ms p95=5.758205000000002 ms invalid=0
+  ov_npu_native_batched_hier     median=2.6838499999999996 ms p95=3.9048100000000003 ms invalid=0
+    vs cpp_exact: cpu_exact speedup=0.115 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_adaptive speedup=0.025 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_costadaptive speedup=0.034 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_hier speedup=0.052 sessions=1 status=exploratory_insufficient_sessions
+
+N16384_K4_normal_f16_T256_B32_S42
+  cpp_exact                      median=0.14155 ms p95=0.2701450000000001 ms invalid=0
+  cpu_exact                      median=1.4085999999999999 ms p95=3.3821050000000006 ms invalid=0
+  ov_npu_native_batched_adaptive median=2.3304 ms p95=3.4140449999999998 ms invalid=0
+  ov_npu_native_batched_costadaptive median=2.3381499999999997 ms p95=2.67423 ms invalid=0
+  ov_npu_native_batched_hier     median=2.46795 ms p95=3.327865 ms invalid=0
+    vs cpp_exact: cpu_exact speedup=0.100 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_adaptive speedup=0.061 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_costadaptive speedup=0.061 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_hier speedup=0.057 sessions=1 status=exploratory_insufficient_sessions
+
+N16384_K4_tied_f16_T256_B32_S42
+  cpp_exact                      median=0.1915 ms p95=0.248465 ms invalid=0
+  cpu_exact                      median=1.5420500000000001 ms p95=4.51199 ms invalid=0
+  ov_npu_native_batched_adaptive median=3.6016 ms p95=6.079530000000001 ms invalid=0
+  ov_npu_native_batched_costadaptive median=3.55985 ms p95=4.35932 ms invalid=0
+  ov_npu_native_batched_hier     median=3.5737 ms p95=6.38231 ms invalid=0
+    vs cpp_exact: cpu_exact speedup=0.124 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_adaptive speedup=0.053 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_costadaptive speedup=0.054 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_hier speedup=0.054 sessions=1 status=exploratory_insufficient_sessions
+
+N4096_K10_adversarial_f16_T256_B32_S42
+  cpp_exact                      median=0.08795 ms p95=0.20424500000000007 ms invalid=0
+  cpu_exact                      median=0.35655000000000003 ms p95=1.2228400000000004 ms invalid=0
+  ov_npu_native_batched_adaptive median=4.87635 ms p95=5.994635000000003 ms invalid=0
+  ov_npu_native_batched_costadaptive median=2.28435 ms p95=3.0513850000000002 ms invalid=0
+  ov_npu_native_batched_hier     median=1.33045 ms p95=1.9357250000000001 ms invalid=0
+    vs cpp_exact: cpu_exact speedup=0.247 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_adaptive speedup=0.018 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_costadaptive speedup=0.039 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_hier speedup=0.066 sessions=1 status=exploratory_insufficient_sessions
+
+N4096_K10_clustered_f16_T256_B32_S42
+  cpp_exact                      median=0.07125000000000001 ms p95=0.21393 ms invalid=0
+  cpu_exact                      median=0.30385 ms p95=1.1722050000000002 ms invalid=0
+  ov_npu_native_batched_adaptive median=5.4533000000000005 ms p95=6.9125450000000015 ms invalid=0
+  ov_npu_native_batched_costadaptive median=2.4097 ms p95=2.8754100000000005 ms invalid=0
+  ov_npu_native_batched_hier     median=1.16575 ms p95=1.3920550000000003 ms invalid=0
+    vs cpp_exact: cpu_exact speedup=0.234 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_adaptive speedup=0.013 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_costadaptive speedup=0.030 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_hier speedup=0.061 sessions=1 status=exploratory_insufficient_sessions
+
+N4096_K10_normal_f16_T256_B32_S42
+  cpp_exact                      median=0.075 ms p95=0.11326 ms invalid=0
+  cpu_exact                      median=0.30369999999999997 ms p95=0.40813000000000055 ms invalid=0
+  ov_npu_native_batched_adaptive median=2.2615 ms p95=2.40664 ms invalid=0
+  ov_npu_native_batched_costadaptive median=2.4379 ms p95=3.2331500000000006 ms invalid=0
+  ov_npu_native_batched_hier     median=1.3165 ms p95=1.91236 ms invalid=0
+    vs cpp_exact: cpu_exact speedup=0.247 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_adaptive speedup=0.033 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_costadaptive speedup=0.031 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_hier speedup=0.057 sessions=1 status=exploratory_insufficient_sessions
+
+N4096_K10_tied_f16_T256_B32_S42
+  cpp_exact                      median=0.23735 ms p95=0.354995 ms invalid=0
+  cpu_exact                      median=0.3373 ms p95=1.093825 ms invalid=0
+  ov_npu_native_batched_adaptive median=3.52955 ms p95=4.25349 ms invalid=0
+  ov_npu_native_batched_costadaptive median=2.53945 ms p95=3.465510000000001 ms invalid=0
+  ov_npu_native_batched_hier     median=1.71135 ms p95=2.854675000000001 ms invalid=0
+    vs cpp_exact: cpu_exact speedup=0.704 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_adaptive speedup=0.067 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_costadaptive speedup=0.093 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_hier speedup=0.139 sessions=1 status=exploratory_insufficient_sessions
+
+N4096_K4_adversarial_f16_T256_B32_S42
+  cpp_exact                      median=0.09805 ms p95=0.20415000000000003 ms invalid=0
+  cpu_exact                      median=0.28785 ms p95=1.39649 ms invalid=0
+  ov_npu_native_batched_adaptive median=3.43035 ms p95=3.848695 ms invalid=0
+  ov_npu_native_batched_costadaptive median=2.3207 ms p95=2.9025000000000003 ms invalid=0
+  ov_npu_native_batched_hier     median=1.1822 ms p95=1.852835 ms invalid=0
+    vs cpp_exact: cpu_exact speedup=0.341 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_adaptive speedup=0.029 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_costadaptive speedup=0.042 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_hier speedup=0.083 sessions=1 status=exploratory_insufficient_sessions
+
+N4096_K4_clustered_f16_T256_B32_S42
+  cpp_exact                      median=0.069 ms p95=0.19552500000000003 ms invalid=0
+  cpu_exact                      median=0.35555000000000003 ms p95=1.1527850000000002 ms invalid=0
+  ov_npu_native_batched_adaptive median=3.4485 ms p95=4.119615 ms invalid=0
+  ov_npu_native_batched_costadaptive median=2.3878500000000003 ms p95=2.73003 ms invalid=0
+  ov_npu_native_batched_hier     median=1.2271999999999998 ms p95=1.8336800000000004 ms invalid=0
+    vs cpp_exact: cpu_exact speedup=0.194 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_adaptive speedup=0.020 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_costadaptive speedup=0.029 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_hier speedup=0.056 sessions=1 status=exploratory_insufficient_sessions
+
+N4096_K4_normal_f16_T256_B32_S42
+  cpp_exact                      median=0.07405 ms p95=0.24822500000000006 ms invalid=0
+  cpu_exact                      median=0.3467 ms p95=0.7686450000000004 ms invalid=0
+  ov_npu_native_batched_adaptive median=2.31555 ms p95=2.8770350000000002 ms invalid=0
+  ov_npu_native_batched_costadaptive median=2.3013500000000002 ms p95=2.8247200000000006 ms invalid=0
+  ov_npu_native_batched_hier     median=1.2396500000000001 ms p95=2.0542450000000003 ms invalid=0
+    vs cpp_exact: cpu_exact speedup=0.214 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_adaptive speedup=0.032 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_costadaptive speedup=0.032 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_hier speedup=0.060 sessions=1 status=exploratory_insufficient_sessions
+
+N4096_K4_tied_f16_T256_B32_S42
+  cpp_exact                      median=0.09015000000000001 ms p95=0.20441000000000004 ms invalid=0
+  cpu_exact                      median=0.3045 ms p95=0.35261000000000003 ms invalid=0
+  ov_npu_native_batched_adaptive median=2.2902 ms p95=2.6707500000000004 ms invalid=0
+  ov_npu_native_batched_costadaptive median=2.3579999999999997 ms p95=3.144765 ms invalid=0
+  ov_npu_native_batched_hier     median=1.5419 ms p95=1.7390750000000004 ms invalid=0
+    vs cpp_exact: cpu_exact speedup=0.296 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_adaptive speedup=0.039 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_costadaptive speedup=0.038 sessions=1 status=exploratory_insufficient_sessions
+    vs cpp_exact: ov_npu_native_batched_hier speedup=0.058 sessions=1 status=exploratory_insufficient_sessions

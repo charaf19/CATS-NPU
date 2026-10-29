@@ -1,0 +1,354 @@
+{"tested": 320, "correct": 143, "failed": 177}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "uniform", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "normal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "clustered", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "tied", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "near_ties", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "adversarial", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "all_equal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "signed_zero", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "subnormal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "extreme", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "uniform", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "normal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "clustered", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "tied", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "near_ties", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "adversarial", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "all_equal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "signed_zero", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "subnormal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "extreme", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_direct", "dtype": "f16", "n": 64, "k": 4, "distribution": "subnormal", "error": null}
+{"method": "ov_npu_native_direct", "dtype": "f16", "n": 65, "k": 10, "distribution": "subnormal", "error": null}
+{"method": "ov_npu_native_direct", "dtype": "f16", "n": 17, "k": 1, "distribution": "subnormal", "error": null}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 64, "k": 4, "distribution": "subnormal", "error": null}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "uniform", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "normal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "clustered", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "tied", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "near_ties", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "adversarial", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "all_equal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "signed_zero", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "subnormal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 65, "k": 10, "distribution": "extreme", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "uniform", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "normal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "clustered", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "tied", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "near_ties", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "adversarial", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "all_equal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "signed_zero", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "subnormal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f16", "n": 33, "k": 33, "distribution": "extreme", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_adaptive", "dtype": "f16", "n": 64, "k": 4, "distribution": "subnormal", "error": null}
+{"method": "ov_npu_native_adaptive", "dtype": "f16", "n": 65, "k": 10, "distribution": "uniform", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_adaptive", "dtype": "f16", "n": 65, "k": 10, "distribution": "normal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_adaptive", "dtype": "f16", "n": 65, "k": 10, "distribution": "clustered", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_adaptive", "dtype": "f16", "n": 65, "k": 10, "distribution": "tied", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_adaptive", "dtype": "f16", "n": 65, "k": 10, "distribution": "near_ties", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_adaptive", "dtype": "f16", "n": 65, "k": 10, "distribution": "adversarial", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_adaptive", "dtype": "f16", "n": 65, "k": 10, "distribution": "all_equal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_adaptive", "dtype": "f16", "n": 65, "k": 10, "distribution": "signed_zero", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_adaptive", "dtype": "f16", "n": 65, "k": 10, "distribution": "subnormal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_adaptive", "dtype": "f16", "n": 65, "k": 10, "distribution": "extreme", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "uniform", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "normal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "clustered", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "tied", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "near_ties", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "adversarial", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "all_equal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "signed_zero", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "subnormal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "extreme", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "uniform", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "normal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "clustered", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "tied", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "near_ties", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "adversarial", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "all_equal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "signed_zero", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "subnormal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_cpu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "extreme", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 64, "k": 4, "distribution": "uniform", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 64, "k": 4, "distribution": "normal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 64, "k": 4, "distribution": "clustered", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 64, "k": 4, "distribution": "tied", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 64, "k": 4, "distribution": "near_ties", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 64, "k": 4, "distribution": "adversarial", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 64, "k": 4, "distribution": "subnormal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 64, "k": 4, "distribution": "extreme", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 65, "k": 10, "distribution": "uniform", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 65, "k": 10, "distribution": "normal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 65, "k": 10, "distribution": "clustered", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 65, "k": 10, "distribution": "tied", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 65, "k": 10, "distribution": "near_ties", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 65, "k": 10, "distribution": "adversarial", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 65, "k": 10, "distribution": "subnormal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 65, "k": 10, "distribution": "extreme", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 33, "k": 33, "distribution": "uniform", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 33, "k": 33, "distribution": "normal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 33, "k": 33, "distribution": "clustered", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 33, "k": 33, "distribution": "tied", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 33, "k": 33, "distribution": "near_ties", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 33, "k": 33, "distribution": "adversarial", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 33, "k": 33, "distribution": "subnormal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 33, "k": 33, "distribution": "extreme", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 17, "k": 1, "distribution": "uniform", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 17, "k": 1, "distribution": "normal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 17, "k": 1, "distribution": "clustered", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 17, "k": 1, "distribution": "tied", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 17, "k": 1, "distribution": "near_ties", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 17, "k": 1, "distribution": "adversarial", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 17, "k": 1, "distribution": "subnormal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_direct", "dtype": "f32", "n": 17, "k": 1, "distribution": "extreme", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 64, "k": 4, "distribution": "uniform", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 64, "k": 4, "distribution": "normal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 64, "k": 4, "distribution": "clustered", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 64, "k": 4, "distribution": "tied", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 64, "k": 4, "distribution": "near_ties", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 64, "k": 4, "distribution": "adversarial", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 64, "k": 4, "distribution": "subnormal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 64, "k": 4, "distribution": "extreme", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "uniform", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "normal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "clustered", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "tied", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "near_ties", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "adversarial", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "all_equal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "signed_zero", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "subnormal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 65, "k": 10, "distribution": "extreme", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "uniform", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "normal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "clustered", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "tied", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "near_ties", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "adversarial", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "all_equal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "signed_zero", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "subnormal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 33, "k": 33, "distribution": "extreme", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 17, "k": 1, "distribution": "uniform", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 17, "k": 1, "distribution": "normal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 17, "k": 1, "distribution": "clustered", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 17, "k": 1, "distribution": "tied", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 17, "k": 1, "distribution": "near_ties", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 17, "k": 1, "distribution": "adversarial", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 17, "k": 1, "distribution": "subnormal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_hier", "dtype": "f32", "n": 17, "k": 1, "distribution": "extreme", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 64, "k": 4, "distribution": "uniform", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 64, "k": 4, "distribution": "normal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 64, "k": 4, "distribution": "clustered", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 64, "k": 4, "distribution": "tied", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 64, "k": 4, "distribution": "near_ties", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 64, "k": 4, "distribution": "adversarial", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 64, "k": 4, "distribution": "subnormal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 64, "k": 4, "distribution": "extreme", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 65, "k": 10, "distribution": "uniform", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 65, "k": 10, "distribution": "normal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 65, "k": 10, "distribution": "clustered", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 65, "k": 10, "distribution": "tied", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 65, "k": 10, "distribution": "near_ties", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 65, "k": 10, "distribution": "adversarial", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 65, "k": 10, "distribution": "all_equal", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 65, "k": 10, "distribution": "signed_zero", "error": "RuntimeError: K=2 not prepared; precompile outside timing"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 65, "k": 10, "distribution": "subnormal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 65, "k": 10, "distribution": "extreme", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 33, "k": 33, "distribution": "uniform", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 33, "k": 33, "distribution": "normal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 33, "k": 33, "distribution": "clustered", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 33, "k": 33, "distribution": "tied", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 33, "k": 33, "distribution": "near_ties", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 33, "k": 33, "distribution": "adversarial", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 33, "k": 33, "distribution": "subnormal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 33, "k": 33, "distribution": "extreme", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 17, "k": 1, "distribution": "uniform", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 17, "k": 1, "distribution": "normal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 17, "k": 1, "distribution": "clustered", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 17, "k": 1, "distribution": "tied", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 17, "k": 1, "distribution": "near_ties", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 17, "k": 1, "distribution": "adversarial", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 17, "k": 1, "distribution": "subnormal", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{"method": "ov_npu_native_adaptive", "dtype": "f32", "n": 17, "k": 1, "distribution": "extreme", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices"}
+{
+  "raw_topk": [
+    {
+      "dtype": "f16",
+      "distribution": "normal",
+      "execution_devices_raw": "NPU",
+      "indices": [
+        13,
+        7,
+        4,
+        8
+      ],
+      "expected": [
+        13,
+        7,
+        4,
+        8
+      ],
+      "deterministic_correct": true,
+      "selected_values_match": true
+    },
+    {
+      "dtype": "f16",
+      "distribution": "tied",
+      "execution_devices_raw": "NPU",
+      "indices": [
+        13,
+        7,
+        3,
+        8
+      ],
+      "expected": [
+        13,
+        7,
+        0,
+        3
+      ],
+      "deterministic_correct": false,
+      "selected_values_match": true
+    },
+    {
+      "dtype": "f16",
+      "distribution": "all_equal",
+      "execution_devices_raw": "NPU",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "expected": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "deterministic_correct": true,
+      "selected_values_match": true
+    },
+    {
+      "dtype": "f16",
+      "distribution": "one_ulp",
+      "execution_devices_raw": "NPU",
+      "indices": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "expected": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "deterministic_correct": true,
+      "selected_values_match": true
+    },
+    {
+      "dtype": "f32",
+      "distribution": "normal",
+      "execution_devices_raw": "NPU",
+      "indices": [
+        13,
+        7,
+        4,
+        8
+      ],
+      "expected": [
+        13,
+        7,
+        4,
+        8
+      ],
+      "deterministic_correct": true,
+      "selected_values_match": false
+    },
+    {
+      "dtype": "f32",
+      "distribution": "tied",
+      "execution_devices_raw": "NPU",
+      "indices": [
+        13,
+        7,
+        3,
+        8
+      ],
+      "expected": [
+        13,
+        7,
+        0,
+        3
+      ],
+      "deterministic_correct": false,
+      "selected_values_match": false
+    },
+    {
+      "dtype": "f32",
+      "distribution": "all_equal",
+      "execution_devices_raw": "NPU",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "expected": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "deterministic_correct": true,
+      "selected_values_match": true
+    },
+    {
+      "dtype": "f32",
+      "distribution": "one_ulp",
+      "execution_devices_raw": "NPU",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "expected": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "deterministic_correct": false,
+      "selected_values_match": false
+    }
+  ],
+  "reshape": [
+    {
+      "dtype": "float16",
+      "operation": "Reshape",
+      "device_requested": "NPU",
+      "compiled": true,
+      "inferred": true,
+      "correct": true,
+      "execution_devices_raw": "NPU"
+    },
+    {
+      "dtype": "float32",
+      "operation": "Reshape",
+      "device_requested": "NPU",
+      "compiled": true,
+      "inferred": true,
+      "correct": true,
+      "execution_devices_raw": "NPU"
+    }
+  ]
+}

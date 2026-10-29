@@ -1,0 +1,10 @@
+{
+  "session_id": "phase5_20261024T211632Z_beir_scifact_q0006_n5183",
+  "observations": 140,
+  "skipped": 0,
+  "wrong_results": 0,
+  "completed": true,
+  "valid_for_inference": true,
+  "results_file": "results\\phase5\\beir_evaluation\\20261024T211632Z\\beir_scifact_q0006_n5183\\observations_phase5_20261024T211632Z_beir_scifact_q0006_n5183.jsonl",
+  "skips_file": "results\\phase5\\beir_evaluation\\20261024T211632Z\\beir_scifact_q0006_n5183\\skips_phase5_20261024T211632Z_beir_scifact_q0006_n5183.jsonl"
+}

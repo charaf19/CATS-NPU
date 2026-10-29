@@ -1,0 +1,169 @@
+{
+  "timestamp_utc": "2026-10-28T10:27:44.739526+00:00",
+  "status": "final audit of existing evidence; no new hardware experiment",
+  "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "audit_source_commit": "fe7efd912fbcafa50691f65cb1ca1eea25e7cb8f",
+  "audit_script_sha256": "a9af3625d68af20c0f208cdffed8674f06b00dd68df490b66831835a373356a5",
+  "manifests": [
+    {
+      "manifest": "results/phase9/manifest.json",
+      "manifest_sha256": "fc277b3e8555d104c6f9d144d3546f0de5260ef4f299e1171c1631930fada9c5",
+      "source_commit": "0d86a8c59ec679b18146b1d6894b225e70e90760",
+      "raw_files_checked": 17,
+      "raw_hash_failures": [],
+      "source_revision_available": true
+    },
+    {
+      "manifest": "results/phase9_novelty/manifest.json",
+      "manifest_sha256": "1a9e12049295bfd278ff9c42682867d4066b2f0d7669166d4e6316f6ba61fbef",
+      "source_commit": "fe7efd912fbcafa50691f65cb1ca1eea25e7cb8f",
+      "raw_files_checked": 32,
+      "raw_hash_failures": [],
+      "source_revision_available": true
+    }
+  ],
+  "encoding_order_check": {
+    "domain": "all 65,536 binary16 words, excluding NaNs and infinities",
+    "finite_bit_patterns": 63488,
+    "distinct_numeric_codes": 63487,
+    "nonzero_subnormal_bit_patterns": 2046,
+    "minimum_code": 1024,
+    "maximum_code": 64511,
+    "all_63488_sorted_positions_match": true,
+    "signed_zeros_share_code": true,
+    "numeric_order_sha256": "ac5be8181259aa400932857cc4541a0b656a21fcffedd34f1c0bec11261d5a03",
+    "scope_limit": "exhaustive encoding order; not exhaustive NPU input vectors"
+  },
+  "compiler_conversion_consistency": {
+    "kind": "CPU model predictions compared with preserved physical observations",
+    "int16_source": "results/phase9_novelty/stable_i16_n1m_failure_diagnostic.json",
+    "int16_observed_values_match_fp16_roundtrip": true,
+    "int16_predicted_values": [
+      -7852,
+      -7880,
+      -8020,
+      -8200,
+      -8208,
+      -8224,
+      -8240,
+      -8272,
+      -8296,
+      -8304
+    ],
+    "int64_source": "results/phase9_novelty/i64_wrap_probe.json",
+    "int64_cases": {
+      "unit_delta_high_base": {
+        "case_reconstruction_matches_recorded_reference": true,
+        "observed_ids_match_signed32_prediction": true,
+        "observed_values_match_signed32_prediction": true
+      },
+      "across_32bit_boundary": {
+        "case_reconstruction_matches_recorded_reference": true,
+        "observed_ids_match_signed32_prediction": true,
+        "observed_values_match_signed32_prediction": true
+      },
+      "negative_64bit": {
+        "case_reconstruction_matches_recorded_reference": true,
+        "observed_ids_match_signed32_prediction": true,
+        "observed_values_match_signed32_prediction": true
+      }
+    },
+    "causal_limit": "consistent with pinned upstream passes; no installed-binary IR trace"
+  },
+  "existing_paired_pilot": {
+    "raw_file": "results/phase9_novelty/paired_sift_dev_q0000_n1000000_k10_with_stable.json",
+    "raw_sha256": "b8a58c5282a778304f9975d084678b3074234fb285d27948f7b342be4fc59496",
+    "n": 1000000,
+    "k": 10,
+    "width": 256,
+    "input_sha256": "880030a910a4da705dd99771342704af9279fb0357554f4a489192b9429f3db2",
+    "methods": {
+      "split_key_npu": {
+        "observations": 5,
+        "median_ms": 38.6571,
+        "descriptive_p95_ms": 42.396919999999994,
+        "all_correct": true
+      },
+      "stable_i32_npu": {
+        "observations": 5,
+        "median_ms": 30.86,
+        "descriptive_p95_ms": 33.80508,
+        "all_correct": true
+      },
+      "fp16_static_npu": {
+        "observations": 5,
+        "median_ms": 27.1454,
+        "descriptive_p95_ms": 27.994120000000002,
+        "all_correct": true
+      },
+      "direct_npu": {
+        "observations": 5,
+        "median_ms": 131.6917,
+        "descriptive_p95_ms": 134.02574,
+        "all_correct": true
+      },
+      "cpp_exact": {
+        "observations": 5,
+        "median_ms": 20.4029,
+        "descriptive_p95_ms": 23.41432,
+        "all_correct": true
+      },
+      "torch_cuda_stable": {
+        "observations": 5,
+        "median_ms": 3.0193,
+        "descriptive_p95_ms": 6.47338,
+        "all_correct": true
+      }
+    },
+    "direct_npu_over_stable_i32_ratio": 4.2673914452365524,
+    "split_key_over_stable_i32_ratio": 1.2526604018146468,
+    "stable_i32_over_fp16_static_ratio": 1.136840864382179,
+    "independent_sessions": 1,
+    "confidence_interval": null,
+    "p_value": null,
+    "statistical_status": "exploratory; within-process repetitions are not independent sessions",
+    "placement": {
+      "split_key_npu": [
+        "NPU"
+      ],
+      "stable_i32_npu": [
+        "NPU"
+      ],
+      "fp16_static_npu": [
+        "NPU"
+      ],
+      "direct_npu": {
+        "requested": "NPU",
+        "kernel": "native",
+        "compiler_type_requested": "PLUGIN",
+        "reported_execution_devices": {
+          "11": [
+            "NPU"
+          ]
+        },
+        "reported_compiler_type": {
+          "11": "CompilerType.PLUGIN"
+        },
+        "prepared_k": [
+          11
+        ],
+        "execution_mode": "batched",
+        "tile_batch": 1,
+        "adaptive_policy": "fixed"
+      }
+    }
+  },
+  "existing_stress": {
+    "cases": 100,
+    "failure_count": 0,
+    "independent_sessions": false
+  },
+  "all_audit_checks_passed": true,
+  "audit_does_not_establish": [
+    "scientific novelty",
+    "universal hardware exactness",
+    "held-out performance",
+    "statistical significance"
+  ]
+}

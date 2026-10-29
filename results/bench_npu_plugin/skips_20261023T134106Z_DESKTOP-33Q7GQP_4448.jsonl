@@ -1,0 +1,5 @@
+{"case_id": "N512_K10_normal_f16_T16_B1_S42", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices", "method": "ov_npu_bitonic_hier", "session_id": "20261023T134106Z_DESKTOP-33Q7GQP_4448"}
+{"case_id": "N512_K10_clustered_f16_T16_B1_S42", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices", "method": "ov_npu_bitonic_hier", "session_id": "20261023T134106Z_DESKTOP-33Q7GQP_4448"}
+{"case_id": "N4096_K4_clustered_f16_T16_B1_S42", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices", "method": "ov_npu_bitonic_hier", "session_id": "20261023T134106Z_DESKTOP-33Q7GQP_4448"}
+{"case_id": "N4096_K10_normal_f16_T16_B1_S42", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices", "method": "ov_npu_bitonic_hier", "session_id": "20261023T134106Z_DESKTOP-33Q7GQP_4448"}
+{"case_id": "N4096_K10_clustered_f16_T16_B1_S42", "error": "RuntimeError: Device Top-K scores disagree with values at its returned indices", "method": "ov_npu_bitonic_hier", "session_id": "20261023T134106Z_DESKTOP-33Q7GQP_4448"}

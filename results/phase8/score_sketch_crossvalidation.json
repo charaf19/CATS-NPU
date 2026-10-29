@@ -1,0 +1,1262 @@
+{
+  "status": "exploratory only; group-held-out CV on prior evaluation data",
+  "training_cases": 64,
+  "model": "128-tree multi-output random forest; depth 4; leaf >=3; seed 42",
+  "sketch_entries": "512 spaced and 512 leading scores",
+  "source_sha256": {
+    "results\\phase8\\predictive_headroom.json": "972de3aa1d3bc9c6d804ebfad3a1ab32523bb3b582bf298be8892a4ed68108a2",
+    "results\\phase8\\synthetic_exploratory\\observations_phase8_exploratory_20261027.jsonl": "41c2b7472fc919a9e2ef53b95cc2c806e80633ddf2978d22ebc14ae8e972dc93"
+  },
+  "crossvalidation": {
+    "real": {
+      "model": {
+        "cases": 48,
+        "geomean_regret": 1.0824309008548931,
+        "oracle_hit_rate": 0.625,
+        "max_regret": 1.8691219077334524
+      },
+      "shape": {
+        "cases": 48,
+        "geomean_regret": 1.049273927616411,
+        "oracle_hit_rate": 0.6875,
+        "max_regret": 1.8500848503548288
+      }
+    },
+    "synthetic": {
+      "model": {
+        "cases": 16,
+        "geomean_regret": 1.1699188852818325,
+        "oracle_hit_rate": 0.5,
+        "max_regret": 2.1378474513066177
+      },
+      "shape": {
+        "cases": 16,
+        "geomean_regret": 1.374213667692626,
+        "oracle_hit_rate": 0.375,
+        "max_regret": 2.388901637933508
+      }
+    }
+  },
+  "decision_overhead_ms": {
+    "sketch_median": 0.17035,
+    "model_median": 4.87805
+  },
+  "rows": [
+    {
+      "id": "sift1m_q0004_n1024_k4",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0004"
+      ],
+      "oracle": "ov_npu_native_direct",
+      "model_choice": "ov_npu_native_direct",
+      "shape_choice": "ov_npu_native_direct",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 0.98785,
+        "ov_npu_native_batched_hier": 1.1957499999999999,
+        "ov_npu_native_batched_adaptive": 1.17145,
+        "ov_npu_native_batched_costadaptive": 1.19235
+      }
+    },
+    {
+      "id": "sift1m_q0005_n1024_k4",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0005"
+      ],
+      "oracle": "ov_npu_native_direct",
+      "model_choice": "ov_npu_native_direct",
+      "shape_choice": "ov_npu_native_direct",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 0.93805,
+        "ov_npu_native_batched_hier": 1.24315,
+        "ov_npu_native_batched_adaptive": 2.2957,
+        "ov_npu_native_batched_costadaptive": 2.336
+      }
+    },
+    {
+      "id": "sift1m_q0006_n1024_k4",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0006"
+      ],
+      "oracle": "ov_npu_native_direct",
+      "model_choice": "ov_npu_native_direct",
+      "shape_choice": "ov_npu_native_direct",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 0.9151,
+        "ov_npu_native_batched_hier": 1.1867,
+        "ov_npu_native_batched_adaptive": 2.3236,
+        "ov_npu_native_batched_costadaptive": 2.24925
+      }
+    },
+    {
+      "id": "sift1m_q0007_n1024_k4",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0007"
+      ],
+      "oracle": "ov_npu_native_direct",
+      "model_choice": "ov_npu_native_direct",
+      "shape_choice": "ov_npu_native_direct",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 0.9653499999999999,
+        "ov_npu_native_batched_hier": 1.3301500000000002,
+        "ov_npu_native_batched_adaptive": 2.67905,
+        "ov_npu_native_batched_costadaptive": 3.18165
+      }
+    },
+    {
+      "id": "sift1m_q0004_n1024_k10",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0004"
+      ],
+      "oracle": "ov_npu_native_direct",
+      "model_choice": "ov_npu_native_direct",
+      "shape_choice": "ov_npu_native_direct",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 0.99375,
+        "ov_npu_native_batched_hier": 1.3187,
+        "ov_npu_native_batched_adaptive": 3.4729,
+        "ov_npu_native_batched_costadaptive": 2.4194
+      }
+    },
+    {
+      "id": "sift1m_q0005_n1024_k10",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0005"
+      ],
+      "oracle": "ov_npu_native_direct",
+      "model_choice": "ov_npu_native_direct",
+      "shape_choice": "ov_npu_native_direct",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 0.9201,
+        "ov_npu_native_batched_hier": 1.29175,
+        "ov_npu_native_batched_adaptive": 4.49815,
+        "ov_npu_native_batched_costadaptive": 2.2470499999999998
+      }
+    },
+    {
+      "id": "sift1m_q0006_n1024_k10",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0006"
+      ],
+      "oracle": "ov_npu_native_direct",
+      "model_choice": "ov_npu_native_direct",
+      "shape_choice": "ov_npu_native_direct",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 0.9593,
+        "ov_npu_native_batched_hier": 1.20455,
+        "ov_npu_native_batched_adaptive": 4.39775,
+        "ov_npu_native_batched_costadaptive": 2.3210499999999996
+      }
+    },
+    {
+      "id": "sift1m_q0007_n1024_k10",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0007"
+      ],
+      "oracle": "ov_npu_native_direct",
+      "model_choice": "ov_npu_native_direct",
+      "shape_choice": "ov_npu_native_direct",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 0.9614,
+        "ov_npu_native_batched_hier": 1.245,
+        "ov_npu_native_batched_adaptive": 4.4338,
+        "ov_npu_native_batched_costadaptive": 2.3296
+      }
+    },
+    {
+      "id": "beir_scifact_q0004_n5183_k4",
+      "source": "real",
+      "group": [
+        "SciFact",
+        "beir_scifact_q0004"
+      ],
+      "oracle": "ov_npu_native_batched_adaptive",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "model_regret": 1.3769870302627203,
+      "shape_regret": 1.03831060857998,
+      "times_ms": {
+        "ov_npu_native_direct": 2.9795499999999997,
+        "ov_npu_native_batched_hier": 2.0703,
+        "ov_npu_native_batched_adaptive": 1.5035,
+        "ov_npu_native_batched_costadaptive": 1.5611
+      }
+    },
+    {
+      "id": "beir_scifact_q0005_n5183_k4",
+      "source": "real",
+      "group": [
+        "SciFact",
+        "beir_scifact_q0005"
+      ],
+      "oracle": "ov_npu_native_batched_adaptive",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "model_regret": 1.0324516743242684,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 1.7717,
+        "ov_npu_native_batched_hier": 1.24715,
+        "ov_npu_native_batched_adaptive": 1.2079499999999999,
+        "ov_npu_native_batched_costadaptive": 1.22365
+      }
+    },
+    {
+      "id": "beir_scifact_q0006_n5183_k4",
+      "source": "real",
+      "group": [
+        "SciFact",
+        "beir_scifact_q0006"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.3327753865773952,
+      "shape_regret": 1.3327753865773952,
+      "times_ms": {
+        "ov_npu_native_direct": 1.8545500000000001,
+        "ov_npu_native_batched_hier": 1.6721,
+        "ov_npu_native_batched_adaptive": 1.2991000000000001,
+        "ov_npu_native_batched_costadaptive": 1.2546
+      }
+    },
+    {
+      "id": "beir_scifact_q0007_n5183_k4",
+      "source": "real",
+      "group": [
+        "SciFact",
+        "beir_scifact_q0007"
+      ],
+      "oracle": "ov_npu_native_batched_hier",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "model_regret": 1.0,
+      "shape_regret": 1.8500848503548288,
+      "times_ms": {
+        "ov_npu_native_direct": 1.77075,
+        "ov_npu_native_batched_hier": 1.2964,
+        "ov_npu_native_batched_adaptive": 2.3815999999999997,
+        "ov_npu_native_batched_costadaptive": 2.39845
+      }
+    },
+    {
+      "id": "beir_scifact_q0004_n5183_k10",
+      "source": "real",
+      "group": [
+        "SciFact",
+        "beir_scifact_q0004"
+      ],
+      "oracle": "ov_npu_native_batched_hier",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 1.95415,
+        "ov_npu_native_batched_hier": 1.6392,
+        "ov_npu_native_batched_adaptive": 2.4193,
+        "ov_npu_native_batched_costadaptive": 3.30085
+      }
+    },
+    {
+      "id": "beir_scifact_q0005_n5183_k10",
+      "source": "real",
+      "group": [
+        "SciFact",
+        "beir_scifact_q0005"
+      ],
+      "oracle": "ov_npu_native_batched_hier",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 2.73925,
+        "ov_npu_native_batched_hier": 1.37395,
+        "ov_npu_native_batched_adaptive": 2.4231,
+        "ov_npu_native_batched_costadaptive": 2.6685
+      }
+    },
+    {
+      "id": "beir_scifact_q0006_n5183_k10",
+      "source": "real",
+      "group": [
+        "SciFact",
+        "beir_scifact_q0006"
+      ],
+      "oracle": "ov_npu_native_batched_hier",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 1.8881999999999999,
+        "ov_npu_native_batched_hier": 1.43765,
+        "ov_npu_native_batched_adaptive": 2.3696,
+        "ov_npu_native_batched_costadaptive": 2.6054500000000003
+      }
+    },
+    {
+      "id": "beir_scifact_q0007_n5183_k10",
+      "source": "real",
+      "group": [
+        "SciFact",
+        "beir_scifact_q0007"
+      ],
+      "oracle": "ov_npu_native_batched_hier",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 1.83075,
+        "ov_npu_native_batched_hier": 1.48795,
+        "ov_npu_native_batched_adaptive": 2.55275,
+        "ov_npu_native_batched_costadaptive": 2.66235
+      }
+    },
+    {
+      "id": "sift1m_q0004_n16384_k4",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0004"
+      ],
+      "oracle": "ov_npu_native_batched_hier",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.5929122849674793,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 2.7133000000000003,
+        "ov_npu_native_batched_hier": 2.46765,
+        "ov_npu_native_batched_adaptive": 3.44435,
+        "ov_npu_native_batched_costadaptive": 3.93075
+      }
+    },
+    {
+      "id": "sift1m_q0005_n16384_k4",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0005"
+      ],
+      "oracle": "ov_npu_native_direct",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.8691219077334524,
+      "shape_regret": 1.1977379095163807,
+      "times_ms": {
+        "ov_npu_native_direct": 2.6921999999999997,
+        "ov_npu_native_batched_hier": 3.22455,
+        "ov_npu_native_batched_adaptive": 3.8634,
+        "ov_npu_native_batched_costadaptive": 5.03205
+      }
+    },
+    {
+      "id": "sift1m_q0006_n16384_k4",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0006"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.4215643719072837,
+      "shape_regret": 1.4215643719072837,
+      "times_ms": {
+        "ov_npu_native_direct": 2.8657500000000002,
+        "ov_npu_native_batched_hier": 3.275,
+        "ov_npu_native_batched_adaptive": 2.3909000000000002,
+        "ov_npu_native_batched_costadaptive": 2.3038
+      }
+    },
+    {
+      "id": "sift1m_q0007_n16384_k4",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0007"
+      ],
+      "oracle": "ov_npu_native_batched_hier",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 2.7188499999999998,
+        "ov_npu_native_batched_hier": 2.45355,
+        "ov_npu_native_batched_adaptive": 3.66275,
+        "ov_npu_native_batched_costadaptive": 3.73495
+      }
+    },
+    {
+      "id": "sift1m_q0004_n16384_k10",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0004"
+      ],
+      "oracle": "ov_npu_native_direct",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.3086383761820601,
+      "shape_regret": 1.1424302607364758,
+      "times_ms": {
+        "ov_npu_native_direct": 2.74415,
+        "ov_npu_native_batched_hier": 3.135,
+        "ov_npu_native_batched_adaptive": 3.9757499999999997,
+        "ov_npu_native_batched_costadaptive": 3.5911
+      }
+    },
+    {
+      "id": "sift1m_q0005_n16384_k10",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0005"
+      ],
+      "oracle": "ov_npu_native_direct",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.7687453874538748,
+      "shape_regret": 1.0530258302583027,
+      "times_ms": {
+        "ov_npu_native_direct": 2.71,
+        "ov_npu_native_batched_hier": 2.8537,
+        "ov_npu_native_batched_adaptive": 4.0915,
+        "ov_npu_native_batched_costadaptive": 4.7933
+      }
+    },
+    {
+      "id": "sift1m_q0006_n16384_k10",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0006"
+      ],
+      "oracle": "ov_npu_native_batched_adaptive",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.2272998607149965,
+      "shape_regret": 1.2272998607149965,
+      "times_ms": {
+        "ov_npu_native_direct": 2.7883500000000003,
+        "ov_npu_native_batched_hier": 2.7756,
+        "ov_npu_native_batched_adaptive": 2.2615499999999997,
+        "ov_npu_native_batched_costadaptive": 2.31355
+      }
+    },
+    {
+      "id": "sift1m_q0007_n16384_k10",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0007"
+      ],
+      "oracle": "ov_npu_native_direct",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.0643739467007427,
+      "shape_regret": 1.0643739467007427,
+      "times_ms": {
+        "ov_npu_native_direct": 2.69985,
+        "ov_npu_native_batched_hier": 2.87365,
+        "ov_npu_native_batched_adaptive": 3.4856,
+        "ov_npu_native_batched_costadaptive": 3.6415499999999996
+      }
+    },
+    {
+      "id": "beir_fiqa_q0004_n57638_k4",
+      "source": "real",
+      "group": [
+        "FiQA",
+        "beir_fiqa_q0004"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 14.936499999999999,
+        "ov_npu_native_batched_hier": 11.287749999999999,
+        "ov_npu_native_batched_adaptive": 13.26465,
+        "ov_npu_native_batched_costadaptive": 10.4069
+      }
+    },
+    {
+      "id": "beir_fiqa_q0005_n57638_k4",
+      "source": "real",
+      "group": [
+        "FiQA",
+        "beir_fiqa_q0005"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 18.22245,
+        "ov_npu_native_batched_hier": 10.316600000000001,
+        "ov_npu_native_batched_adaptive": 9.623149999999999,
+        "ov_npu_native_batched_costadaptive": 8.13485
+      }
+    },
+    {
+      "id": "beir_fiqa_q0006_n57638_k4",
+      "source": "real",
+      "group": [
+        "FiQA",
+        "beir_fiqa_q0006"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 16.5036,
+        "ov_npu_native_batched_hier": 10.70685,
+        "ov_npu_native_batched_adaptive": 10.4967,
+        "ov_npu_native_batched_costadaptive": 9.92155
+      }
+    },
+    {
+      "id": "beir_fiqa_q0007_n57638_k4",
+      "source": "real",
+      "group": [
+        "FiQA",
+        "beir_fiqa_q0007"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 16.961550000000003,
+        "ov_npu_native_batched_hier": 12.15315,
+        "ov_npu_native_batched_adaptive": 10.8396,
+        "ov_npu_native_batched_costadaptive": 9.0851
+      }
+    },
+    {
+      "id": "beir_fiqa_q0004_n57638_k10",
+      "source": "real",
+      "group": [
+        "FiQA",
+        "beir_fiqa_q0004"
+      ],
+      "oracle": "ov_npu_native_batched_adaptive",
+      "model_choice": "ov_npu_native_batched_adaptive",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 12.72265,
+        "ov_npu_native_batched_hier": 11.056899999999999,
+        "ov_npu_native_batched_adaptive": 8.84985,
+        "ov_npu_native_batched_costadaptive": 10.32975
+      }
+    },
+    {
+      "id": "beir_fiqa_q0005_n57638_k10",
+      "source": "real",
+      "group": [
+        "FiQA",
+        "beir_fiqa_q0005"
+      ],
+      "oracle": "ov_npu_native_batched_adaptive",
+      "model_choice": "ov_npu_native_batched_adaptive",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 17.11085,
+        "ov_npu_native_batched_hier": 11.4788,
+        "ov_npu_native_batched_adaptive": 8.707550000000001,
+        "ov_npu_native_batched_costadaptive": 11.28655
+      }
+    },
+    {
+      "id": "beir_fiqa_q0006_n57638_k10",
+      "source": "real",
+      "group": [
+        "FiQA",
+        "beir_fiqa_q0006"
+      ],
+      "oracle": "ov_npu_native_batched_adaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "model_regret": 1.1977861091346944,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 13.8331,
+        "ov_npu_native_batched_hier": 9.79215,
+        "ov_npu_native_batched_adaptive": 7.3084,
+        "ov_npu_native_batched_costadaptive": 8.7539
+      }
+    },
+    {
+      "id": "beir_fiqa_q0007_n57638_k10",
+      "source": "real",
+      "group": [
+        "FiQA",
+        "beir_fiqa_q0007"
+      ],
+      "oracle": "ov_npu_native_batched_adaptive",
+      "model_choice": "ov_npu_native_batched_adaptive",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 14.75405,
+        "ov_npu_native_batched_hier": 10.06795,
+        "ov_npu_native_batched_adaptive": 8.283000000000001,
+        "ov_npu_native_batched_costadaptive": 9.3073
+      }
+    },
+    {
+      "id": "sift1m_q0004_n131072_k4",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0004"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 17.83655,
+        "ov_npu_native_batched_hier": 16.3568,
+        "ov_npu_native_batched_adaptive": 15.635449999999999,
+        "ov_npu_native_batched_costadaptive": 13.6456
+      }
+    },
+    {
+      "id": "sift1m_q0005_n131072_k4",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0005"
+      ],
+      "oracle": "ov_npu_native_batched_adaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "model_regret": 1.0026202199563188,
+      "shape_regret": 1.0026202199563188,
+      "times_ms": {
+        "ov_npu_native_direct": 18.06025,
+        "ov_npu_native_batched_hier": 16.5386,
+        "ov_npu_native_batched_adaptive": 15.4758,
+        "ov_npu_native_batched_costadaptive": 15.51635
+      }
+    },
+    {
+      "id": "sift1m_q0006_n131072_k4",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0006"
+      ],
+      "oracle": "ov_npu_native_batched_adaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "model_regret": 1.0685915901282392,
+      "shape_regret": 1.0685915901282392,
+      "times_ms": {
+        "ov_npu_native_direct": 17.958399999999997,
+        "ov_npu_native_batched_hier": 18.63955,
+        "ov_npu_native_batched_adaptive": 16.2119,
+        "ov_npu_native_batched_costadaptive": 17.323900000000002
+      }
+    },
+    {
+      "id": "sift1m_q0007_n131072_k4",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0007"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_adaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "model_regret": 1.0528303488076043,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 18.13195,
+        "ov_npu_native_batched_hier": 17.818199999999997,
+        "ov_npu_native_batched_adaptive": 16.12715,
+        "ov_npu_native_batched_costadaptive": 15.3179
+      }
+    },
+    {
+      "id": "sift1m_q0004_n131072_k10",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0004"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 17.86385,
+        "ov_npu_native_batched_hier": 20.5124,
+        "ov_npu_native_batched_adaptive": 14.383199999999999,
+        "ov_npu_native_batched_costadaptive": 13.7595
+      }
+    },
+    {
+      "id": "sift1m_q0005_n131072_k10",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0005"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 18.1652,
+        "ov_npu_native_batched_hier": 18.5642,
+        "ov_npu_native_batched_adaptive": 15.4829,
+        "ov_npu_native_batched_costadaptive": 15.23585
+      }
+    },
+    {
+      "id": "sift1m_q0006_n131072_k10",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0006"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 17.5304,
+        "ov_npu_native_batched_hier": 18.81085,
+        "ov_npu_native_batched_adaptive": 13.0341,
+        "ov_npu_native_batched_costadaptive": 12.43235
+      }
+    },
+    {
+      "id": "sift1m_q0007_n131072_k10",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0007"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 18.127450000000003,
+        "ov_npu_native_batched_hier": 21.3014,
+        "ov_npu_native_batched_adaptive": 16.892400000000002,
+        "ov_npu_native_batched_costadaptive": 16.50975
+      }
+    },
+    {
+      "id": "sift1m_q0004_n1000000_k4",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0004"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 133.5235,
+        "ov_npu_native_batched_hier": 114.7813,
+        "ov_npu_native_batched_adaptive": 100.8229,
+        "ov_npu_native_batched_costadaptive": 98.55359999999999
+      }
+    },
+    {
+      "id": "sift1m_q0005_n1000000_k4",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0005"
+      ],
+      "oracle": "ov_npu_native_batched_adaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "model_regret": 1.1059819315182233,
+      "shape_regret": 1.1059819315182233,
+      "times_ms": {
+        "ov_npu_native_direct": 133.6661,
+        "ov_npu_native_batched_hier": 106.15379999999999,
+        "ov_npu_native_batched_adaptive": 92.79695000000001,
+        "ov_npu_native_batched_costadaptive": 102.63175
+      }
+    },
+    {
+      "id": "sift1m_q0006_n1000000_k4",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0006"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_costadaptive",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 133.897,
+        "ov_npu_native_batched_hier": 102.78935,
+        "ov_npu_native_batched_adaptive": 96.36775,
+        "ov_npu_native_batched_costadaptive": 95.3003
+      }
+    },
+    {
+      "id": "sift1m_q0007_n1000000_k4",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0007"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_adaptive",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "model_regret": 1.10948437671343,
+      "shape_regret": 1.10948437671343,
+      "times_ms": {
+        "ov_npu_native_direct": 133.00645,
+        "ov_npu_native_batched_hier": 114.37985,
+        "ov_npu_native_batched_adaptive": 104.21065,
+        "ov_npu_native_batched_costadaptive": 93.9271
+      }
+    },
+    {
+      "id": "sift1m_q0004_n1000000_k10",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0004"
+      ],
+      "oracle": "ov_npu_native_batched_adaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "model_regret": 1.0566266324367712,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 134.23225000000002,
+        "ov_npu_native_batched_hier": 119.2091,
+        "ov_npu_native_batched_adaptive": 96.73805,
+        "ov_npu_native_batched_costadaptive": 102.21600000000001
+      }
+    },
+    {
+      "id": "sift1m_q0005_n1000000_k10",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0005"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "model_regret": 1.0,
+      "shape_regret": 1.0119173695881951,
+      "times_ms": {
+        "ov_npu_native_direct": 134.16805,
+        "ov_npu_native_batched_hier": 154.12045,
+        "ov_npu_native_batched_adaptive": 97.65205,
+        "ov_npu_native_batched_costadaptive": 96.502
+      }
+    },
+    {
+      "id": "sift1m_q0006_n1000000_k10",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0006"
+      ],
+      "oracle": "ov_npu_native_batched_adaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "model_regret": 1.054507361008928,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 133.6719,
+        "ov_npu_native_batched_hier": 118.1699,
+        "ov_npu_native_batched_adaptive": 98.20325,
+        "ov_npu_native_batched_costadaptive": 103.55605
+      }
+    },
+    {
+      "id": "sift1m_q0007_n1000000_k10",
+      "source": "real",
+      "group": [
+        "SIFT1M",
+        "sift1m_q0007"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_costadaptive",
+      "shape_choice": "ov_npu_native_batched_adaptive",
+      "model_regret": 1.0,
+      "shape_regret": 1.104042935882223,
+      "times_ms": {
+        "ov_npu_native_direct": 133.0297,
+        "ov_npu_native_batched_hier": 119.23685,
+        "ov_npu_native_batched_adaptive": 110.57945000000001,
+        "ov_npu_native_batched_costadaptive": 100.15865
+      }
+    },
+    {
+      "id": "synthetic_adversarial_n4096_k4",
+      "source": "synthetic",
+      "group": [
+        "synthetic",
+        "adversarial"
+      ],
+      "oracle": "ov_npu_native_direct",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.1588115976613769,
+      "shape_regret": 1.1588115976613769,
+      "times_ms": {
+        "ov_npu_native_direct": 1.25715,
+        "ov_npu_native_batched_hier": 1.4567999999999999,
+        "ov_npu_native_batched_adaptive": 3.57585,
+        "ov_npu_native_batched_costadaptive": 2.2529000000000003
+      }
+    },
+    {
+      "id": "synthetic_clustered_n4096_k4",
+      "source": "synthetic",
+      "group": [
+        "synthetic",
+        "clustered"
+      ],
+      "oracle": "ov_npu_native_batched_hier",
+      "model_choice": "ov_npu_native_direct",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.21226790662123,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 1.9032,
+        "ov_npu_native_batched_hier": 1.56995,
+        "ov_npu_native_batched_adaptive": 4.5033,
+        "ov_npu_native_batched_costadaptive": 2.4539
+      }
+    },
+    {
+      "id": "synthetic_normal_n4096_k4",
+      "source": "synthetic",
+      "group": [
+        "synthetic",
+        "normal"
+      ],
+      "oracle": "ov_npu_native_batched_hier",
+      "model_choice": "ov_npu_native_direct",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.1084138658926743,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 1.6803,
+        "ov_npu_native_batched_hier": 1.5159500000000001,
+        "ov_npu_native_batched_adaptive": 2.2048,
+        "ov_npu_native_batched_costadaptive": 2.3593
+      }
+    },
+    {
+      "id": "synthetic_tied_n4096_k4",
+      "source": "synthetic",
+      "group": [
+        "synthetic",
+        "tied"
+      ],
+      "oracle": "ov_npu_native_direct",
+      "model_choice": "ov_npu_native_direct",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.0,
+      "shape_regret": 1.0331537069001808,
+      "times_ms": {
+        "ov_npu_native_direct": 2.3753,
+        "ov_npu_native_batched_hier": 2.4540499999999996,
+        "ov_npu_native_batched_adaptive": 3.70085,
+        "ov_npu_native_batched_costadaptive": 2.4246499999999997
+      }
+    },
+    {
+      "id": "synthetic_adversarial_n4096_k10",
+      "source": "synthetic",
+      "group": [
+        "synthetic",
+        "adversarial"
+      ],
+      "oracle": "ov_npu_native_batched_hier",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 1.81885,
+        "ov_npu_native_batched_hier": 1.504,
+        "ov_npu_native_batched_adaptive": 9.1372,
+        "ov_npu_native_batched_costadaptive": 3.32315
+      }
+    },
+    {
+      "id": "synthetic_clustered_n4096_k10",
+      "source": "synthetic",
+      "group": [
+        "synthetic",
+        "clustered"
+      ],
+      "oracle": "ov_npu_native_batched_hier",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 1.836,
+        "ov_npu_native_batched_hier": 1.3978000000000002,
+        "ov_npu_native_batched_adaptive": 6.414199999999999,
+        "ov_npu_native_batched_costadaptive": 2.48745
+      }
+    },
+    {
+      "id": "synthetic_normal_n4096_k10",
+      "source": "synthetic",
+      "group": [
+        "synthetic",
+        "normal"
+      ],
+      "oracle": "ov_npu_native_batched_hier",
+      "model_choice": "ov_npu_native_direct",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.7957011832248124,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 2.5648,
+        "ov_npu_native_batched_hier": 1.4283000000000001,
+        "ov_npu_native_batched_adaptive": 4.07745,
+        "ov_npu_native_batched_costadaptive": 2.52965
+      }
+    },
+    {
+      "id": "synthetic_tied_n4096_k10",
+      "source": "synthetic",
+      "group": [
+        "synthetic",
+        "tied"
+      ],
+      "oracle": "ov_npu_native_direct",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.3800682261208577,
+      "shape_regret": 1.3800682261208577,
+      "times_ms": {
+        "ov_npu_native_direct": 2.052,
+        "ov_npu_native_batched_hier": 2.8319,
+        "ov_npu_native_batched_adaptive": 4.39285,
+        "ov_npu_native_batched_costadaptive": 3.097
+      }
+    },
+    {
+      "id": "synthetic_adversarial_n16384_k4",
+      "source": "synthetic",
+      "group": [
+        "synthetic",
+        "adversarial"
+      ],
+      "oracle": "ov_npu_native_batched_hier",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_direct",
+      "model_regret": 1.0,
+      "shape_regret": 2.0094411540491413,
+      "times_ms": {
+        "ov_npu_native_direct": 5.1400500000000005,
+        "ov_npu_native_batched_hier": 2.55795,
+        "ov_npu_native_batched_adaptive": 6.134650000000001,
+        "ov_npu_native_batched_costadaptive": 4.86475
+      }
+    },
+    {
+      "id": "synthetic_clustered_n16384_k4",
+      "source": "synthetic",
+      "group": [
+        "synthetic",
+        "clustered"
+      ],
+      "oracle": "ov_npu_native_batched_hier",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.0,
+      "shape_regret": 1.0,
+      "times_ms": {
+        "ov_npu_native_direct": 7.39715,
+        "ov_npu_native_batched_hier": 4.096550000000001,
+        "ov_npu_native_batched_adaptive": 6.756349999999999,
+        "ov_npu_native_batched_costadaptive": 4.39035
+      }
+    },
+    {
+      "id": "synthetic_normal_n16384_k4",
+      "source": "synthetic",
+      "group": [
+        "synthetic",
+        "normal"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_direct",
+      "model_regret": 1.1153680143053875,
+      "shape_regret": 1.9828993073397327,
+      "times_ms": {
+        "ov_npu_native_direct": 4.8237000000000005,
+        "ov_npu_native_batched_hier": 2.7133000000000003,
+        "ov_npu_native_batched_adaptive": 3.06225,
+        "ov_npu_native_batched_costadaptive": 2.4326499999999998
+      }
+    },
+    {
+      "id": "synthetic_tied_n16384_k4",
+      "source": "synthetic",
+      "group": [
+        "synthetic",
+        "tied"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_batched_hier",
+      "model_regret": 1.3385947276028147,
+      "shape_regret": 1.3385947276028147,
+      "times_ms": {
+        "ov_npu_native_direct": 4.7969,
+        "ov_npu_native_batched_hier": 4.4608,
+        "ov_npu_native_batched_adaptive": 3.9025499999999997,
+        "ov_npu_native_batched_costadaptive": 3.33245
+      }
+    },
+    {
+      "id": "synthetic_adversarial_n16384_k10",
+      "source": "synthetic",
+      "group": [
+        "synthetic",
+        "adversarial"
+      ],
+      "oracle": "ov_npu_native_batched_hier",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_direct",
+      "model_regret": 1.0,
+      "shape_regret": 1.7961356114142588,
+      "times_ms": {
+        "ov_npu_native_direct": 7.02765,
+        "ov_npu_native_batched_hier": 3.91265,
+        "ov_npu_native_batched_adaptive": 8.56525,
+        "ov_npu_native_batched_costadaptive": 4.846550000000001
+      }
+    },
+    {
+      "id": "synthetic_clustered_n16384_k10",
+      "source": "synthetic",
+      "group": [
+        "synthetic",
+        "clustered"
+      ],
+      "oracle": "ov_npu_native_batched_hier",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_direct",
+      "model_regret": 1.0,
+      "shape_regret": 2.2645198175468253,
+      "times_ms": {
+        "ov_npu_native_direct": 9.110050000000001,
+        "ov_npu_native_batched_hier": 4.02295,
+        "ov_npu_native_batched_adaptive": 8.17465,
+        "ov_npu_native_batched_costadaptive": 5.1078
+      }
+    },
+    {
+      "id": "synthetic_normal_n16384_k10",
+      "source": "synthetic",
+      "group": [
+        "synthetic",
+        "normal"
+      ],
+      "oracle": "ov_npu_native_batched_hier",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_direct",
+      "model_regret": 1.0,
+      "shape_regret": 1.889084170045417,
+      "times_ms": {
+        "ov_npu_native_direct": 5.428,
+        "ov_npu_native_batched_hier": 2.8733500000000003,
+        "ov_npu_native_batched_adaptive": 3.7903000000000002,
+        "ov_npu_native_batched_costadaptive": 3.2808
+      }
+    },
+    {
+      "id": "synthetic_tied_n16384_k10",
+      "source": "synthetic",
+      "group": [
+        "synthetic",
+        "tied"
+      ],
+      "oracle": "ov_npu_native_batched_costadaptive",
+      "model_choice": "ov_npu_native_batched_hier",
+      "shape_choice": "ov_npu_native_direct",
+      "model_regret": 2.1378474513066177,
+      "shape_regret": 2.388901637933508,
+      "times_ms": {
+        "ov_npu_native_direct": 8.327950000000001,
+        "ov_npu_native_batched_hier": 7.45275,
+        "ov_npu_native_batched_adaptive": 4.86345,
+        "ov_npu_native_batched_costadaptive": 3.4861
+      }
+    }
+  ]
+}

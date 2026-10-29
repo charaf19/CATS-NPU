@@ -1,0 +1,34 @@
+{
+  "timestamp_utc": "2026-10-23T13:55:31.628110+00:00",
+  "device_requested": "NPU",
+  "available_devices": [
+    "CPU",
+    "GPU.0",
+    "GPU.1",
+    "NPU"
+  ],
+  "openvino": "2026.4.1-22982-e213a147257-releases/2026/4",
+  "dtype": "f16",
+  "compiler_type_requested": "DRIVER",
+  "operations": {
+    "Bitonic": {
+      "compiled": true,
+      "inferred": true,
+      "correct": false,
+      "execution_devices": [
+        "NPU"
+      ],
+      "compile_ms": 384.5143,
+      "inference_ms": 5.6901,
+      "compiler_type_used": "CompilerType.DRIVER",
+      "indices": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "all_passed": false,
+  "warning": "Every row includes actual inference and a deterministic smoke-input check. Passing this probe is not adversarial numerical-exactness proof."
+}

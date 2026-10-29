@@ -1,0 +1,94 @@
+{
+  "timestamp_utc": "2026-10-27T12:21:13.652455+00:00",
+  "status": "exploratory physical NPU order-encoding probe",
+  "input": "results\\phase5\\beir\\scifact\\q0000_1_n5183_cosine_f16.npy",
+  "n": 5183,
+  "k": 10,
+  "width": 256,
+  "input_sha256": "22cf8c479f223b646d38726a7d3e26f82120047e2e530227431f646ff1f38d44",
+  "correct": true,
+  "samples": [
+    {
+      "encoding_ms": 0.1226,
+      "staging_ms": 0.0034,
+      "infer_sync_ms": 4.2256,
+      "copy_ms": 0.0189,
+      "verification_ms": 0.197,
+      "end_to_end_ms": 4.5675,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.0724,
+      "staging_ms": 0.0024,
+      "infer_sync_ms": 0.8624,
+      "copy_ms": 0.0122,
+      "verification_ms": 0.1117,
+      "end_to_end_ms": 1.0611,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.0536,
+      "staging_ms": 0.0022,
+      "infer_sync_ms": 0.8998,
+      "copy_ms": 0.0245,
+      "verification_ms": 0.0882,
+      "end_to_end_ms": 1.0683,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.0497,
+      "staging_ms": 0.0014,
+      "infer_sync_ms": 0.874,
+      "copy_ms": 0.0179,
+      "verification_ms": 0.0952,
+      "end_to_end_ms": 1.0382,
+      "correct": true
+    },
+    {
+      "encoding_ms": 0.0452,
+      "staging_ms": 0.0013,
+      "infer_sync_ms": 0.8419,
+      "copy_ms": 0.0124,
+      "verification_ms": 0.1208,
+      "end_to_end_ms": 1.0216,
+      "correct": true
+    }
+  ],
+  "host_input_to_host_indices": true,
+  "independent_sessions": false,
+  "ordered_fp16_span": 26751,
+  "max_unsigned_key": 138677182,
+  "int32_capacity_span": 828504,
+  "initial_encoding_ms": 0.3151,
+  "compile_ms": 125.9475,
+  "execution_devices": [
+    "NPU"
+  ],
+  "selected_ids": [
+    4132,
+    766,
+    697,
+    1838,
+    4241,
+    2723,
+    5115,
+    166,
+    2981,
+    320
+  ],
+  "expected_ids": [
+    4132,
+    766,
+    697,
+    1838,
+    4241,
+    2723,
+    5115,
+    166,
+    2981,
+    320
+  ],
+  "submissions_per_query": 1,
+  "staged_input_bytes": 21504,
+  "retrieved_output_bytes": 80
+}

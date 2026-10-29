@@ -1,0 +1,41 @@
+{
+  "timestamp_utc": "2026-10-23T21:43:03.219513+00:00",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.0",
+  "numpy": "2.4.6",
+  "openvino": "2026.4.1-22982-e213a147257-releases/2026/4",
+  "openvino_devices": [
+    "CPU",
+    "GPU.0",
+    "GPU.1",
+    "NPU"
+  ],
+  "properties": {
+    "CPU": {
+      "FULL_DEVICE_NAME": "Intel(R) Core(TM) Ultra 7 255H",
+      "DEVICE_ARCHITECTURE": "intel64",
+      "EXECUTION_DEVICES": "['CPU']"
+    },
+    "GPU.0": {
+      "FULL_DEVICE_NAME": "Intel(R) Arc(TM) 140T GPU (16GB) (iGPU)",
+      "DEVICE_ARCHITECTURE": "GPU: vendor=0x8086 arch=v12.74.4"
+    },
+    "GPU.1": {
+      "FULL_DEVICE_NAME": "NVIDIA GeForce RTX 5060 Laptop GPU (dGPU)",
+      "DEVICE_ARCHITECTURE": "GPU: vendor=0x10de arch=v12.0.0"
+    },
+    "NPU": {
+      "FULL_DEVICE_NAME": "Intel(R) AI Boost",
+      "DEVICE_ARCHITECTURE": "3720",
+      "NPU_DRIVER_VERSION": "1004512",
+      "NPU_COMPILER_VERSION": "458778",
+      "EXECUTION_DEVICES": "NPU"
+    }
+  },
+  "notes": [
+    "Strict 'NPU' runs will never silently fall back through AUTO/HETERO."
+  ],
+  "torch_version": "2.11.0+cu128",
+  "cuda_available": true,
+  "cuda_device": "NVIDIA GeForce RTX 5060 Laptop GPU"
+}

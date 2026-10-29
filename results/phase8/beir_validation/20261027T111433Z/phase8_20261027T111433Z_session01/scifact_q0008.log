@@ -1,0 +1,36 @@
+CASE N5183_K4_beir_scifact_q0008_f16_T256_B32_S42: preparing 4 methods
+  PREP N5183_K4_beir_scifact_q0008_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N5183_K4_beir_scifact_q0008_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N5183_K4_beir_scifact_q0008_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N5183_K4_beir_scifact_q0008_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N5183_K4_beir_scifact_q0008_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N5183_K4_beir_scifact_q0008_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N5183_K4_beir_scifact_q0008_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N5183_K4_beir_scifact_q0008_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N5183_K4_beir_scifact_q0008_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+  N5183_K4_beir_scifact_q0008_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+  N5183_K4_beir_scifact_q0008_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+  N5183_K4_beir_scifact_q0008_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+CASE N5183_K10_beir_scifact_q0008_f16_T256_B32_S42: preparing 4 methods
+  PREP N5183_K10_beir_scifact_q0008_f16_T256_B32_S42 ov_npu_native_direct
+  PREP N5183_K10_beir_scifact_q0008_f16_T256_B32_S42 ov_npu_native_batched_hier
+  PREP N5183_K10_beir_scifact_q0008_f16_T256_B32_S42 ov_npu_native_batched_adaptive
+  PREP N5183_K10_beir_scifact_q0008_f16_T256_B32_S42 ov_npu_native_batched_costadaptive
+  N5183_K10_beir_scifact_q0008_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_hier: measured
+  N5183_K10_beir_scifact_q0008_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_adaptive: measured
+  N5183_K10_beir_scifact_q0008_f16_T256_B32_S42 block=1/2 ov_npu_native_direct: measured
+  N5183_K10_beir_scifact_q0008_f16_T256_B32_S42 block=1/2 ov_npu_native_batched_costadaptive: measured
+  N5183_K10_beir_scifact_q0008_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_costadaptive: measured
+  N5183_K10_beir_scifact_q0008_f16_T256_B32_S42 block=2/2 ov_npu_native_direct: measured
+  N5183_K10_beir_scifact_q0008_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_adaptive: measured
+  N5183_K10_beir_scifact_q0008_f16_T256_B32_S42 block=2/2 ov_npu_native_batched_hier: measured
+{
+  "session_id": "phase8_20261027T111433Z_session01",
+  "observations": 48,
+  "skipped": 0,
+  "wrong_results": 0,
+  "completed": true,
+  "valid_for_inference": true,
+  "results_file": "results\\phase8\\beir_validation\\20261027T111433Z\\phase8_20261027T111433Z_session01\\scifact_q0008\\observations_phase8_20261027T111433Z_session01.jsonl",
+  "skips_file": "results\\phase8\\beir_validation\\20261027T111433Z\\phase8_20261027T111433Z_session01\\scifact_q0008\\skips_phase8_20261027T111433Z_session01.jsonl"
+}

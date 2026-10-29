@@ -1,0 +1,54 @@
+{
+  "status": "separate Phase 8 holdout feasibility test",
+  "protocol": "phase8-beir-predictor-feasibility-v1",
+  "observation_count": 4608,
+  "all_correct": true,
+  "all_reported_npu": true,
+  "primary": {
+    "comparison": "shape-rule / tree-choice latency, zero overhead",
+    "case_count_per_session": 32,
+    "session_count": 6,
+    "geomean_speedup": 1.0972880371990128,
+    "ci95_session_cluster_bootstrap": [
+      1.0937887700933402,
+      1.1000658881451655
+    ],
+    "two_sided_exact_sign_flip_p": 0.03125,
+    "session_speedups": [
+      1.0963181144196275,
+      1.089377468266051,
+      1.0974719842465317,
+      1.0989511615437495,
+      1.1020274583751655,
+      1.099625083154485
+    ],
+    "disagreement_count_per_session": 8,
+    "practical_threshold": 1.05,
+    "passes_zero_overhead_gate": true,
+    "warning": "This excludes the measured score-sketch and model decision overhead; passing is necessary but not sufficient for actual end-to-end benefit."
+  },
+  "subgroups_descriptive": {
+    "fiqa_K4": {
+      "geomean_speedup": 1.0,
+      "paired_rows": 48
+    },
+    "fiqa_K10": {
+      "geomean_speedup": 1.0,
+      "paired_rows": 48
+    },
+    "scifact_K4": {
+      "geomean_speedup": 1.4497148177687897,
+      "paired_rows": 48
+    },
+    "scifact_K10": {
+      "geomean_speedup": 1.0,
+      "paired_rows": 48
+    }
+  },
+  "limitations": [
+    "One laptop and one OpenVINO/NPU compiler stack.",
+    "Session blocks are sequential on one host.",
+    "Tree and shape models were selected after development data inspection; the BEIR holdout predictions were frozen before timing.",
+    "This is a zero-overhead feasibility screen, not an integrated dispatcher benchmark."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "case_count": 16,
+  "submission_aware_faster_than_geometric": 13,
+  "submission_aware_slower_than_geometric": 3,
+  "cost_over_geometric_speedup_min_median_max": [
+    0.9276426432585422,
+    1.2723017716818341,
+    2.263061791924306
+  ],
+  "median_jumps": 1.0,
+  "interpretation": "development pilot only; one process is not an independent-session study"
+}

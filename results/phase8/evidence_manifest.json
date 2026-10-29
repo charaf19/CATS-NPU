@@ -1,0 +1,2138 @@
+{
+  "created_utc": "2026-10-27T11:27:03.015635+00:00",
+  "source_revision": "8c705ee73aa7c1ec3b4543292625f82e5cdd9b30",
+  "scope": "Phase 8 raw results, analyses, frozen protocol, and relevant source",
+  "file_count_excluding_manifest": 426,
+  "files": [
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/doctor.json",
+      "size_bytes": 1235,
+      "sha256": "112dc3fac94c280d257912e4d1d151c42cf47e56be87adf1ab665eec4a66fdc8"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0008/manifest_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 1122,
+      "sha256": "3a005d555d6627c19228e94eaac3790ca3993e9c8f504a82a23c6a036c265d97"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0008/observations_phase8_20261027T111433Z_session01.jsonl",
+      "size_bytes": 71604,
+      "sha256": "9e8533b8cc3d1276ef82cbd401558cc49815d9fefe27a2f7e594d1aaaf3ba75c"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0008/summary_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 515,
+      "sha256": "79cc0859051afc5b97e6ca2ec1f5fb85fa93148704dd047573c61b99d55e1633"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0008.log",
+      "size_bytes": 2816,
+      "sha256": "ece9f865443ef59fb7de87c5d5b34913f215348a3d51bda3533e08ad9e2f87b6"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0009/manifest_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 1122,
+      "sha256": "162af79b648a144071506193109665b20b62bae07aee6b80d631c35c909abc26"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0009/observations_phase8_20261027T111433Z_session01.jsonl",
+      "size_bytes": 71633,
+      "sha256": "4631f0a434fdf8fa196a9889a3419df387ba408753886a2b89cb83f55a6b4f72"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0009/summary_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 515,
+      "sha256": "dfedbc4a3c79bbc40d529c6cee66e182519ac45d4524a07d110a415f47e6f95a"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0009.log",
+      "size_bytes": 2816,
+      "sha256": "16402669efcaff62743ce9db188bdc45ff80e1ec572312fbde93633941a20797"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0010/manifest_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 1122,
+      "sha256": "34b08673749cc6c9fc60c05b2cd4df1ae11ee07fa4a4bc544acfda6360d0a933"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0010/observations_phase8_20261027T111433Z_session01.jsonl",
+      "size_bytes": 71662,
+      "sha256": "f522459bf3db11daeb1e7c0a4b90075a863e1e79643f23f7edd06b44fc31ea45"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0010/summary_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 515,
+      "sha256": "5c14e06b8067ce08cb89f02c92d28f932ab1239cc609a88fadd1b60158cf2da8"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0010.log",
+      "size_bytes": 2816,
+      "sha256": "e8f41ff1e1d5c4a2b39810439f4811413a201f8d028df9f1dd6708190f836f92"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0011/manifest_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 1122,
+      "sha256": "d213c228e371feaff7bc8ed457f4083970de9a035e8027f604d7d322079ca80e"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0011/observations_phase8_20261027T111433Z_session01.jsonl",
+      "size_bytes": 71663,
+      "sha256": "191b4c6cf2fe7cbccc937af9884ff31c6668d7f6a560a8fd9d7e2868d7b1e9cb"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0011/summary_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 515,
+      "sha256": "bee728668cbb44bcf884b9b1f2e5cd945657c84c141a35d7675f30d0671f0616"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0011.log",
+      "size_bytes": 2816,
+      "sha256": "f1d6eb90b2ea2efdbf5af1eab7395b4ed243f64914a1c1aa4781e771f54cadd3"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0012/manifest_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 1123,
+      "sha256": "d31e959dfa8586de52f757ec6a50073da7532b7cfba1180d0f4887e986b3a2be"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0012/observations_phase8_20261027T111433Z_session01.jsonl",
+      "size_bytes": 71580,
+      "sha256": "9d504e7bd0fcf8f93757c8887e35062f0592a9ad305ce485eb6b73d5d8e3a950"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0012/summary_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 515,
+      "sha256": "4f81788b0206c72978faf296763b00a40270b56ed989df406bd3142d99907f75"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0012.log",
+      "size_bytes": 2816,
+      "sha256": "322869b784977e9710df2f71f5aebfbab1015db0cfb3bfed2b183a9a2735cc22"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0013/manifest_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 1123,
+      "sha256": "0d0b22bc1a33b99c89884cb1f174f5a071df91d8c4ed6777444c4bc9915ec0fa"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0013/observations_phase8_20261027T111433Z_session01.jsonl",
+      "size_bytes": 71597,
+      "sha256": "13cf7eeccc929b3cd840236b97eb90d3cf5951bd943b89ade97c99795c87b948"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0013/summary_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 515,
+      "sha256": "ff64f9e205ec2e24c6d8e770a209ed856969d0e33a3f93ae8f067f76b16d001f"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0013.log",
+      "size_bytes": 2816,
+      "sha256": "8503b5940dbcde2fb263dca7adb19c79221f25c928dc57e312e5892d5878ec26"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0014/manifest_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 1123,
+      "sha256": "6b08922b371f13328b7f67508108c454c31525d7b7ee3aab5eb7639e9251921e"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0014/observations_phase8_20261027T111433Z_session01.jsonl",
+      "size_bytes": 71592,
+      "sha256": "c4387088ccc918b75f23cd8ecec9f77b11e2bcfe2886cf1bdd717bb4c5c87b06"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0014/summary_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 515,
+      "sha256": "09a7ad76d8df207d6286e52ae2909d6955d8fb694f0a67a739637d40282e3841"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0014.log",
+      "size_bytes": 2816,
+      "sha256": "1467ec345c7f7c80def9161b584c2b6b78fd1c43f5a184c9bbd0039b1c74de50"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0015/manifest_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 1123,
+      "sha256": "740f59e4165fb33419e6d3186fcdd9b2bdbcbdc3316538fd856dcd2aee629168"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0015/observations_phase8_20261027T111433Z_session01.jsonl",
+      "size_bytes": 71680,
+      "sha256": "86ddc0f003a93a5d3cb974db6cd92c02ad2cd855bf73b0fdf9441ad53c200f7c"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0015/summary_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 515,
+      "sha256": "762e8ad8dfda8008e948d27cce823af5db4391b3c4c86cde2c0902df92a9f63a"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/fiqa_q0015.log",
+      "size_bytes": 2816,
+      "sha256": "6faa58cce08a2c1e9d1ec16ef56b102a77dd1430620f80ee1c4fdcf5aa7c0d41"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0008/manifest_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 1126,
+      "sha256": "847bb4ff1ff95e049c6b3dafe2351e6c50f07bc642d8caedf40cbcd01a6c8cb2"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0008/observations_phase8_20261027T111433Z_session01.jsonl",
+      "size_bytes": 71600,
+      "sha256": "ed184add9d24587c6cad678d5afa4d824217becd0672b3d91806b88ec9d429da"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0008/summary_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 521,
+      "sha256": "3a1a91fedebef1b02d59b114c92fc8c2984bc20bee29f379a0add9e108dea5dd"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0008.log",
+      "size_bytes": 2874,
+      "sha256": "8891a8141fd2e6ebcc640848ff96f83324ee627e7dfef188b447ae005452f5c4"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0009/manifest_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 1126,
+      "sha256": "d14831bf0026466b2362ce81f5aad1fccd95d196fe7089e79a91d9cee90ba171"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0009/observations_phase8_20261027T111433Z_session01.jsonl",
+      "size_bytes": 71620,
+      "sha256": "89a0c936bd3e7971eef87d804bcff519eb579ca409f883605c6e3570123f9bf9"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0009/summary_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 521,
+      "sha256": "4f86235f9259b51c787d3ceccb05e048ff4d4b045ff9b27bfdf6d9c056d993bc"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0009.log",
+      "size_bytes": 2874,
+      "sha256": "31c407527e6eb347bdaf2c083338c72bf792f5c808af65cc4d2d36eeaeb1d2d4"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0010/manifest_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 1126,
+      "sha256": "6218721aa48189919cef45f0a515f0a294d500156fc0ae0595bd929686460a6a"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0010/observations_phase8_20261027T111433Z_session01.jsonl",
+      "size_bytes": 71613,
+      "sha256": "5254c210d39b22bebbdd9f66dd01732ad0be4d71b4f0dbb477844fea76e56653"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0010/summary_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 521,
+      "sha256": "837d0775bd0d2207d773743f97b84587e951b24c1cfa7324a6451814a25f123d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0010.log",
+      "size_bytes": 2874,
+      "sha256": "6fa75e1a573466d24a7531d8f2b5c9ed3d618fce2230622c96aed01cee8355a7"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0011/manifest_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 1126,
+      "sha256": "2ff9a727657c1533f682097ac5fcb1193fc3767b899e22603b58985b77f06b9f"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0011/observations_phase8_20261027T111433Z_session01.jsonl",
+      "size_bytes": 71470,
+      "sha256": "4ec1d6e0ef70d715bd69a0530d22f2e104e77e07f9d6e0235c3dee8b2aa11097"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0011/summary_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 521,
+      "sha256": "19fbe30ca693b930dde4f020c2a5a744acbba31e5c134339cb3ce65b8ce4b196"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0011.log",
+      "size_bytes": 2874,
+      "sha256": "2c2b4e2d30156fb9dac96c54f01ece250e6a1c91b48588141a2a6e5c67236fa1"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0012/manifest_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 1126,
+      "sha256": "cca2d6d147bd2799cdf38959cbbcd43c2617f88619d4d06ce4b811a834fe0c83"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0012/observations_phase8_20261027T111433Z_session01.jsonl",
+      "size_bytes": 71576,
+      "sha256": "dd6d8379e615baf3eee1637a9924d592b61e3470fd58f6194154fe29ae5afbb2"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0012/summary_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 521,
+      "sha256": "6ea8c843619c5224f4a3063b32a2f16c5d15012faa5e26b316c255940f15d520"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0012.log",
+      "size_bytes": 2874,
+      "sha256": "a50ed3782e846b761e0f0ec6c45a19a6431c773ececafb53bada9fbc6c8ab5ae"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0013/manifest_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 1126,
+      "sha256": "fa0691473d6083de632719e740f4cb1bc4095720e682e8381baceae94d576703"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0013/observations_phase8_20261027T111433Z_session01.jsonl",
+      "size_bytes": 71602,
+      "sha256": "62b530a5ae37aaf27b1595e386a8d9fef45d9493cda5b401fbbf9e53be7e0159"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0013/summary_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 521,
+      "sha256": "905927f6a503fc163668b2a2613e4e02e3555ea84a109be3f85e9ffa7e8c234c"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0013.log",
+      "size_bytes": 2874,
+      "sha256": "945ca6b5fea102dbf62f9936bec7bd3fbb70f61453364958b2455b3bdcca5fbe"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0014/manifest_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 1126,
+      "sha256": "9c708123c23a85e897fca257545f6766b85aa19236c3c5bd272e17a51be8c82e"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0014/observations_phase8_20261027T111433Z_session01.jsonl",
+      "size_bytes": 71497,
+      "sha256": "95b5a70074123957b36a0b189c566a4a16c278b1959dda086644fe60f6c07352"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0014/summary_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 521,
+      "sha256": "bfe1eca8b1300de1b2070f7639c939ef8cd7faf2b426716c5eaaa40c1bcf4603"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0014.log",
+      "size_bytes": 2874,
+      "sha256": "e0dbd3da8d44241eba1d51f5c4d30e99024b1749a0a651e5a84baa8611a5dc98"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0015/manifest_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 1126,
+      "sha256": "e2cdd774f35e71d3168639432a2adf22ce0fb534415cae5317b484555eefc514"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0015/observations_phase8_20261027T111433Z_session01.jsonl",
+      "size_bytes": 71438,
+      "sha256": "58bf5d43ad5aca3f4643f771639192ffcf0d44c858332f5f128939aef23b77b6"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0015/summary_phase8_20261027T111433Z_session01.json",
+      "size_bytes": 521,
+      "sha256": "017ab95c9bb98c1946d0e691ab0ac520752aad5d00d064ec324766021f8c210f"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session01/scifact_q0015.log",
+      "size_bytes": 2874,
+      "sha256": "e0ca07a31816023fee41558e4c41832c27dea2b17f4fac347a26faa84e750005"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0008/manifest_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 1122,
+      "sha256": "731eabb650ba631ee99d843f2db840b9e61037c47d5b234c767cd371a256fa19"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0008/observations_phase8_20261027T111433Z_session02.jsonl",
+      "size_bytes": 71701,
+      "sha256": "483bf9677e1c7ec938a6c9cd3ee3b5e8e6773577d944668f115e0cccbf21f2b6"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0008/summary_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 515,
+      "sha256": "a09a80cc88f97de74c5402511e76f8cb0798ceed3930ed6649357a6e11334c2d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0008.log",
+      "size_bytes": 2816,
+      "sha256": "8cbe811c28bd513de4f0c32c8c5fc2e71b028154315bb4b722329e63f4178ac8"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0009/manifest_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 1122,
+      "sha256": "ed484c386633bb87a24d6cfba9dc26b12cf734932f4c3ee5d8a5a016174ca1ef"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0009/observations_phase8_20261027T111433Z_session02.jsonl",
+      "size_bytes": 71699,
+      "sha256": "55d59a29a0f902f78ade0e5bcfb766923405cb5decffba3d11c7e3bbf1e032ec"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0009/summary_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 515,
+      "sha256": "7bbce351142e355a93310473c69d192c70ac4b3167df98d56fa843b24822d15b"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0009.log",
+      "size_bytes": 2816,
+      "sha256": "3a3125fd64d7aa349c175e6603e990cfbbef0c42f93abf88574f0c0c11ebd369"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0010/manifest_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 1122,
+      "sha256": "26e10e5907c6085c091a9c2dc68e6c810838e49cfd6733be265dadfa5c569d0d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0010/observations_phase8_20261027T111433Z_session02.jsonl",
+      "size_bytes": 71727,
+      "sha256": "aeadca24130b9f968bca4d09bffb6fac49dd00e3e2edcf737fa5fc223e6ed698"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0010/summary_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 515,
+      "sha256": "3171ae2af2dd71098cd8371c6dee91afc0aeda94b1003934cc543aec401c559b"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0010.log",
+      "size_bytes": 2816,
+      "sha256": "4399f13f50fdd42db95ddc3b570a9f59233db9877d4da57be3b33d7c042cd72a"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0011/manifest_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 1122,
+      "sha256": "43425adf57463b7bd56f3536893b3bbf69e1fa55faa96b1283e52382bb54bdbb"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0011/observations_phase8_20261027T111433Z_session02.jsonl",
+      "size_bytes": 71680,
+      "sha256": "969cb2e6f60ce0b6b7ee6c20dc74185aaf676b377159fb65cb0da5e81bae7205"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0011/summary_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 515,
+      "sha256": "4e0c38d074c73681854a0406f25a6ba39865d7a3afa93004372e13797b85ea6d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0011.log",
+      "size_bytes": 2816,
+      "sha256": "c4d0a13269f96a1f9a985557079ec2090040d51d1f7ae8200ace31ba38411188"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0012/manifest_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 1123,
+      "sha256": "d3b472cf03704d381a6ce1f61179d463a1cb463ccdcc1b22765b47e536226781"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0012/observations_phase8_20261027T111433Z_session02.jsonl",
+      "size_bytes": 71698,
+      "sha256": "6a30ad58be2fefc6d141e84304e452ee7ef9b7d0d0208b056352b628120ff475"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0012/summary_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 515,
+      "sha256": "9c1c0d99d80947bea0349c582b38178ced47648721b11f122299b2ee3ed1568d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0012.log",
+      "size_bytes": 2816,
+      "sha256": "b1a5fa14c82ef5f8bb82bdb13579b1b4c4234108a23b9b71c247e9f34235e9d5"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0013/manifest_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 1123,
+      "sha256": "e6aa40967d5d2750920161eb7982e6c105b4565b779437bea4c6fe3ad155b1bb"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0013/observations_phase8_20261027T111433Z_session02.jsonl",
+      "size_bytes": 71690,
+      "sha256": "306f11e0da26803adaad2743909fa92f8e3a7a3d5e3892448479df386b01aa84"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0013/summary_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 515,
+      "sha256": "e0c1e2669bc41d4aab4b7b1214c50dc77e5e8038538d275c683f5b3b95ca1bd5"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0013.log",
+      "size_bytes": 2816,
+      "sha256": "ef46913955820b918d76dfc0ddaca911019af2de4f9c48e8578e59957852509e"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0014/manifest_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 1123,
+      "sha256": "11329ec3d3c14c6b4d4fc3a737a6e59246fb3dc96ee301b0df7d8a0ca8f4c8bd"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0014/observations_phase8_20261027T111433Z_session02.jsonl",
+      "size_bytes": 71703,
+      "sha256": "2fab0f9712935b95dfab66260511b8ba783fcb1a110141417fe14716204a3dde"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0014/summary_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 515,
+      "sha256": "d52d165de32c5fe6efc9a20439468854c8af45b1749302810e75c115e404e71d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0014.log",
+      "size_bytes": 2816,
+      "sha256": "a3ed051f0c8454a649e74303233f67d87361d2d2df0e71ec1c12063d88f842a0"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0015/manifest_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 1123,
+      "sha256": "52424776e6bf690696df571da4d1751e4a2a2f6dd585e55774858862049cd9d5"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0015/observations_phase8_20261027T111433Z_session02.jsonl",
+      "size_bytes": 71680,
+      "sha256": "5de03d419dd49f0909d6c7ba4ddec894f58642e7f05e550bde14c0bc21a93a93"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0015/summary_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 515,
+      "sha256": "6e47d9e905fa6a2ba34cc7362edf2bf75817f9a7041531524b98036c9bf48a53"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/fiqa_q0015.log",
+      "size_bytes": 2816,
+      "sha256": "5a60f00e7989213a573cfbe1beae49cac1ff64437f72ca2fa5042eda756b2b1d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0008/manifest_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 1126,
+      "sha256": "2128944fcde27153d9aff35b9ffa38a2b344bc958377eb930b440e401d848759"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0008/observations_phase8_20261027T111433Z_session02.jsonl",
+      "size_bytes": 71624,
+      "sha256": "b4791d35b6b26bfbd78f2019246aad600bac690f00966dfc4262b4e4df98452d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0008/summary_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 521,
+      "sha256": "44527b36f39f76037822cdb47977ccd754bf2d7b51e44cac5ffeb5d35d2359a7"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0008.log",
+      "size_bytes": 2874,
+      "sha256": "70732b2dfd63c0b19cbd306deaca2bc791bf3b93d0b64b6ac21b74c380055d35"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0009/manifest_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 1126,
+      "sha256": "ff5a02384da6b017ff88b45e3edecdb142cc44981ed808c49cb6bff5e8674a6d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0009/observations_phase8_20261027T111433Z_session02.jsonl",
+      "size_bytes": 71636,
+      "sha256": "9bfd5ce7557c05346f2f3a60541e94ad9f63b17179c5649c958c1eda9c5ac0a8"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0009/summary_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 521,
+      "sha256": "b83ac2f5019350878d612434a481e3410e10823bd3f24c7c6b5748d06ab95c91"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0009.log",
+      "size_bytes": 2874,
+      "sha256": "a8b7ced06b757ac9924442bdb3fd313e255e4156d6223db91294bb9c7cf750f1"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0010/manifest_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 1126,
+      "sha256": "e726eb11897c9eb168fd9630d5e8b4e1cf884830390abac0632bdeab85c51353"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0010/observations_phase8_20261027T111433Z_session02.jsonl",
+      "size_bytes": 71623,
+      "sha256": "24b7798d6c14cde7bcceb90c691870d8131f0f07586cea02b5ff8d6a6e35f674"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0010/summary_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 521,
+      "sha256": "15ce54898900f73440c15ae1bdec331b4e8c57d4e807c28f3a0d3580e8887435"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0010.log",
+      "size_bytes": 2874,
+      "sha256": "e8ec8a0b5e35f4d375c1843aabca45597031a9e49af35bbf3ed68aa07ba14309"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0011/manifest_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 1126,
+      "sha256": "68a7d903baf11e7337f3e9e98cb7c79310c272ec899725d5d3ea9a20f21eced4"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0011/observations_phase8_20261027T111433Z_session02.jsonl",
+      "size_bytes": 71495,
+      "sha256": "2f705911a24dbe13ddf00aed9e254d92c692284f89541f3b29f40361cb24f67f"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0011/summary_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 521,
+      "sha256": "a759ab488c2e440ce1c6bd2348e8cea2d18afb90ddf18c667819fb8990b7668a"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0011.log",
+      "size_bytes": 2874,
+      "sha256": "87146c2ca2c82ad738914da334f312395a0e2675f33a63179e302f7b126bc399"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0012/manifest_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 1126,
+      "sha256": "573288b876b911cf7c37c948fd762ce2fcd2c928153556454284268b5cc0d7ff"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0012/observations_phase8_20261027T111433Z_session02.jsonl",
+      "size_bytes": 71604,
+      "sha256": "7f7522ccd17ef716cf83609d2816b0d86878ba0c152e3a60cac6547ac16b7ed0"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0012/summary_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 521,
+      "sha256": "0ddf83e94791cf71c4cbb9bcf9ee291ae052389a70a07684256ab8a3e861950d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0012.log",
+      "size_bytes": 2874,
+      "sha256": "b88c8f2cc5891c3249c4a840fcebed84b09e7520d8eff0f905c93e4c3cbcb9a0"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0013/manifest_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 1126,
+      "sha256": "245a4949b69270935a1975df7e5e104fc1de421dd6703ffc980481a0b3b4066e"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0013/observations_phase8_20261027T111433Z_session02.jsonl",
+      "size_bytes": 71612,
+      "sha256": "c90aa54eface03b065d3f1c4093b36c2cd99927fab5c317a6c1f18bfb96a7a30"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0013/summary_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 521,
+      "sha256": "5c7eb693ad409fa2b9f17060760e7b56d8c7183ba725f740ff93d42f15bf250d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0013.log",
+      "size_bytes": 2874,
+      "sha256": "f9ecaaef93f01140e26eb53c86ecadc3c1ace78d9a7c0013602a8c2429c3bbec"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0014/manifest_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 1126,
+      "sha256": "0b1ef485252619bef9c049e5fbd8d5a4166bfa23e30cb83e46450bd1861e182e"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0014/observations_phase8_20261027T111433Z_session02.jsonl",
+      "size_bytes": 71496,
+      "sha256": "e94243cf13f7c1756cc3ccd6adc0a6fcacefce64c2cabc5ec2a69640b8bcc235"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0014/summary_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 521,
+      "sha256": "a5b4490425f439a900c86ad40722a5905accc9366759b3914e3595489463dadd"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0014.log",
+      "size_bytes": 2874,
+      "sha256": "b4298a2bbf69d7174fec9d1ddd24f2bd4b1bddc38a26b5e203a2339f09975c6a"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0015/manifest_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 1126,
+      "sha256": "9774fec10fffa38915c5fa9191c1ded91501f8299aae3e9da7acc69b589ecb5f"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0015/observations_phase8_20261027T111433Z_session02.jsonl",
+      "size_bytes": 71494,
+      "sha256": "92524edb2b92e3dd1da775b23f381ae26ff62f8078ff33c364ce7dd7aa547a27"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0015/summary_phase8_20261027T111433Z_session02.json",
+      "size_bytes": 521,
+      "sha256": "243522df0c7bcb8ef88fd413e8665c215d565820699774fafc3f97a6cf0a9c77"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session02/scifact_q0015.log",
+      "size_bytes": 2874,
+      "sha256": "c42e2ca522941f279c5abdb8270cf423b0e30344c1933bc2290f273e153b43b0"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0008/manifest_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 1122,
+      "sha256": "19e304ee87d34090f75e1f8b63eaa82255ed52b7558c5f6dd47e6eb84d102f51"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0008/observations_phase8_20261027T111433Z_session03.jsonl",
+      "size_bytes": 71680,
+      "sha256": "76d4d4baacf9a76389ba11533d15d67b852394dddd73413c98e39bc2f30f2abe"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0008/summary_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 515,
+      "sha256": "eb2a3a3d5234c368b89aad6a510942f845c8b4cbab8f30b53e4ebc13935776cf"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0008.log",
+      "size_bytes": 2816,
+      "sha256": "9d701f78206906813aa5e519c9807f209a6dfb0c88731659e3a9822b0c060342"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0009/manifest_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 1122,
+      "sha256": "c2dd4d6813b9804d8fa57d2856102e775a47e1d5530ed2cefe2050014ea9e256"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0009/observations_phase8_20261027T111433Z_session03.jsonl",
+      "size_bytes": 71661,
+      "sha256": "c07aaa0827dc135fafc57f57d4f3f8dd3394582cd280a6aec901f595e57e5db1"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0009/summary_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 515,
+      "sha256": "4f43b8c956837751f8c27895dc7f3a914fd931d82feb1e2911b3d82cf7736964"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0009.log",
+      "size_bytes": 2816,
+      "sha256": "14bcec3d46eff9a66e2f8b558adf30b410494173fa80a9f9abb4e2b335a156af"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0010/manifest_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 1122,
+      "sha256": "06cb032b642cd847859c759d6121fe652fdbce9c828b1377ccb1a38856ad59af"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0010/observations_phase8_20261027T111433Z_session03.jsonl",
+      "size_bytes": 71697,
+      "sha256": "b3512b1bf6495932a21fcfc8c58a9fb15ba393871082a91089855a2415fbf6a4"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0010/summary_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 515,
+      "sha256": "b709e52ce6ffce8dba19bf4ff70d7911064d9017068b63ea33edb2b7078b3a0e"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0010.log",
+      "size_bytes": 2816,
+      "sha256": "e508750fef02575d2eebf512c73e3c60afebd85ac99cf27b844e79977be2d3c1"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0011/manifest_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 1122,
+      "sha256": "635cc1052a6b7909befa1d242ba7ef613234cd91e41a5d79e5e6d11700985fde"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0011/observations_phase8_20261027T111433Z_session03.jsonl",
+      "size_bytes": 71634,
+      "sha256": "2646d6c24b68a5e2451a497d1bf5b38321d45d185a18ab17eed627593b4c3f85"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0011/summary_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 515,
+      "sha256": "cc336fc9761b2746c465bdd85c33f7b5e2661ffec8c50f5db926e5328e963782"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0011.log",
+      "size_bytes": 2816,
+      "sha256": "ed9d5b15d69f1a6c5afa1e901a77d8bda58689667b357a262a00dbf48a6f8707"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0012/manifest_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 1123,
+      "sha256": "c76a71566a052fccb841ed5a7bcb5698540df7a2600d2de3de37258036f8992c"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0012/observations_phase8_20261027T111433Z_session03.jsonl",
+      "size_bytes": 71645,
+      "sha256": "a9536633e25dab54930850385dd1f24d46774917319205921ed9cbb93e6af969"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0012/summary_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 515,
+      "sha256": "2a5d656b221e49c39fbe0dfb3b632d448bea6cb2111e2f1481950a3f8ab9c1a4"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0012.log",
+      "size_bytes": 2816,
+      "sha256": "6978672dfecfec80d3298559a7a94bb2a29eda299eace2326fb24e6f1059fba2"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0013/manifest_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 1123,
+      "sha256": "d5f76e406f6f6bd745b8cfd79a2e3b08021420ab40aac6a524e9f6b71953121b"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0013/observations_phase8_20261027T111433Z_session03.jsonl",
+      "size_bytes": 71657,
+      "sha256": "e7b3dde03ebcf9c24bd8ac65e5b0db65a33b5a83d8b0075fd3e455fac4639ffe"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0013/summary_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 515,
+      "sha256": "f3273b15452e7128adcadbadf034e752518102d6ae407d6a6b28363e1cf82256"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0013.log",
+      "size_bytes": 2816,
+      "sha256": "3a98114e32a45b464999bf904816601d98a8212ca6c19e8b09e595c911108853"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0014/manifest_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 1123,
+      "sha256": "7e842cdb4d484a822ea81007fc0fb77b353b5581ded70dc163972290e2b454e8"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0014/observations_phase8_20261027T111433Z_session03.jsonl",
+      "size_bytes": 71719,
+      "sha256": "412c04c7ba5fe48d2c7918d20ad88b5890cb0e3f89d19a6e65a3f9d598e25106"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0014/summary_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 515,
+      "sha256": "a880feb61e98645132c8be08ba027b3111affad6fee205ca78357bf729394342"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0014.log",
+      "size_bytes": 2816,
+      "sha256": "0f26e6b1463f6f776cb701db59107fdacd36c4151d08be82b62a46a60ff123a3"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0015/manifest_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 1123,
+      "sha256": "d01f8407bb46f591c7b002da61469c78e0a0e034bfdc78610a9cb612729fde57"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0015/observations_phase8_20261027T111433Z_session03.jsonl",
+      "size_bytes": 71666,
+      "sha256": "c84ceed4fa364bb1913cc031fa46774469d586ce9de1e3f21fab2a05f6c05d04"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0015/summary_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 515,
+      "sha256": "6cd52cbbd7ca39b435e2d492f380d144caad12832a96ac8f1946866784f5718c"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/fiqa_q0015.log",
+      "size_bytes": 2816,
+      "sha256": "560fe9cd250cf7ff82d7b7e68cb1600d5f854751121ee03a477ef081b9e2e341"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0008/manifest_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 1126,
+      "sha256": "6bfe9129ef333f847003ff993a1edb7539f9b3a8d138453e5812285bb964e7c3"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0008/observations_phase8_20261027T111433Z_session03.jsonl",
+      "size_bytes": 71583,
+      "sha256": "d349b092248f4a6a4a8e697f2fb32bd0389d95cf7cdb1f29e70d533a9652d1a1"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0008/summary_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 521,
+      "sha256": "c274ff28b866bfa572d63b94d351ab9cd848e0c88feba6472bced389d0c8db67"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0008.log",
+      "size_bytes": 2874,
+      "sha256": "c2104c9961cb61ecf458de8e175859c0c267a10010348780f16b7fe0b4128e63"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0009/manifest_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 1126,
+      "sha256": "ed3cbb41f6ca8054a46674ae72fefe3cd45b2acc0d5b77d2b1bd1619da41eca8"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0009/observations_phase8_20261027T111433Z_session03.jsonl",
+      "size_bytes": 71630,
+      "sha256": "a172d506575e57e6fd113cc37970b6c9a2db2e8e9e3680f6b94201d484dda826"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0009/summary_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 521,
+      "sha256": "fadd184eb930e4433b679a03ecf727a47f5db6da1a8299186d21ced63995aef2"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0009.log",
+      "size_bytes": 2874,
+      "sha256": "861204213c19c2d04e19718752415c646fcc4e906f5561124636988280cb9a70"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0010/manifest_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 1126,
+      "sha256": "df4811d75ee9d2b551ee4e28a6b58e46c31390d24004c776182c5ab388c2c526"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0010/observations_phase8_20261027T111433Z_session03.jsonl",
+      "size_bytes": 71630,
+      "sha256": "1017bb4ca3f5a3fc8d5db0bb5ba02bad7ed0e006065eec1de37f69652f2e3e56"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0010/summary_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 521,
+      "sha256": "862122cae05a4b7bd6ab3c5c16591cca2bd52dcc72733d19ee6fac95df274161"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0010.log",
+      "size_bytes": 2874,
+      "sha256": "fac513b81538fade3db62af57b413ff22e716a29730983b3c6dc94850fcec7e1"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0011/manifest_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 1126,
+      "sha256": "b6b470cf01d13efdd868f31ff429d9f8861e372ad1fc7ad1c8aad7ee867ee8dc"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0011/observations_phase8_20261027T111433Z_session03.jsonl",
+      "size_bytes": 71489,
+      "sha256": "fdcb35533f718299ca03d03e103a455375778a15ec1c062a2902eec95e945730"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0011/summary_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 521,
+      "sha256": "803a5619ae3c822f2d30b74cda19fcf31212308c6813252c3f2b57095d519a72"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0011.log",
+      "size_bytes": 2874,
+      "sha256": "2ebefcedb001816bddfe6c97ee7999038d9ed9de2ac978c531c8506193f4496d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0012/manifest_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 1126,
+      "sha256": "5cc09e94ab021a772be9006c5362afeffb028aad1d2aafd11674e681a108d811"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0012/observations_phase8_20261027T111433Z_session03.jsonl",
+      "size_bytes": 71612,
+      "sha256": "2a547199cc101d39ce26854c7645eb43ed439fec63537079c12edb32073c7978"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0012/summary_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 521,
+      "sha256": "5fef519aa94e15e8564f3e931e6cd4ca6e222bccb5e63c98608b1efed7341018"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0012.log",
+      "size_bytes": 2874,
+      "sha256": "1896c46688537fe0abaad8a9fa01eb06d45a08a4501d6c649148e0b626d7c889"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0013/manifest_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 1126,
+      "sha256": "738f71acfce721478720cb59194d90bafeb6030495cc30e7ce02f273fe105143"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0013/observations_phase8_20261027T111433Z_session03.jsonl",
+      "size_bytes": 71618,
+      "sha256": "d0bf788245d39b117cd0b35b0b0d88abcb553654fe3f4ede92d564718ae97609"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0013/summary_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 521,
+      "sha256": "9d527b9c38c0a5f223554c5657ab9db6616bc5b5ef1bedbddcffebd70908b31d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0013.log",
+      "size_bytes": 2874,
+      "sha256": "1bcd503c6ccf14b2176869f50f94ede0710a3d6f9b45346417be264c1d36d541"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0014/manifest_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 1126,
+      "sha256": "3f488037e1013e417b3edc25002a654d521628f88b152cab7a4c37d7ad895269"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0014/observations_phase8_20261027T111433Z_session03.jsonl",
+      "size_bytes": 71489,
+      "sha256": "bf417a770ff922f85b7072c1474984f5ac9a1b7d9cfe82e6f5c0bb5c4e11396c"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0014/summary_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 521,
+      "sha256": "5e7ec6a037b7b421f4033a7b13dbb06e9fa8373f097ca5007d796d4cde1d6eb4"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0014.log",
+      "size_bytes": 2874,
+      "sha256": "bd013dc7228df8a1568f069fe0b1ff6d4749d050851fb3abef6fb8d646b02653"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0015/manifest_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 1126,
+      "sha256": "174e225705d98862d3945a1b45efa038457f913d2a50182b146fcb61c868aa76"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0015/observations_phase8_20261027T111433Z_session03.jsonl",
+      "size_bytes": 71486,
+      "sha256": "5287319ea441ef55ce9c55d04decd336c56951572cb0c4b1eb70f21e91e1150b"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0015/summary_phase8_20261027T111433Z_session03.json",
+      "size_bytes": 521,
+      "sha256": "582e969870ffe7f3a14d3c0a1e255d4a052c94b223fd69c0befba5160e4713c1"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session03/scifact_q0015.log",
+      "size_bytes": 2874,
+      "sha256": "46dd443597e3d58837db75eba2c822b77c928baa2d5aeecabdf4b929f879d1f4"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0008/manifest_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 1122,
+      "sha256": "8a712bd7e98d6d7de5b4d4e88366454f61b3885e1637e8f33354fb693c939b6c"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0008/observations_phase8_20261027T111433Z_session04.jsonl",
+      "size_bytes": 71667,
+      "sha256": "6fdab05770470be34466705526b69b5a7e8e73f454a12afa4052654c465e192e"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0008/summary_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 515,
+      "sha256": "1f1f28d6f7c90a7147d1205fc8f532df89ec73a027af67b798a7b783e87c9eee"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0008.log",
+      "size_bytes": 2816,
+      "sha256": "59d28932179f566baee3e20ffcfd33aa0f95d80f51c59ecbf589f34073be31af"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0009/manifest_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 1122,
+      "sha256": "cd71e1d13447851f8d326c35d13766cede5de262b0bf909dce1ebcc9debde676"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0009/observations_phase8_20261027T111433Z_session04.jsonl",
+      "size_bytes": 71690,
+      "sha256": "e324d9f9f5b88cc5f87293e49dd0802a715c966cd302c60583b23a41d1b3d9da"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0009/summary_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 515,
+      "sha256": "cc5d8ac6ad919b171b289b1b46cbafccefe188187b848bcc038e207ea64cccd7"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0009.log",
+      "size_bytes": 2816,
+      "sha256": "57a1f85a8cf10febe492826c19ea59fc22dbc453e4fafab05e9fa395b6721383"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0010/manifest_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 1122,
+      "sha256": "47012ce991b4a7427028b99de6bcd0ac46d04999946514f96da7019deb83ed34"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0010/observations_phase8_20261027T111433Z_session04.jsonl",
+      "size_bytes": 71729,
+      "sha256": "7f65151c97e3d378c829d1e144d28224b8042f6e2c5b286ec6f753b5e6c03da1"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0010/summary_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 515,
+      "sha256": "302f53a7eebcd5790b6e145a97c17777145fdc3bf4caaf4d62688e07d2ddc243"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0010.log",
+      "size_bytes": 2816,
+      "sha256": "720b2770d7ef61648d7c2252fce977bec134af4f30c8984fd4113ccba4147ea6"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0011/manifest_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 1122,
+      "sha256": "ecba1a29c724688c096ab9ce69005b5e5946a8f1a17a74e2ddc736f9035850b9"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0011/observations_phase8_20261027T111433Z_session04.jsonl",
+      "size_bytes": 71708,
+      "sha256": "079cc3020b81d16556d86e0df5cb6e90431589612033d26ce5c5edcee051550e"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0011/summary_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 515,
+      "sha256": "e9a1707cf52c3e95142938d27bc2d9f12828d6ac314fe011fdfbf310ceae2fcd"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0011.log",
+      "size_bytes": 2816,
+      "sha256": "a7fef953077b744ba47ad79571938c9af9580c6ac1c5bf392382db29b43389d5"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0012/manifest_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 1123,
+      "sha256": "2eb38634ec79e4b04b98d5c258376bdb3b72fbc41e90accf0dc1c2693dffd2b1"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0012/observations_phase8_20261027T111433Z_session04.jsonl",
+      "size_bytes": 71679,
+      "sha256": "3efc78085a7f570f3b5b0d1f8cb8c686ce651e6afdd365bda324808b34e212fc"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0012/summary_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 515,
+      "sha256": "02478c43e65e534985b29894dea269515fc392b18b760ec1c02ec09d76568dcd"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0012.log",
+      "size_bytes": 2816,
+      "sha256": "e22cf56ec9a603d859497bff341724d23cab239ba3cd3ac98460a0d51ab67efe"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0013/manifest_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 1123,
+      "sha256": "8f17cfd00cacd004dd6130d5c8b4745600402887b8cf1be74b2c2655f6524f4f"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0013/observations_phase8_20261027T111433Z_session04.jsonl",
+      "size_bytes": 71662,
+      "sha256": "85b39c99e975aa09b20da487d0ec2d0c350c460937d208f5edd7700538f94c08"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0013/summary_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 515,
+      "sha256": "fac5c270fd66fb41c2a409a964c2efa2ba59c76a6fbeee1538659b9de5f87d6e"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0013.log",
+      "size_bytes": 2816,
+      "sha256": "88745df89717bd3a4b11798dd1e13ddfd180dcb05699168189109d355994ad22"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0014/manifest_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 1123,
+      "sha256": "eb21a7c0fcc56ecaf7e0ca7b6dbe1590c5a3bf4ce22f8c7f192a2c647e12327a"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0014/observations_phase8_20261027T111433Z_session04.jsonl",
+      "size_bytes": 71684,
+      "sha256": "8a2a5c5ef66a97fc9e7b34f6eb0b162753e8db077fd8a9a9fde6447be1635585"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0014/summary_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 515,
+      "sha256": "b089b5678c1087cbcb8f1450f4355a046cc1ef56cff68820d3476cbf942d509e"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0014.log",
+      "size_bytes": 2816,
+      "sha256": "0e9704aa9de02974fda835b0c9a0799a6800120fcab7942f11f2ff24d987127f"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0015/manifest_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 1123,
+      "sha256": "ab01c96a23152dc3b31f5eff84cd3982591d469a2b4f2e6e5c28cd781cee623c"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0015/observations_phase8_20261027T111433Z_session04.jsonl",
+      "size_bytes": 71683,
+      "sha256": "54e760ee741f00ea9dcdb61fcd620c462191913b49d385aa1d30eb1e49d5ce7e"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0015/summary_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 515,
+      "sha256": "7d8a7cc71ec06ce3aee666c3148c2bba821d1b143d41ab76623d98242428e500"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/fiqa_q0015.log",
+      "size_bytes": 2816,
+      "sha256": "eb4db669330b6e83c6e2345a97925bb464510b37451f2794bc464482095600c7"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0008/manifest_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 1126,
+      "sha256": "ac412469bd9ddecb4d0d09f860959f2e986a63fc33c89a319ce0f1b77f6a61d5"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0008/observations_phase8_20261027T111433Z_session04.jsonl",
+      "size_bytes": 71606,
+      "sha256": "bed71a79f4f07a0b5747bfa33a344f0458b2935db5e8d6c63fd3ddf51ca66a13"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0008/summary_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 521,
+      "sha256": "1b995efca51b8ac33b1d93c4b5ee41d241ea87e5a5a17e7c08d7341c6345f5b3"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0008.log",
+      "size_bytes": 2874,
+      "sha256": "5fb4b584e548ed6f8b4ea6af065d0722e7b9861bd0db44fed60c8b108cc26534"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0009/manifest_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 1126,
+      "sha256": "852e64ed974ac59d8e9d59c2488dd0bc6153d531ba367ca7c184790e5d746122"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0009/observations_phase8_20261027T111433Z_session04.jsonl",
+      "size_bytes": 71644,
+      "sha256": "79959532c2640be1ef73a77009139f21a3046745d53890bdb08ccbf604afca8d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0009/summary_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 521,
+      "sha256": "56df0b6715330344dc653eee3d7f79468a68681dfcac104585bd47f006304076"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0009.log",
+      "size_bytes": 2874,
+      "sha256": "006dc8ed3c9b07cc5b2b9a2bf5dd6d842652c7115b82ed012191e9caba44b691"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0010/manifest_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 1126,
+      "sha256": "04b0b0d362f045116971a3ed98952d970575e9e6af98d2fe143cd2c605bc8763"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0010/observations_phase8_20261027T111433Z_session04.jsonl",
+      "size_bytes": 71620,
+      "sha256": "69597b921011cf71dd086d761cb44b21b13d085f80da2b29310890cc89f43917"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0010/summary_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 521,
+      "sha256": "f965abef38541af8f383d83b2d5be3607773ce471ab5708d5f1987de3b202647"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0010.log",
+      "size_bytes": 2874,
+      "sha256": "e3864289da48574e05e88f74233a13b054e0e904d984a6c2ff38e9ecd526a654"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0011/manifest_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 1126,
+      "sha256": "76e990fba166889d45ae2d84cf7444b65da35ab8ecc1935eb51395ad8b04fbf7"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0011/observations_phase8_20261027T111433Z_session04.jsonl",
+      "size_bytes": 71510,
+      "sha256": "f8fbcde35c4e3a17562f87841f6dd6f266f4f9775cef6b764dc0bfa1e5fc32d5"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0011/summary_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 521,
+      "sha256": "a64cbcbcabd79b4584159b8a77e25e98ecd8a2bddc147c2fc4b633e690b434ce"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0011.log",
+      "size_bytes": 2874,
+      "sha256": "8abccf0e24095bb7a514e83ce62dde8845d8a14116a00d087dec80dd8a1665d4"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0012/manifest_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 1126,
+      "sha256": "98cf5ea40962684e183a06fc5b73170a75e1707c4aa4eb60e1eeb1c87cf92380"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0012/observations_phase8_20261027T111433Z_session04.jsonl",
+      "size_bytes": 71610,
+      "sha256": "7e2444034419d3a38f5377165747530c9a581ba66c3620eb529b6600ae3a5714"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0012/summary_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 521,
+      "sha256": "bfc0ef0ea40e177a83610cb025171892dbc54b1ce2c7e0543810e1464e46f006"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0012.log",
+      "size_bytes": 2874,
+      "sha256": "041c29614a55b8d4a8de41fbc372a9ab520e9a91bdf771c4573d4eeb91a3d0eb"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0013/manifest_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 1126,
+      "sha256": "32566082b3de0e8eb53f688db91cfa41381ca95ba98c80a5706c84d53a80acc5"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0013/observations_phase8_20261027T111433Z_session04.jsonl",
+      "size_bytes": 71606,
+      "sha256": "84e2f61570b88ef5154e03a82a770cda1d0e5a78ffe2b2b80104b1852e9db66c"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0013/summary_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 521,
+      "sha256": "9759154aebd1d6818a133d0113017b2181bd88c7909a0d905a005d390470202b"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0013.log",
+      "size_bytes": 2874,
+      "sha256": "f6a0796399dfe54af1200d1ff69f51b7aa85ea8d25f40ccd1d7fe0c080077bb6"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0014/manifest_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 1126,
+      "sha256": "5f55d1dabf5654d4cd3040800bf87176ca2064f38d68e8fb601f4b969dde1697"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0014/observations_phase8_20261027T111433Z_session04.jsonl",
+      "size_bytes": 71493,
+      "sha256": "615f8c48651f00a8c9e7f28e12393b1c1dbed03a05a8f211088cf1584e5a4c5a"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0014/summary_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 521,
+      "sha256": "63686f27400b37ccf9724d25d1b1a56c69df1c033a3354e7876e9c8a46df60ec"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0014.log",
+      "size_bytes": 2874,
+      "sha256": "61b6b30fba16f571783eaa2cd76fa522b7e939811cb395739c0070de04ec2477"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0015/manifest_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 1126,
+      "sha256": "efa90c282e67e4329c162f40a398926bd886dcb451f09cea1e56d437462d2524"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0015/observations_phase8_20261027T111433Z_session04.jsonl",
+      "size_bytes": 71483,
+      "sha256": "4cd306afa5c6ea3eec5e4d4e0b3f8d78ce75f8b6a99f05ec835b22b1a35fdea9"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0015/summary_phase8_20261027T111433Z_session04.json",
+      "size_bytes": 521,
+      "sha256": "b31a5f03a03d40810fd56cf9254d3337f4730dd240a995abfd5046ef83148a15"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session04/scifact_q0015.log",
+      "size_bytes": 2874,
+      "sha256": "5ad4fcc1ff43dd8756384794b86f679e3ad7f96cfd6815d85344e41f8008624c"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0008/manifest_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 1122,
+      "sha256": "f37d09cd79730db5acd8b8d1c7ce839ffb6e7156119638ba3422cd2c111216b4"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0008/observations_phase8_20261027T111433Z_session05.jsonl",
+      "size_bytes": 71731,
+      "sha256": "dbd69662e01c0aa6becb7759829b7547c99817e8f4ee5999c5401816026393c4"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0008/summary_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 515,
+      "sha256": "b4ebd2a687a0db851c996cbbbfe522527b2e9b089750af7de8e997782a51ced5"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0008.log",
+      "size_bytes": 2816,
+      "sha256": "28a8001eae01c67ec5db24312fb4d1e99061168388dcfd8242a786b2b7ac4ba2"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0009/manifest_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 1122,
+      "sha256": "54ac3dcae14921fa2afda859f4a73f2fc6e1648be7d0084e6a502373df436bf8"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0009/observations_phase8_20261027T111433Z_session05.jsonl",
+      "size_bytes": 71724,
+      "sha256": "ac12ecc435827eea72ac4a5bac99df3e4d565ec0823647fdc1f267e7b53e5aa6"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0009/summary_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 515,
+      "sha256": "107dca67d76831f38d035590f1203a2e4e967cde59050676647b56ea8040e2d2"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0009.log",
+      "size_bytes": 2816,
+      "sha256": "4c2ceb8e9df49f57f2801ee7f8868f93e0a2c671307c63797a1bbf75aae54716"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0010/manifest_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 1122,
+      "sha256": "f999dd92e18dbb6a2634dc3712887b75bdaa7bdb2ea86eb46ebd8ad71e2df16a"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0010/observations_phase8_20261027T111433Z_session05.jsonl",
+      "size_bytes": 71756,
+      "sha256": "7288ae3c61c89bedb6f4d637d120c890501a463a73acae46af7efde5b2a1cad6"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0010/summary_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 515,
+      "sha256": "f2819dfcfbbcd3285f3bf2fc91ca729bd7c5e12c0d798c06d1430ee35bf6b67f"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0010.log",
+      "size_bytes": 2816,
+      "sha256": "3166a5981139153cc11183a22ab85cd8e48907a483bfaa9908a57d00daa13e3f"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0011/manifest_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 1122,
+      "sha256": "8b365dd0cccc76c6c22b028e05356118bde9a5f28a86d753dd75dcd32603aa4f"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0011/observations_phase8_20261027T111433Z_session05.jsonl",
+      "size_bytes": 71715,
+      "sha256": "57583eafe7dcba49b3c9bd5a673a7bd9cf8d4061d10f8ade40093c053dfa6fb6"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0011/summary_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 515,
+      "sha256": "995d5d82aeb3faa42b3b7c3ac68878d870cbe0d2def1d0821c4b3f64e0a124d3"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0011.log",
+      "size_bytes": 2816,
+      "sha256": "f0565f77afee753a5d930e6a3fafbd9982d93304afe13d0f52fed35004a6a334"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0012/manifest_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 1123,
+      "sha256": "705563ef0f81bae5d5048e7bcb43ef19abf8b892fca7dbf60b83d4ef919c8285"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0012/observations_phase8_20261027T111433Z_session05.jsonl",
+      "size_bytes": 71664,
+      "sha256": "abfdf60b00a2418e315932b81721ac67ea33b25dd4299d6bf90fc29cf1324c5d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0012/summary_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 515,
+      "sha256": "1c127631aa1082426541720bcdf9243aa09b782c7e8e97168ef1e10cc771a33e"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0012.log",
+      "size_bytes": 2816,
+      "sha256": "3f8ed3dbbe8256500d1d510ebdbaaa6086e718cda06c73bf0cf35cc0c7311028"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0013/manifest_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 1123,
+      "sha256": "59bdf635ea219522bd4486191025dc9d6bea83c07e4f7a469ede848004074c63"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0013/observations_phase8_20261027T111433Z_session05.jsonl",
+      "size_bytes": 71648,
+      "sha256": "3524dc6380742386675a625701ba4a72327c2d167fddbf69be74adfcd1539b67"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0013/summary_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 515,
+      "sha256": "f4a9f5c279c88aef6cd3059bdf1f1de71b5e5a7cc1c81bca822919f7162851e7"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0013.log",
+      "size_bytes": 2816,
+      "sha256": "e670b85e99a58940d9705ecf5be3fae02b9c569de6e47fecfff1536a5dc4003e"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0014/manifest_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 1123,
+      "sha256": "0e12efedace3d2656b9418df120ee2ba9d7ca89302cd563c74542d95bb82d606"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0014/observations_phase8_20261027T111433Z_session05.jsonl",
+      "size_bytes": 71717,
+      "sha256": "aeb4e8f95460f5d5018c1dec87be15c2aac1e8f9ea00826523cfdf3978e3552a"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0014/summary_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 515,
+      "sha256": "c15266024058585518908ba4c56b706aa89fa29d4f5fa0fcadf5ceda9978dd7f"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0014.log",
+      "size_bytes": 2816,
+      "sha256": "ddf6e5a236c2e5b84180ce9ec94fc3cf0ad9e4e277ff227f1c67b1c0bb6a096a"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0015/manifest_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 1123,
+      "sha256": "5b163489a65b1a005d86b80c4de85ab47447fa6d5ab183621711d89fe985304d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0015/observations_phase8_20261027T111433Z_session05.jsonl",
+      "size_bytes": 71737,
+      "sha256": "cf34045e5b758eb7d0556c02c245a4ad6e3c677fe8cc2b122bf4365518ae6de1"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0015/summary_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 515,
+      "sha256": "b3af1f73de3c44559e6a050a5c26218f03cdb98cb1025e73bcf9f042a888295f"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/fiqa_q0015.log",
+      "size_bytes": 2816,
+      "sha256": "c25ccfd3d694a61756d657b5429ea53fe96e00ff96c5b3e6cbcbb0f5cda8bdba"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0008/manifest_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 1126,
+      "sha256": "a01c363955a7e6682891e84b010801fe5e0dd9c625f51aceba0e31fd4b292fbc"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0008/observations_phase8_20261027T111433Z_session05.jsonl",
+      "size_bytes": 71617,
+      "sha256": "4cae36c52fb83e76d95246ab557afe965e5382759e12e8df8c766b17d518c7fc"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0008/summary_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 521,
+      "sha256": "b0c712dc3b7a75b9d8d35dc869a01be266dfeaf28dc6d90f3d5d90a0af148642"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0008.log",
+      "size_bytes": 2874,
+      "sha256": "e115d7c57dab1812a147b986ef5782c4f132db97576b916bbeb4104efb488362"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0009/manifest_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 1126,
+      "sha256": "2bd352335c332e9912d1967441606796882063d3b5a0904fc2e654593b7feb06"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0009/observations_phase8_20261027T111433Z_session05.jsonl",
+      "size_bytes": 71641,
+      "sha256": "aeb32b57a4c85900e3dd04de5738bdf2e20c62ba64ae256903cf86c445d44dbd"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0009/summary_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 521,
+      "sha256": "5b318ed8545a9cc70ad4ff454e31d06caed5f23c3c7f3224f8a60701a3793b0c"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0009.log",
+      "size_bytes": 2874,
+      "sha256": "49ebe9880407bc23cb6a332b1a5e5b2219f7f7a857b577011e71d8fcf53c931c"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0010/manifest_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 1126,
+      "sha256": "1cbb16782415d9491edc4d854450f27ae74e86cb77b1fc6202a0333b9f000a6f"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0010/observations_phase8_20261027T111433Z_session05.jsonl",
+      "size_bytes": 71626,
+      "sha256": "b818dc7d7a569442fdb6808614eb766282a05b276c6dbbe702e646d12709e683"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0010/summary_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 521,
+      "sha256": "f8a4953f508ae16670cf10a1afdba80a50fda330617a99b1235e4f345230f846"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0010.log",
+      "size_bytes": 2874,
+      "sha256": "e128a064eecc4a03cc32457007b4d344342a5a7d21506c72236970e1792884a4"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0011/manifest_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 1126,
+      "sha256": "71ab4848360213913cbe2c978907543e47fa1a0d2a7325761aebf28aa584bc6a"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0011/observations_phase8_20261027T111433Z_session05.jsonl",
+      "size_bytes": 71497,
+      "sha256": "867afca063338db2edc504dc3e2c570949903e7c72d448fbec9708aa6ddf88be"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0011/summary_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 521,
+      "sha256": "20f88b5f1ad676750571cae2a016a276801fd29c8a75bb7a5786d40d1848a4ea"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0011.log",
+      "size_bytes": 2874,
+      "sha256": "b1540d06179bc093ff756abd5807b72a30ac111f1971b8e2ae34103b7e9ce204"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0012/manifest_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 1126,
+      "sha256": "c6beacda4ebdc9e59d3b9fe48187c96b5e201c66e2ec88b8c00d40b1e0101854"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0012/observations_phase8_20261027T111433Z_session05.jsonl",
+      "size_bytes": 71628,
+      "sha256": "888013f6ad9b4cbad405a6acfebc102d4ef582ba3679ed084d75b542c6fe85bd"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0012/summary_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 521,
+      "sha256": "bf97eb5fb72e6d7c0d7036bb9a6031bc77203f127be420911f8740a00d2486ef"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0012.log",
+      "size_bytes": 2874,
+      "sha256": "b216d049d29a60112a41f4f39da59ab5041506572b79809bea630125d416717f"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0013/manifest_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 1126,
+      "sha256": "b5efa89803bb81fd2542af0e01e3a3040bdc6af0f76dadd40f54135385ebe5e6"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0013/observations_phase8_20261027T111433Z_session05.jsonl",
+      "size_bytes": 71625,
+      "sha256": "0e3bb41ab2ff2ef3f1c8c9ae58c5f7e5352dc0d6491217672e2b0218cdcf9309"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0013/summary_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 521,
+      "sha256": "15d14e600a8b972a154ea09bd564c8ad946c4ae43d0333b03104c0e56b60237b"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0013.log",
+      "size_bytes": 2874,
+      "sha256": "e2451d8fb232769eb1673cded189571e672342285a7c7e45552d0309597539ad"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0014/manifest_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 1126,
+      "sha256": "287576ad62fe5c044b03b5ac141182ca0d8c82ec12d2d7d8a24d72dd44995716"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0014/observations_phase8_20261027T111433Z_session05.jsonl",
+      "size_bytes": 71504,
+      "sha256": "8bacadf76a4234cc9976ef3b4cbeacd8387799e9c79255ed3b151b98d9af3878"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0014/summary_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 521,
+      "sha256": "894bb4f32b91312980c6c4218069c4c4dbf5c97dca70a6e90cd264791fe16809"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0014.log",
+      "size_bytes": 2874,
+      "sha256": "7e94e22589ef70f83f76d8a1ab673531c50750dbbcc0968299b436e2f41d2c07"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0015/manifest_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 1126,
+      "sha256": "1e5bca0cd37777eb9da0febc2e7d37abcb32a4c4c703de1af61a700d7a5ee5fb"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0015/observations_phase8_20261027T111433Z_session05.jsonl",
+      "size_bytes": 71499,
+      "sha256": "4b3f5bc9e51ef460e0e97172e4960c98e5d192ca920f60058ece5b1e0651952b"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0015/summary_phase8_20261027T111433Z_session05.json",
+      "size_bytes": 521,
+      "sha256": "62da8cb5356828ec49a2f498bc43aa1b7d8a711ccaec1c27de59bb68ffb4510b"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session05/scifact_q0015.log",
+      "size_bytes": 2874,
+      "sha256": "06d68ace886ea8df1ab2d334bdbe0d6dabcfa0d80ec8f9927e8d3c963794fa57"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0008/manifest_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 1122,
+      "sha256": "7069036ceb58a243b3cee25fac14309a8d35817f2b2258aabb4427fe548e8086"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0008/observations_phase8_20261027T111433Z_session06.jsonl",
+      "size_bytes": 71735,
+      "sha256": "5678fdea17198c67bd5251d012bee724556da7f74d2662fb8e4b876535763319"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0008/summary_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 515,
+      "sha256": "13a2ad721043c0a59c2abe3b2002ffe50345f9b6a29b7eddab5352a6bb476cff"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0008.log",
+      "size_bytes": 2816,
+      "sha256": "331be8f341f2463fe2197234194603e34f2db7e94a7cbfb87db1f46834279df4"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0009/manifest_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 1122,
+      "sha256": "19314410cfeb0034f0af1e9e4df0a4447e7666637d04966dfef776984209e648"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0009/observations_phase8_20261027T111433Z_session06.jsonl",
+      "size_bytes": 71735,
+      "sha256": "43ca83102c41641ba36fdf0af6e93a9817ee2d1f8a011eeb71d3c37ae7886a34"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0009/summary_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 515,
+      "sha256": "f53870449371d4ad4ba34e86b24f601dcd03a8a631efa7ffae7cbfb7b963e420"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0009.log",
+      "size_bytes": 2816,
+      "sha256": "1453e4951818d464ea8f0f9e3ccbc9a44e82565eb719ea300195155d83b1dad5"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0010/manifest_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 1122,
+      "sha256": "d32aefc0fe902dcf0168baafc7522b9c81f7ce80c736bcfe77cac6cc8cb319ce"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0010/observations_phase8_20261027T111433Z_session06.jsonl",
+      "size_bytes": 71704,
+      "sha256": "f12f1e81316159676e199e769e0b2f6fab8c97f1a927e70af3b091a7a98ebce0"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0010/summary_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 515,
+      "sha256": "917b3b25282a8edb90a53b0b8414da824ae60d2fa34fe13c4907060d27033706"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0010.log",
+      "size_bytes": 2816,
+      "sha256": "458397a9b8f698f87fea4f3300bbbd28ec217156aa96b583e8cdda51f5f8f085"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0011/manifest_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 1122,
+      "sha256": "102f3d03d54037e0e73d83b54ec9235be4b707d9617c3e908b171ee995893ca7"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0011/observations_phase8_20261027T111433Z_session06.jsonl",
+      "size_bytes": 71703,
+      "sha256": "e3b261edb60a3f99c14f2d289dfdfdad133878c88caa871e06bf07c54758401e"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0011/summary_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 515,
+      "sha256": "dffb2e53617e96033c6824d40e60f06da16882fea0dbf3b21a58360e427c4d2d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0011.log",
+      "size_bytes": 2816,
+      "sha256": "2cd2e5a7a461080edaae0c70032681d7b5bb477b4dcf17e6994bac1a17cbd64c"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0012/manifest_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 1123,
+      "sha256": "be89a62d094e4b9ac650ad5e32be053e7e75bebaed85fcd3734b1277206c67bc"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0012/observations_phase8_20261027T111433Z_session06.jsonl",
+      "size_bytes": 71679,
+      "sha256": "a2d5ecea8c46de198891a8d6a95412c8046f278e14899923c1a7dc56306e34c6"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0012/summary_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 515,
+      "sha256": "cffe4bdbc325bc6b6f437a36bbffc46c5e3b57c449fd79f555487732e6b36aad"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0012.log",
+      "size_bytes": 2816,
+      "sha256": "8a13c57ecfd18829e95b783445a02960b8aec2898638f6b64f29b8af25cdf6ad"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0013/manifest_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 1123,
+      "sha256": "8bf169ffcd93ba924fc620def9ccc4f6d7dd15ff41529c150a5333cabda23dc8"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0013/observations_phase8_20261027T111433Z_session06.jsonl",
+      "size_bytes": 71701,
+      "sha256": "1d4d1edb90471b0d6c4c1d2ae48160898e6bc405b7785841a2cef37abd94d5ba"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0013/summary_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 515,
+      "sha256": "2d91df649fbaa2f2678691b2db05d6fd276a2ec7b9c33f3f8c6eb58e5781efb2"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0013.log",
+      "size_bytes": 2816,
+      "sha256": "3fa3238bd8ede1b10a602cf8e4200b1c61915f61f44ce25e3f42947e5cae6abe"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0014/manifest_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 1123,
+      "sha256": "26377bbd7d0ee92106e5491f7108b744b16c39d6ae415f64805fa40e6e10189a"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0014/observations_phase8_20261027T111433Z_session06.jsonl",
+      "size_bytes": 71689,
+      "sha256": "1a8e08484d97baf6f0ef0083679253a807c4c285fb512c4a2573d5a1f7e93942"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0014/summary_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 515,
+      "sha256": "89889a90da5a12da8b85f911974178b64fa0c9186a0ecf49ee752b85cf8a8f84"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0014.log",
+      "size_bytes": 2816,
+      "sha256": "52c53b7d65ef241b5c69d2b90c40c67379d9efcd5184fee62095ca1675fd1d19"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0015/manifest_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 1123,
+      "sha256": "ead2846ff6d2d994d8670d128344df11959628ae055d294782fe5dd4485c783b"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0015/observations_phase8_20261027T111433Z_session06.jsonl",
+      "size_bytes": 71716,
+      "sha256": "5d71d3618b08e1134d411cadb3e78c017b8f92d4e90534a6cb746d69ca04b10f"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0015/summary_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 515,
+      "sha256": "38fa47af69502c44b0e10b873702fc75d33f8228d1f75ec7543765a4149c0f6a"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/fiqa_q0015.log",
+      "size_bytes": 2816,
+      "sha256": "7594390f4f4ce4e00fb00ca1ed45c56a322406fbbc09f9f3df96aeee13e3c2b5"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0008/manifest_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 1126,
+      "sha256": "163cd16973a4058cdeadce9e9833d708679bd78356e061df0b25d7f4dac23821"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0008/observations_phase8_20261027T111433Z_session06.jsonl",
+      "size_bytes": 71612,
+      "sha256": "9c9189149991dba3a05d0971697fbb79f1edc9a4cd59f81beabf5fb226fe2758"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0008/summary_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 521,
+      "sha256": "00af8ee4b68e0fcd74291e93d61ac1cdda8f030bbac56ab232d172042c5bedad"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0008.log",
+      "size_bytes": 2874,
+      "sha256": "d4d8ecb0e6b75c66e6299398c4f0dc35742aca3d7f07f6c238502b6da325de93"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0009/manifest_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 1126,
+      "sha256": "967a6cde88237b0301b2c5dcfd8d898facc1c90463d46ca28afd35439b95d7b5"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0009/observations_phase8_20261027T111433Z_session06.jsonl",
+      "size_bytes": 71635,
+      "sha256": "68050737674ed9a991b8c316d94a87411674c2942c955db98eec9b4bb9000604"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0009/summary_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 521,
+      "sha256": "81e82c084a3fb0b35ae873a094bd4bdf842021bfe460a2af738faf9bf386578d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0009.log",
+      "size_bytes": 2874,
+      "sha256": "61c8008ba1070680711012de77add75cdd063c028d05936e1ed77e60f3eabf31"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0010/manifest_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 1126,
+      "sha256": "db6a125af70d2daa44d37ba8ef57957020729d99bc6c65c3eac30d00dbfb1a19"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0010/observations_phase8_20261027T111433Z_session06.jsonl",
+      "size_bytes": 71624,
+      "sha256": "c30bb41a1cdf02f0629581cf0e1eaf67d31c4f0c374f8ac7587d55659078afe5"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0010/summary_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 521,
+      "sha256": "93db52a442fd825177ffc051c2d960c22f3118d047f593c27f188abde5feec03"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0010.log",
+      "size_bytes": 2874,
+      "sha256": "c000b13d4cbc643aeaae9652da527a688288321940d00569b6cdc8d0ad77e82d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0011/manifest_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 1126,
+      "sha256": "c0e66e671a12dbfeaf6aeddcc45633b656da1e385a3371a6f5d3a2edf0fd7432"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0011/observations_phase8_20261027T111433Z_session06.jsonl",
+      "size_bytes": 71485,
+      "sha256": "33bbd997f2d0bbc9dba274bbdc4e2c0fe175da4122e80ed2b38f2ed0f8e3ce04"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0011/summary_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 521,
+      "sha256": "f1b5e66a1f646882eaf590afe74b37cfcfdc1eeed644d7c0edd23c4d1167b68d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0011.log",
+      "size_bytes": 2874,
+      "sha256": "4cba40b96e57c1a65d8677d2a0d1f02294d52bfe926e584d6a7f902cfa4a8d11"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0012/manifest_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 1126,
+      "sha256": "11bf79102133a34ecbb3b4a54a91b4902d01248a0badd5be972b0307a9b54242"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0012/observations_phase8_20261027T111433Z_session06.jsonl",
+      "size_bytes": 71620,
+      "sha256": "790c8eaf4c79b89fa97958c291c334989f4bf1189c2a10c06bfc44a90f258c2c"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0012/summary_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 521,
+      "sha256": "0a6abb9d9e2d1a90b9bc989217b262d80a9cdb31b78c6b36f827998bfa25c12c"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0012.log",
+      "size_bytes": 2874,
+      "sha256": "d40b062c2b522f6afff8b59ca0ce9bc0341eb285ef3bf41afa73e042f7051eeb"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0013/manifest_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 1126,
+      "sha256": "cf12b1c85038b20d657f83510ddac9e20e04061849bd602a35927dec58b961b0"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0013/observations_phase8_20261027T111433Z_session06.jsonl",
+      "size_bytes": 71626,
+      "sha256": "0bf434efae511989096cfa8cdf9bf11ed354f20e264222f71bfaf5494c8e55e8"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0013/summary_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 521,
+      "sha256": "7a3fd7be9a8e6f59421fcbe6628989e23d98e3f9def4fdaa881d8e7630e16495"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0013.log",
+      "size_bytes": 2874,
+      "sha256": "c70a30df291f1b4f1c44ed5a2e08a3b942db35d804ba0cb21813e39c93c22b1f"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0014/manifest_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 1126,
+      "sha256": "bf22af9aa7b7636ca029126d7a6030c676436565caf6bc3976fd27b5cb3f379f"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0014/observations_phase8_20261027T111433Z_session06.jsonl",
+      "size_bytes": 71514,
+      "sha256": "dd32183e8a602aae4e7d1a8c929cfa0e299e9cf2ea300077616eb9ec8d4f404d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0014/summary_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 521,
+      "sha256": "5d70c0721e41df421aa1dda251a17df9220354f1755dcfed97cffbc7fdb3dd0d"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0014.log",
+      "size_bytes": 2874,
+      "sha256": "b096b11eed225fd1fb58879949af3f1c162f86b93c2ce1bd55e078427dc2d4b9"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0015/manifest_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 1126,
+      "sha256": "64a967b60d90d79b38cc79a9512bf280a2619b59e2c6619e7ce2d184a0d4ff74"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0015/observations_phase8_20261027T111433Z_session06.jsonl",
+      "size_bytes": 71512,
+      "sha256": "b7956b2248ea87a672aa11b1255de79c76907f2fb2786932297b7475ede33c4a"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0015/summary_phase8_20261027T111433Z_session06.json",
+      "size_bytes": 521,
+      "sha256": "15ec9ae174dc202401650af4d3d7af7602e3709d88c8247343a1c939300e27e6"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/phase8_20261027T111433Z_session06/scifact_q0015.log",
+      "size_bytes": 2874,
+      "sha256": "5202b8a43dd63263458899f9db05abce362ceea02c4510886ab0a1830e0889e0"
+    },
+    {
+      "path": "results/phase8/beir_validation/20261027T111433Z/validation_manifest.json",
+      "size_bytes": 219465,
+      "sha256": "63ff6991568452245916ad0b3d5ab09006f9f50fe01cfffb8c5b5a209faf8549"
+    },
+    {
+      "path": "results/phase8/beir_validation_analysis.csv",
+      "size_bytes": 34829,
+      "sha256": "311b718123bb4d6cbe31ceed28b09ce143cae1e8b08e2c8d89453db21226ff45"
+    },
+    {
+      "path": "results/phase8/beir_validation_analysis.json",
+      "size_bytes": 1757,
+      "sha256": "8f6406b8a3ee985732f1010b0b38879a731dca6bdfadfc26c5bf5beebfa62392"
+    },
+    {
+      "path": "results/phase8/integrated_dispatch_analysis.csv",
+      "size_bytes": 12057,
+      "sha256": "fb15ad512b858eb4cb8390eb5192a1a84cf4b5ba31d44551563c1d7aca3cc615"
+    },
+    {
+      "path": "results/phase8/integrated_dispatch_analysis.json",
+      "size_bytes": 1583,
+      "sha256": "a98c62340f4ae79fef4c8e7d478afd425595c3c4656269c2e7b58f58b99099b8"
+    },
+    {
+      "path": "results/phase8/integrated_dispatch_exploratory/phase8_integrated_20261027T112202Z_00/manifest.json",
+      "size_bytes": 15106,
+      "sha256": "9d38a1c6b32991444aab127df7bfb17eb0d6ca9fa856d9f516041a1e357b672b"
+    },
+    {
+      "path": "results/phase8/integrated_dispatch_exploratory/phase8_integrated_20261027T112202Z_00/observations.jsonl",
+      "size_bytes": 838835,
+      "sha256": "20d0cfe1cde15cbd2f2a2e4e6f15ef2cda164398eaed78fdbbeab31b718eba6d"
+    },
+    {
+      "path": "results/phase8/integrated_dispatch_exploratory/phase8_integrated_20261027T112231Z_01/manifest.json",
+      "size_bytes": 15106,
+      "sha256": "2f4b0dc6d394e9a171b34e5a39f6592679bb5632b75bfc6beb08767bad8ca953"
+    },
+    {
+      "path": "results/phase8/integrated_dispatch_exploratory/phase8_integrated_20261027T112231Z_01/observations.jsonl",
+      "size_bytes": 838946,
+      "sha256": "f11555d46568274a7e99aafe4254fc723867cccc5a4212673eca87eaee14aa77"
+    },
+    {
+      "path": "results/phase8/integrated_dispatch_exploratory/phase8_integrated_20261027T112253Z_02/manifest.json",
+      "size_bytes": 15106,
+      "sha256": "3716962e4ecaab1944682f57c0349802d6eae90fab2bcd77f9548bca5fba0cf8"
+    },
+    {
+      "path": "results/phase8/integrated_dispatch_exploratory/phase8_integrated_20261027T112253Z_02/observations.jsonl",
+      "size_bytes": 839156,
+      "sha256": "e6c7c42ec20d27bd1e8abb029575988bf1b95a1c69aaeebd3ce3773379949dac"
+    },
+    {
+      "path": "results/phase8/predictive_headroom.json",
+      "size_bytes": 27667,
+      "sha256": "972de3aa1d3bc9c6d804ebfad3a1ab32523bb3b582bf298be8892a4ed68108a2"
+    },
+    {
+      "path": "results/phase8/score_sketch_crossvalidation.json",
+      "size_bytes": 41007,
+      "sha256": "30762aed287ae1c3751456bbd769a277bc39b1d42e8f91a68a2b72f83d1a5303"
+    },
+    {
+      "path": "results/phase8/score_sketch_forest_crossvalidation_fixed.json",
+      "size_bytes": 40996,
+      "sha256": "cab839b038319873adef215d1417f838d12892f56661f40a89bab722851530eb"
+    },
+    {
+      "path": "results/phase8/score_sketch_tree_crossvalidation.json",
+      "size_bytes": 41117,
+      "sha256": "19073f723b45f654d6ad7c75dd2dd7994cbdcd8e3e7c816d914f39eedcba921d"
+    },
+    {
+      "path": "results/phase8/score_sketch_tree_crossvalidation_fixed.json",
+      "size_bytes": 41053,
+      "sha256": "a896bc66f714340a8ac5eb86931a2a2ebcdc4ea3f9d31abf9661bfd694a921f4"
+    },
+    {
+      "path": "results/phase8/synthetic_exploratory/manifest_phase8_exploratory_20261027.json",
+      "size_bytes": 1112,
+      "sha256": "9bc0fdeeb5760636019cc108544653d2c7af0786a54f736d260154263aa8fbcc"
+    },
+    {
+      "path": "results/phase8/synthetic_exploratory/observations_phase8_exploratory_20261027.jsonl",
+      "size_bytes": 563739,
+      "sha256": "41c2b7472fc919a9e2ef53b95cc2c806e80633ddf2978d22ebc14ae8e972dc93"
+    },
+    {
+      "path": "results/phase8/synthetic_exploratory/summary_phase8_exploratory_20261027.json",
+      "size_bytes": 380,
+      "sha256": "8ec8148930f15a13f3bc8828284b7c6f6b1abf9d907bd1519d6aa3394b941095"
+    },
+    {
+      "path": "results/phase8/synthetic_exploratory_fixed/manifest_phase8_exploratory_fixed_20261027.json",
+      "size_bytes": 1118,
+      "sha256": "b02ce03bacbf0b9863f721351e4bd00c1db4115b736a99f85b0447963a218be1"
+    },
+    {
+      "path": "results/phase8/synthetic_exploratory_fixed/observations_phase8_exploratory_fixed_20261027.jsonl",
+      "size_bytes": 566003,
+      "sha256": "fa80d6e62df9f11416b55ced6544c9b8e4add21bf8fda3804636747884a0d9b6"
+    },
+    {
+      "path": "results/phase8/synthetic_exploratory_fixed/summary_phase8_exploratory_fixed_20261027.json",
+      "size_bytes": 410,
+      "sha256": "0999d33a3c52f3dad8503c33bd2a30af0984d67b9881c5a1ecaae6d91288285c"
+    },
+    {
+      "path": "results/phase8/synthetic_exploratory_fixed_console.txt",
+      "size_bytes": 17154,
+      "sha256": "51ebc455660008701a68dabdf936b1188b5fb5e547839bd078bd1944636d87eb"
+    },
+    {
+      "path": "results/phase8/tie_repair_exploratory/manifest_phase8_tie_repair_exploratory_20261027.json",
+      "size_bytes": 1077,
+      "sha256": "0d87b4a93513352b3a6b578276fd25b4d1066b0734ad7502c3d3a906fe6a033e"
+    },
+    {
+      "path": "results/phase8/tie_repair_exploratory/observations_phase8_tie_repair_exploratory_20261027.jsonl",
+      "size_bytes": 111015,
+      "sha256": "cb54ab40d3c150f5cc974e275eb62d278b7a82c6fe2a604e7f6c67fed9768c8b"
+    },
+    {
+      "path": "results/phase8/tie_repair_exploratory/summary_phase8_tie_repair_exploratory_20261027.json",
+      "size_bytes": 414,
+      "sha256": "3c2616adc91c12031a17c69284b8417132f360f9e0c3c82738754023948ca006"
+    },
+    {
+      "path": "results/phase8/tie_repair_reference_audit.json",
+      "size_bytes": 994,
+      "sha256": "8fc9f03737900e7f131f6d442d093fda8921f57e7291b9394224fdbcd165e55b"
+    },
+    {
+      "path": "configs/phase8_beir_validation.json",
+      "size_bytes": 1549,
+      "sha256": "2395d1fd6faf7d80204811eb8c72dd93753ec5e06b7634c7606d5d2e1ef7ba96"
+    },
+    {
+      "path": "configs/phase8_beir_predictions.json",
+      "size_bytes": 19150,
+      "sha256": "fe619b47b067c241dd010d8d4443d03d151c958b57c80a5068f9a674c61ad871"
+    },
+    {
+      "path": "docs/PREDICTIVE_FEASIBILITY.md",
+      "size_bytes": 11434,
+      "sha256": "c5c31d8841ec0d18c6e2ffa1774fec6eb18b7ecb31b358052bc19e3682230c36"
+    },
+    {
+      "path": "docs/PUBLICATION_GO_NO_GO.md",
+      "size_bytes": 8439,
+      "sha256": "0f9a197f909173ebe99ede0b6069f031a306d951d5185929445f49ef3244689d"
+    },
+    {
+      "path": "docs/STATISTICAL_VALIDATION.md",
+      "size_bytes": 7461,
+      "sha256": "a55236bb429058073732e0ee0edeca07a124129d53f22045b68922a67c1cb848"
+    },
+    {
+      "path": "scripts/assess_predictive_headroom.py",
+      "size_bytes": 5861,
+      "sha256": "4ec19ef706653463957f712b2bb1a03f8fe5bc7d1c1588dc0cf72adbf67957a0"
+    },
+    {
+      "path": "scripts/explore_phase8_predictor.py",
+      "size_bytes": 9382,
+      "sha256": "93f60dde6b33ddec24be1115a06d2d5edb95bb02a1827d206de9b83180aad0ca"
+    },
+    {
+      "path": "scripts/audit_tie_repair.py",
+      "size_bytes": 2450,
+      "sha256": "e6be49d693e88774fcc123d1deecf7238ee937c09312d35aa623f52a2dbb19bc"
+    },
+    {
+      "path": "scripts/prepare_phase8_beir_predictions.py",
+      "size_bytes": 4206,
+      "sha256": "e7350fedbbaf0c0d82bac33713b8d04ec6500428d4838fe826e1bdb029ecf380"
+    },
+    {
+      "path": "scripts/run_phase8_beir_validation.py",
+      "size_bytes": 6073,
+      "sha256": "2b988c58a3241bd234a8e5f8f75c1e234337449c50539ac2c61911442826b338"
+    },
+    {
+      "path": "scripts/analyze_phase8_beir_validation.py",
+      "size_bytes": 8043,
+      "sha256": "061096d855ae554bf0b4618ad896773e3915d4e6e4ef874040225ab7f6689123"
+    },
+    {
+      "path": "scripts/bench_phase8_integrated_dispatch.py",
+      "size_bytes": 8485,
+      "sha256": "2a2e2f781494780c97b49510936da740d7ee789d4fa59abd2b0dd12479de0cd1"
+    },
+    {
+      "path": "scripts/analyze_phase8_integrated_dispatch.py",
+      "size_bytes": 6077,
+      "sha256": "e70087b22c655958aa665a60d3e060ea788b0750446296f8233a890d3a521cbd"
+    },
+    {
+      "path": "src/cats_npu/reference.py",
+      "size_bytes": 3358,
+      "sha256": "da32bfec076a9c65924e1553926c5df81c17be4170663a32a921070ab1378fb1"
+    }
+  ]
+}

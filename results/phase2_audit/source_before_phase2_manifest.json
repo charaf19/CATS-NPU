@@ -1,0 +1,224 @@
+{
+  "timestamp_utc": "2026-10-23T13:53:11.621966+00:00",
+  "workspace": "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1",
+  "git_available": false,
+  "file_count": 43,
+  "aggregate_sha256": "ac2f655f492b3441e02d2b7904be80d3bc9456be5833ec5fdbd28f4f84dd86ca",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "76aa2e2bb6038d78db1369ea101eb11b74ae9240ae6e3fdaa63a2594e34abbef",
+      "bytes": 1074
+    },
+    {
+      "path": "README.md",
+      "sha256": "1611eee8770503807e3dd3791fa7ac6d6a0de39ec2526ec96a5d45649b35485a",
+      "bytes": 11194
+    },
+    {
+      "path": "configs/pilot.json",
+      "sha256": "f754f9119e3efd512610c4627c3b07aa30303440c677cc843e9649435b636b03",
+      "bytes": 934
+    },
+    {
+      "path": "docs/AUDIT_2026-10-23.md",
+      "sha256": "7625cc2ed5c3dc9bf4e48a1c309e5544d1b196f4cc3bba5e856744c1ce80e6db",
+      "bytes": 23289
+    },
+    {
+      "path": "docs/MATHEMATICAL_SPECIFICATION.md",
+      "sha256": "5b8f479a49ee47cbbb51a43cfb4256cedbe36444ceab47517dbf875f58cdd7c0",
+      "bytes": 3878
+    },
+    {
+      "path": "docs/METHODOLOGY.md",
+      "sha256": "2ad9b99494622288f38faa53c25216768f6de8658e3caa10e5f89ac793e3416f",
+      "bytes": 6146
+    },
+    {
+      "path": "docs/NOTES_AND_LIMITATIONS.md",
+      "sha256": "48208700525727582a43c49e4697f1ca3710003a3324805449c20f4382d2bb83",
+      "bytes": 3434
+    },
+    {
+      "path": "docs/RESEARCH_CHARTER.md",
+      "sha256": "d87c0606080232a5e09f44a376be231e10895157bb45b578b2b4757eaadfeb88",
+      "bytes": 12513
+    },
+    {
+      "path": "docs/RESEARCH_GATES.md",
+      "sha256": "f3fcfc6f75f584c42c5908492120aaf51b054939cb299b184627512374ffd63e",
+      "bytes": 3120
+    },
+    {
+      "path": "docs/SETUP_FIX_2026-10-23.md",
+      "sha256": "ba5d2573bba77a05cdee42a55044db04d6b11f1e020d26b3b2ef5f4ab760d821",
+      "bytes": 2965
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "sha256": "27b0ffd4287f943e6badd69b470c1444b4f16d1287f49dfe2b4a9a0a8c73fb51",
+      "bytes": 3163
+    },
+    {
+      "path": "native/CMakeLists.txt",
+      "sha256": "b1f53badc6b86bd180b7ba7fcc2512264e3b03ca8f0cb63a049251529d760ad2",
+      "bytes": 385
+    },
+    {
+      "path": "native/topk.cpp",
+      "sha256": "02fe71fdc9265a644d8c139e851ab8a6cdd877e8c210e06c6ba48a86e38c10d2",
+      "bytes": 1432
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "5bff1aefc8daa882f3daf8da93409813494ed6c2cc9266965e51df6d23341482",
+      "bytes": 785
+    },
+    {
+      "path": "scripts/00_setup.ps1",
+      "sha256": "31823e27937b95b208fac28c1a9a5bf654f5c43f021d3f20dd8324ec8a15fd42",
+      "bytes": 1188
+    },
+    {
+      "path": "scripts/01_doctor.ps1",
+      "sha256": "12acf2c66833759a537e21cd33eecfc7160d1e7223743cbd52759105a55f1b23",
+      "bytes": 298
+    },
+    {
+      "path": "scripts/02_probe_npu.ps1",
+      "sha256": "30e4334a6d969194a49ccfea5dd0089bf7e2ad4e16221e9eb1ca73793c19efa1",
+      "bytes": 812
+    },
+    {
+      "path": "scripts/03_smoke_cpu.ps1",
+      "sha256": "1842091d1b1405a621e9fc47d9214e6adb8900b1bb5f9ad51b59324813ebf64f",
+      "bytes": 471
+    },
+    {
+      "path": "scripts/04_smoke_npu.ps1",
+      "sha256": "b0cc7c07d8b5c7b9adba58748da5802b075e6d4e2361c7d79fcd3e3a0567666b",
+      "bytes": 721
+    },
+    {
+      "path": "scripts/05_benchmark_cpu.ps1",
+      "sha256": "edb3935f797911254878f65767eb10cb2e727567c47a645286bb1e26fd4c73f7",
+      "bytes": 639
+    },
+    {
+      "path": "scripts/06_benchmark_npu.ps1",
+      "sha256": "0b41df80da68284983c537e6518ac24922f092f8b8dc4c88f1812594f1a21a4d",
+      "bytes": 992
+    },
+    {
+      "path": "scripts/07_analyze.ps1",
+      "sha256": "bdd83b036045f6baec455ed5c8793797767f6f537b9edf06437cfc13543f0961",
+      "bytes": 719
+    },
+    {
+      "path": "scripts/08_build_cpp.ps1",
+      "sha256": "99cf5df154f15f3d07bcb3ed2f390d4a2896420980ee1426599b955c1e70b008",
+      "bytes": 731
+    },
+    {
+      "path": "scripts/09_freeze_environment.ps1",
+      "sha256": "2347e86f913991099a9e9696efc017dd55b2aaae9515c43263855c604f7b5d7a",
+      "bytes": 638
+    },
+    {
+      "path": "src/cats_npu/__init__.py",
+      "sha256": "9256ae64e3df05e2e5a9dabcbad29f1b1f5da274275963d1a44a9c6382c56862",
+      "bytes": 179
+    },
+    {
+      "path": "src/cats_npu/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "bytes": 48
+    },
+    {
+      "path": "src/cats_npu/algorithms.py",
+      "sha256": "48b659d37b94eae19c1bf78575f69e5cb90e1a6c0b6ac1db6aae0f8e0844b169",
+      "bytes": 12103
+    },
+    {
+      "path": "src/cats_npu/backends.py",
+      "sha256": "28052d3ea9be7e8084b50e5f08b737b704f8201eea28f2d1203eb958aaf68a06",
+      "bytes": 11486
+    },
+    {
+      "path": "src/cats_npu/benchmark.py",
+      "sha256": "8e85a2a1aa7e48f0308d1c9c1ad823ede2339ac8ff88828669fbcd84ce9fce5c",
+      "bytes": 8683
+    },
+    {
+      "path": "src/cats_npu/cli.py",
+      "sha256": "597a20c8ab0e736d192bbc02c0a3e4fe99c77bf0d89f12f87b13d573a9062102",
+      "bytes": 8872
+    },
+    {
+      "path": "src/cats_npu/data_import.py",
+      "sha256": "9d53183e36f9ac31413275cc2613a7ed3ab05dd5fa72a08906cbcb3b8a4ff91d",
+      "bytes": 2802
+    },
+    {
+      "path": "src/cats_npu/native.py",
+      "sha256": "e1d6c193570b9a5156e7e3598e65fc2ffba173b5e2f847b7e12b6813f3a05859",
+      "bytes": 2060
+    },
+    {
+      "path": "src/cats_npu/probe.py",
+      "sha256": "0f717d26c954b0bdc72795f0b9a1c66ace79846652a3bd3d5a1a8b057eb5fb52",
+      "bytes": 7574
+    },
+    {
+      "path": "src/cats_npu/reference.py",
+      "sha256": "243a9d89ce20b6c763c1ba2bd37de5a42738e3d325dcc9f3d1dbc492e66c0860",
+      "bytes": 2882
+    },
+    {
+      "path": "src/cats_npu/statistics.py",
+      "sha256": "a117d1f3a47fc28bd45101cc879c82a04abfd494fcff9c0e598a22f926e13238",
+      "bytes": 6919
+    },
+    {
+      "path": "src/cats_npu/workloads.py",
+      "sha256": "0313f03e164e7a08ddff6cfb53e1eeecda9ebd918ad33b10d223e282cb4513a1",
+      "bytes": 1977
+    },
+    {
+      "path": "tests/test_algorithms.py",
+      "sha256": "db0abc45edb05bf801d6d223d12c4105ebbef2e932fa5350449eb0346bad8a20",
+      "bytes": 2698
+    },
+    {
+      "path": "tests/test_benchmark.py",
+      "sha256": "1ef133f86c406665608e985562fd6a8680dcceb8871f4a40cbf0378dff86bf9b",
+      "bytes": 796
+    },
+    {
+      "path": "tests/test_data_import.py",
+      "sha256": "b49101d9b0b6e0b18769b02bf335ed48a2d68ea69a5b5bad699f957aa60f02b7",
+      "bytes": 682
+    },
+    {
+      "path": "tests/test_native_optional.py",
+      "sha256": "0d02e692c512b2afd1375eaffad38af3c2f270bba260192acd9318e18b58dade",
+      "bytes": 650
+    },
+    {
+      "path": "tests/test_openvino_optional.py",
+      "sha256": "a477db5414d020834dc45f41d8ad4e8257298b894020ff9f8df963c0195afbdc",
+      "bytes": 2247
+    },
+    {
+      "path": "tests/test_reference.py",
+      "sha256": "6a53e4142a94498b61d01d398ba0fec1051403f67c0c688a9ae91fb35a655a07",
+      "bytes": 1214
+    },
+    {
+      "path": "tests/test_statistics.py",
+      "sha256": "f242f787cbcd1358a6be4fa95e0d3c4dc8f37246797046eb21525c5745cd5139",
+      "bytes": 2465
+    }
+  ]
+}

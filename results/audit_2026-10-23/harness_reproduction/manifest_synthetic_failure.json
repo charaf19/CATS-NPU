@@ -1,0 +1,34 @@
+{
+  "session_id": "synthetic_failure",
+  "timestamp_utc": "2026-10-23T12:39:02.932719+00:00",
+  "host": "DESKTOP-33Q7GQP",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "git_commit": null,
+  "methods": [
+    "cpu_exact"
+  ],
+  "ns": [
+    16
+  ],
+  "ks": [
+    2
+  ],
+  "distributions": [
+    "normal"
+  ],
+  "dtype": "f16",
+  "seed": 42,
+  "tile": 16,
+  "batch": 1,
+  "initial_budget": 1,
+  "warmup": 0,
+  "repeats": 2,
+  "blocks": 1,
+  "input_path": null,
+  "scope": "Top-K operator (scores provided)",
+  "measurement": "host input to host indices; compilation and warmup excluded",
+  "individual_blocks_independent_sessions": false,
+  "openvino": "2026.4.1-22982-e213a147257-releases/2026/4"
+}

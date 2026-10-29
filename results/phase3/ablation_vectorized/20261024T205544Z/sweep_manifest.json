@@ -1,0 +1,94 @@
+{
+  "sweep_id": "phase3_vectorized_20261024T205544Z",
+  "timestamp_utc": "2026-10-24T20:55:51.725509+00:00",
+  "label": "vectorized",
+  "tile_widths": [
+    256
+  ],
+  "tile_batches": [
+    32
+  ],
+  "query_batch": 1,
+  "query_batch_supported": false,
+  "ns": [
+    4096,
+    16384
+  ],
+  "ks": [
+    4,
+    10
+  ],
+  "distributions": [
+    "normal",
+    "tied",
+    "clustered",
+    "adversarial"
+  ],
+  "compiler_type": "PLUGIN",
+  "warmup": 2,
+  "repeats": 5,
+  "blocks": 1,
+  "configurations": [
+    {
+      "config_id": "T256_TB32_QB1",
+      "tile_width": 256,
+      "tile_batch": 32,
+      "query_batch": 1,
+      "methods": [
+        "ov_npu_native_batched_hier",
+        "ov_npu_native_batched_adaptive"
+      ],
+      "command": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "cats_npu",
+        "bench",
+        "--methods",
+        "ov_npu_native_batched_hier,ov_npu_native_batched_adaptive",
+        "--ns",
+        "4096,16384",
+        "--ks",
+        "4,10",
+        "--distributions",
+        "normal,tied,clustered,adversarial",
+        "--dtype",
+        "f16",
+        "--tile",
+        "256",
+        "--batch",
+        "32",
+        "--initial-budget",
+        "1",
+        "--warmup",
+        "2",
+        "--repeats",
+        "5",
+        "--blocks",
+        "1",
+        "--compiler-type",
+        "PLUGIN",
+        "--session-id",
+        "phase3_vectorized_20261024T205544Z_T256_TB32_QB1",
+        "--out",
+        "results\\phase3\\ablation_vectorized\\20261024T205544Z\\T256_TB32_QB1",
+        "--allow-skips"
+      ],
+      "returncode": 0,
+      "wall_seconds": 7.386540199999899,
+      "output_directory": "results\\phase3\\ablation_vectorized\\20261024T205544Z\\T256_TB32_QB1",
+      "log": "results\\phase3\\ablation_vectorized\\20261024T205544Z\\T256_TB32_QB1.log",
+      "summary_file": "results\\phase3\\ablation_vectorized\\20261024T205544Z\\T256_TB32_QB1\\summary_phase3_vectorized_20261024T205544Z_T256_TB32_QB1.json",
+      "summary": {
+        "session_id": "phase3_vectorized_20261024T205544Z_T256_TB32_QB1",
+        "observations": 160,
+        "skipped": 0,
+        "wrong_results": 0,
+        "completed": true,
+        "valid_for_inference": true,
+        "results_file": "results\\phase3\\ablation_vectorized\\20261024T205544Z\\T256_TB32_QB1\\observations_phase3_vectorized_20261024T205544Z_T256_TB32_QB1.jsonl",
+        "skips_file": "results\\phase3\\ablation_vectorized\\20261024T205544Z\\T256_TB32_QB1\\skips_phase3_vectorized_20261024T205544Z_T256_TB32_QB1.jsonl"
+      }
+    }
+  ]
+}
