@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<net name="Model24" version="11">
+	<layers>
+		<layer id="0" name="Parameter_10851" type="Parameter" version="opset1">
+			<data shape="2,256" element_type="f16" />
+			<output>
+				<port id="0" precision="FP16">
+					<dim>2</dim>
+					<dim>256</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="1" name="Constant_10854" type="Const" version="opset1">
+			<data element_type="i32" shape="2, 4" offset="0" size="32" />
+			<output>
+				<port id="0" precision="I32">
+					<dim>2</dim>
+					<dim>4</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="2" name="Constant_10852" type="Const" version="opset1">
+			<data element_type="f16" shape="2, 4" offset="32" size="16" />
+			<output>
+				<port id="0" precision="FP16">
+					<dim>2</dim>
+					<dim>4</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="3" name="Result_10834" type="Result" version="opset1">
+			<input>
+				<port id="0" precision="FP16">
+					<dim>2</dim>
+					<dim>4</dim>
+				</port>
+			</input>
+		</layer>
+		<layer id="4" name="Result_10835" type="Result" version="opset1">
+			<input>
+				<port id="0" precision="I32">
+					<dim>2</dim>
+					<dim>4</dim>
+				</port>
+			</input>
+		</layer>
+	</layers>
+	<edges>
+		<edge from-layer="1" from-port="0" to-layer="4" to-port="0" />
+		<edge from-layer="2" from-port="0" to-layer="3" to-port="0" />
+	</edges>
+	<rt_info />
+</net>

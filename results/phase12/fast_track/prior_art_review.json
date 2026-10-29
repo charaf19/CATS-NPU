@@ -1,0 +1,67 @@
+{
+  "access_date": "2026-10-29",
+  "scope": "Focused primary-source comparison of the implemented repair, not a systematic novelty proof",
+  "sources": [
+    {
+      "title": "NPU public compiler precision option",
+      "url": "https://github.com/openvinotoolkit/npu_compiler/blob/c74b1265f28dc5a8f08dd50babd2a063cb59ac6e/src/vpux_compiler/include/vpux/compiler/core/public_options.hpp",
+      "commit": "c74b1265f28dc5a8f08dd50babd2a063cb59ac6e",
+      "blob": "f864c05bf3f9afb7d3fb9496fac3440d26234197",
+      "lines": [
+        41,
+        44
+      ],
+      "finding": "Existing compute-layers-with-higher-precision option already supplies the repair control."
+    },
+    {
+      "title": "NPU ConvertPrecisionToFP16",
+      "url": "https://github.com/openvinotoolkit/npu_compiler/blob/c74b1265f28dc5a8f08dd50babd2a063cb59ac6e/src/vpux_compiler/src/dialect/IE/transforms/passes/convert_precision_to_fp16.cpp",
+      "commit": "c74b1265f28dc5a8f08dd50babd2a063cb59ac6e",
+      "blob": "a2b9634d9c9d22a19a4a9bc6a40b4f5d8efd830f",
+      "lines": [
+        [
+          153,
+          177
+        ],
+        [
+          223,
+          265
+        ],
+        [
+          334,
+          357
+        ]
+      ],
+      "finding": "F32/F64 normally converted to F16; selected registered IE operations exempted. Additional handling of Greater/Less uses precision-sensitive metadata. Not matched to installed compiler binary."
+    },
+    {
+      "title": "NPU accuracy-debug guide",
+      "url": "https://github.com/openvinotoolkit/npu_compiler/blob/c74b1265f28dc5a8f08dd50babd2a063cb59ac6e/guides/how_to_debug_accuracy.md",
+      "commit": "c74b1265f28dc5a8f08dd50babd2a063cb59ac6e",
+      "blob": "6d7e7abe16e00b44e6ee64ab94761cb3b6694235",
+      "finding": "Graph cutting and intermediate-buffer observation are established diagnostic methods. Actual intermediate-buffer dump requires developer build."
+    },
+    {
+      "title": "NVIDIA TensorRT Accuracy Considerations",
+      "url": "https://docs.nvidia.com/deeplearning/tensorrt/latest/inference-library/accuracy-considerations.html",
+      "finding": "Established mixed precision mitigation: critical calculations in FP32; scaling is conventional. This does not certify Intel NPU execution."
+    },
+    {
+      "title": "NVIDIA TensorRT 8.6.1 Reduced Precision",
+      "url": "https://docs.nvidia.com/deeplearning/tensorrt/archives/tensorrt-861/developer-guide/index.html",
+      "section": "6.7.2",
+      "finding": "Layer input/output precision controls and inserted conversions predate this study."
+    },
+    {
+      "title": "OpenVINO TopK-11",
+      "url": "https://docs.openvino.ai/2026/documentation/openvino-ir-format/operation-sets/operation-specs/sort/top-k-11.html",
+      "finding": "Stable selection and output ordering are separate configured contracts; FP16 input promotion does not itself constrain backend lowering."
+    }
+  ],
+  "kernel_source_limit": {
+    "path": "sw_runtime_kernels/kernels/prebuild/act_shave_bin/topk.3720xx.elf",
+    "blob": "64c725453ca5af6b4ef5d90593e8b61aa1988753",
+    "finding": "Pinned public tree contains a prebuilt kernel; no installed SHAVE instruction trace or silicon root cause established."
+  },
+  "decision": "NO-GO for method novelty: manual graph promotion and existing layer-type precision control."
+}

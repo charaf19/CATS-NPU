@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<net name="Model91" version="11">
+	<layers>
+		<layer id="0" name="Parameter_48815" type="Parameter" version="opset1">
+			<data shape="2,256" element_type="f16" />
+			<output>
+				<port id="0" precision="FP16">
+					<dim>2</dim>
+					<dim>256</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="1" name="Constant_48816" type="Const" version="opset1">
+			<data element_type="f16" shape="2, 256" offset="0" size="1024" />
+			<output>
+				<port id="0" precision="FP16">
+					<dim>2</dim>
+					<dim>256</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="2" name="Result_48807" type="Result" version="opset1">
+			<input>
+				<port id="0" precision="FP16">
+					<dim>2</dim>
+					<dim>256</dim>
+				</port>
+			</input>
+		</layer>
+	</layers>
+	<edges>
+		<edge from-layer="1" from-port="0" to-layer="2" to-port="0" />
+	</edges>
+	<rt_info />
+</net>

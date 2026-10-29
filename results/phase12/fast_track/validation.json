@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-29",
+  "pytest": {
+    "command": ".venv/Scripts/python.exe -m pytest -q tests/test_precision_topk.py tests/test_stable_integer_hierarchy.py tests/test_order_encoded_npu.py tests/test_static_graph.py",
+    "passed": 22,
+    "failed": 0
+  },
+  "ruff": {
+    "paths": [
+      "scripts/evaluate_precision_repair.py",
+      "scripts/probe_topk_numerical_path.py",
+      "scripts/summarize_precision_repair.py",
+      "src/cats_npu/precision_topk.py",
+      "src/cats_npu/dyadic_guard.py",
+      "tests/test_precision_topk.py"
+    ],
+    "passed": true
+  },
+  "raw_input_and_model_references_verified": true,
+  "relative_report_links_verified": true,
+  "historical_raw_hashes_verified": 49,
+  "historical_raw_hash_failures": 0,
+  "analysis": "analysis_final.json",
+  "earlier_harness_errors_preserved_and_excluded": true,
+  "new_hardware_campaign": "bounded exploratory diagnosis/repair only",
+  "novelty_decision": "NO-GO for the implemented mechanism",
+  "git_diff_cached_check_passed": true
+}

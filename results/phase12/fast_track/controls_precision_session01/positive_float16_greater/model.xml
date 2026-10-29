@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<net name="greater" version="11">
+	<layers>
+		<layer id="0" name="scores" type="Parameter" version="opset1">
+			<data shape="1,2" element_type="f16" />
+			<output>
+				<port id="0" precision="FP16" names="scores">
+					<dim>1</dim>
+					<dim>2</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="1" name="Constant_5417" type="Const" version="opset1">
+			<data element_type="i32" shape="1" offset="0" size="4" />
+			<output>
+				<port id="0" precision="I32">
+					<dim>1</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="2" name="Constant_5412" type="Const" version="opset1">
+			<data element_type="i32" shape="" offset="0" size="4" />
+			<output>
+				<port id="0" precision="I32" />
+			</output>
+		</layer>
+		<layer id="3" name="Gather_5418" type="Gather" version="opset8">
+			<data batch_dims="0" />
+			<input>
+				<port id="0" precision="FP16">
+					<dim>1</dim>
+					<dim>2</dim>
+				</port>
+				<port id="1" precision="I32">
+					<dim>1</dim>
+				</port>
+				<port id="2" precision="I32" />
+			</input>
+			<output>
+				<port id="3" precision="FP16">
+					<dim>1</dim>
+					<dim>1</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="4" name="Constant_5414" type="Const" version="opset1">
+			<data element_type="i32" shape="1" offset="4" size="4" />
+			<output>
+				<port id="0" precision="I32">
+					<dim>1</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="5" name="Gather_5415" type="Gather" version="opset8">
+			<data batch_dims="0" />
+			<input>
+				<port id="0" precision="FP16">
+					<dim>1</dim>
+					<dim>2</dim>
+				</port>
+				<port id="1" precision="I32">
+					<dim>1</dim>
+				</port>
+				<port id="2" precision="I32" />
+			</input>
+			<output>
+				<port id="3" precision="FP16">
+					<dim>1</dim>
+					<dim>1</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="6" name="Greater_5419" type="Greater" version="opset1">
+			<data auto_broadcast="numpy" />
+			<input>
+				<port id="0" precision="FP16">
+					<dim>1</dim>
+					<dim>1</dim>
+				</port>
+				<port id="1" precision="FP16">
+					<dim>1</dim>
+					<dim>1</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="BOOL" names="Result_5420">
+					<dim>1</dim>
+					<dim>1</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="7" name="Result_5420" type="Result" version="opset1" output_names="Result_5420">
+			<input>
+				<port id="0" precision="BOOL">
+					<dim>1</dim>
+					<dim>1</dim>
+				</port>
+			</input>
+		</layer>
+	</layers>
+	<edges>
+		<edge from-layer="0" from-port="0" to-layer="3" to-port="0" />
+		<edge from-layer="0" from-port="0" to-layer="5" to-port="0" />
+		<edge from-layer="1" from-port="0" to-layer="3" to-port="1" />
+		<edge from-layer="2" from-port="0" to-layer="3" to-port="2" />
+		<edge from-layer="2" from-port="0" to-layer="5" to-port="2" />
+		<edge from-layer="3" from-port="3" to-layer="6" to-port="0" />
+		<edge from-layer="4" from-port="0" to-layer="5" to-port="1" />
+		<edge from-layer="5" from-port="3" to-layer="6" to-port="1" />
+		<edge from-layer="6" from-port="2" to-layer="7" to-port="0" />
+	</edges>
+	<rt_info />
+</net>

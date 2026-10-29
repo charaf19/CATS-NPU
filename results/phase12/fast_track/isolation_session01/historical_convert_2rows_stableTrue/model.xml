@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<net name="fp16_to_fp32_transport" version="11">
+	<layers>
+		<layer id="0" name="scores" type="Parameter" version="opset1">
+			<data shape="2,256" element_type="f16" />
+			<output>
+				<port id="0" precision="FP16" names="scores">
+					<dim>2</dim>
+					<dim>256</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="1" name="Convert_43081" type="Convert" version="opset1">
+			<data destination_type="f32" />
+			<input>
+				<port id="0" precision="FP16">
+					<dim>2</dim>
+					<dim>256</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="FP32" names="Result_43082">
+					<dim>2</dim>
+					<dim>256</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="2" name="Result_43082" type="Result" version="opset1" output_names="Result_43082">
+			<input>
+				<port id="0" precision="FP32">
+					<dim>2</dim>
+					<dim>256</dim>
+				</port>
+			</input>
+		</layer>
+	</layers>
+	<edges>
+		<edge from-layer="0" from-port="0" to-layer="1" to-port="0" />
+		<edge from-layer="1" from-port="1" to-layer="2" to-port="0" />
+	</edges>
+	<rt_info />
+</net>

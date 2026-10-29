@@ -1,0 +1,244 @@
+{
+  "timestamp_utc": "2026-10-29T21:42:24.545067+00:00",
+  "status": "exploratory interleaved checked baseline evaluation; no novelty claim",
+  "source_base": "05e74cd030bf1ca380ac4404777c0aa5f474ed20",
+  "source_sha256": {
+    "scripts/evaluate_precision_repair.py": "06a3cd7286a6e9ae11d44082c4581f92c55ff9eda68103b362a9d75098232cd5",
+    "src/cats_npu/precision_topk.py": "4fb6ccb76747ccb3e8c08c4e3629405041f2b5ae73ffa0d2e411a3771e28431b",
+    "scripts/probe_stable_integer_hierarchy.py": "8aa8d7bc1cfb8d2c8742f97b8ea842678b09125a66df9be0e7482e94b97281da",
+    "src/cats_npu/static_graph.py": "bbc4b9f2799239036322882077f0f757db2ad53762788c0e724592a969fdad19",
+    "src/cats_npu/order_encoding.py": "e8b4eb4c7cd46e70fc8d77555ff210340dd45319d6b677f45dd149bbcdd7b30f"
+  },
+  "openvino": "2026.4.1-22982-e213a147257-releases/2026/4",
+  "numpy": "2.4.6",
+  "npu_driver": "1004512",
+  "npu_compiler": "458778",
+  "independent_process_sessions_in_this_file": 1,
+  "input_contract": "immutable finite FP16 host vector",
+  "output_contract": "host stable IDs; graph methods use full host certificates; historical native/CUDA controls retain documented host tie repair",
+  "excluded_from_timing": [
+    "compilation",
+    "first inference",
+    "independent Python reference"
+  ],
+  "seed": 291026,
+  "repeats": 3,
+  "case_filter": "subnormal_across_tiles",
+  "cases": [
+    {
+      "name": "subnormal_across_tiles",
+      "input_path": null,
+      "input_sha256": "46f81ce05c6f51ea1fb57aaac6bcd413d6387d381239e51d96182de81f8ec62b",
+      "n": 512,
+      "k": 4,
+      "width": 256,
+      "expected_ids": [
+        256,
+        257,
+        258,
+        259
+      ],
+      "methods": {
+        "fp16_static": {
+          "samples": [
+            {
+              "elapsed_ms": 0.6793,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 8 differs from K=4"
+            },
+            {
+              "elapsed_ms": 0.6858,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 8 differs from K=4"
+            },
+            {
+              "elapsed_ms": 0.8275,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 8 differs from K=4"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 4.8753,
+            "correct": false,
+            "error": "StaticGraphMismatch: Boundary rank 8 differs from K=4"
+          },
+          "all_correct": false,
+          "median_ms": 0.6858,
+          "descriptive_p95_ms": 0.81333
+        },
+        "stable_i32": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7154,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 0.7349,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 0.8453,
+              "correct": true
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 4.7444,
+            "correct": true
+          },
+          "all_correct": true,
+          "median_ms": 0.7349,
+          "descriptive_p95_ms": 0.83426
+        },
+        "fp32_default": {
+          "samples": [
+            {
+              "elapsed_ms": 0.8239,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 8 differs from K=4"
+            },
+            {
+              "elapsed_ms": 0.6856,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 8 differs from K=4"
+            },
+            {
+              "elapsed_ms": 0.7185,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 8 differs from K=4"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN"
+          },
+          "preflight": {
+            "elapsed_ms": 3.0071,
+            "correct": false,
+            "error": "StaticGraphMismatch: Boundary rank 8 differs from K=4"
+          },
+          "all_correct": false,
+          "median_ms": 0.7185,
+          "descriptive_p95_ms": 0.81336
+        },
+        "fp32_topk_only": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7127,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            },
+            {
+              "elapsed_ms": 0.7325,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            },
+            {
+              "elapsed_ms": 0.7655,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK"
+          },
+          "preflight": {
+            "elapsed_ms": 2.713,
+            "correct": false,
+            "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+          },
+          "all_correct": false,
+          "median_ms": 0.7325,
+          "descriptive_p95_ms": 0.7622
+        },
+        "fp32_reshape_only": {
+          "samples": [
+            {
+              "elapsed_ms": 0.6813,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 8 differs from K=4"
+            },
+            {
+              "elapsed_ms": 0.6625,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 8 differs from K=4"
+            },
+            {
+              "elapsed_ms": 0.8052,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 8 differs from K=4"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=Reshape"
+          },
+          "preflight": {
+            "elapsed_ms": 2.5882,
+            "correct": false,
+            "error": "StaticGraphMismatch: Boundary rank 8 differs from K=4"
+          },
+          "all_correct": false,
+          "median_ms": 0.6813,
+          "descriptive_p95_ms": 0.79281
+        },
+        "fp32_island": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7285,
+              "correct": true,
+              "infer_sync_ms": 0.6446
+            },
+            {
+              "elapsed_ms": 0.7757,
+              "correct": true,
+              "infer_sync_ms": 0.7
+            },
+            {
+              "elapsed_ms": 0.7607,
+              "correct": true,
+              "infer_sync_ms": 0.6636
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK,Reshape"
+          },
+          "preflight": {
+            "elapsed_ms": 1.8318,
+            "correct": true,
+            "infer_sync_ms": 1.721
+          },
+          "all_correct": true,
+          "median_ms": 0.7607,
+          "descriptive_p95_ms": 0.7742
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1690 @@
+{
+  "timestamp_utc": "2026-10-29T21:37:42.720157+00:00",
+  "status": "exploratory interleaved checked baseline evaluation; no novelty claim",
+  "source_base": "05e74cd030bf1ca380ac4404777c0aa5f474ed20",
+  "source_sha256": {
+    "scripts/evaluate_precision_repair.py": "0e8bac7820bb6d27ae14f118d10caaa20086af6ca13cfb6e6ba69d1757311f40",
+    "src/cats_npu/precision_topk.py": "4fb6ccb76747ccb3e8c08c4e3629405041f2b5ae73ffa0d2e411a3771e28431b",
+    "scripts/probe_stable_integer_hierarchy.py": "8aa8d7bc1cfb8d2c8742f97b8ea842678b09125a66df9be0e7482e94b97281da",
+    "src/cats_npu/static_graph.py": "bbc4b9f2799239036322882077f0f757db2ad53762788c0e724592a969fdad19",
+    "src/cats_npu/order_encoding.py": "e8b4eb4c7cd46e70fc8d77555ff210340dd45319d6b677f45dd149bbcdd7b30f"
+  },
+  "openvino": "2026.4.1-22982-e213a147257-releases/2026/4",
+  "numpy": "2.4.6",
+  "npu_driver": "1004512",
+  "npu_compiler": "458778",
+  "independent_process_sessions_in_this_file": 1,
+  "input_contract": "immutable finite FP16 host vector",
+  "output_contract": "host stable IDs; all NPU methods perform full host verification",
+  "excluded_from_timing": [
+    "compilation",
+    "first inference",
+    "independent Python reference"
+  ],
+  "seed": 291026,
+  "repeats": 3,
+  "cases": [
+    {
+      "name": "known_subnormal",
+      "input_path": null,
+      "input_sha256": "cc3059dac59eb7545501f790a53415df6e2b7698f33944e4769ff6399b0de740",
+      "n": 512,
+      "k": 4,
+      "width": 256,
+      "expected_ids": [
+        63,
+        62,
+        61,
+        60
+      ],
+      "methods": {
+        "fp16_static": {
+          "samples": [
+            {
+              "elapsed_ms": 0.719,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 64 differs from K=4"
+            },
+            {
+              "elapsed_ms": 0.7046,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 64 differs from K=4"
+            },
+            {
+              "elapsed_ms": 0.8325,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 64 differs from K=4"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 5.6969,
+            "correct": false,
+            "error": "StaticGraphMismatch: Boundary rank 64 differs from K=4"
+          },
+          "all_correct": false,
+          "median_ms": 0.719,
+          "descriptive_p95_ms": 0.82115
+        },
+        "stable_i32": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7919,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 1.1544,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 0.7253,
+              "correct": true
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 4.5971,
+            "correct": true
+          },
+          "all_correct": true,
+          "median_ms": 0.7919,
+          "descriptive_p95_ms": 1.11815
+        },
+        "fp32_default": {
+          "samples": [
+            {
+              "elapsed_ms": 0.9112,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 64 differs from K=4"
+            },
+            {
+              "elapsed_ms": 0.7367,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 64 differs from K=4"
+            },
+            {
+              "elapsed_ms": 0.8826,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 64 differs from K=4"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN"
+          },
+          "preflight": {
+            "elapsed_ms": 3.7727,
+            "correct": false,
+            "error": "StaticGraphMismatch: Boundary rank 64 differs from K=4"
+          },
+          "all_correct": false,
+          "median_ms": 0.8826,
+          "descriptive_p95_ms": 0.90834
+        },
+        "fp32_topk_only": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7929,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            },
+            {
+              "elapsed_ms": 0.814,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            },
+            {
+              "elapsed_ms": 0.7378,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK"
+          },
+          "preflight": {
+            "elapsed_ms": 2.5894,
+            "correct": false,
+            "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+          },
+          "all_correct": false,
+          "median_ms": 0.7929,
+          "descriptive_p95_ms": 0.81189
+        },
+        "fp32_island": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7968,
+              "correct": true,
+              "infer_sync_ms": 0.7161
+            },
+            {
+              "elapsed_ms": 0.7291,
+              "correct": true,
+              "infer_sync_ms": 0.6427
+            },
+            {
+              "elapsed_ms": 0.8094,
+              "correct": true,
+              "infer_sync_ms": 0.7373
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK,Reshape"
+          },
+          "preflight": {
+            "elapsed_ms": 2.7391,
+            "correct": true,
+            "infer_sync_ms": 2.56
+          },
+          "all_correct": true,
+          "median_ms": 0.7968,
+          "descriptive_p95_ms": 0.80814
+        }
+      }
+    },
+    {
+      "name": "subnormal_boundary_and_extremes",
+      "input_path": null,
+      "input_sha256": "801fa9b4713714988570f152d3b530cb0630a88e8906c150bab822169796062f",
+      "n": 512,
+      "k": 4,
+      "width": 256,
+      "expected_ids": [
+        510,
+        63,
+        62,
+        61
+      ],
+      "methods": {
+        "fp16_static": {
+          "samples": [
+            {
+              "elapsed_ms": 0.6561,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 65 differs from K=4"
+            },
+            {
+              "elapsed_ms": 0.7037,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 65 differs from K=4"
+            },
+            {
+              "elapsed_ms": 0.7252,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 65 differs from K=4"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 3.0408,
+            "correct": false,
+            "error": "StaticGraphMismatch: Boundary rank 65 differs from K=4"
+          },
+          "all_correct": false,
+          "median_ms": 0.7037,
+          "descriptive_p95_ms": 0.72305
+        },
+        "stable_i32": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7249,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 0.7917,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 0.7169,
+              "correct": true
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 2.4713,
+            "correct": true
+          },
+          "all_correct": true,
+          "median_ms": 0.7249,
+          "descriptive_p95_ms": 0.7850199999999999
+        },
+        "fp32_default": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7987,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 65 differs from K=4"
+            },
+            {
+              "elapsed_ms": 0.692,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 65 differs from K=4"
+            },
+            {
+              "elapsed_ms": 0.9659,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 65 differs from K=4"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN"
+          },
+          "preflight": {
+            "elapsed_ms": 2.5365,
+            "correct": false,
+            "error": "StaticGraphMismatch: Boundary rank 65 differs from K=4"
+          },
+          "all_correct": false,
+          "median_ms": 0.7987,
+          "descriptive_p95_ms": 0.9491799999999999
+        },
+        "fp32_topk_only": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7169,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            },
+            {
+              "elapsed_ms": 0.6801,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            },
+            {
+              "elapsed_ms": 0.71,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK"
+          },
+          "preflight": {
+            "elapsed_ms": 3.348,
+            "correct": false,
+            "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+          },
+          "all_correct": false,
+          "median_ms": 0.71,
+          "descriptive_p95_ms": 0.71621
+        },
+        "fp32_island": {
+          "samples": [
+            {
+              "elapsed_ms": 0.6911,
+              "correct": true,
+              "infer_sync_ms": 0.6269
+            },
+            {
+              "elapsed_ms": 0.7061,
+              "correct": true,
+              "infer_sync_ms": 0.6291
+            },
+            {
+              "elapsed_ms": 0.7407,
+              "correct": true,
+              "infer_sync_ms": 0.6599
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK,Reshape"
+          },
+          "preflight": {
+            "elapsed_ms": 2.8159,
+            "correct": true,
+            "infer_sync_ms": 2.6804
+          },
+          "all_correct": true,
+          "median_ms": 0.7061,
+          "descriptive_p95_ms": 0.73724
+        }
+      }
+    },
+    {
+      "name": "signed_zero_irregular",
+      "input_path": null,
+      "input_sha256": "58cdbf8736725a90d0f8549799664aedf3b10d0f15ec8d4464f6282ceed3daf8",
+      "n": 513,
+      "k": 10,
+      "width": 256,
+      "expected_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "methods": {
+        "fp16_static": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7473,
+              "correct": true,
+              "infer_sync_ms": 0.6726
+            },
+            {
+              "elapsed_ms": 0.795,
+              "correct": true,
+              "infer_sync_ms": 0.7307
+            },
+            {
+              "elapsed_ms": 0.8489,
+              "correct": true,
+              "infer_sync_ms": 0.7315
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 2.6602,
+            "correct": true,
+            "infer_sync_ms": 2.4772
+          },
+          "all_correct": true,
+          "median_ms": 0.795,
+          "descriptive_p95_ms": 0.84351
+        },
+        "stable_i32": {
+          "samples": [
+            {
+              "elapsed_ms": 0.8732,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 0.8036,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 0.7694,
+              "correct": true
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 2.2699,
+            "correct": true
+          },
+          "all_correct": true,
+          "median_ms": 0.8036,
+          "descriptive_p95_ms": 0.86624
+        },
+        "fp32_default": {
+          "samples": [
+            {
+              "elapsed_ms": 0.902,
+              "correct": true,
+              "infer_sync_ms": 0.8041
+            },
+            {
+              "elapsed_ms": 0.8184,
+              "correct": true,
+              "infer_sync_ms": 0.7361
+            },
+            {
+              "elapsed_ms": 0.7577,
+              "correct": true,
+              "infer_sync_ms": 0.7017
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN"
+          },
+          "preflight": {
+            "elapsed_ms": 2.8589,
+            "correct": true,
+            "infer_sync_ms": 2.6764
+          },
+          "all_correct": true,
+          "median_ms": 0.8184,
+          "descriptive_p95_ms": 0.89364
+        },
+        "fp32_topk_only": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7852,
+              "correct": true,
+              "infer_sync_ms": 0.7265
+            },
+            {
+              "elapsed_ms": 0.8772,
+              "correct": true,
+              "infer_sync_ms": 0.7674
+            },
+            {
+              "elapsed_ms": 0.7841,
+              "correct": true,
+              "infer_sync_ms": 0.7027
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK"
+          },
+          "preflight": {
+            "elapsed_ms": 3.4094,
+            "correct": true,
+            "infer_sync_ms": 3.2507
+          },
+          "all_correct": true,
+          "median_ms": 0.7852,
+          "descriptive_p95_ms": 0.868
+        },
+        "fp32_island": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7713,
+              "correct": true,
+              "infer_sync_ms": 0.6898
+            },
+            {
+              "elapsed_ms": 0.7999,
+              "correct": true,
+              "infer_sync_ms": 0.732
+            },
+            {
+              "elapsed_ms": 0.805,
+              "correct": true,
+              "infer_sync_ms": 0.7412
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK,Reshape"
+          },
+          "preflight": {
+            "elapsed_ms": 2.7009,
+            "correct": true,
+            "infer_sync_ms": 2.5726
+          },
+          "all_correct": true,
+          "median_ms": 0.7999,
+          "descriptive_p95_ms": 0.80449
+        }
+      }
+    },
+    {
+      "name": "boundary_ties_across_tiles",
+      "input_path": null,
+      "input_sha256": "f461ba32d062928b2619ade95d68b1e24553784a945db947100b1c722d9f882a",
+      "n": 5183,
+      "k": 10,
+      "width": 256,
+      "expected_ids": [
+        0,
+        100,
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
+      "methods": {
+        "fp16_static": {
+          "samples": [
+            {
+              "elapsed_ms": 0.9901,
+              "correct": true,
+              "infer_sync_ms": 0.8835
+            },
+            {
+              "elapsed_ms": 0.9258,
+              "correct": true,
+              "infer_sync_ms": 0.8545
+            },
+            {
+              "elapsed_ms": 1.0175,
+              "correct": true,
+              "infer_sync_ms": 0.9431
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 3.3298,
+            "correct": true,
+            "infer_sync_ms": 3.0901
+          },
+          "all_correct": true,
+          "median_ms": 0.9901,
+          "descriptive_p95_ms": 1.01476
+        },
+        "stable_i32": {
+          "samples": [
+            {
+              "elapsed_ms": 1.0143,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 1.0311,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 0.9509,
+              "correct": true
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 3.2143,
+            "correct": true
+          },
+          "all_correct": true,
+          "median_ms": 1.0143,
+          "descriptive_p95_ms": 1.02942
+        },
+        "fp32_default": {
+          "samples": [
+            {
+              "elapsed_ms": 1.1866,
+              "correct": true,
+              "infer_sync_ms": 1.0261
+            },
+            {
+              "elapsed_ms": 1.0113,
+              "correct": true,
+              "infer_sync_ms": 0.9136
+            },
+            {
+              "elapsed_ms": 0.9573,
+              "correct": true,
+              "infer_sync_ms": 0.8852
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN"
+          },
+          "preflight": {
+            "elapsed_ms": 3.0489,
+            "correct": true,
+            "infer_sync_ms": 2.895
+          },
+          "all_correct": true,
+          "median_ms": 1.0113,
+          "descriptive_p95_ms": 1.16907
+        },
+        "fp32_topk_only": {
+          "samples": [
+            {
+              "elapsed_ms": 1.0011,
+              "correct": true,
+              "infer_sync_ms": 0.9081
+            },
+            {
+              "elapsed_ms": 1.0337,
+              "correct": true,
+              "infer_sync_ms": 0.9153
+            },
+            {
+              "elapsed_ms": 0.9404,
+              "correct": true,
+              "infer_sync_ms": 0.8682
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK"
+          },
+          "preflight": {
+            "elapsed_ms": 3.0475,
+            "correct": true,
+            "infer_sync_ms": 2.8632
+          },
+          "all_correct": true,
+          "median_ms": 1.0011,
+          "descriptive_p95_ms": 1.03044
+        },
+        "fp32_island": {
+          "samples": [
+            {
+              "elapsed_ms": 0.9274,
+              "correct": true,
+              "infer_sync_ms": 0.8678
+            },
+            {
+              "elapsed_ms": 1.1297,
+              "correct": true,
+              "infer_sync_ms": 0.8952
+            },
+            {
+              "elapsed_ms": 0.9704,
+              "correct": true,
+              "infer_sync_ms": 0.8825
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK,Reshape"
+          },
+          "preflight": {
+            "elapsed_ms": 3.0382,
+            "correct": true,
+            "infer_sync_ms": 2.8789
+          },
+          "all_correct": true,
+          "median_ms": 0.9704,
+          "descriptive_p95_ms": 1.11377
+        }
+      }
+    },
+    {
+      "name": "irregular_normal",
+      "input_path": null,
+      "input_sha256": "5db90e1accb3d380b737a9cd552731779de3f6feb2fa05a7248e4b69e435954d",
+      "n": 257,
+      "k": 10,
+      "width": 256,
+      "expected_ids": [
+        256,
+        255,
+        254,
+        253,
+        252,
+        251,
+        250,
+        249,
+        248,
+        247
+      ],
+      "methods": {
+        "fp16_static": {
+          "samples": [
+            {
+              "elapsed_ms": 0.9674,
+              "correct": true,
+              "infer_sync_ms": 0.8579
+            },
+            {
+              "elapsed_ms": 0.9464,
+              "correct": true,
+              "infer_sync_ms": 0.8517
+            },
+            {
+              "elapsed_ms": 0.8907,
+              "correct": true,
+              "infer_sync_ms": 0.8133
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 3.9756,
+            "correct": true,
+            "infer_sync_ms": 3.6517
+          },
+          "all_correct": true,
+          "median_ms": 0.9464,
+          "descriptive_p95_ms": 0.9653
+        },
+        "stable_i32": {
+          "samples": [
+            {
+              "elapsed_ms": 0.8981,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 0.9004,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 0.902,
+              "correct": true
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 3.8298,
+            "correct": true
+          },
+          "all_correct": true,
+          "median_ms": 0.9004,
+          "descriptive_p95_ms": 0.90184
+        },
+        "fp32_default": {
+          "samples": [
+            {
+              "elapsed_ms": 1.0023,
+              "correct": true,
+              "infer_sync_ms": 0.869
+            },
+            {
+              "elapsed_ms": 0.9063,
+              "correct": true,
+              "infer_sync_ms": 0.8091
+            },
+            {
+              "elapsed_ms": 0.7795,
+              "correct": true,
+              "infer_sync_ms": 0.7294
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN"
+          },
+          "preflight": {
+            "elapsed_ms": 3.0618,
+            "correct": true,
+            "infer_sync_ms": 2.915
+          },
+          "all_correct": true,
+          "median_ms": 0.9063,
+          "descriptive_p95_ms": 0.9926999999999999
+        },
+        "fp32_topk_only": {
+          "samples": [
+            {
+              "elapsed_ms": 0.9562,
+              "correct": true,
+              "infer_sync_ms": 0.8659
+            },
+            {
+              "elapsed_ms": 0.8886,
+              "correct": true,
+              "infer_sync_ms": 0.8196
+            },
+            {
+              "elapsed_ms": 0.8421,
+              "correct": true,
+              "infer_sync_ms": 0.7647
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK"
+          },
+          "preflight": {
+            "elapsed_ms": 3.6156,
+            "correct": true,
+            "infer_sync_ms": 3.4084
+          },
+          "all_correct": true,
+          "median_ms": 0.8886,
+          "descriptive_p95_ms": 0.9494400000000001
+        },
+        "fp32_island": {
+          "samples": [
+            {
+              "elapsed_ms": 0.8697,
+              "correct": true,
+              "infer_sync_ms": 0.7963
+            },
+            {
+              "elapsed_ms": 0.9437,
+              "correct": true,
+              "infer_sync_ms": 0.843
+            },
+            {
+              "elapsed_ms": 1.0274,
+              "correct": true,
+              "infer_sync_ms": 0.8392
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK,Reshape"
+          },
+          "preflight": {
+            "elapsed_ms": 3.1558,
+            "correct": true,
+            "infer_sync_ms": 3.0086
+          },
+          "all_correct": true,
+          "median_ms": 0.9437,
+          "descriptive_p95_ms": 1.01903
+        }
+      }
+    },
+    {
+      "name": "all_finite_words_shuffled",
+      "input_path": null,
+      "input_sha256": "9373af778059ae29c91b9afa9937ee4c5cec22369a67b2449ddd460b970c8077",
+      "n": 63488,
+      "k": 10,
+      "width": 256,
+      "expected_ids": [
+        10599,
+        51587,
+        52727,
+        5055,
+        35560,
+        23255,
+        41608,
+        27478,
+        13578,
+        32915
+      ],
+      "methods": {
+        "fp16_static": {
+          "samples": [
+            {
+              "elapsed_ms": 4.2166,
+              "correct": true,
+              "infer_sync_ms": 3.6882
+            },
+            {
+              "elapsed_ms": 4.2086,
+              "correct": true,
+              "infer_sync_ms": 3.6638
+            },
+            {
+              "elapsed_ms": 4.9433,
+              "correct": true,
+              "infer_sync_ms": 3.5771
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 7.179,
+            "correct": true,
+            "infer_sync_ms": 6.4545
+          },
+          "all_correct": true,
+          "median_ms": 4.2166,
+          "descriptive_p95_ms": 4.870629999999999
+        },
+        "stable_i32": {
+          "samples": [
+            {
+              "elapsed_ms": 4.0967,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 3.8873,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 4.1672,
+              "correct": true
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 7.4517,
+            "correct": true
+          },
+          "all_correct": true,
+          "median_ms": 4.0967,
+          "descriptive_p95_ms": 4.16015
+        },
+        "fp32_default": {
+          "samples": [
+            {
+              "elapsed_ms": 4.8871,
+              "correct": true,
+              "infer_sync_ms": 4.2735
+            },
+            {
+              "elapsed_ms": 4.9944,
+              "correct": true,
+              "infer_sync_ms": 3.6884
+            },
+            {
+              "elapsed_ms": 3.9532,
+              "correct": true,
+              "infer_sync_ms": 3.1634
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN"
+          },
+          "preflight": {
+            "elapsed_ms": 6.6157,
+            "correct": true,
+            "infer_sync_ms": 5.9431
+          },
+          "all_correct": true,
+          "median_ms": 4.8871,
+          "descriptive_p95_ms": 4.98367
+        },
+        "fp32_topk_only": {
+          "samples": [
+            {
+              "elapsed_ms": 4.4228,
+              "correct": true,
+              "infer_sync_ms": 3.836
+            },
+            {
+              "elapsed_ms": 4.4518,
+              "correct": true,
+              "infer_sync_ms": 3.7897
+            },
+            {
+              "elapsed_ms": 3.9226,
+              "correct": true,
+              "infer_sync_ms": 3.3435
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK"
+          },
+          "preflight": {
+            "elapsed_ms": 6.7129,
+            "correct": true,
+            "infer_sync_ms": 5.9996
+          },
+          "all_correct": true,
+          "median_ms": 4.4228,
+          "descriptive_p95_ms": 4.4489
+        },
+        "fp32_island": {
+          "samples": [
+            {
+              "elapsed_ms": 4.2328,
+              "correct": true,
+              "infer_sync_ms": 3.6675
+            },
+            {
+              "elapsed_ms": 4.2156,
+              "correct": true,
+              "infer_sync_ms": 3.6812
+            },
+            {
+              "elapsed_ms": 4.3821,
+              "correct": true,
+              "infer_sync_ms": 3.5943
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK,Reshape"
+          },
+          "preflight": {
+            "elapsed_ms": 6.0301,
+            "correct": true,
+            "infer_sync_ms": 5.4191
+          },
+          "all_correct": true,
+          "median_ms": 4.2328,
+          "descriptive_p95_ms": 4.367170000000001
+        }
+      }
+    },
+    {
+      "name": "subnormal_boundary_seed101",
+      "input_path": null,
+      "input_sha256": "5f7f39a36d4e743a4158c57b091df6f3dd2c5f11d39fb1378c3fdb5023d49a59",
+      "n": 513,
+      "k": 10,
+      "width": 256,
+      "expected_ids": [
+        31,
+        30,
+        29,
+        28,
+        27,
+        26,
+        25,
+        24,
+        23,
+        22
+      ],
+      "methods": {
+        "fp16_static": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7744,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            },
+            {
+              "elapsed_ms": 0.7466,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            },
+            {
+              "elapsed_ms": 0.7835,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 3.2731,
+            "correct": false,
+            "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+          },
+          "all_correct": false,
+          "median_ms": 0.7744,
+          "descriptive_p95_ms": 0.78259
+        },
+        "stable_i32": {
+          "samples": [
+            {
+              "elapsed_ms": 0.8132,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 0.6809,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 0.7957,
+              "correct": true
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 3.3292,
+            "correct": true
+          },
+          "all_correct": true,
+          "median_ms": 0.7957,
+          "descriptive_p95_ms": 0.81145
+        },
+        "fp32_default": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7843,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            },
+            {
+              "elapsed_ms": 0.8107,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            },
+            {
+              "elapsed_ms": 0.734,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN"
+          },
+          "preflight": {
+            "elapsed_ms": 2.6427,
+            "correct": false,
+            "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+          },
+          "all_correct": false,
+          "median_ms": 0.7843,
+          "descriptive_p95_ms": 0.80806
+        },
+        "fp32_topk_only": {
+          "samples": [
+            {
+              "elapsed_ms": 0.8592,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            },
+            {
+              "elapsed_ms": 0.7438,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            },
+            {
+              "elapsed_ms": 0.7867,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK"
+          },
+          "preflight": {
+            "elapsed_ms": 2.45,
+            "correct": false,
+            "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+          },
+          "all_correct": false,
+          "median_ms": 0.7867,
+          "descriptive_p95_ms": 0.85195
+        },
+        "fp32_island": {
+          "samples": [
+            {
+              "elapsed_ms": 0.718,
+              "correct": true,
+              "infer_sync_ms": 0.6615
+            },
+            {
+              "elapsed_ms": 0.7664,
+              "correct": true,
+              "infer_sync_ms": 0.6939
+            },
+            {
+              "elapsed_ms": 0.7754,
+              "correct": true,
+              "infer_sync_ms": 0.703
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK,Reshape"
+          },
+          "preflight": {
+            "elapsed_ms": 2.6547,
+            "correct": true,
+            "infer_sync_ms": 2.5593
+          },
+          "all_correct": true,
+          "median_ms": 0.7664,
+          "descriptive_p95_ms": 0.7745
+        }
+      }
+    },
+    {
+      "name": "subnormal_boundary_seed202",
+      "input_path": null,
+      "input_sha256": "5f1da053ce8f0fe994f8e25a13eab512b84254f77a331d00e8c9b6d8d8e9b6ad",
+      "n": 513,
+      "k": 10,
+      "width": 256,
+      "expected_ids": [
+        31,
+        30,
+        29,
+        28,
+        27,
+        26,
+        25,
+        24,
+        23,
+        22
+      ],
+      "methods": {
+        "fp16_static": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7915,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            },
+            {
+              "elapsed_ms": 0.7004,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            },
+            {
+              "elapsed_ms": 0.7349,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 2.886,
+            "correct": false,
+            "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+          },
+          "all_correct": false,
+          "median_ms": 0.7349,
+          "descriptive_p95_ms": 0.78584
+        },
+        "stable_i32": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7832,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 0.7659,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 0.7755,
+              "correct": true
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 2.2715,
+            "correct": true
+          },
+          "all_correct": true,
+          "median_ms": 0.7755,
+          "descriptive_p95_ms": 0.78243
+        },
+        "fp32_default": {
+          "samples": [
+            {
+              "elapsed_ms": 0.8599,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            },
+            {
+              "elapsed_ms": 0.7926,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            },
+            {
+              "elapsed_ms": 0.857,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN"
+          },
+          "preflight": {
+            "elapsed_ms": 2.3331,
+            "correct": false,
+            "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+          },
+          "all_correct": false,
+          "median_ms": 0.857,
+          "descriptive_p95_ms": 0.85961
+        },
+        "fp32_topk_only": {
+          "samples": [
+            {
+              "elapsed_ms": 0.8022,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            },
+            {
+              "elapsed_ms": 0.8081,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            },
+            {
+              "elapsed_ms": 0.833,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK"
+          },
+          "preflight": {
+            "elapsed_ms": 2.3459,
+            "correct": false,
+            "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+          },
+          "all_correct": false,
+          "median_ms": 0.8081,
+          "descriptive_p95_ms": 0.83051
+        },
+        "fp32_island": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7729,
+              "correct": true,
+              "infer_sync_ms": 0.7092
+            },
+            {
+              "elapsed_ms": 0.7889,
+              "correct": true,
+              "infer_sync_ms": 0.7295
+            },
+            {
+              "elapsed_ms": 0.7854,
+              "correct": true,
+              "infer_sync_ms": 0.7205
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK,Reshape"
+          },
+          "preflight": {
+            "elapsed_ms": 2.4481,
+            "correct": true,
+            "infer_sync_ms": 2.3336
+          },
+          "all_correct": true,
+          "median_ms": 0.7854,
+          "descriptive_p95_ms": 0.7885500000000001
+        }
+      }
+    },
+    {
+      "name": "subnormal_boundary_seed303",
+      "input_path": null,
+      "input_sha256": "b4416bdba1bdc254c39c91b311bef2c42a4162bb6fdb4340256863f3b630bd70",
+      "n": 513,
+      "k": 10,
+      "width": 256,
+      "expected_ids": [
+        31,
+        30,
+        29,
+        28,
+        27,
+        26,
+        25,
+        24,
+        23,
+        22
+      ],
+      "methods": {
+        "fp16_static": {
+          "samples": [
+            {
+              "elapsed_ms": 0.8461,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            },
+            {
+              "elapsed_ms": 0.7435,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            },
+            {
+              "elapsed_ms": 0.7368,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 2.9855,
+            "correct": false,
+            "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+          },
+          "all_correct": false,
+          "median_ms": 0.7435,
+          "descriptive_p95_ms": 0.8358399999999999
+        },
+        "stable_i32": {
+          "samples": [
+            {
+              "elapsed_ms": 0.8295,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 0.7842,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 0.802,
+              "correct": true
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 2.5702,
+            "correct": true
+          },
+          "all_correct": true,
+          "median_ms": 0.802,
+          "descriptive_p95_ms": 0.82675
+        },
+        "fp32_default": {
+          "samples": [
+            {
+              "elapsed_ms": 0.8569,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            },
+            {
+              "elapsed_ms": 0.7762,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            },
+            {
+              "elapsed_ms": 0.7432,
+              "correct": false,
+              "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN"
+          },
+          "preflight": {
+            "elapsed_ms": 2.3453,
+            "correct": false,
+            "error": "StaticGraphMismatch: Boundary rank 32 differs from K=10"
+          },
+          "all_correct": false,
+          "median_ms": 0.7762,
+          "descriptive_p95_ms": 0.84883
+        },
+        "fp32_topk_only": {
+          "samples": [
+            {
+              "elapsed_ms": 0.8529,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            },
+            {
+              "elapsed_ms": 0.7717,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            },
+            {
+              "elapsed_ms": 0.7393,
+              "correct": false,
+              "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK"
+          },
+          "preflight": {
+            "elapsed_ms": 2.2905,
+            "correct": false,
+            "error": "StaticGraphMismatch: NPU returned scores inconsistent with host input"
+          },
+          "all_correct": false,
+          "median_ms": 0.7717,
+          "descriptive_p95_ms": 0.84478
+        },
+        "fp32_island": {
+          "samples": [
+            {
+              "elapsed_ms": 0.7527,
+              "correct": true,
+              "infer_sync_ms": 0.6704
+            },
+            {
+              "elapsed_ms": 0.7426,
+              "correct": true,
+              "infer_sync_ms": 0.6688
+            },
+            {
+              "elapsed_ms": 0.772,
+              "correct": true,
+              "infer_sync_ms": 0.6872
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK,Reshape"
+          },
+          "preflight": {
+            "elapsed_ms": 2.3331,
+            "correct": true,
+            "infer_sync_ms": 2.2307
+          },
+          "all_correct": true,
+          "median_ms": 0.7527,
+          "descriptive_p95_ms": 0.77007
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<net name="Model20" version="11">
+	<layers>
+		<layer id="0" name="Parameter_10768" type="Parameter" version="opset1">
+			<data shape="1,2" element_type="f16" />
+			<output>
+				<port id="0" precision="FP16">
+					<dim>1</dim>
+					<dim>2</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="1" name="Constant_10769" type="Const" version="opset1">
+			<data element_type="f16" shape="1, 2" offset="0" size="4" />
+			<output>
+				<port id="0" precision="FP16">
+					<dim>1</dim>
+					<dim>2</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="2" name="Result_10762" type="Result" version="opset1">
+			<input>
+				<port id="0" precision="FP16">
+					<dim>1</dim>
+					<dim>2</dim>
+				</port>
+			</input>
+		</layer>
+	</layers>
+	<edges>
+		<edge from-layer="1" from-port="0" to-layer="2" to-port="0" />
+	</edges>
+	<rt_info />
+</net>

@@ -1,0 +1,431 @@
+{
+  "timestamp_utc": "2026-10-29T21:40:25.039350+00:00",
+  "status": "exploratory interleaved checked baseline evaluation; no novelty claim",
+  "source_base": "05e74cd030bf1ca380ac4404777c0aa5f474ed20",
+  "source_sha256": {
+    "scripts/evaluate_precision_repair.py": "45758727a3384a894a99b6ce7bf98f5456e7ab6118b8b807930f3c3bbdadafca",
+    "src/cats_npu/precision_topk.py": "4fb6ccb76747ccb3e8c08c4e3629405041f2b5ae73ffa0d2e411a3771e28431b",
+    "scripts/probe_stable_integer_hierarchy.py": "8aa8d7bc1cfb8d2c8742f97b8ea842678b09125a66df9be0e7482e94b97281da",
+    "src/cats_npu/static_graph.py": "bbc4b9f2799239036322882077f0f757db2ad53762788c0e724592a969fdad19",
+    "src/cats_npu/order_encoding.py": "e8b4eb4c7cd46e70fc8d77555ff210340dd45319d6b677f45dd149bbcdd7b30f"
+  },
+  "openvino": "2026.4.1-22982-e213a147257-releases/2026/4",
+  "numpy": "2.4.6",
+  "npu_driver": "1004512",
+  "npu_compiler": "458778",
+  "independent_process_sessions_in_this_file": 1,
+  "input_contract": "immutable finite FP16 host vector",
+  "output_contract": "host stable IDs; graph methods use full host certificates; historical native/CUDA controls retain documented host tie repair",
+  "excluded_from_timing": [
+    "compilation",
+    "first inference",
+    "independent Python reference"
+  ],
+  "seed": 291026,
+  "repeats": 5,
+  "cases": [
+    {
+      "name": "real_development_input",
+      "input_path": "results\\phase5\\beir\\scifact\\q0000_1_n5183_cosine_f16.npy",
+      "input_sha256": "22cf8c479f223b646d38726a7d3e26f82120047e2e530227431f646ff1f38d44",
+      "n": 5183,
+      "k": 10,
+      "width": 256,
+      "expected_ids": [
+        4132,
+        766,
+        697,
+        1838,
+        4241,
+        2723,
+        5115,
+        166,
+        2981,
+        320
+      ],
+      "methods": {
+        "fp16_static": {
+          "samples": [
+            {
+              "elapsed_ms": 1.0694,
+              "correct": true,
+              "infer_sync_ms": 0.9527
+            },
+            {
+              "elapsed_ms": 1.0008,
+              "correct": true,
+              "infer_sync_ms": 0.8884
+            },
+            {
+              "elapsed_ms": 1.1939,
+              "correct": true,
+              "infer_sync_ms": 0.9943
+            },
+            {
+              "elapsed_ms": 1.2062,
+              "correct": true,
+              "infer_sync_ms": 0.9515
+            },
+            {
+              "elapsed_ms": 1.0459,
+              "correct": true,
+              "infer_sync_ms": 0.9094
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 4.9035,
+            "correct": true,
+            "infer_sync_ms": 4.5569
+          },
+          "all_correct": true,
+          "median_ms": 1.0694,
+          "descriptive_p95_ms": 1.20374
+        },
+        "stable_i32": {
+          "samples": [
+            {
+              "elapsed_ms": 1.0487,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 1.0643,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 1.1813,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 0.9413,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 1.2008,
+              "correct": true
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 3.863,
+            "correct": true
+          },
+          "all_correct": true,
+          "median_ms": 1.0643,
+          "descriptive_p95_ms": 1.1969
+        },
+        "fp32_default": {
+          "samples": [
+            {
+              "elapsed_ms": 1.056,
+              "correct": true,
+              "infer_sync_ms": 0.9565
+            },
+            {
+              "elapsed_ms": 1.0572,
+              "correct": true,
+              "infer_sync_ms": 0.9398
+            },
+            {
+              "elapsed_ms": 1.0179,
+              "correct": true,
+              "infer_sync_ms": 0.9374
+            },
+            {
+              "elapsed_ms": 0.9756,
+              "correct": true,
+              "infer_sync_ms": 0.8925
+            },
+            {
+              "elapsed_ms": 1.2527,
+              "correct": true,
+              "infer_sync_ms": 1.1248
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN"
+          },
+          "preflight": {
+            "elapsed_ms": 3.6461,
+            "correct": true,
+            "infer_sync_ms": 3.4556
+          },
+          "all_correct": true,
+          "median_ms": 1.056,
+          "descriptive_p95_ms": 1.2135999999999998
+        },
+        "fp32_topk_only": {
+          "samples": [
+            {
+              "elapsed_ms": 1.6639,
+              "correct": true,
+              "infer_sync_ms": 1.5543
+            },
+            {
+              "elapsed_ms": 0.982,
+              "correct": true,
+              "infer_sync_ms": 0.9058
+            },
+            {
+              "elapsed_ms": 1.2018,
+              "correct": true,
+              "infer_sync_ms": 0.993
+            },
+            {
+              "elapsed_ms": 1.0159,
+              "correct": true,
+              "infer_sync_ms": 0.9313
+            },
+            {
+              "elapsed_ms": 1.1359,
+              "correct": true,
+              "infer_sync_ms": 1.014
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK"
+          },
+          "preflight": {
+            "elapsed_ms": 2.6319,
+            "correct": true,
+            "infer_sync_ms": 2.4839
+          },
+          "all_correct": true,
+          "median_ms": 1.1359,
+          "descriptive_p95_ms": 1.5714799999999998
+        },
+        "fp32_island": {
+          "samples": [
+            {
+              "elapsed_ms": 1.6233,
+              "correct": true,
+              "infer_sync_ms": 1.5062
+            },
+            {
+              "elapsed_ms": 1.0593,
+              "correct": true,
+              "infer_sync_ms": 0.9698
+            },
+            {
+              "elapsed_ms": 1.1378,
+              "correct": true,
+              "infer_sync_ms": 1.0131
+            },
+            {
+              "elapsed_ms": 0.9655,
+              "correct": true,
+              "infer_sync_ms": 0.8889
+            },
+            {
+              "elapsed_ms": 1.391,
+              "correct": true,
+              "infer_sync_ms": 0.948
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK,Reshape"
+          },
+          "preflight": {
+            "elapsed_ms": 2.6009,
+            "correct": true,
+            "infer_sync_ms": 2.4673
+          },
+          "all_correct": true,
+          "median_ms": 1.1378,
+          "descriptive_p95_ms": 1.57684
+        },
+        "cpp_exact": {
+          "samples": [
+            {
+              "elapsed_ms": 0.1099,
+              "correct": true,
+              "cpu_tie_repairs": 0,
+              "device_submissions": 0
+            },
+            {
+              "elapsed_ms": 0.2111,
+              "correct": true,
+              "cpu_tie_repairs": 0,
+              "device_submissions": 0
+            },
+            {
+              "elapsed_ms": 0.2073,
+              "correct": true,
+              "cpu_tie_repairs": 0,
+              "device_submissions": 0
+            },
+            {
+              "elapsed_ms": 0.0885,
+              "correct": true,
+              "cpu_tie_repairs": 0,
+              "device_submissions": 0
+            },
+            {
+              "elapsed_ms": 0.3112,
+              "correct": true,
+              "cpu_tie_repairs": 0,
+              "device_submissions": 0
+            }
+          ],
+          "execution_devices": null,
+          "device_info": {
+            "requested": "CPU",
+            "library": "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\native\\build\\cats_topk.dll"
+          },
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 0.1569,
+            "correct": true,
+            "cpu_tie_repairs": 0,
+            "device_submissions": 0
+          },
+          "all_correct": true,
+          "median_ms": 0.2073,
+          "descriptive_p95_ms": 0.29118
+        },
+        "cuda_stable": {
+          "samples": [
+            {
+              "elapsed_ms": 0.5348,
+              "correct": true,
+              "cpu_tie_repairs": 0,
+              "device_submissions": 1
+            },
+            {
+              "elapsed_ms": 0.2728,
+              "correct": true,
+              "cpu_tie_repairs": 0,
+              "device_submissions": 1
+            },
+            {
+              "elapsed_ms": 0.3399,
+              "correct": true,
+              "cpu_tie_repairs": 0,
+              "device_submissions": 1
+            },
+            {
+              "elapsed_ms": 0.3671,
+              "correct": true,
+              "cpu_tie_repairs": 0,
+              "device_submissions": 1
+            },
+            {
+              "elapsed_ms": 0.4268,
+              "correct": true,
+              "cpu_tie_repairs": 0,
+              "device_submissions": 1
+            }
+          ],
+          "execution_devices": null,
+          "device_info": {
+            "requested": "cuda",
+            "torch_version": "2.11.0+cu128",
+            "stable_tie_policy": true,
+            "device_index": 0,
+            "device_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+            "compute_capability": [
+              12,
+              0
+            ]
+          },
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 548.7682,
+            "correct": true,
+            "cpu_tie_repairs": 0,
+            "device_submissions": 1
+          },
+          "all_correct": true,
+          "median_ms": 0.3671,
+          "descriptive_p95_ms": 0.5132
+        },
+        "native_npu": {
+          "samples": [
+            {
+              "elapsed_ms": 2.3502,
+              "correct": true,
+              "cpu_tie_repairs": 0,
+              "device_submissions": 1
+            },
+            {
+              "elapsed_ms": 2.8008,
+              "correct": true,
+              "cpu_tie_repairs": 0,
+              "device_submissions": 1
+            },
+            {
+              "elapsed_ms": 1.8126,
+              "correct": true,
+              "cpu_tie_repairs": 0,
+              "device_submissions": 1
+            },
+            {
+              "elapsed_ms": 1.7704,
+              "correct": true,
+              "cpu_tie_repairs": 0,
+              "device_submissions": 1
+            },
+            {
+              "elapsed_ms": 1.8704,
+              "correct": true,
+              "cpu_tie_repairs": 0,
+              "device_submissions": 1
+            }
+          ],
+          "execution_devices": null,
+          "device_info": {
+            "requested": "NPU",
+            "kernel": "native",
+            "compiler_type_requested": "PLUGIN",
+            "reported_execution_devices": {
+              "11": [
+                "NPU"
+              ]
+            },
+            "reported_compiler_type": {
+              "11": "CompilerType.PLUGIN"
+            },
+            "prepared_k": [
+              11
+            ],
+            "execution_mode": "batched",
+            "tile_batch": 1,
+            "adaptive_policy": "fixed"
+          },
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 4.9494,
+            "correct": true,
+            "cpu_tie_repairs": 0,
+            "device_submissions": 1
+          },
+          "all_correct": true,
+          "median_ms": 1.8704,
+          "descriptive_p95_ms": 2.71068
+        }
+      }
+    }
+  ]
+}

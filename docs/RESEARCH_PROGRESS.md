@@ -127,3 +127,14 @@ Details: `docs/STATISTICAL_VALIDATION.md`.
 - Prior exact Top-K work already includes threshold-guided selection and hardware-aware algorithm dispatch. The current system has a valid narrow systems observation but lacks a differentiated predictive mechanism, measured net benefit, broad hardware generalization, and universal exactness proof over opaque NPU numerical behavior.
 
 The publication decision is **NO-GO at this milestone**. Do not prepare a manuscript or run another confirmatory study of this decision tree. A new line of work would first need to articulate and development-test a mechanism that cannot be replaced by a zero-cost shape map, preserves the exactness contract on its declared numerical domain, and earns enough benefit to pay its measured dispatch cost. Preserve both Phase 7 and Phase 8 raw records unchanged. Details: `docs/PREDICTIVE_FEASIBILITY.md` and `docs/PUBLICATION_GO_NO_GO.md`.
+
+
+## Phase 12 fast-track numerical repair (2026-10-29)
+
+- Reproduced the known subnormal failure with a two-element NPU TopK. Explicit FP32 promotion alone is insufficient under default lowering.
+- Added a checked promoted-FP32 hierarchy using the existing TopK,Reshape precision-preservation option. A two-tile case exposes wrong global winners when TopK alone is protected.
+- Promoted/preserved execution passes all 63,487 adjacent finite-FP16 pairs in the tested batch. Default execution has 2,046 membership failures there; these are bounded cases, not independent bugs or universal proof.
+- Ten correctness workloads pass in two processes each. Reused SIFT1M/SciFact/FiQA development comparisons show mixed latency outcomes versus checked INT32. CPU/CUDA remain faster. All 49 Phase 9 raw hashes still verify.
+- **NO-GO for novel-method/manuscript claims:** established promotion, hierarchy, precision controls and checking explain the repair. Retain it as a stronger conventional baseline and diagnostic artifact.
+
+Details: `docs/PHASE12_FINAL_RESEARCH_DECISION.md`; raw results/source snapshots: `results/phase12/fast_track/`.

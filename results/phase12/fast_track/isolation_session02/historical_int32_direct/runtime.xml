@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<net name="Model105" version="11">
+	<layers>
+		<layer id="0" name="Parameter_59415" type="Parameter" version="opset1">
+			<data shape="1,512" element_type="i32" />
+			<output>
+				<port id="0" precision="I32">
+					<dim>1</dim>
+					<dim>512</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="1" name="Constant_59418" type="Const" version="opset1">
+			<data element_type="i32" shape="1, 4" offset="0" size="16" />
+			<output>
+				<port id="0" precision="I32">
+					<dim>1</dim>
+					<dim>4</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="2" name="Constant_59416" type="Const" version="opset1">
+			<data element_type="i32" shape="1, 4" offset="0" size="16" />
+			<output>
+				<port id="0" precision="I32">
+					<dim>1</dim>
+					<dim>4</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="3" name="Result_59403" type="Result" version="opset1">
+			<input>
+				<port id="0" precision="I32">
+					<dim>1</dim>
+					<dim>4</dim>
+				</port>
+			</input>
+		</layer>
+		<layer id="4" name="Result_59404" type="Result" version="opset1">
+			<input>
+				<port id="0" precision="I32">
+					<dim>1</dim>
+					<dim>4</dim>
+				</port>
+			</input>
+		</layer>
+	</layers>
+	<edges>
+		<edge from-layer="1" from-port="0" to-layer="4" to-port="0" />
+		<edge from-layer="2" from-port="0" to-layer="3" to-port="0" />
+	</edges>
+	<rt_info />
+</net>

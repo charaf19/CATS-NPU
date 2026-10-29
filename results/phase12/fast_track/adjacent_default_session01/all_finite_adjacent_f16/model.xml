@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<net name="direct_topk" version="11">
+	<layers>
+		<layer id="0" name="scores" type="Parameter" version="opset1">
+			<data shape="63487,2" element_type="f16" />
+			<output>
+				<port id="0" precision="FP16" names="scores">
+					<dim>63487</dim>
+					<dim>2</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="1" name="Constant_2" type="Const" version="opset1">
+			<data element_type="i64" shape="" offset="0" size="8" />
+			<output>
+				<port id="0" precision="I64" />
+			</output>
+		</layer>
+		<layer id="2" name="TopK_3" type="TopK" version="opset11">
+			<data axis="-1" mode="max" sort="value" index_element_type="i32" stable="true" />
+			<input>
+				<port id="0" precision="FP16">
+					<dim>63487</dim>
+					<dim>2</dim>
+				</port>
+				<port id="1" precision="I64" />
+			</input>
+			<output>
+				<port id="2" precision="FP16" names="Result_4">
+					<dim>63487</dim>
+					<dim>1</dim>
+				</port>
+				<port id="3" precision="I32" names="Result_5">
+					<dim>63487</dim>
+					<dim>1</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="3" name="Result_4" type="Result" version="opset1" output_names="Result_4">
+			<input>
+				<port id="0" precision="FP16">
+					<dim>63487</dim>
+					<dim>1</dim>
+				</port>
+			</input>
+		</layer>
+		<layer id="4" name="Result_5" type="Result" version="opset1" output_names="Result_5">
+			<input>
+				<port id="0" precision="I32">
+					<dim>63487</dim>
+					<dim>1</dim>
+				</port>
+			</input>
+		</layer>
+	</layers>
+	<edges>
+		<edge from-layer="0" from-port="0" to-layer="2" to-port="0" />
+		<edge from-layer="1" from-port="0" to-layer="2" to-port="1" />
+		<edge from-layer="2" from-port="2" to-layer="3" to-port="0" />
+		<edge from-layer="2" from-port="3" to-layer="4" to-port="0" />
+	</edges>
+	<rt_info />
+</net>

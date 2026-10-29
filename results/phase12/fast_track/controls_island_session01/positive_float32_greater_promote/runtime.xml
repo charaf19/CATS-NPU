@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<net name="Model43" version="11">
+	<layers>
+		<layer id="0" name="Parameter_27008" type="Parameter" version="opset1">
+			<data shape="1,2" element_type="f32" />
+			<output>
+				<port id="0" precision="FP32">
+					<dim>1</dim>
+					<dim>2</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="1" name="Constant_27009" type="Const" version="opset1">
+			<data element_type="boolean" shape="1, 1" offset="0" size="1" />
+			<output>
+				<port id="0" precision="BOOL">
+					<dim>1</dim>
+					<dim>1</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="2" name="Result_26995" type="Result" version="opset1">
+			<input>
+				<port id="0" precision="BOOL">
+					<dim>1</dim>
+					<dim>1</dim>
+				</port>
+			</input>
+		</layer>
+	</layers>
+	<edges>
+		<edge from-layer="1" from-port="0" to-layer="2" to-port="0" />
+	</edges>
+	<rt_info />
+</net>

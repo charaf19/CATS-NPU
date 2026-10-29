@@ -1,0 +1,343 @@
+{
+  "timestamp_utc": "2026-10-29T21:38:09.083764+00:00",
+  "status": "exploratory interleaved checked baseline evaluation; no novelty claim",
+  "source_base": "05e74cd030bf1ca380ac4404777c0aa5f474ed20",
+  "source_sha256": {
+    "scripts/evaluate_precision_repair.py": "154414ed8339b5cbf424bc7baeed9201861dbbc448d9a128c13f874b64599ab2",
+    "src/cats_npu/precision_topk.py": "4fb6ccb76747ccb3e8c08c4e3629405041f2b5ae73ffa0d2e411a3771e28431b",
+    "scripts/probe_stable_integer_hierarchy.py": "8aa8d7bc1cfb8d2c8742f97b8ea842678b09125a66df9be0e7482e94b97281da",
+    "src/cats_npu/static_graph.py": "bbc4b9f2799239036322882077f0f757db2ad53762788c0e724592a969fdad19",
+    "src/cats_npu/order_encoding.py": "e8b4eb4c7cd46e70fc8d77555ff210340dd45319d6b677f45dd149bbcdd7b30f"
+  },
+  "openvino": "2026.4.1-22982-e213a147257-releases/2026/4",
+  "numpy": "2.4.6",
+  "npu_driver": "1004512",
+  "npu_compiler": "458778",
+  "independent_process_sessions_in_this_file": 1,
+  "input_contract": "immutable finite FP16 host vector",
+  "output_contract": "host stable IDs; all NPU methods perform full host verification",
+  "excluded_from_timing": [
+    "compilation",
+    "first inference",
+    "independent Python reference"
+  ],
+  "seed": 291026,
+  "repeats": 5,
+  "cases": [
+    {
+      "name": "real_development_input",
+      "input_path": "results\\phase5\\sift1m\\q0000_n1000000_neg_l2_f16.npy",
+      "input_sha256": "880030a910a4da705dd99771342704af9279fb0357554f4a489192b9429f3db2",
+      "n": 1000000,
+      "k": 10,
+      "width": 256,
+      "expected_ids": [
+        932085,
+        934876,
+        561813,
+        708177,
+        706771,
+        695756,
+        435345,
+        701258,
+        455537,
+        872728
+      ],
+      "methods": {
+        "fp16_static": {
+          "samples": [
+            {
+              "elapsed_ms": 27.0038,
+              "correct": true,
+              "infer_sync_ms": 22.7579
+            },
+            {
+              "elapsed_ms": 26.8564,
+              "correct": true,
+              "infer_sync_ms": 22.1798
+            },
+            {
+              "elapsed_ms": 27.5391,
+              "correct": true,
+              "infer_sync_ms": 22.481
+            },
+            {
+              "elapsed_ms": 26.8263,
+              "correct": true,
+              "infer_sync_ms": 22.5168
+            },
+            {
+              "elapsed_ms": 26.6203,
+              "correct": true,
+              "infer_sync_ms": 22.6877
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 59.062,
+            "correct": true,
+            "infer_sync_ms": 53.8971
+          },
+          "all_correct": true,
+          "median_ms": 26.8564,
+          "descriptive_p95_ms": 27.43204
+        },
+        "stable_i32": {
+          "samples": [
+            {
+              "elapsed_ms": 31.2527,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 28.647,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 29.4192,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 31.1434,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 28.8314,
+              "correct": true
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 52.3698,
+            "correct": true
+          },
+          "all_correct": true,
+          "median_ms": 29.4192,
+          "descriptive_p95_ms": 31.23084
+        },
+        "fp32_default": {
+          "samples": [
+            {
+              "elapsed_ms": 29.4165,
+              "correct": true,
+              "infer_sync_ms": 23.0234
+            },
+            {
+              "elapsed_ms": 26.2084,
+              "correct": true,
+              "infer_sync_ms": 22.7002
+            },
+            {
+              "elapsed_ms": 26.5766,
+              "correct": true,
+              "infer_sync_ms": 22.6514
+            },
+            {
+              "elapsed_ms": 27.9297,
+              "correct": true,
+              "infer_sync_ms": 23.6375
+            },
+            {
+              "elapsed_ms": 26.2021,
+              "correct": true,
+              "infer_sync_ms": 22.5041
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN"
+          },
+          "preflight": {
+            "elapsed_ms": 37.5511,
+            "correct": true,
+            "infer_sync_ms": 33.6272
+          },
+          "all_correct": true,
+          "median_ms": 26.5766,
+          "descriptive_p95_ms": 29.119139999999998
+        },
+        "fp32_topk_only": {
+          "samples": [
+            {
+              "elapsed_ms": 26.3702,
+              "correct": true,
+              "infer_sync_ms": 22.8433
+            },
+            {
+              "elapsed_ms": 26.877,
+              "correct": true,
+              "infer_sync_ms": 22.8171
+            },
+            {
+              "elapsed_ms": 27.0499,
+              "correct": true,
+              "infer_sync_ms": 22.2132
+            },
+            {
+              "elapsed_ms": 26.2212,
+              "correct": true,
+              "infer_sync_ms": 22.7036
+            },
+            {
+              "elapsed_ms": 26.531,
+              "correct": true,
+              "infer_sync_ms": 22.2041
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK"
+          },
+          "preflight": {
+            "elapsed_ms": 33.065,
+            "correct": true,
+            "infer_sync_ms": 28.9832
+          },
+          "all_correct": true,
+          "median_ms": 26.531,
+          "descriptive_p95_ms": 27.01532
+        },
+        "fp32_island": {
+          "samples": [
+            {
+              "elapsed_ms": 26.8173,
+              "correct": true,
+              "infer_sync_ms": 23.3513
+            },
+            {
+              "elapsed_ms": 28.3189,
+              "correct": true,
+              "infer_sync_ms": 22.8608
+            },
+            {
+              "elapsed_ms": 26.4057,
+              "correct": true,
+              "infer_sync_ms": 22.0774
+            },
+            {
+              "elapsed_ms": 27.9433,
+              "correct": true,
+              "infer_sync_ms": 22.6164
+            },
+            {
+              "elapsed_ms": 26.428,
+              "correct": true,
+              "infer_sync_ms": 22.7146
+            }
+          ],
+          "execution_devices": [
+            "NPU"
+          ],
+          "device_info": null,
+          "compile_config": {
+            "NPU_COMPILER_TYPE": "PLUGIN",
+            "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK,Reshape"
+          },
+          "preflight": {
+            "elapsed_ms": 30.3138,
+            "correct": true,
+            "infer_sync_ms": 25.518
+          },
+          "all_correct": true,
+          "median_ms": 26.8173,
+          "descriptive_p95_ms": 28.24378
+        },
+        "cpp_exact": {
+          "samples": [
+            {
+              "elapsed_ms": 16.0664,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 14.5594,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 16.9907,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 15.9673,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 14.6168,
+              "correct": true
+            }
+          ],
+          "execution_devices": null,
+          "device_info": {
+            "requested": "CPU",
+            "library": "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\native\\build\\cats_topk.dll"
+          },
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 14.3062,
+            "correct": true
+          },
+          "all_correct": true,
+          "median_ms": 15.9673,
+          "descriptive_p95_ms": 16.80584
+        },
+        "cuda_stable": {
+          "samples": [
+            {
+              "elapsed_ms": 2.2238,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 2.8976,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 2.7264,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 2.2606,
+              "correct": true
+            },
+            {
+              "elapsed_ms": 2.1269,
+              "correct": true
+            }
+          ],
+          "execution_devices": null,
+          "device_info": {
+            "requested": "cuda",
+            "torch_version": "2.11.0+cu128",
+            "stable_tie_policy": true,
+            "device_index": 0,
+            "device_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+            "compute_capability": [
+              12,
+              0
+            ]
+          },
+          "compile_config": null,
+          "preflight": {
+            "elapsed_ms": 629.6976,
+            "correct": true
+          },
+          "all_correct": true,
+          "median_ms": 2.2606,
+          "descriptive_p95_ms": 2.86336
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+/.gitattributes text eol=lf
+/docs/PHASE12_*.md text eol=lf
+/scripts/probe_topk_numerical_path.py text eol=lf
+/scripts/evaluate_precision_repair.py text eol=lf
+/scripts/summarize_precision_repair.py text eol=lf
+/src/cats_npu/precision_topk.py text eol=lf
+/src/cats_npu/dyadic_guard.py text eol=lf
+/tests/test_precision_topk.py text eol=lf
+/results/phase12/** -text whitespace=cr-at-eol

@@ -1,0 +1,314 @@
+{
+  "timestamp_utc": "2026-10-29T21:36:45.873454+00:00",
+  "purpose": "exploratory numerical-path isolation; no novel algorithm claimed",
+  "suite": "adjacent",
+  "source_base": "05e74cd030bf1ca380ac4404777c0aa5f474ed20",
+  "script_sha256": "4255a5b9931e319387a0cadb7d4b131380852cdb761e2873fd1bd77371d5594c",
+  "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "numpy": "2.4.6",
+  "openvino": "2026.4.1-22982-e213a147257-releases/2026/4",
+  "available_devices": [
+    "CPU",
+    "GPU.0",
+    "GPU.1",
+    "NPU"
+  ],
+  "npu_compile_config": {
+    "NPU_COMPILER_TYPE": "PLUGIN"
+  },
+  "npu": {
+    "FULL_DEVICE_NAME": "Intel(R) AI Boost",
+    "DEVICE_ARCHITECTURE": "3720",
+    "NPU_DRIVER_VERSION": "1004512",
+    "NPU_COMPILER_VERSION": "458778"
+  },
+  "repeats": 1,
+  "independent_hardware_sessions": 1,
+  "cases": [
+    {
+      "name": "all_finite_adjacent_f16",
+      "shape": [
+        63487,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "direct",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "57f84631c8d3a9deba85d05c44a7f5d519d418091340bff48c3adefabdef1882",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 1.5846,
+          "check_summary": {
+            "rows": 63487,
+            "failed_rows": 0,
+            "membership_failures": 0,
+            "value_failures": 0,
+            "first_failures": []
+          }
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 5.3524,
+          "check_summary": {
+            "rows": 63487,
+            "failed_rows": 2047,
+            "membership_failures": 2046,
+            "value_failures": 2046,
+            "first_failures": [
+              {
+                "row": 30719,
+                "valid_ids": true,
+                "membership": true,
+                "value_match": false,
+                "source_value_sorted": true,
+                "stable_ids_match": true,
+                "expected_ids": [
+                  1
+                ],
+                "passed": false
+              },
+              {
+                "row": 30720,
+                "valid_ids": true,
+                "membership": false,
+                "value_match": false,
+                "source_value_sorted": true,
+                "stable_ids_match": false,
+                "expected_ids": [
+                  1
+                ],
+                "passed": false
+              },
+              {
+                "row": 30721,
+                "valid_ids": true,
+                "membership": false,
+                "value_match": false,
+                "source_value_sorted": true,
+                "stable_ids_match": false,
+                "expected_ids": [
+                  1
+                ],
+                "passed": false
+              },
+              {
+                "row": 30722,
+                "valid_ids": true,
+                "membership": false,
+                "value_match": false,
+                "source_value_sorted": true,
+                "stable_ids_match": false,
+                "expected_ids": [
+                  1
+                ],
+                "passed": false
+              },
+              {
+                "row": 30723,
+                "valid_ids": true,
+                "membership": false,
+                "value_match": false,
+                "source_value_sorted": true,
+                "stable_ids_match": false,
+                "expected_ids": [
+                  1
+                ],
+                "passed": false
+              },
+              {
+                "row": 30724,
+                "valid_ids": true,
+                "membership": false,
+                "value_match": false,
+                "source_value_sorted": true,
+                "stable_ids_match": false,
+                "expected_ids": [
+                  1
+                ],
+                "passed": false
+              },
+              {
+                "row": 30725,
+                "valid_ids": true,
+                "membership": false,
+                "value_match": false,
+                "source_value_sorted": true,
+                "stable_ids_match": false,
+                "expected_ids": [
+                  1
+                ],
+                "passed": false
+              },
+              {
+                "row": 30726,
+                "valid_ids": true,
+                "membership": false,
+                "value_match": false,
+                "source_value_sorted": true,
+                "stable_ids_match": false,
+                "expected_ids": [
+                  1
+                ],
+                "passed": false
+              }
+            ]
+          }
+        }
+      ],
+      "graph_case": "all_finite_adjacent_f16",
+      "compile_ms": 78.3836,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "all_finite_adjacent_promoted",
+      "shape": [
+        63487,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "promote",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "57f84631c8d3a9deba85d05c44a7f5d519d418091340bff48c3adefabdef1882",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 1.5426,
+          "check_summary": {
+            "rows": 63487,
+            "failed_rows": 0,
+            "membership_failures": 0,
+            "value_failures": 0,
+            "first_failures": []
+          }
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 5.46,
+          "check_summary": {
+            "rows": 63487,
+            "failed_rows": 2047,
+            "membership_failures": 2046,
+            "value_failures": 2046,
+            "first_failures": [
+              {
+                "row": 30719,
+                "valid_ids": true,
+                "membership": true,
+                "value_match": false,
+                "source_value_sorted": true,
+                "stable_ids_match": true,
+                "expected_ids": [
+                  1
+                ],
+                "passed": false
+              },
+              {
+                "row": 30720,
+                "valid_ids": true,
+                "membership": false,
+                "value_match": false,
+                "source_value_sorted": true,
+                "stable_ids_match": false,
+                "expected_ids": [
+                  1
+                ],
+                "passed": false
+              },
+              {
+                "row": 30721,
+                "valid_ids": true,
+                "membership": false,
+                "value_match": false,
+                "source_value_sorted": true,
+                "stable_ids_match": false,
+                "expected_ids": [
+                  1
+                ],
+                "passed": false
+              },
+              {
+                "row": 30722,
+                "valid_ids": true,
+                "membership": false,
+                "value_match": false,
+                "source_value_sorted": true,
+                "stable_ids_match": false,
+                "expected_ids": [
+                  1
+                ],
+                "passed": false
+              },
+              {
+                "row": 30723,
+                "valid_ids": true,
+                "membership": false,
+                "value_match": false,
+                "source_value_sorted": true,
+                "stable_ids_match": false,
+                "expected_ids": [
+                  1
+                ],
+                "passed": false
+              },
+              {
+                "row": 30724,
+                "valid_ids": true,
+                "membership": false,
+                "value_match": false,
+                "source_value_sorted": true,
+                "stable_ids_match": false,
+                "expected_ids": [
+                  1
+                ],
+                "passed": false
+              },
+              {
+                "row": 30725,
+                "valid_ids": true,
+                "membership": false,
+                "value_match": false,
+                "source_value_sorted": true,
+                "stable_ids_match": false,
+                "expected_ids": [
+                  1
+                ],
+                "passed": false
+              },
+              {
+                "row": 30726,
+                "valid_ids": true,
+                "membership": false,
+                "value_match": false,
+                "source_value_sorted": true,
+                "stable_ids_match": false,
+                "expected_ids": [
+                  1
+                ],
+                "passed": false
+              }
+            ]
+          }
+        }
+      ],
+      "graph_case": "all_finite_adjacent_promoted",
+      "compile_ms": 68.9391,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    }
+  ]
+}

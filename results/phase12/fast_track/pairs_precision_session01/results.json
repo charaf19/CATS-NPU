@@ -1,0 +1,3352 @@
+{
+  "timestamp_utc": "2026-10-29T21:33:10.478083+00:00",
+  "purpose": "exploratory numerical-path isolation; no novel algorithm claimed",
+  "suite": "pairs",
+  "source_base": "05e74cd030bf1ca380ac4404777c0aa5f474ed20",
+  "script_sha256": "ea2e69bf20f250bac65543fa3f45e8cb8dd8c52725850f4829d02119e08f7be0",
+  "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "numpy": "2.4.6",
+  "openvino": "2026.4.1-22982-e213a147257-releases/2026/4",
+  "available_devices": [
+    "CPU",
+    "GPU.0",
+    "GPU.1",
+    "NPU"
+  ],
+  "npu_compile_config": {
+    "NPU_COMPILER_TYPE": "PLUGIN",
+    "NPU_COMPILATION_MODE_PARAMS": "compute-layers-with-higher-precision=TopK"
+  },
+  "npu": {
+    "FULL_DEVICE_NAME": "Intel(R) AI Boost",
+    "DEVICE_ARCHITECTURE": "3720",
+    "NPU_DRIVER_VERSION": "1004512",
+    "NPU_COMPILER_VERSION": "458778"
+  },
+  "repeats": 3,
+  "independent_hardware_sessions": 1,
+  "cases": [
+    {
+      "name": "pair0_direct",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "direct",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "6b1e73a0094b7b812d3b9e22cffb4f8239319847522c4fa103753b6950020f93",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.4615,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 4.2329,
+          "outputs": [
+            [
+              [
+                0.0
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": false,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": false,
+              "expected_ids": [
+                1
+              ],
+              "passed": false
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5743,
+          "outputs": [
+            [
+              [
+                0.0
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": false,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": false,
+              "expected_ids": [
+                1
+              ],
+              "passed": false
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.595,
+          "outputs": [
+            [
+              [
+                0.0
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": false,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": false,
+              "expected_ids": [
+                1
+              ],
+              "passed": false
+            }
+          ]
+        }
+      ],
+      "graph_case": "pair0_direct",
+      "compile_ms": 70.7352,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair0_promote",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "promote",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "6b1e73a0094b7b812d3b9e22cffb4f8239319847522c4fa103753b6950020f93",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1673,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 3.9481,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 1.3822,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 1.3291,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "graph_case": "pair0_promote",
+      "compile_ms": 42.4311,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair0_identity",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "identity",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "6b1e73a0094b7b812d3b9e22cffb4f8239319847522c4fa103753b6950020f93",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1643,
+          "outputs": [
+            [
+              [
+                0.0,
+                5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.487,
+          "outputs": [
+            [
+              [
+                0.0,
+                5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 1.2394,
+          "outputs": [
+            [
+              [
+                0.0,
+                5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5611,
+          "outputs": [
+            [
+              [
+                0.0,
+                5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        }
+      ],
+      "graph_case": "pair0_identity",
+      "compile_ms": 35.5234,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair0_convert",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "convert",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "6b1e73a0094b7b812d3b9e22cffb4f8239319847522c4fa103753b6950020f93",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.2659,
+          "outputs": [
+            [
+              [
+                0.0,
+                5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.2341,
+          "outputs": [
+            [
+              [
+                0.0,
+                5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5662,
+          "outputs": [
+            [
+              [
+                0.0,
+                5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.502,
+          "outputs": [
+            [
+              [
+                0.0,
+                5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        }
+      ],
+      "graph_case": "pair0_convert",
+      "compile_ms": 41.5393,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair1_direct",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "direct",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "7b11c1133330cd161071bf23a0c9b6ce5320a8f3a0f83620035a72be46df4104",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.132,
+          "outputs": [
+            [
+              [
+                1.1920928955078125e-07
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.1037,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": false,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": false,
+              "expected_ids": [
+                1
+              ],
+              "passed": false
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.6654,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": false,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": false,
+              "expected_ids": [
+                1
+              ],
+              "passed": false
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5296,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": false,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": false,
+              "expected_ids": [
+                1
+              ],
+              "passed": false
+            }
+          ]
+        }
+      ],
+      "graph_case": "pair0_direct",
+      "compile_ms": 70.7352,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair1_promote",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "promote",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "7b11c1133330cd161071bf23a0c9b6ce5320a8f3a0f83620035a72be46df4104",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1691,
+          "outputs": [
+            [
+              [
+                1.1920928955078125e-07
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.4555,
+          "outputs": [
+            [
+              [
+                1.1920928955078125e-07
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5872,
+          "outputs": [
+            [
+              [
+                1.1920928955078125e-07
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5134,
+          "outputs": [
+            [
+              [
+                1.1920928955078125e-07
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "graph_case": "pair0_promote",
+      "compile_ms": 42.4311,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair1_identity",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "identity",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "7b11c1133330cd161071bf23a0c9b6ce5320a8f3a0f83620035a72be46df4104",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1026,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08,
+                1.1920928955078125e-07
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 1.9229,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08,
+                1.1920928955078125e-07
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.4476,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08,
+                1.1920928955078125e-07
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.4407,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08,
+                1.1920928955078125e-07
+              ]
+            ]
+          ],
+          "transport_exact": true
+        }
+      ],
+      "graph_case": "pair0_identity",
+      "compile_ms": 35.5234,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair1_convert",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "convert",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "7b11c1133330cd161071bf23a0c9b6ce5320a8f3a0f83620035a72be46df4104",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1198,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08,
+                1.1920928955078125e-07
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.0394,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08,
+                1.1920928955078125e-07
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5433,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08,
+                1.1920928955078125e-07
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5089,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08,
+                1.1920928955078125e-07
+              ]
+            ]
+          ],
+          "transport_exact": true
+        }
+      ],
+      "graph_case": "pair0_convert",
+      "compile_ms": 41.5393,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair2_direct",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "direct",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "9cdd3043783c27d0fc66d6514672700be332885b0132636c5f1e467abf79d517",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1276,
+          "outputs": [
+            [
+              [
+                0.0
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.209,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": false,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": false,
+              "expected_ids": [
+                1
+              ],
+              "passed": false
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5491,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": false,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": false,
+              "expected_ids": [
+                1
+              ],
+              "passed": false
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5442,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": false,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": false,
+              "expected_ids": [
+                1
+              ],
+              "passed": false
+            }
+          ]
+        }
+      ],
+      "graph_case": "pair0_direct",
+      "compile_ms": 70.7352,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair2_promote",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "promote",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "9cdd3043783c27d0fc66d6514672700be332885b0132636c5f1e467abf79d517",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.2761,
+          "outputs": [
+            [
+              [
+                0.0
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.9744,
+          "outputs": [
+            [
+              [
+                0.0
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.6483,
+          "outputs": [
+            [
+              [
+                0.0
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5532,
+          "outputs": [
+            [
+              [
+                0.0
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "graph_case": "pair0_promote",
+      "compile_ms": 42.4311,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair2_identity",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "identity",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "9cdd3043783c27d0fc66d6514672700be332885b0132636c5f1e467abf79d517",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.0961,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08,
+                0.0
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 1.8754,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08,
+                0.0
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5371,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08,
+                0.0
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5178,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08,
+                0.0
+              ]
+            ]
+          ],
+          "transport_exact": true
+        }
+      ],
+      "graph_case": "pair0_identity",
+      "compile_ms": 35.5234,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair2_convert",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "convert",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "9cdd3043783c27d0fc66d6514672700be332885b0132636c5f1e467abf79d517",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1475,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08,
+                0.0
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.198,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08,
+                0.0
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5747,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08,
+                0.0
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5422,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08,
+                0.0
+              ]
+            ]
+          ],
+          "transport_exact": true
+        }
+      ],
+      "graph_case": "pair0_convert",
+      "compile_ms": 41.5393,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair3_direct",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "direct",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "0111372ace8d9b99ab8157716dbf0e626fcf1eefbabe52bf8f43ead5416fcc5e",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1151,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.5356,
+          "outputs": [
+            [
+              [
+                -1.1920928955078125e-07
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": false,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": false,
+              "expected_ids": [
+                1
+              ],
+              "passed": false
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.6301,
+          "outputs": [
+            [
+              [
+                -1.1920928955078125e-07
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": false,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": false,
+              "expected_ids": [
+                1
+              ],
+              "passed": false
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5397,
+          "outputs": [
+            [
+              [
+                -1.1920928955078125e-07
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": false,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": false,
+              "expected_ids": [
+                1
+              ],
+              "passed": false
+            }
+          ]
+        }
+      ],
+      "graph_case": "pair0_direct",
+      "compile_ms": 70.7352,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair3_promote",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "promote",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "0111372ace8d9b99ab8157716dbf0e626fcf1eefbabe52bf8f43ead5416fcc5e",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1457,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.6984,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.6154,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5614,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "graph_case": "pair0_promote",
+      "compile_ms": 42.4311,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair3_identity",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "identity",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "0111372ace8d9b99ab8157716dbf0e626fcf1eefbabe52bf8f43ead5416fcc5e",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.0928,
+          "outputs": [
+            [
+              [
+                -1.1920928955078125e-07,
+                -5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.1013,
+          "outputs": [
+            [
+              [
+                -1.1920928955078125e-07,
+                -5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5322,
+          "outputs": [
+            [
+              [
+                -1.1920928955078125e-07,
+                -5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5,
+          "outputs": [
+            [
+              [
+                -1.1920928955078125e-07,
+                -5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        }
+      ],
+      "graph_case": "pair0_identity",
+      "compile_ms": 35.5234,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair3_convert",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "convert",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "0111372ace8d9b99ab8157716dbf0e626fcf1eefbabe52bf8f43ead5416fcc5e",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1952,
+          "outputs": [
+            [
+              [
+                -1.1920928955078125e-07,
+                -5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.2112,
+          "outputs": [
+            [
+              [
+                -1.1920928955078125e-07,
+                -5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5303,
+          "outputs": [
+            [
+              [
+                -1.1920928955078125e-07,
+                -5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5102,
+          "outputs": [
+            [
+              [
+                -1.1920928955078125e-07,
+                -5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        }
+      ],
+      "graph_case": "pair0_convert",
+      "compile_ms": 41.5393,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair4_direct",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "direct",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "c1f147bf63ca4e222271681afb532eaf8d3efab79ed065a97d8322e5f568e291",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1468,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.5837,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": false,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": false,
+              "expected_ids": [
+                1
+              ],
+              "passed": false
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5592,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": false,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": false,
+              "expected_ids": [
+                1
+              ],
+              "passed": false
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5275,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": false,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": false,
+              "expected_ids": [
+                1
+              ],
+              "passed": false
+            }
+          ]
+        }
+      ],
+      "graph_case": "pair0_direct",
+      "compile_ms": 70.7352,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair4_promote",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "promote",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "c1f147bf63ca4e222271681afb532eaf8d3efab79ed065a97d8322e5f568e291",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.115,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.264,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5566,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5626,
+          "outputs": [
+            [
+              [
+                5.960464477539063e-08
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "graph_case": "pair0_promote",
+      "compile_ms": 42.4311,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair4_identity",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "identity",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "c1f147bf63ca4e222271681afb532eaf8d3efab79ed065a97d8322e5f568e291",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1005,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08,
+                5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 1.9494,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08,
+                5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5219,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08,
+                5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.4683,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08,
+                5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        }
+      ],
+      "graph_case": "pair0_identity",
+      "compile_ms": 35.5234,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair4_convert",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "convert",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "c1f147bf63ca4e222271681afb532eaf8d3efab79ed065a97d8322e5f568e291",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1063,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08,
+                5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.0331,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08,
+                5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5681,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08,
+                5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5066,
+          "outputs": [
+            [
+              [
+                -5.960464477539063e-08,
+                5.960464477539063e-08
+              ]
+            ]
+          ],
+          "transport_exact": true
+        }
+      ],
+      "graph_case": "pair0_convert",
+      "compile_ms": 41.5393,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair5_direct",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "direct",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "6d58692645c9d1cfaf13541cbd258f86193ef63c2f1d38f6bbca9617372d7bd6",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1499,
+          "outputs": [
+            [
+              [
+                0.0
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                0
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.6672,
+          "outputs": [
+            [
+              [
+                0.0
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                0
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5518,
+          "outputs": [
+            [
+              [
+                0.0
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                0
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5094,
+          "outputs": [
+            [
+              [
+                0.0
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                0
+              ],
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "graph_case": "pair0_direct",
+      "compile_ms": 70.7352,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair5_promote",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "promote",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "6d58692645c9d1cfaf13541cbd258f86193ef63c2f1d38f6bbca9617372d7bd6",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1148,
+          "outputs": [
+            [
+              [
+                0.0
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                0
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.3896,
+          "outputs": [
+            [
+              [
+                0.0
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                0
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5763,
+          "outputs": [
+            [
+              [
+                0.0
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                0
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5585,
+          "outputs": [
+            [
+              [
+                0.0
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                0
+              ],
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "graph_case": "pair0_promote",
+      "compile_ms": 42.4311,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair5_identity",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "identity",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "6d58692645c9d1cfaf13541cbd258f86193ef63c2f1d38f6bbca9617372d7bd6",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1348,
+          "outputs": [
+            [
+              [
+                0.0,
+                -0.0
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 1.9892,
+          "outputs": [
+            [
+              [
+                0.0,
+                -0.0
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5193,
+          "outputs": [
+            [
+              [
+                0.0,
+                -0.0
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5295,
+          "outputs": [
+            [
+              [
+                0.0,
+                -0.0
+              ]
+            ]
+          ],
+          "transport_exact": true
+        }
+      ],
+      "graph_case": "pair0_identity",
+      "compile_ms": 35.5234,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "pair5_convert",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "convert",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "6d58692645c9d1cfaf13541cbd258f86193ef63c2f1d38f6bbca9617372d7bd6",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1086,
+          "outputs": [
+            [
+              [
+                0.0,
+                -0.0
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.1355,
+          "outputs": [
+            [
+              [
+                0.0,
+                -0.0
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5797,
+          "outputs": [
+            [
+              [
+                0.0,
+                -0.0
+              ]
+            ]
+          ],
+          "transport_exact": true
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5424,
+          "outputs": [
+            [
+              [
+                0.0,
+                -0.0
+              ]
+            ]
+          ],
+          "transport_exact": true
+        }
+      ],
+      "graph_case": "pair0_convert",
+      "compile_ms": 41.5393,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "normal_pair_exp-14",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "direct",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "498ee1ef07c8fbd279e0d133043214555461db2034a1b479597782ae1dfdaa52",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1359,
+          "outputs": [
+            [
+              [
+                6.109476089477539e-05
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.4663,
+          "outputs": [
+            [
+              [
+                6.109476089477539e-05
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.6135,
+          "outputs": [
+            [
+              [
+                6.109476089477539e-05
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5185,
+          "outputs": [
+            [
+              [
+                6.109476089477539e-05
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "graph_case": "pair0_direct",
+      "compile_ms": 70.7352,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "normal_pair_exp-10",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "direct",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "90dd0dba2f66ab0bbd1a92db07537410fa0c85a3eb50df38ac3b86d7ae2e2b66",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1183,
+          "outputs": [
+            [
+              [
+                0.0009775161743164062
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.3235,
+          "outputs": [
+            [
+              [
+                0.0009775161743164062
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.531,
+          "outputs": [
+            [
+              [
+                0.0009775161743164062
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5049,
+          "outputs": [
+            [
+              [
+                0.0009775161743164062
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "graph_case": "pair0_direct",
+      "compile_ms": 70.7352,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "normal_pair_exp-6",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "direct",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "fdad4971c955c9dc92923676feca3ee8c192b97e7bf4036c4139e93ff532d9d3",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1178,
+          "outputs": [
+            [
+              [
+                0.0156402587890625
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.1748,
+          "outputs": [
+            [
+              [
+                0.0156402587890625
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5671,
+          "outputs": [
+            [
+              [
+                0.0156402587890625
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5468,
+          "outputs": [
+            [
+              [
+                0.0156402587890625
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "graph_case": "pair0_direct",
+      "compile_ms": 70.7352,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "normal_pair_exp-4",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "direct",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "3bbe70e66e5d13559fbcea0ba09c4928c6cb6b0f4e3fe935e55d5d04788c8f66",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1772,
+          "outputs": [
+            [
+              [
+                0.06256103515625
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.7421,
+          "outputs": [
+            [
+              [
+                0.06256103515625
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5478,
+          "outputs": [
+            [
+              [
+                0.06256103515625
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5084,
+          "outputs": [
+            [
+              [
+                0.06256103515625
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "graph_case": "pair0_direct",
+      "compile_ms": 70.7352,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    },
+    {
+      "name": "normal_pair_exp0",
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float16",
+      "k": 1,
+      "kind": "direct",
+      "stable": true,
+      "sort": "value",
+      "input_sha256": "df4850eca3e64ea9ae6e812b2ce9c4b66341bd1ddd2c9df6832a40826f25ddc9",
+      "runs": [
+        {
+          "backend": "CPU",
+          "repetition": 0,
+          "infer_sync_ms": 0.1241,
+          "outputs": [
+            [
+              [
+                1.0009765625
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 0,
+          "infer_sync_ms": 2.3588,
+          "outputs": [
+            [
+              [
+                1.0009765625
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 1,
+          "infer_sync_ms": 0.5813,
+          "outputs": [
+            [
+              [
+                1.0009765625
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        },
+        {
+          "backend": "NPU",
+          "repetition": 2,
+          "infer_sync_ms": 0.5131,
+          "outputs": [
+            [
+              [
+                1.0009765625
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "checks": [
+            {
+              "valid_ids": true,
+              "membership": true,
+              "value_match": true,
+              "source_value_sorted": true,
+              "stable_ids_match": true,
+              "expected_ids": [
+                1
+              ],
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "graph_case": "pair0_direct",
+      "compile_ms": 70.7352,
+      "execution_devices": [
+        "NPU"
+      ],
+      "runtime_export_error": null
+    }
+  ]
+}
