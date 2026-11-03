@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<net name="stable_integer_hierarchy" version="11">
+	<layers>
+		<layer id="0" name="Parameter_157467" type="Parameter" version="opset1">
+			<data shape="2,128" element_type="i32" />
+			<output>
+				<port id="0" precision="I32" names="Parameter_157467">
+					<dim>2</dim>
+					<dim>128</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="1" name="Constant_157468" type="Const" version="opset1">
+			<data element_type="i64" shape="" offset="0" size="8" />
+			<output>
+				<port id="0" precision="I64" />
+			</output>
+		</layer>
+		<layer id="2" name="TopK_157469" type="TopK" version="opset11">
+			<data axis="1" mode="max" sort="value" index_element_type="i32" stable="true" />
+			<input>
+				<port id="0" precision="I32">
+					<dim>2</dim>
+					<dim>128</dim>
+				</port>
+				<port id="1" precision="I64" />
+			</input>
+			<output>
+				<port id="2" precision="I32">
+					<dim>2</dim>
+					<dim>10</dim>
+				</port>
+				<port id="3" precision="I32">
+					<dim>2</dim>
+					<dim>10</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="3" name="Constant_157471" type="Const" version="opset1">
+			<data element_type="i32" shape="2, 1" offset="8" size="8" />
+			<output>
+				<port id="0" precision="I32">
+					<dim>2</dim>
+					<dim>1</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="4" name="Add_157472" type="Add" version="opset1">
+			<data auto_broadcast="numpy" />
+			<input>
+				<port id="0" precision="I32">
+					<dim>2</dim>
+					<dim>10</dim>
+				</port>
+				<port id="1" precision="I32">
+					<dim>2</dim>
+					<dim>1</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="I32">
+					<dim>2</dim>
+					<dim>10</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="5" name="Constant_157474" type="Const" version="opset1">
+			<data element_type="i64" shape="2" offset="16" size="16" />
+			<output>
+				<port id="0" precision="I64">
+					<dim>2</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="6" name="Reshape_157476" type="Reshape" version="opset1">
+			<data special_zero="false" />
+			<input>
+				<port id="0" precision="I32">
+					<dim>2</dim>
+					<dim>10</dim>
+				</port>
+				<port id="1" precision="I64">
+					<dim>2</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="I32">
+					<dim>1</dim>
+					<dim>20</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="7" name="Reshape_157475" type="Reshape" version="opset1">
+			<data special_zero="false" />
+			<input>
+				<port id="0" precision="I32">
+					<dim>2</dim>
+					<dim>10</dim>
+				</port>
+				<port id="1" precision="I64">
+					<dim>2</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="I32">
+					<dim>1</dim>
+					<dim>20</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="8" name="Constant_157477" type="Const" version="opset1">
+			<data element_type="i64" shape="" offset="0" size="8" />
+			<output>
+				<port id="0" precision="I64" />
+			</output>
+		</layer>
+		<layer id="9" name="TopK_157478" type="TopK" version="opset11">
+			<data axis="1" mode="max" sort="value" index_element_type="i32" stable="true" />
+			<input>
+				<port id="0" precision="I32">
+					<dim>1</dim>
+					<dim>20</dim>
+				</port>
+				<port id="1" precision="I64" />
+			</input>
+			<output>
+				<port id="2" precision="I32" names="Result_157482">
+					<dim>1</dim>
+					<dim>10</dim>
+				</port>
+				<port id="3" precision="I32">
+					<dim>1</dim>
+					<dim>10</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="10" name="Constant_157480" type="Const" version="opset1">
+			<data element_type="i32" shape="" offset="32" size="4" />
+			<output>
+				<port id="0" precision="I32" />
+			</output>
+		</layer>
+		<layer id="11" name="Gather_157481" type="Gather" version="opset8">
+			<data batch_dims="0" />
+			<input>
+				<port id="0" precision="I32">
+					<dim>1</dim>
+					<dim>20</dim>
+				</port>
+				<port id="1" precision="I32">
+					<dim>1</dim>
+					<dim>10</dim>
+				</port>
+				<port id="2" precision="I32" />
+			</input>
+			<output>
+				<port id="3" precision="I32" names="Result_157483">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>10</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="12" name="Result_157482" type="Result" version="opset1" output_names="Result_157482">
+			<input>
+				<port id="0" precision="I32">
+					<dim>1</dim>
+					<dim>10</dim>
+				</port>
+			</input>
+		</layer>
+		<layer id="13" name="Result_157483" type="Result" version="opset1" output_names="Result_157483">
+			<input>
+				<port id="0" precision="I32">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>10</dim>
+				</port>
+			</input>
+		</layer>
+	</layers>
+	<edges>
+		<edge from-layer="0" from-port="0" to-layer="2" to-port="0" />
+		<edge from-layer="1" from-port="0" to-layer="2" to-port="1" />
+		<edge from-layer="2" from-port="3" to-layer="4" to-port="0" />
+		<edge from-layer="2" from-port="2" to-layer="7" to-port="0" />
+		<edge from-layer="3" from-port="0" to-layer="4" to-port="1" />
+		<edge from-layer="4" from-port="2" to-layer="6" to-port="0" />
+		<edge from-layer="5" from-port="0" to-layer="6" to-port="1" />
+		<edge from-layer="5" from-port="0" to-layer="7" to-port="1" />
+		<edge from-layer="6" from-port="2" to-layer="11" to-port="0" />
+		<edge from-layer="7" from-port="2" to-layer="9" to-port="0" />
+		<edge from-layer="8" from-port="0" to-layer="9" to-port="1" />
+		<edge from-layer="9" from-port="3" to-layer="11" to-port="1" />
+		<edge from-layer="9" from-port="2" to-layer="12" to-port="0" />
+		<edge from-layer="10" from-port="0" to-layer="11" to-port="2" />
+		<edge from-layer="11" from-port="3" to-layer="13" to-port="0" />
+	</edges>
+	<rt_info />
+</net>

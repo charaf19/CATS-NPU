@@ -1,0 +1,259 @@
+{
+  "freeze": {
+    "frozen_revision": "d97544ac4514bafbb81b0cf38044982f43fb1379",
+    "protocol_sha256": "52f60488955557d374d94372b145e6f25ef0fba3966d366631107eeb596416fe",
+    "protocol_document_sha256": "de53b8ce3d17eff4db2e6c2029fdf20458ee7ecdac2cca9f9222d7c8a048e6af",
+    "frozen_utc": "2026-11-03T14:31:19.041391+00:00",
+    "confirmation_results_existed": false
+  },
+  "started_utc": "2026-11-03T14:35:07.890044+00:00",
+  "commands": [
+    {
+      "label": "numerical1",
+      "argv": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.phase13_run",
+        "numerical",
+        "--session",
+        "1"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 32.42200000000048,
+      "log": "results\\phase13\\logs\\numerical1.log"
+    },
+    {
+      "label": "numerical2",
+      "argv": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.phase13_run",
+        "numerical",
+        "--session",
+        "2"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 37.32799999999952,
+      "log": "results\\phase13\\logs\\numerical2.log"
+    },
+    {
+      "label": "numerical3",
+      "argv": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.phase13_run",
+        "numerical",
+        "--session",
+        "3"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 36.73500000000058,
+      "log": "results\\phase13\\logs\\numerical3.log"
+    },
+    {
+      "label": "adjacent1",
+      "argv": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.probe_topk_numerical_path",
+        "--suite",
+        "adjacent",
+        "--repeats",
+        "1",
+        "--out",
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\results\\phase13\\numerical\\adjacent_default"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 7.656000000000859,
+      "log": "results\\phase13\\logs\\adjacent1.log"
+    },
+    {
+      "label": "adjacent2",
+      "argv": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.probe_topk_numerical_path",
+        "--suite",
+        "adjacent",
+        "--repeats",
+        "1",
+        "--higher-precision",
+        "TopK",
+        "--out",
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\results\\phase13\\numerical\\adjacent_protected"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 7.593999999999141,
+      "log": "results\\phase13\\logs\\adjacent2.log"
+    },
+    {
+      "label": "performance1",
+      "argv": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.phase13_run",
+        "performance",
+        "--session",
+        "1"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 89.17100000000028,
+      "log": "results\\phase13\\logs\\performance1.log"
+    },
+    {
+      "label": "performance2",
+      "argv": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.phase13_run",
+        "performance",
+        "--session",
+        "2"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 89.23500000000058,
+      "log": "results\\phase13\\logs\\performance2.log"
+    },
+    {
+      "label": "performance3",
+      "argv": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.phase13_run",
+        "performance",
+        "--session",
+        "3"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 86.07799999999952,
+      "log": "results\\phase13\\logs\\performance3.log"
+    },
+    {
+      "label": "performance4",
+      "argv": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.phase13_run",
+        "performance",
+        "--session",
+        "4"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 84.0619999999999,
+      "log": "results\\phase13\\logs\\performance4.log"
+    },
+    {
+      "label": "performance5",
+      "argv": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.phase13_run",
+        "performance",
+        "--session",
+        "5"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 82.71900000000096,
+      "log": "results\\phase13\\logs\\performance5.log"
+    },
+    {
+      "label": "performance6",
+      "argv": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.phase13_run",
+        "performance",
+        "--session",
+        "6"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 83.48500000000058,
+      "log": "results\\phase13\\logs\\performance6.log"
+    },
+    {
+      "label": "performance7",
+      "argv": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.phase13_run",
+        "performance",
+        "--session",
+        "7"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 88.0,
+      "log": "results\\phase13\\logs\\performance7.log"
+    },
+    {
+      "label": "performance8",
+      "argv": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.phase13_run",
+        "performance",
+        "--session",
+        "8"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 87.95299999999952,
+      "log": "results\\phase13\\logs\\performance8.log"
+    },
+    {
+      "label": "performance9",
+      "argv": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.phase13_run",
+        "performance",
+        "--session",
+        "9"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 93.15599999999904,
+      "log": "results\\phase13\\logs\\performance9.log"
+    },
+    {
+      "label": "performance10",
+      "argv": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.phase13_run",
+        "performance",
+        "--session",
+        "10"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 103.5,
+      "log": "results\\phase13\\logs\\performance10.log"
+    },
+    {
+      "label": "performance11",
+      "argv": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.phase13_run",
+        "performance",
+        "--session",
+        "11"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 88.0630000000001,
+      "log": "results\\phase13\\logs\\performance11.log"
+    },
+    {
+      "label": "performance12",
+      "argv": [
+        "C:\\Users\\pc\\Desktop\\CATS-NPU-research-v0.1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.phase13_run",
+        "performance",
+        "--session",
+        "12"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 93.67200000000048,
+      "log": "results\\phase13\\logs\\performance12.log"
+    }
+  ],
+  "completed_utc": "2026-11-03T14:56:58.760780+00:00"
+}

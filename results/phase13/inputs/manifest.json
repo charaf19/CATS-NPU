@@ -1,0 +1,830 @@
+{
+  "freeze": {
+    "frozen_revision": "d97544ac4514bafbb81b0cf38044982f43fb1379",
+    "protocol_sha256": "52f60488955557d374d94372b145e6f25ef0fba3966d366631107eeb596416fe",
+    "protocol_document_sha256": "de53b8ce3d17eff4db2e6c2029fdf20458ee7ecdac2cca9f9222d7c8a048e6af",
+    "frozen_utc": "2026-11-03T14:31:19.041391+00:00",
+    "confirmation_results_existed": false
+  },
+  "environment": {
+    "timestamp_utc": "2026-11-03T14:31:25.886035+00:00",
+    "pid": 19792,
+    "source_revision": "d97544ac4514bafbb81b0cf38044982f43fb1379",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.0",
+    "packages": {
+      "numpy": "2.4.6",
+      "openvino": "2026.4.1",
+      "torch": "2.11.0+cu128",
+      "sentence-transformers": "5.1.2",
+      "scipy": "1.17.1"
+    },
+    "devices": [
+      "CPU",
+      "GPU.0",
+      "GPU.1",
+      "NPU"
+    ],
+    "cpu_name": "Intel(R) Core(TM) Ultra 7 255H",
+    "npu": {
+      "FULL_DEVICE_NAME": "Intel(R) AI Boost",
+      "DEVICE_ARCHITECTURE": "3720",
+      "NPU_DRIVER_VERSION": "1004512",
+      "NPU_COMPILER_VERSION": "458778"
+    },
+    "cuda_available": true,
+    "cuda_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "torch_threads": 16,
+    "power": {
+      "ac_connected": true,
+      "battery_percent": 100,
+      "battery_saver": false,
+      "power_plan": "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)"
+    }
+  },
+  "scores": [
+    {
+      "dataset": "sift",
+      "query_id": "4337",
+      "n": 1000000,
+      "path": "results/phase13/inputs/sift_q4337.npy",
+      "sha256": "5ceae8fee4c501d8e5c4e27693374dc67654ccc6033a37b8a1c47fc37c1cb069",
+      "score_bytes_sha256": "c8de7bc4306e93665f0cfafad6d35b1c0a2e4c58f364222a2ba9e17a7cbc6f7c",
+      "metric": "(-squared_L2)/(128*255^2), then FP16"
+    },
+    {
+      "dataset": "sift",
+      "query_id": "3620",
+      "n": 1000000,
+      "path": "results/phase13/inputs/sift_q3620.npy",
+      "sha256": "a0392b1857edd1196d1d341dde0a2b69e698faaa6bd83bd0b8e2f4672e989edd",
+      "score_bytes_sha256": "ffd9056b62aa65d4e40caadf6df5050297acf516595c7f141860a1132dc194cd",
+      "metric": "(-squared_L2)/(128*255^2), then FP16"
+    },
+    {
+      "dataset": "sift",
+      "query_id": "701",
+      "n": 1000000,
+      "path": "results/phase13/inputs/sift_q701.npy",
+      "sha256": "a8c01c34435b4faaf2e02f914ddcc2b798c3763d14a77e1d12f48d01f9d26b26",
+      "score_bytes_sha256": "df741ab7892ef0ea1fa9e56a6c85e47ccbdc261953ecd23df9efbdfeaa3e883e",
+      "metric": "(-squared_L2)/(128*255^2), then FP16"
+    },
+    {
+      "dataset": "sift",
+      "query_id": "3111",
+      "n": 1000000,
+      "path": "results/phase13/inputs/sift_q3111.npy",
+      "sha256": "926f20a2f81183d697e3e54119fec29a601316b127fbeda977fff45bd9742c1d",
+      "score_bytes_sha256": "821fbfb55fe3f1b8e50f56340cd2847c27698924e55ce27c7a5c7a55379f608c",
+      "metric": "(-squared_L2)/(128*255^2), then FP16"
+    },
+    {
+      "dataset": "sift",
+      "query_id": "2262",
+      "n": 1000000,
+      "path": "results/phase13/inputs/sift_q2262.npy",
+      "sha256": "9e54a0b5eed3ba2a106e0b9c5b35b83207f45e93274cfb31258d0d6d223f7e4f",
+      "score_bytes_sha256": "019d0b90fc1ba2880788496f21059357ca24d93ea2fba2fc8483c8c9fca50c09",
+      "metric": "(-squared_L2)/(128*255^2), then FP16"
+    },
+    {
+      "dataset": "sift",
+      "query_id": "8005",
+      "n": 1000000,
+      "path": "results/phase13/inputs/sift_q8005.npy",
+      "sha256": "1a112031e9b3060a60a651c1f93fa45cb47ce5c1b33683599127e6363acceac3",
+      "score_bytes_sha256": "821409f6a0dd2fda0ae8b02580ab636de3aa9104fcfa863ac48b0e4f0ba0bcb4",
+      "metric": "(-squared_L2)/(128*255^2), then FP16"
+    },
+    {
+      "dataset": "sift",
+      "query_id": "2526",
+      "n": 1000000,
+      "path": "results/phase13/inputs/sift_q2526.npy",
+      "sha256": "38328b05df0624c1da0dddb27e282f57dbb812ab4a869bd59c8463cd7dba677a",
+      "score_bytes_sha256": "14c3baff28778752fbd1141c6026ddf20006fdd3311c6749c9696f2810590a5d",
+      "metric": "(-squared_L2)/(128*255^2), then FP16"
+    },
+    {
+      "dataset": "sift",
+      "query_id": "5971",
+      "n": 1000000,
+      "path": "results/phase13/inputs/sift_q5971.npy",
+      "sha256": "ef0cef8b5f6b2dca393e10dc781cd33d272d7af63a9717c0f3074d1b3c332750",
+      "score_bytes_sha256": "adbe5961302c078f03d176cb6e895af30d9efaf4d021f737313e9b0dfdc93a3e",
+      "metric": "(-squared_L2)/(128*255^2), then FP16"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "832",
+      "n": 5183,
+      "path": "results/phase13/inputs/scifact_q832.npy",
+      "sha256": "fea33f424ec93ce4f2b21c2dcccb7652e619ad33c562b598bb1c5d111a8239d1",
+      "score_bytes_sha256": "b21f9c4a1746f76402dd382bf271d593f9c4151c95541ba8f9faf96da11982d3",
+      "metric": "cosine of original-model normalized FP32 embeddings, then FP16"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1382",
+      "n": 5183,
+      "path": "results/phase13/inputs/scifact_q1382.npy",
+      "sha256": "ee6c7ab3e01378d88e1ce7b45339e51855e229938ff6f09147e79fab43bb8e30",
+      "score_bytes_sha256": "4b307c8e8ed531fd532beb01d1d86d9c06444967fd13a42828393b51eb5d9c88",
+      "metric": "cosine of original-model normalized FP32 embeddings, then FP16"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "830",
+      "n": 5183,
+      "path": "results/phase13/inputs/scifact_q830.npy",
+      "sha256": "cc2ae5bd15bdde5936922a6e77468fd906abdd9132d566a038d653ff95a85417",
+      "score_bytes_sha256": "92eb96b01fd38dee17ae1160a439497594c8cabb5f37e06c82a73e01a356b772",
+      "metric": "cosine of original-model normalized FP32 embeddings, then FP16"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "904",
+      "n": 5183,
+      "path": "results/phase13/inputs/scifact_q904.npy",
+      "sha256": "39279b3c97a986684cdf9526cf295e15ba4bf6a0df9089dfed1c925bc6b2d334",
+      "score_bytes_sha256": "cf8271865602857c87f8c928b6e82106fe2940a636aaf3f15fb4316122ab99a7",
+      "metric": "cosine of original-model normalized FP32 embeddings, then FP16"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1363",
+      "n": 5183,
+      "path": "results/phase13/inputs/scifact_q1363.npy",
+      "sha256": "d44ad7eb363eceb0ce0eeb6847ede5e5b2c901d3e6f0575cd14182b59c8f711f",
+      "score_bytes_sha256": "9c6bf9460bb6bd13d588186cf4b5f8155b3aec5cc14f7da541f86e9f8397445b",
+      "metric": "cosine of original-model normalized FP32 embeddings, then FP16"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1319",
+      "n": 5183,
+      "path": "results/phase13/inputs/scifact_q1319.npy",
+      "sha256": "0b788e9eecac0e97135cb7bae3558170f5732b4883a4a23dbd8aa472d80208a9",
+      "score_bytes_sha256": "ec0d97374e8e26a60edb0201ea4dd27f6f92c8f6f578d89cb57c73e57c522564",
+      "metric": "cosine of original-model normalized FP32 embeddings, then FP16"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "578",
+      "n": 5183,
+      "path": "results/phase13/inputs/scifact_q578.npy",
+      "sha256": "0022b132948b661cfe658ae43f1893dc7e43ea7e5e86025d5b49d5e1b3f1eea2",
+      "score_bytes_sha256": "7c29ba7a01168036fb2658bb798dd6661d311e4605c7246eef55824db9349cb0",
+      "metric": "cosine of original-model normalized FP32 embeddings, then FP16"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "957",
+      "n": 5183,
+      "path": "results/phase13/inputs/scifact_q957.npy",
+      "sha256": "48053bd53f22f5f8e991da897b55866173d923260183126146ce41622289ee93",
+      "score_bytes_sha256": "adc0e0328193f7aba2840b60832df0f000ac4088ba4ec3173a9505b3ed0a211d",
+      "metric": "cosine of original-model normalized FP32 embeddings, then FP16"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "2010",
+      "n": 57638,
+      "path": "results/phase13/inputs/fiqa_q2010.npy",
+      "sha256": "18c580804d390eab9135334ec9be49aeb4932d8f38289718418610010efe1d51",
+      "score_bytes_sha256": "e53416b39dcc299965e3970d7972e995fc2fd30a44873bd5961f30181ff9772e",
+      "metric": "cosine of original-model normalized FP32 embeddings, then FP16"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "8947",
+      "n": 57638,
+      "path": "results/phase13/inputs/fiqa_q8947.npy",
+      "sha256": "ed1a033cbe94361c017af9e99208c077afd1495525536d452e21d39a576bb8e1",
+      "score_bytes_sha256": "f3150728c3f080ed7bf62e2d7a6ba974c4f0ab17b47522949929c37415306053",
+      "metric": "cosine of original-model normalized FP32 embeddings, then FP16"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "5460",
+      "n": 57638,
+      "path": "results/phase13/inputs/fiqa_q5460.npy",
+      "sha256": "6c33f19993f25c1e12a197f467d0977c43db7bf987ce09bdb73c4c770b4f76f1",
+      "score_bytes_sha256": "45449e1be4defeb79065a29534d1ba3dbc085d6bb0912c1b8afc058e2da15185",
+      "metric": "cosine of original-model normalized FP32 embeddings, then FP16"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "4447",
+      "n": 57638,
+      "path": "results/phase13/inputs/fiqa_q4447.npy",
+      "sha256": "12b6466acf32733b1eedcd72bf3acbb4772697abc129248943bd330287ffa22f",
+      "score_bytes_sha256": "3e62ecbd4cd4ba09775b9b85f6af8b04e24dc2c4ea67a3921f7e312f03c85efc",
+      "metric": "cosine of original-model normalized FP32 embeddings, then FP16"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "4523",
+      "n": 57638,
+      "path": "results/phase13/inputs/fiqa_q4523.npy",
+      "sha256": "c1168aa8a9ea09eac43a4b4e04a8f53d9c2459236762e56569966135ff69f3f2",
+      "score_bytes_sha256": "b7516ca9546a3cb02b77645aabd42a5fd6d132d58a59d3556c42c59e6644a357",
+      "metric": "cosine of original-model normalized FP32 embeddings, then FP16"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "9391",
+      "n": 57638,
+      "path": "results/phase13/inputs/fiqa_q9391.npy",
+      "sha256": "8a889596dbde9890e8ec81d206e5097e21d7954a7dacc081d6aeceafdfffc982",
+      "score_bytes_sha256": "08c35b90b58c8c654f70d8a197399bdba410a56402e232e617f7c2f45414d0f9",
+      "metric": "cosine of original-model normalized FP32 embeddings, then FP16"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "8351",
+      "n": 57638,
+      "path": "results/phase13/inputs/fiqa_q8351.npy",
+      "sha256": "c82e64951f439d3824e983bdd4f5e2e511b522992806265f0d3c725c23c7afba",
+      "score_bytes_sha256": "be9b558936063537233c396510a2850831fb2be53c14ccca1aacf6b38c683767",
+      "metric": "cosine of original-model normalized FP32 embeddings, then FP16"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "7344",
+      "n": 57638,
+      "path": "results/phase13/inputs/fiqa_q7344.npy",
+      "sha256": "f024a9bbd5d4e4b7f94484b22d942e80db7bc25981423917dabf9a6c7394acf9",
+      "score_bytes_sha256": "2a989d83949a99640901ca6ba2103010de6787cb04a2ef40f50ef812b4d5a448",
+      "metric": "cosine of original-model normalized FP32 embeddings, then FP16"
+    }
+  ],
+  "numerical": [
+    {
+      "id": "positive_subnormal_W128_K1",
+      "family": "positive_subnormal",
+      "n": 257,
+      "k": 1,
+      "w": 128,
+      "seed": 130000,
+      "path": "results/phase13/inputs/positive_subnormal_W128_K1.npy",
+      "sha256": "83f5d652379e620cb2036d2148d0fe19f2aa8c9ff9f32a7f2d4b6d6050ab7b9e"
+    },
+    {
+      "id": "negative_subnormal_W128_K1",
+      "family": "negative_subnormal",
+      "n": 255,
+      "k": 1,
+      "w": 128,
+      "seed": 130001,
+      "path": "results/phase13/inputs/negative_subnormal_W128_K1.npy",
+      "sha256": "86199617c84342931abe87d9c808dd5849177043f8f46bbd276f903da64170d2"
+    },
+    {
+      "id": "normal_neighbors_W128_K1",
+      "family": "normal_neighbors",
+      "n": 257,
+      "k": 1,
+      "w": 128,
+      "seed": 130002,
+      "path": "results/phase13/inputs/normal_neighbors_W128_K1.npy",
+      "sha256": "3dee39aa4a16092b6ef927f5b2889df6f225e1c52e8486d1ada3d6b5ef177d7e"
+    },
+    {
+      "id": "mixed_ties_extremes_W128_K1",
+      "family": "mixed_ties_extremes",
+      "n": 129,
+      "k": 1,
+      "w": 128,
+      "seed": 130003,
+      "path": "results/phase13/inputs/mixed_ties_extremes_W128_K1.npy",
+      "sha256": "49d21ad83fd468e58a6c76947eece7333181d815b8aec2266d364aa62dff8c1f"
+    },
+    {
+      "id": "signed_zero_W128_K1",
+      "family": "signed_zero",
+      "n": 129,
+      "k": 1,
+      "w": 128,
+      "seed": 130004,
+      "path": "results/phase13/inputs/signed_zero_W128_K1.npy",
+      "sha256": "eae11ce54e3a6337756dd0111f0b6fa75317bff9bbd717f2e74ed79c9a87cebc"
+    },
+    {
+      "id": "cross_tile_boundary_W128_K1",
+      "family": "cross_tile_boundary",
+      "n": 257,
+      "k": 1,
+      "w": 128,
+      "seed": 130005,
+      "path": "results/phase13/inputs/cross_tile_boundary_W128_K1.npy",
+      "sha256": "37ccd6c18a5d45354d8146570b418862f673bf20bd0f9a43f68c67e9c935d249"
+    },
+    {
+      "id": "positive_subnormal_W128_K10",
+      "family": "positive_subnormal",
+      "n": 257,
+      "k": 10,
+      "w": 128,
+      "seed": 130006,
+      "path": "results/phase13/inputs/positive_subnormal_W128_K10.npy",
+      "sha256": "268bd2853cfe33f3e4e200f6a42d5fc832eb6351245373150bce0df36a51ba30"
+    },
+    {
+      "id": "negative_subnormal_W128_K10",
+      "family": "negative_subnormal",
+      "n": 255,
+      "k": 10,
+      "w": 128,
+      "seed": 130007,
+      "path": "results/phase13/inputs/negative_subnormal_W128_K10.npy",
+      "sha256": "f260177cdca3580295742ce0229857598e185708e6604430db60e59251f4e3cd"
+    },
+    {
+      "id": "normal_neighbors_W128_K10",
+      "family": "normal_neighbors",
+      "n": 257,
+      "k": 10,
+      "w": 128,
+      "seed": 130008,
+      "path": "results/phase13/inputs/normal_neighbors_W128_K10.npy",
+      "sha256": "c872a0644327a4f29c3270e79dbb25984ec3b4284286925fa6cf1a00476889dd"
+    },
+    {
+      "id": "mixed_ties_extremes_W128_K10",
+      "family": "mixed_ties_extremes",
+      "n": 129,
+      "k": 10,
+      "w": 128,
+      "seed": 130009,
+      "path": "results/phase13/inputs/mixed_ties_extremes_W128_K10.npy",
+      "sha256": "72707d344d9542fddc567a4f8a168918bd8376ad767832ed328a1ad587aff397"
+    },
+    {
+      "id": "signed_zero_W128_K10",
+      "family": "signed_zero",
+      "n": 129,
+      "k": 10,
+      "w": 128,
+      "seed": 130010,
+      "path": "results/phase13/inputs/signed_zero_W128_K10.npy",
+      "sha256": "2e071ef3834b0ed7346f5dffd6425e4027725b6ded8ed9777d9d90bd1dfa3493"
+    },
+    {
+      "id": "cross_tile_boundary_W128_K10",
+      "family": "cross_tile_boundary",
+      "n": 257,
+      "k": 10,
+      "w": 128,
+      "seed": 130011,
+      "path": "results/phase13/inputs/cross_tile_boundary_W128_K10.npy",
+      "sha256": "42d75bfef127dbc23dc8d00f120a1fbe83f8d31426ccaf0e85405d467dab880d"
+    },
+    {
+      "id": "positive_subnormal_W128_K100",
+      "family": "positive_subnormal",
+      "n": 257,
+      "k": 100,
+      "w": 128,
+      "seed": 130012,
+      "path": "results/phase13/inputs/positive_subnormal_W128_K100.npy",
+      "sha256": "0208e97636c6d183876fb8809b8db9bebc0abb26c4d5ab6ccfb582fc969bfef1"
+    },
+    {
+      "id": "negative_subnormal_W128_K100",
+      "family": "negative_subnormal",
+      "n": 255,
+      "k": 100,
+      "w": 128,
+      "seed": 130013,
+      "path": "results/phase13/inputs/negative_subnormal_W128_K100.npy",
+      "sha256": "218c94071648826d0fb60b09630e9ade3a791d485c9aad522ef9f6a925513a57"
+    },
+    {
+      "id": "normal_neighbors_W128_K100",
+      "family": "normal_neighbors",
+      "n": 257,
+      "k": 100,
+      "w": 128,
+      "seed": 130014,
+      "path": "results/phase13/inputs/normal_neighbors_W128_K100.npy",
+      "sha256": "a65407d473f9aa86fe9312650df7ae5b12543c5882d59c4eca808c23831f4e34"
+    },
+    {
+      "id": "mixed_ties_extremes_W128_K100",
+      "family": "mixed_ties_extremes",
+      "n": 129,
+      "k": 100,
+      "w": 128,
+      "seed": 130015,
+      "path": "results/phase13/inputs/mixed_ties_extremes_W128_K100.npy",
+      "sha256": "f70a73db34c2198df912c629a6dc02ef7bab42176f105263ff5d437041f61229"
+    },
+    {
+      "id": "signed_zero_W128_K100",
+      "family": "signed_zero",
+      "n": 129,
+      "k": 100,
+      "w": 128,
+      "seed": 130016,
+      "path": "results/phase13/inputs/signed_zero_W128_K100.npy",
+      "sha256": "3c1023b982141a004fb1063a9841798bb49a6fbb07fddeb8fb1de7e9fe167916"
+    },
+    {
+      "id": "cross_tile_boundary_W128_K100",
+      "family": "cross_tile_boundary",
+      "n": 257,
+      "k": 100,
+      "w": 128,
+      "seed": 130017,
+      "path": "results/phase13/inputs/cross_tile_boundary_W128_K100.npy",
+      "sha256": "96bd3fac2e3e8f32271f19933ba76946a9bcbc28e95ea505894d76e2432fb339"
+    },
+    {
+      "id": "positive_subnormal_W256_K1",
+      "family": "positive_subnormal",
+      "n": 513,
+      "k": 1,
+      "w": 256,
+      "seed": 130018,
+      "path": "results/phase13/inputs/positive_subnormal_W256_K1.npy",
+      "sha256": "170654d093d14d37349961587b3ecc786edcd1e0b75dcd107132f8a194be6cc1"
+    },
+    {
+      "id": "negative_subnormal_W256_K1",
+      "family": "negative_subnormal",
+      "n": 511,
+      "k": 1,
+      "w": 256,
+      "seed": 130019,
+      "path": "results/phase13/inputs/negative_subnormal_W256_K1.npy",
+      "sha256": "cab2ed44d18f36cfd8bb3d879222933e5feb3216232911c25dba8bf9a5b25709"
+    },
+    {
+      "id": "normal_neighbors_W256_K1",
+      "family": "normal_neighbors",
+      "n": 513,
+      "k": 1,
+      "w": 256,
+      "seed": 130020,
+      "path": "results/phase13/inputs/normal_neighbors_W256_K1.npy",
+      "sha256": "ac8c47cfefd47a76b46f7d5dc9783cc96d7153cd0c21f92c712fd141f1d599a0"
+    },
+    {
+      "id": "mixed_ties_extremes_W256_K1",
+      "family": "mixed_ties_extremes",
+      "n": 257,
+      "k": 1,
+      "w": 256,
+      "seed": 130021,
+      "path": "results/phase13/inputs/mixed_ties_extremes_W256_K1.npy",
+      "sha256": "ff25bbe4e74556567573c49b4f9d9ea03f942eeac60983f9ec5c57fc2624bee9"
+    },
+    {
+      "id": "signed_zero_W256_K1",
+      "family": "signed_zero",
+      "n": 257,
+      "k": 1,
+      "w": 256,
+      "seed": 130022,
+      "path": "results/phase13/inputs/signed_zero_W256_K1.npy",
+      "sha256": "ebbc8dd2561e5d1d26a8e37a835c914f3f6f5242d34a1c2cb70ce4296b2c8e09"
+    },
+    {
+      "id": "cross_tile_boundary_W256_K1",
+      "family": "cross_tile_boundary",
+      "n": 513,
+      "k": 1,
+      "w": 256,
+      "seed": 130023,
+      "path": "results/phase13/inputs/cross_tile_boundary_W256_K1.npy",
+      "sha256": "93abf7f5e390b2b7255c9b2356a705e417ee681d898d80149a7f527d62e94123"
+    },
+    {
+      "id": "positive_subnormal_W256_K10",
+      "family": "positive_subnormal",
+      "n": 513,
+      "k": 10,
+      "w": 256,
+      "seed": 130024,
+      "path": "results/phase13/inputs/positive_subnormal_W256_K10.npy",
+      "sha256": "2c3313b0f7ce6512b6f063518c9455975a9c91d12beeacb575ef91238ef950bc"
+    },
+    {
+      "id": "negative_subnormal_W256_K10",
+      "family": "negative_subnormal",
+      "n": 511,
+      "k": 10,
+      "w": 256,
+      "seed": 130025,
+      "path": "results/phase13/inputs/negative_subnormal_W256_K10.npy",
+      "sha256": "1b99660fb62e509401047a13fc6b2e89704c29c180ab646b637df928072e3e91"
+    },
+    {
+      "id": "normal_neighbors_W256_K10",
+      "family": "normal_neighbors",
+      "n": 513,
+      "k": 10,
+      "w": 256,
+      "seed": 130026,
+      "path": "results/phase13/inputs/normal_neighbors_W256_K10.npy",
+      "sha256": "82cefcd077ff589a45c9d9134be9fe75348628474e5ec684d8abb76e02eaac99"
+    },
+    {
+      "id": "mixed_ties_extremes_W256_K10",
+      "family": "mixed_ties_extremes",
+      "n": 257,
+      "k": 10,
+      "w": 256,
+      "seed": 130027,
+      "path": "results/phase13/inputs/mixed_ties_extremes_W256_K10.npy",
+      "sha256": "e304a7aba787591f8f00ed75cfd46b48db41ab88612a81ff6ec193d06a089728"
+    },
+    {
+      "id": "signed_zero_W256_K10",
+      "family": "signed_zero",
+      "n": 257,
+      "k": 10,
+      "w": 256,
+      "seed": 130028,
+      "path": "results/phase13/inputs/signed_zero_W256_K10.npy",
+      "sha256": "38c1b85a2d71221dbcf915d688b2b3ba0ba47ba37bb24af270534d1cc3e236fe"
+    },
+    {
+      "id": "cross_tile_boundary_W256_K10",
+      "family": "cross_tile_boundary",
+      "n": 513,
+      "k": 10,
+      "w": 256,
+      "seed": 130029,
+      "path": "results/phase13/inputs/cross_tile_boundary_W256_K10.npy",
+      "sha256": "707772a93c69adb2bfdd74653e3dd26219fedc591d1b895dd218b6040317fd91"
+    },
+    {
+      "id": "positive_subnormal_W256_K100",
+      "family": "positive_subnormal",
+      "n": 513,
+      "k": 100,
+      "w": 256,
+      "seed": 130030,
+      "path": "results/phase13/inputs/positive_subnormal_W256_K100.npy",
+      "sha256": "4c03e873836f11e6f414c87cc32416f9a2766d356d7a78ab929eef4e9a2368d0"
+    },
+    {
+      "id": "negative_subnormal_W256_K100",
+      "family": "negative_subnormal",
+      "n": 511,
+      "k": 100,
+      "w": 256,
+      "seed": 130031,
+      "path": "results/phase13/inputs/negative_subnormal_W256_K100.npy",
+      "sha256": "dd0caefc40c93c2ce08b47fa56345edde90fc796ef3fea2e89aeed0c0ad864b4"
+    },
+    {
+      "id": "normal_neighbors_W256_K100",
+      "family": "normal_neighbors",
+      "n": 513,
+      "k": 100,
+      "w": 256,
+      "seed": 130032,
+      "path": "results/phase13/inputs/normal_neighbors_W256_K100.npy",
+      "sha256": "e91298d234c47098172017ddd7a2001eb304ea1b76af89638ef061e74a9cfd2d"
+    },
+    {
+      "id": "mixed_ties_extremes_W256_K100",
+      "family": "mixed_ties_extremes",
+      "n": 257,
+      "k": 100,
+      "w": 256,
+      "seed": 130033,
+      "path": "results/phase13/inputs/mixed_ties_extremes_W256_K100.npy",
+      "sha256": "943bbf331f0dcfd2282ee82666a36abd2f751a7503fc7441a392507028d92b3c"
+    },
+    {
+      "id": "signed_zero_W256_K100",
+      "family": "signed_zero",
+      "n": 257,
+      "k": 100,
+      "w": 256,
+      "seed": 130034,
+      "path": "results/phase13/inputs/signed_zero_W256_K100.npy",
+      "sha256": "7d6f9af6d2143c8f8fd00c0c2c1a030e29cbda659f21de33d56fb16540dc9ed6"
+    },
+    {
+      "id": "cross_tile_boundary_W256_K100",
+      "family": "cross_tile_boundary",
+      "n": 513,
+      "k": 100,
+      "w": 256,
+      "seed": 130035,
+      "path": "results/phase13/inputs/cross_tile_boundary_W256_K100.npy",
+      "sha256": "f44cb85758e6ccbcd29c7beb3c2c4ab0e49a3f3e9721a601bc9cc8bbf07f073e"
+    },
+    {
+      "id": "positive_subnormal_W512_K1",
+      "family": "positive_subnormal",
+      "n": 1025,
+      "k": 1,
+      "w": 512,
+      "seed": 130036,
+      "path": "results/phase13/inputs/positive_subnormal_W512_K1.npy",
+      "sha256": "95f95c67c8bad6b4fcde9c726408d40309b4ccd172af75e86cdbb92ee5e2e522"
+    },
+    {
+      "id": "negative_subnormal_W512_K1",
+      "family": "negative_subnormal",
+      "n": 1023,
+      "k": 1,
+      "w": 512,
+      "seed": 130037,
+      "path": "results/phase13/inputs/negative_subnormal_W512_K1.npy",
+      "sha256": "03a5963a9493d28a489966ae376c9773bcad9b2f97cd06426090da2b969809a9"
+    },
+    {
+      "id": "normal_neighbors_W512_K1",
+      "family": "normal_neighbors",
+      "n": 1025,
+      "k": 1,
+      "w": 512,
+      "seed": 130038,
+      "path": "results/phase13/inputs/normal_neighbors_W512_K1.npy",
+      "sha256": "03bc79db8f8f069a16efbeb2554f77f5699c55eb70a6534ebc6817c2904b58dc"
+    },
+    {
+      "id": "mixed_ties_extremes_W512_K1",
+      "family": "mixed_ties_extremes",
+      "n": 513,
+      "k": 1,
+      "w": 512,
+      "seed": 130039,
+      "path": "results/phase13/inputs/mixed_ties_extremes_W512_K1.npy",
+      "sha256": "be8f2b90d1bb0e0ca8a90088c25fc763f24478f1371a77e5c2eb659965596fd5"
+    },
+    {
+      "id": "signed_zero_W512_K1",
+      "family": "signed_zero",
+      "n": 513,
+      "k": 1,
+      "w": 512,
+      "seed": 130040,
+      "path": "results/phase13/inputs/signed_zero_W512_K1.npy",
+      "sha256": "1acacf2023bdabccb712bf040046214dba17224f40ea44324a9da3f1cce924a7"
+    },
+    {
+      "id": "cross_tile_boundary_W512_K1",
+      "family": "cross_tile_boundary",
+      "n": 1025,
+      "k": 1,
+      "w": 512,
+      "seed": 130041,
+      "path": "results/phase13/inputs/cross_tile_boundary_W512_K1.npy",
+      "sha256": "952b1ab26ffd6173b5b1cc7239944c01c83255bc680cbe9117d8661baac5b1bc"
+    },
+    {
+      "id": "positive_subnormal_W512_K10",
+      "family": "positive_subnormal",
+      "n": 1025,
+      "k": 10,
+      "w": 512,
+      "seed": 130042,
+      "path": "results/phase13/inputs/positive_subnormal_W512_K10.npy",
+      "sha256": "42f9c0a1343d28119bb4ffc2d5f42a215407bc757e7256db2596f7499846c6a3"
+    },
+    {
+      "id": "negative_subnormal_W512_K10",
+      "family": "negative_subnormal",
+      "n": 1023,
+      "k": 10,
+      "w": 512,
+      "seed": 130043,
+      "path": "results/phase13/inputs/negative_subnormal_W512_K10.npy",
+      "sha256": "facf69eb7f08f53b31e88baba24df98aac629e1ad4a9802eba45d3b82935e752"
+    },
+    {
+      "id": "normal_neighbors_W512_K10",
+      "family": "normal_neighbors",
+      "n": 1025,
+      "k": 10,
+      "w": 512,
+      "seed": 130044,
+      "path": "results/phase13/inputs/normal_neighbors_W512_K10.npy",
+      "sha256": "0c669c4905d98e454097bd58bb3a870e7286f62bd290804c42a8582aac509df2"
+    },
+    {
+      "id": "mixed_ties_extremes_W512_K10",
+      "family": "mixed_ties_extremes",
+      "n": 513,
+      "k": 10,
+      "w": 512,
+      "seed": 130045,
+      "path": "results/phase13/inputs/mixed_ties_extremes_W512_K10.npy",
+      "sha256": "5a5c2b8cd4907142d757a7ea9cd69e7511b9700d279531a8f4ade6f08c9c2b10"
+    },
+    {
+      "id": "signed_zero_W512_K10",
+      "family": "signed_zero",
+      "n": 513,
+      "k": 10,
+      "w": 512,
+      "seed": 130046,
+      "path": "results/phase13/inputs/signed_zero_W512_K10.npy",
+      "sha256": "1e7206f94c75d05a0d690685cdfc00bae0e946a5b484b91ab0eb6ad896276a07"
+    },
+    {
+      "id": "cross_tile_boundary_W512_K10",
+      "family": "cross_tile_boundary",
+      "n": 1025,
+      "k": 10,
+      "w": 512,
+      "seed": 130047,
+      "path": "results/phase13/inputs/cross_tile_boundary_W512_K10.npy",
+      "sha256": "b8d1629f93d6e09984e2d07bc17de0b3525826dcbe0c957c4a428462951e7214"
+    },
+    {
+      "id": "positive_subnormal_W512_K100",
+      "family": "positive_subnormal",
+      "n": 1025,
+      "k": 100,
+      "w": 512,
+      "seed": 130048,
+      "path": "results/phase13/inputs/positive_subnormal_W512_K100.npy",
+      "sha256": "31328a6bd74a265e9a0d0b4a2139cf744a8cb2ae3c3504a66c82e2587f9c95fc"
+    },
+    {
+      "id": "negative_subnormal_W512_K100",
+      "family": "negative_subnormal",
+      "n": 1023,
+      "k": 100,
+      "w": 512,
+      "seed": 130049,
+      "path": "results/phase13/inputs/negative_subnormal_W512_K100.npy",
+      "sha256": "da3a7caac25590297d870150d9ffd04601eb5f61aa43e7a909aa925cf233d4c0"
+    },
+    {
+      "id": "normal_neighbors_W512_K100",
+      "family": "normal_neighbors",
+      "n": 1025,
+      "k": 100,
+      "w": 512,
+      "seed": 130050,
+      "path": "results/phase13/inputs/normal_neighbors_W512_K100.npy",
+      "sha256": "47a6c56560124c3b308966a9ef3f7aa3f044a2f7c1db6e3bf3b5abc470f18c3d"
+    },
+    {
+      "id": "mixed_ties_extremes_W512_K100",
+      "family": "mixed_ties_extremes",
+      "n": 513,
+      "k": 100,
+      "w": 512,
+      "seed": 130051,
+      "path": "results/phase13/inputs/mixed_ties_extremes_W512_K100.npy",
+      "sha256": "5d98e3b092d4dfb1d8f03d5aadee5e11ed5c3952d7d0af89d06df3744db3ab5c"
+    },
+    {
+      "id": "signed_zero_W512_K100",
+      "family": "signed_zero",
+      "n": 513,
+      "k": 100,
+      "w": 512,
+      "seed": 130052,
+      "path": "results/phase13/inputs/signed_zero_W512_K100.npy",
+      "sha256": "ca707e423194cc00e6c188377e82c8fb98f453a64c7ef070ed5a0ce6731a75aa"
+    },
+    {
+      "id": "cross_tile_boundary_W512_K100",
+      "family": "cross_tile_boundary",
+      "n": 1025,
+      "k": 100,
+      "w": 512,
+      "seed": 130053,
+      "path": "results/phase13/inputs/cross_tile_boundary_W512_K100.npy",
+      "sha256": "76befa83a1df53bfc0788cf7fcd157f0294e93cb12a640f791980961850b2a81"
+    }
+  ],
+  "generation_in_topk_timing": false,
+  "encoder_or_metric_changed": false,
+  "embedding_parameters": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "batch_size": 256,
+    "normalize_embeddings": true,
+    "device": "cuda",
+    "stored_embedding_dtype": "float32",
+    "torch_allow_tf32": false
+  },
+  "scifact_provenance": {
+    "corpus_jsonl_sha256": "dec31c8182f3d744c7d2c09423756fd1d17cbef75808db13ba01cc0aab4d1ac6",
+    "queries_jsonl_sha256": "8ff84a7c903f722981cd8d595c022660140c51867b27608a6d4910db86080313",
+    "document_embedding_path": "data\\extracted\\phase13_embeddings\\scifact_documents.npy",
+    "document_embeddings_sha256": "144b5f41c9a762d473c43425620d81a18d22417e74ba5cfe3fc22a90fe7fe77b",
+    "query_embeddings_sha256": "8a9296986b29149c0b1fa2f2b54d977599a34e7cfb73fa44e5da951517e51235"
+  },
+  "fiqa_provenance": {
+    "corpus_jsonl_sha256": "ff593e4df9933955dc3af83be0c3fa28ac7465f627e08c2e53593e734d506517",
+    "queries_jsonl_sha256": "eede1e61d4a0188940239b53ebc2da91f577a6a34679c812d1eb9090c29877bc",
+    "document_embedding_path": "data\\extracted\\phase13_embeddings\\fiqa_documents.npy",
+    "document_embeddings_sha256": "4a82feca35bc61619749636b05f2b93245ecbd2fbf0cdd20a2afad3b30ee2a84",
+    "query_embeddings_sha256": "026fac30dc325760a7ff2ff575634988a1a7a8c8d33951246dc77a5322f19400"
+  }
+}

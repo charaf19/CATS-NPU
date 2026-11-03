@@ -1,0 +1,2 @@
+{"case": "all_finite_adjacent_f16", "npu_passed": false, "error": null}
+{"case": "all_finite_adjacent_promoted", "npu_passed": false, "error": null}

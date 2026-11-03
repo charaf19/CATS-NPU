@@ -1,0 +1,84 @@
+{
+  "access_date": "2026-11-03",
+  "purpose": "Position bounded empirical observations; no new algorithm or first-of-kind claim",
+  "search_scope": [
+    "OpenVINO TopK subnormal",
+    "Top-K numerical NPU precision",
+    "exact Top-K numerical accelerator subnormal",
+    "Numerical Behavior NPU subnormal ranking",
+    "Primary author papers and official numerical/precision documentation"
+  ],
+  "limitation": "Targeted primary-source comparison, not a systematic proof that no related report exists",
+  "sources": [
+    {
+      "authors": "hsfzxjy and npunlock contributors",
+      "title": "npunlock: Write and run custom C kernels for Intel Core Ultra NPUs",
+      "venue": "Primary software repository and compatibility documentation, 2026",
+      "url": "https://github.com/hsfzxjy/npunlock",
+      "limits_url": "https://github.com/hsfzxjy/npunlock/blob/master/wiki/LIMITATIONS.md",
+      "relation": "Already exposes custom SHAVE kernels and validated FP32 paths on NPU3720, with explicit graph/precision limits. Neither Intel-NPU programmability nor retained FP32 execution is new here. CATS-NPU uses stock supported graphs and characterizes their exact ranking/output contracts; it does not implement custom SHAVE code or infer its instruction behavior."
+    },
+    {
+      "authors": "Massimiliano Fasi, Nicholas J. Higham, Mantas Mikaitis, Srikara Pranesh",
+      "title": "Numerical Behavior of NVIDIA Tensor Cores",
+      "venue": "PeerJ Computer Science 7:e330, 2021",
+      "doi": "10.7717/peerj-cs.330",
+      "url": "https://eprints.maths.manchester.ac.uk/2791/1/fhmp20.pdf",
+      "publication_record": "https://research.manchester.ac.uk/en/publications/numerical-behavior-of-nvidia-tensor-cores/",
+      "relation": "Established precedent for designed probes of accelerator precision, subnormal handling and undocumented numerical behavior. Our scope is exact selection output contracts and graph composition; characterization itself is not new."
+    },
+    {
+      "authors": "Peichen Xie, Yanjie Gao, Yang Wang, Jilong Xue",
+      "title": "Revealing Floating-Point Accumulation Orders in Software/Hardware Implementations",
+      "venue": "USENIX ATC 2025, pp. 1425-1440",
+      "url": "https://www.usenix.org/conference/atc25/presentation/xie",
+      "relation": "FPRev infers accumulation structure through designed numerical probes. CATS-NPU does not recover an instruction sequence or accumulation tree and makes a weaker output-level characterization claim."
+    },
+    {
+      "authors": "Ramchand Kumaresan",
+      "title": "Orion: Characterizing and Programming Apple's Neural Engine for LLM Training and Inference",
+      "venue": "arXiv preprint 2603.06728v1, 2026",
+      "url": "https://arxiv.org/html/2603.06728v1",
+      "doi": "10.48550/arXiv.2603.06728",
+      "relation": "NPU compiler/runtime constraint and numerical characterization already exists. Different accelerator and application scope; the present evidence cannot claim to introduce NPU characterization or a general compiler mechanism."
+    },
+    {
+      "authors": "ryugyosoft",
+      "title": "onw technical notes",
+      "venue": "Author software report, not peer-reviewed",
+      "revision": "7ed25189ba7f10aa25a281859ed9492b53b2164e",
+      "url": "https://huggingface.co/ryugyosoft/onw/blob/7ed25189ba7f10aa25a281859ed9492b53b2164e/TECHNICAL_en.md",
+      "relation": "Reports FP16 subnormal-related degradation in Intel NPU inference and conventional scaling mitigations. Broad Intel-NPU subnormal loss is not an exclusive discovery claimed here. This project independently measures exact Top-K membership/value semantics and controlled precision composition."
+    },
+    {
+      "authors": "NVIDIA",
+      "title": "TensorRT Accuracy Considerations",
+      "venue": "Official software documentation",
+      "url": "https://docs.nvidia.com/deeplearning/tensorrt/latest/inference-library/accuracy-considerations.html",
+      "relation": "Mixed precision and FP32 execution of sensitive operations are existing mitigation techniques; applying them is not a new optimization."
+    },
+    {
+      "authors": "Intel/OpenVINO",
+      "title": "TopK-11 operation specification",
+      "venue": "OpenVINO 2026 documentation",
+      "url": "https://docs.openvino.ai/2026/documentation/openvino-ir-format/operation-sets/operation-specs/sort/top-k-11.html",
+      "relation": "Defines stable versus unspecified ties and output values/indices. Used to avoid misclassifying a legal unstable tie as a defect; finite numerical tests do not address implementation-defined NaN ordering."
+    },
+    {
+      "authors": "OpenVINO NPU compiler contributors",
+      "title": "Public high-precision layer option and ConvertPrecisionToFP16 implementation",
+      "venue": "Pinned upstream source, Phase 12 source audit retained",
+      "revision": "c74b1265f28dc5a8f08dd50babd2a063cb59ac6e",
+      "url": "https://github.com/openvinotoolkit/npu_compiler/blob/c74b1265f28dc5a8f08dd50babd2a063cb59ac6e/src/vpux_compiler/src/dialect/IE/transforms/passes/convert_precision_to_fp16.cpp",
+      "option_url": "https://github.com/openvinotoolkit/npu_compiler/blob/c74b1265f28dc5a8f08dd50babd2a063cb59ac6e/src/vpux_compiler/include/vpux/compiler/core/public_options.hpp",
+      "relation": "Existing precision option and operation exemptions explain why this is an ablation of established controls. Source consistency does not establish the installed binary's exact lowering or a unique root cause."
+    }
+  ],
+  "previous_selection_prior_art": "docs/FINAL_RESEARCH_CONTRIBUTION.md and results/phase12/fast_track/prior_art_review.json retain the verified CUB, DeepSelect, RadiK, stable selection and hierarchy comparison. The algorithmic NO-GO is unchanged.",
+  "defensible_empirical_scope": "A reproducible contract-level map of ranking/value failures on one NPU stack, controlled nine-setting composition witnesses, and prospectively frozen correctness-aware latency trade-offs on fresh query IDs.",
+  "excluded_claims": [
+    "first observation of accelerator or Intel NPU subnormal behavior",
+    "new Top-K, compiler optimization, mixed precision technique or certificate",
+    "universal correctness or a proven instruction-level root cause"
+  ]
+}

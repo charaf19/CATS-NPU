@@ -1,0 +1,74 @@
+[
+  {
+    "source": "results\\phase13\\numerical\\adjacent_default\\results.json",
+    "case": "all_finite_adjacent_f16",
+    "backend": "CPU",
+    "rows": 63487,
+    "failed_rows": 0,
+    "membership_failures": 0,
+    "value_failures": 0
+  },
+  {
+    "source": "results\\phase13\\numerical\\adjacent_default\\results.json",
+    "case": "all_finite_adjacent_f16",
+    "backend": "NPU",
+    "rows": 63487,
+    "failed_rows": 2047,
+    "membership_failures": 2046,
+    "value_failures": 2046
+  },
+  {
+    "source": "results\\phase13\\numerical\\adjacent_default\\results.json",
+    "case": "all_finite_adjacent_promoted",
+    "backend": "CPU",
+    "rows": 63487,
+    "failed_rows": 0,
+    "membership_failures": 0,
+    "value_failures": 0
+  },
+  {
+    "source": "results\\phase13\\numerical\\adjacent_default\\results.json",
+    "case": "all_finite_adjacent_promoted",
+    "backend": "NPU",
+    "rows": 63487,
+    "failed_rows": 2047,
+    "membership_failures": 2046,
+    "value_failures": 2046
+  },
+  {
+    "source": "results\\phase13\\numerical\\adjacent_protected\\results.json",
+    "case": "all_finite_adjacent_f16",
+    "backend": "CPU",
+    "rows": 63487,
+    "failed_rows": 0,
+    "membership_failures": 0,
+    "value_failures": 0
+  },
+  {
+    "source": "results\\phase13\\numerical\\adjacent_protected\\results.json",
+    "case": "all_finite_adjacent_f16",
+    "backend": "NPU",
+    "rows": 63487,
+    "failed_rows": 2047,
+    "membership_failures": 2046,
+    "value_failures": 2046
+  },
+  {
+    "source": "results\\phase13\\numerical\\adjacent_protected\\results.json",
+    "case": "all_finite_adjacent_promoted",
+    "backend": "CPU",
+    "rows": 63487,
+    "failed_rows": 0,
+    "membership_failures": 0,
+    "value_failures": 0
+  },
+  {
+    "source": "results\\phase13\\numerical\\adjacent_protected\\results.json",
+    "case": "all_finite_adjacent_promoted",
+    "backend": "NPU",
+    "rows": 63487,
+    "failed_rows": 0,
+    "membership_failures": 0,
+    "value_failures": 0
+  }
+]

@@ -1,1 +1,5 @@
 phase13_*.py text eol=lf
+.gitattributes text eol=lf
+replay_phase13.py text eol=lf
+summarize_phase13.py text eol=lf
+check_phase13_artifacts.py text eol=lf

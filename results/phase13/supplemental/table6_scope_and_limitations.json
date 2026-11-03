@@ -1,0 +1,28 @@
+{
+  "performance_sensitivity": "../analysis/table6_sensitivity.json",
+  "numerical_failures": "numerical_disjoint_categories.json",
+  "rejections_and_correctness": "performance_integrity_and_components.json",
+  "scope": {
+    "devices": 1,
+    "npu_architecture": "3720",
+    "driver": "1004512",
+    "compiler": "458778",
+    "unique_fresh_queries": 24,
+    "queries_per_dataset": 8,
+    "performance_processes": 12,
+    "numerical_processes": 3,
+    "temporal_scope": "sequential sessions on one date; no cross-day or cross-machine replication",
+    "numerical_scope": "fixed adversarial panel plus bounded adjacent-pair batch; no population failure CI",
+    "exactness": "over supplied finite FP16 scores; checked wrappers are exact-or-reject",
+    "unsupported": [
+      "NaN or infinite user scores",
+      "uncompiled shapes or invalid integer dimensions"
+    ],
+    "not_established": [
+      "universal device correctness",
+      "unique silicon/compiler cause",
+      "new algorithm or precision technique",
+      "concurrent throughput"
+    ]
+  }
+}

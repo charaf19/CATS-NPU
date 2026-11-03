@@ -1,0 +1,15 @@
+{"session": 11, "group": ["sift", 1000000, 1, 256], "observations": 72}
+{"session": 11, "group": ["sift", 1000000, 10, 128], "observations": 144}
+{"session": 11, "group": ["scifact", 5183, 100, 512], "observations": 216}
+{"session": 11, "group": ["fiqa", 57638, 10, 256], "observations": 504}
+{"session": 11, "group": ["fiqa", 57638, 100, 512], "observations": 576}
+{"session": 11, "group": ["sift", 131072, 10, 256], "observations": 648}
+{"session": 11, "group": ["sift", 1000000, 10, 256], "observations": 936}
+{"session": 11, "group": ["scifact", 5183, 1, 128], "observations": 1008}
+{"session": 11, "group": ["sift", 1000000, 100, 512], "observations": 1080}
+{"session": 11, "group": ["sift", 1000000, 1, 128], "observations": 1152}
+{"session": 11, "group": ["sift", 1000000, 100, 256], "observations": 1224}
+{"session": 11, "group": ["sift", 1000000, 10, 512], "observations": 1296}
+{"session": 11, "group": ["sift", 16384, 10, 256], "observations": 1368}
+{"session": 11, "group": ["scifact", 5183, 10, 256], "observations": 1656}
+{"session": 11, "group": ["fiqa", 57638, 1, 128], "observations": 1728}

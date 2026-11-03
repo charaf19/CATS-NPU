@@ -1,0 +1,362 @@
+[
+  {
+    "id": "cross_tile_boundary_W128_K1",
+    "family": "cross_tile_boundary",
+    "n": 257,
+    "k": 1,
+    "w": 128,
+    "seed": 130005,
+    "outcomes": {
+      "fp16": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "promotion": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "topk": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "reshape": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "combined": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      },
+      "int32": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      }
+    }
+  },
+  {
+    "id": "cross_tile_boundary_W128_K10",
+    "family": "cross_tile_boundary",
+    "n": 257,
+    "k": 10,
+    "w": 128,
+    "seed": 130011,
+    "outcomes": {
+      "fp16": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "promotion": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "topk": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "reshape": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "combined": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      },
+      "int32": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      }
+    }
+  },
+  {
+    "id": "cross_tile_boundary_W128_K100",
+    "family": "cross_tile_boundary",
+    "n": 257,
+    "k": 100,
+    "w": 128,
+    "seed": 130017,
+    "outcomes": {
+      "fp16": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "promotion": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "topk": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "reshape": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "combined": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      },
+      "int32": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      }
+    }
+  },
+  {
+    "id": "cross_tile_boundary_W256_K1",
+    "family": "cross_tile_boundary",
+    "n": 513,
+    "k": 1,
+    "w": 256,
+    "seed": 130023,
+    "outcomes": {
+      "fp16": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "promotion": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "topk": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "reshape": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "combined": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      },
+      "int32": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      }
+    }
+  },
+  {
+    "id": "cross_tile_boundary_W256_K10",
+    "family": "cross_tile_boundary",
+    "n": 513,
+    "k": 10,
+    "w": 256,
+    "seed": 130029,
+    "outcomes": {
+      "fp16": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "promotion": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "topk": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "reshape": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "combined": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      },
+      "int32": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      }
+    }
+  },
+  {
+    "id": "cross_tile_boundary_W256_K100",
+    "family": "cross_tile_boundary",
+    "n": 513,
+    "k": 100,
+    "w": 256,
+    "seed": 130035,
+    "outcomes": {
+      "fp16": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "promotion": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "topk": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "reshape": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "combined": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      },
+      "int32": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      }
+    }
+  },
+  {
+    "id": "cross_tile_boundary_W512_K1",
+    "family": "cross_tile_boundary",
+    "n": 1025,
+    "k": 1,
+    "w": 512,
+    "seed": 130041,
+    "outcomes": {
+      "fp16": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "promotion": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "topk": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "reshape": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "combined": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      },
+      "int32": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      }
+    }
+  },
+  {
+    "id": "cross_tile_boundary_W512_K10",
+    "family": "cross_tile_boundary",
+    "n": 1025,
+    "k": 10,
+    "w": 512,
+    "seed": 130047,
+    "outcomes": {
+      "fp16": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "promotion": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "topk": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "reshape": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "combined": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      },
+      "int32": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      }
+    }
+  },
+  {
+    "id": "cross_tile_boundary_W512_K100",
+    "family": "cross_tile_boundary",
+    "n": 1025,
+    "k": 100,
+    "w": 512,
+    "seed": 130053,
+    "outcomes": {
+      "fp16": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "promotion": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "topk": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 6
+      },
+      "reshape": {
+        "calls": 6,
+        "membership_failures": 6,
+        "value_failures": 0
+      },
+      "combined": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      },
+      "int32": {
+        "calls": 6,
+        "membership_failures": 0,
+        "value_failures": 0
+      }
+    }
+  }
+]

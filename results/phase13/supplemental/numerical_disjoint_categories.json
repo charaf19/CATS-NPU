@@ -1,0 +1,2238 @@
+{
+  "note": "Post-freeze descriptive partition by first failed check; categories are not independent defects",
+  "rows": [
+    {
+      "configuration": "combined",
+      "family": "cross_tile_boundary",
+      "pass": 54
+    },
+    {
+      "configuration": "combined",
+      "family": "mixed_ties_extremes",
+      "pass": 54
+    },
+    {
+      "configuration": "combined",
+      "family": "negative_subnormal",
+      "pass": 54
+    },
+    {
+      "configuration": "combined",
+      "family": "normal_neighbors",
+      "pass": 54
+    },
+    {
+      "configuration": "combined",
+      "family": "positive_subnormal",
+      "pass": 54
+    },
+    {
+      "configuration": "combined",
+      "family": "signed_zero",
+      "pass": 54
+    },
+    {
+      "configuration": "fp16",
+      "family": "cross_tile_boundary",
+      "wrong_membership": 54
+    },
+    {
+      "configuration": "fp16",
+      "family": "mixed_ties_extremes",
+      "pass": 42,
+      "wrong_source_order_only": 6,
+      "wrong_membership": 6
+    },
+    {
+      "configuration": "fp16",
+      "family": "negative_subnormal",
+      "wrong_membership": 54
+    },
+    {
+      "configuration": "fp16",
+      "family": "normal_neighbors",
+      "pass": 54
+    },
+    {
+      "configuration": "fp16",
+      "family": "positive_subnormal",
+      "wrong_membership": 54
+    },
+    {
+      "configuration": "fp16",
+      "family": "signed_zero",
+      "pass": 54
+    },
+    {
+      "configuration": "int32",
+      "family": "cross_tile_boundary",
+      "pass": 54
+    },
+    {
+      "configuration": "int32",
+      "family": "mixed_ties_extremes",
+      "pass": 54
+    },
+    {
+      "configuration": "int32",
+      "family": "negative_subnormal",
+      "pass": 54
+    },
+    {
+      "configuration": "int32",
+      "family": "normal_neighbors",
+      "pass": 54
+    },
+    {
+      "configuration": "int32",
+      "family": "positive_subnormal",
+      "pass": 54
+    },
+    {
+      "configuration": "int32",
+      "family": "signed_zero",
+      "pass": 54
+    },
+    {
+      "configuration": "promotion",
+      "family": "cross_tile_boundary",
+      "wrong_membership": 54
+    },
+    {
+      "configuration": "promotion",
+      "family": "mixed_ties_extremes",
+      "pass": 42,
+      "wrong_source_order_only": 6,
+      "wrong_membership": 6
+    },
+    {
+      "configuration": "promotion",
+      "family": "negative_subnormal",
+      "wrong_membership": 54
+    },
+    {
+      "configuration": "promotion",
+      "family": "normal_neighbors",
+      "pass": 54
+    },
+    {
+      "configuration": "promotion",
+      "family": "positive_subnormal",
+      "wrong_membership": 54
+    },
+    {
+      "configuration": "promotion",
+      "family": "signed_zero",
+      "pass": 54
+    },
+    {
+      "configuration": "reshape",
+      "family": "cross_tile_boundary",
+      "wrong_membership": 54
+    },
+    {
+      "configuration": "reshape",
+      "family": "mixed_ties_extremes",
+      "pass": 42,
+      "wrong_source_order_only": 6,
+      "wrong_membership": 6
+    },
+    {
+      "configuration": "reshape",
+      "family": "negative_subnormal",
+      "wrong_membership": 54
+    },
+    {
+      "configuration": "reshape",
+      "family": "normal_neighbors",
+      "pass": 54
+    },
+    {
+      "configuration": "reshape",
+      "family": "positive_subnormal",
+      "wrong_membership": 54
+    },
+    {
+      "configuration": "reshape",
+      "family": "signed_zero",
+      "pass": 54
+    },
+    {
+      "configuration": "topk",
+      "family": "cross_tile_boundary",
+      "wrong_membership": 54
+    },
+    {
+      "configuration": "topk",
+      "family": "mixed_ties_extremes",
+      "pass": 42,
+      "wrong_values_only_after_valid_membership": 12
+    },
+    {
+      "configuration": "topk",
+      "family": "negative_subnormal",
+      "wrong_values_only_after_valid_membership": 6,
+      "wrong_membership": 48
+    },
+    {
+      "configuration": "topk",
+      "family": "normal_neighbors",
+      "pass": 54
+    },
+    {
+      "configuration": "topk",
+      "family": "positive_subnormal",
+      "wrong_membership": 42,
+      "wrong_values_only_after_valid_membership": 12
+    },
+    {
+      "configuration": "topk",
+      "family": "signed_zero",
+      "pass": 54
+    }
+  ],
+  "distinct_raw_outputs_per_case": [
+    {
+      "configuration": "combined",
+      "case_id": "cross_tile_boundary_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "cross_tile_boundary_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "cross_tile_boundary_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "cross_tile_boundary_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "cross_tile_boundary_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "cross_tile_boundary_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "cross_tile_boundary_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "cross_tile_boundary_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "cross_tile_boundary_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "mixed_ties_extremes_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "mixed_ties_extremes_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "mixed_ties_extremes_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "mixed_ties_extremes_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "mixed_ties_extremes_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "mixed_ties_extremes_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "mixed_ties_extremes_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "mixed_ties_extremes_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "mixed_ties_extremes_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "negative_subnormal_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "negative_subnormal_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "negative_subnormal_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "negative_subnormal_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "negative_subnormal_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "negative_subnormal_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "negative_subnormal_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "negative_subnormal_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "negative_subnormal_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "normal_neighbors_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "normal_neighbors_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "normal_neighbors_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "normal_neighbors_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "normal_neighbors_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "normal_neighbors_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "normal_neighbors_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "normal_neighbors_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "normal_neighbors_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "positive_subnormal_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "positive_subnormal_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "positive_subnormal_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "positive_subnormal_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "positive_subnormal_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "positive_subnormal_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "positive_subnormal_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "positive_subnormal_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "positive_subnormal_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "signed_zero_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "signed_zero_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "signed_zero_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "signed_zero_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "signed_zero_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "signed_zero_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "signed_zero_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "signed_zero_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "combined",
+      "case_id": "signed_zero_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "cross_tile_boundary_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "cross_tile_boundary_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "cross_tile_boundary_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "cross_tile_boundary_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "cross_tile_boundary_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "cross_tile_boundary_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "cross_tile_boundary_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "cross_tile_boundary_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "cross_tile_boundary_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "mixed_ties_extremes_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "mixed_ties_extremes_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "mixed_ties_extremes_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "mixed_ties_extremes_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "mixed_ties_extremes_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "mixed_ties_extremes_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "mixed_ties_extremes_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "mixed_ties_extremes_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "mixed_ties_extremes_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "negative_subnormal_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "negative_subnormal_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "negative_subnormal_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "negative_subnormal_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "negative_subnormal_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "negative_subnormal_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "negative_subnormal_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "negative_subnormal_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "negative_subnormal_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "normal_neighbors_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "normal_neighbors_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "normal_neighbors_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "normal_neighbors_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "normal_neighbors_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "normal_neighbors_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "normal_neighbors_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "normal_neighbors_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "normal_neighbors_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "positive_subnormal_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "positive_subnormal_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "positive_subnormal_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "positive_subnormal_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "positive_subnormal_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "positive_subnormal_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "positive_subnormal_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "positive_subnormal_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "positive_subnormal_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "signed_zero_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "signed_zero_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "signed_zero_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "signed_zero_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "signed_zero_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "signed_zero_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "signed_zero_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "signed_zero_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "fp16",
+      "case_id": "signed_zero_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "cross_tile_boundary_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "cross_tile_boundary_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "cross_tile_boundary_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "cross_tile_boundary_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "cross_tile_boundary_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "cross_tile_boundary_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "cross_tile_boundary_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "cross_tile_boundary_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "cross_tile_boundary_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "mixed_ties_extremes_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "mixed_ties_extremes_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "mixed_ties_extremes_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "mixed_ties_extremes_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "mixed_ties_extremes_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "mixed_ties_extremes_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "mixed_ties_extremes_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "mixed_ties_extremes_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "mixed_ties_extremes_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "negative_subnormal_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "negative_subnormal_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "negative_subnormal_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "negative_subnormal_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "negative_subnormal_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "negative_subnormal_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "negative_subnormal_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "negative_subnormal_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "negative_subnormal_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "normal_neighbors_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "normal_neighbors_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "normal_neighbors_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "normal_neighbors_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "normal_neighbors_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "normal_neighbors_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "normal_neighbors_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "normal_neighbors_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "normal_neighbors_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "positive_subnormal_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "positive_subnormal_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "positive_subnormal_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "positive_subnormal_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "positive_subnormal_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "positive_subnormal_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "positive_subnormal_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "positive_subnormal_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "positive_subnormal_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "signed_zero_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "signed_zero_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "signed_zero_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "signed_zero_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "signed_zero_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "signed_zero_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "signed_zero_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "signed_zero_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "int32",
+      "case_id": "signed_zero_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "cross_tile_boundary_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "cross_tile_boundary_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "cross_tile_boundary_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "cross_tile_boundary_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "cross_tile_boundary_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "cross_tile_boundary_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "cross_tile_boundary_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "cross_tile_boundary_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "cross_tile_boundary_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "mixed_ties_extremes_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "mixed_ties_extremes_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "mixed_ties_extremes_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "mixed_ties_extremes_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "mixed_ties_extremes_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "mixed_ties_extremes_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "mixed_ties_extremes_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "mixed_ties_extremes_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "mixed_ties_extremes_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "negative_subnormal_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "negative_subnormal_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "negative_subnormal_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "negative_subnormal_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "negative_subnormal_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "negative_subnormal_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "negative_subnormal_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "negative_subnormal_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "negative_subnormal_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "normal_neighbors_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "normal_neighbors_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "normal_neighbors_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "normal_neighbors_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "normal_neighbors_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "normal_neighbors_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "normal_neighbors_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "normal_neighbors_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "normal_neighbors_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "positive_subnormal_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "positive_subnormal_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "positive_subnormal_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "positive_subnormal_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "positive_subnormal_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "positive_subnormal_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "positive_subnormal_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "positive_subnormal_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "positive_subnormal_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "signed_zero_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "signed_zero_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "signed_zero_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "signed_zero_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "signed_zero_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "signed_zero_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "signed_zero_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "signed_zero_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "promotion",
+      "case_id": "signed_zero_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "cross_tile_boundary_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "cross_tile_boundary_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "cross_tile_boundary_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "cross_tile_boundary_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "cross_tile_boundary_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "cross_tile_boundary_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "cross_tile_boundary_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "cross_tile_boundary_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "cross_tile_boundary_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "mixed_ties_extremes_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "mixed_ties_extremes_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "mixed_ties_extremes_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "mixed_ties_extremes_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "mixed_ties_extremes_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "mixed_ties_extremes_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "mixed_ties_extremes_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "mixed_ties_extremes_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "mixed_ties_extremes_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "negative_subnormal_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "negative_subnormal_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "negative_subnormal_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "negative_subnormal_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "negative_subnormal_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "negative_subnormal_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "negative_subnormal_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "negative_subnormal_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "negative_subnormal_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "normal_neighbors_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "normal_neighbors_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "normal_neighbors_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "normal_neighbors_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "normal_neighbors_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "normal_neighbors_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "normal_neighbors_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "normal_neighbors_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "normal_neighbors_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "positive_subnormal_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "positive_subnormal_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "positive_subnormal_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "positive_subnormal_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "positive_subnormal_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "positive_subnormal_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "positive_subnormal_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "positive_subnormal_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "positive_subnormal_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "signed_zero_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "signed_zero_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "signed_zero_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "signed_zero_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "signed_zero_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "signed_zero_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "signed_zero_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "signed_zero_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "reshape",
+      "case_id": "signed_zero_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "cross_tile_boundary_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "cross_tile_boundary_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "cross_tile_boundary_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "cross_tile_boundary_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "cross_tile_boundary_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "cross_tile_boundary_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "cross_tile_boundary_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "cross_tile_boundary_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "cross_tile_boundary_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "mixed_ties_extremes_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "mixed_ties_extremes_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "mixed_ties_extremes_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "mixed_ties_extremes_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "mixed_ties_extremes_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "mixed_ties_extremes_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "mixed_ties_extremes_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "mixed_ties_extremes_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "mixed_ties_extremes_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "negative_subnormal_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "negative_subnormal_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "negative_subnormal_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "negative_subnormal_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "negative_subnormal_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "negative_subnormal_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "negative_subnormal_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "negative_subnormal_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "negative_subnormal_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "normal_neighbors_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "normal_neighbors_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "normal_neighbors_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "normal_neighbors_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "normal_neighbors_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "normal_neighbors_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "normal_neighbors_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "normal_neighbors_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "normal_neighbors_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "positive_subnormal_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "positive_subnormal_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "positive_subnormal_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "positive_subnormal_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "positive_subnormal_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "positive_subnormal_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "positive_subnormal_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "positive_subnormal_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "positive_subnormal_W512_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "signed_zero_W128_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "signed_zero_W128_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "signed_zero_W128_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "signed_zero_W256_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "signed_zero_W256_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "signed_zero_W256_K100",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "signed_zero_W512_K1",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "signed_zero_W512_K10",
+      "distinct_outputs": 1
+    },
+    {
+      "configuration": "topk",
+      "case_id": "signed_zero_W512_K100",
+      "distinct_outputs": 1
+    }
+  ],
+  "failed_case_ids": [
+    {
+      "configuration": "fp16",
+      "session": 1,
+      "cases": [
+        "cross_tile_boundary_W128_K1",
+        "cross_tile_boundary_W128_K10",
+        "cross_tile_boundary_W128_K100",
+        "cross_tile_boundary_W256_K1",
+        "cross_tile_boundary_W256_K10",
+        "cross_tile_boundary_W256_K100",
+        "cross_tile_boundary_W512_K1",
+        "cross_tile_boundary_W512_K10",
+        "cross_tile_boundary_W512_K100",
+        "mixed_ties_extremes_W128_K100",
+        "mixed_ties_extremes_W256_K100",
+        "negative_subnormal_W128_K1",
+        "negative_subnormal_W128_K10",
+        "negative_subnormal_W128_K100",
+        "negative_subnormal_W256_K1",
+        "negative_subnormal_W256_K10",
+        "negative_subnormal_W256_K100",
+        "negative_subnormal_W512_K1",
+        "negative_subnormal_W512_K10",
+        "negative_subnormal_W512_K100",
+        "positive_subnormal_W128_K1",
+        "positive_subnormal_W128_K10",
+        "positive_subnormal_W128_K100",
+        "positive_subnormal_W256_K1",
+        "positive_subnormal_W256_K10",
+        "positive_subnormal_W256_K100",
+        "positive_subnormal_W512_K1",
+        "positive_subnormal_W512_K10",
+        "positive_subnormal_W512_K100"
+      ]
+    },
+    {
+      "configuration": "fp16",
+      "session": 2,
+      "cases": [
+        "cross_tile_boundary_W128_K1",
+        "cross_tile_boundary_W128_K10",
+        "cross_tile_boundary_W128_K100",
+        "cross_tile_boundary_W256_K1",
+        "cross_tile_boundary_W256_K10",
+        "cross_tile_boundary_W256_K100",
+        "cross_tile_boundary_W512_K1",
+        "cross_tile_boundary_W512_K10",
+        "cross_tile_boundary_W512_K100",
+        "mixed_ties_extremes_W128_K100",
+        "mixed_ties_extremes_W256_K100",
+        "negative_subnormal_W128_K1",
+        "negative_subnormal_W128_K10",
+        "negative_subnormal_W128_K100",
+        "negative_subnormal_W256_K1",
+        "negative_subnormal_W256_K10",
+        "negative_subnormal_W256_K100",
+        "negative_subnormal_W512_K1",
+        "negative_subnormal_W512_K10",
+        "negative_subnormal_W512_K100",
+        "positive_subnormal_W128_K1",
+        "positive_subnormal_W128_K10",
+        "positive_subnormal_W128_K100",
+        "positive_subnormal_W256_K1",
+        "positive_subnormal_W256_K10",
+        "positive_subnormal_W256_K100",
+        "positive_subnormal_W512_K1",
+        "positive_subnormal_W512_K10",
+        "positive_subnormal_W512_K100"
+      ]
+    },
+    {
+      "configuration": "fp16",
+      "session": 3,
+      "cases": [
+        "cross_tile_boundary_W128_K1",
+        "cross_tile_boundary_W128_K10",
+        "cross_tile_boundary_W128_K100",
+        "cross_tile_boundary_W256_K1",
+        "cross_tile_boundary_W256_K10",
+        "cross_tile_boundary_W256_K100",
+        "cross_tile_boundary_W512_K1",
+        "cross_tile_boundary_W512_K10",
+        "cross_tile_boundary_W512_K100",
+        "mixed_ties_extremes_W128_K100",
+        "mixed_ties_extremes_W256_K100",
+        "negative_subnormal_W128_K1",
+        "negative_subnormal_W128_K10",
+        "negative_subnormal_W128_K100",
+        "negative_subnormal_W256_K1",
+        "negative_subnormal_W256_K10",
+        "negative_subnormal_W256_K100",
+        "negative_subnormal_W512_K1",
+        "negative_subnormal_W512_K10",
+        "negative_subnormal_W512_K100",
+        "positive_subnormal_W128_K1",
+        "positive_subnormal_W128_K10",
+        "positive_subnormal_W128_K100",
+        "positive_subnormal_W256_K1",
+        "positive_subnormal_W256_K10",
+        "positive_subnormal_W256_K100",
+        "positive_subnormal_W512_K1",
+        "positive_subnormal_W512_K10",
+        "positive_subnormal_W512_K100"
+      ]
+    },
+    {
+      "configuration": "promotion",
+      "session": 1,
+      "cases": [
+        "cross_tile_boundary_W128_K1",
+        "cross_tile_boundary_W128_K10",
+        "cross_tile_boundary_W128_K100",
+        "cross_tile_boundary_W256_K1",
+        "cross_tile_boundary_W256_K10",
+        "cross_tile_boundary_W256_K100",
+        "cross_tile_boundary_W512_K1",
+        "cross_tile_boundary_W512_K10",
+        "cross_tile_boundary_W512_K100",
+        "mixed_ties_extremes_W128_K100",
+        "mixed_ties_extremes_W256_K100",
+        "negative_subnormal_W128_K1",
+        "negative_subnormal_W128_K10",
+        "negative_subnormal_W128_K100",
+        "negative_subnormal_W256_K1",
+        "negative_subnormal_W256_K10",
+        "negative_subnormal_W256_K100",
+        "negative_subnormal_W512_K1",
+        "negative_subnormal_W512_K10",
+        "negative_subnormal_W512_K100",
+        "positive_subnormal_W128_K1",
+        "positive_subnormal_W128_K10",
+        "positive_subnormal_W128_K100",
+        "positive_subnormal_W256_K1",
+        "positive_subnormal_W256_K10",
+        "positive_subnormal_W256_K100",
+        "positive_subnormal_W512_K1",
+        "positive_subnormal_W512_K10",
+        "positive_subnormal_W512_K100"
+      ]
+    },
+    {
+      "configuration": "promotion",
+      "session": 2,
+      "cases": [
+        "cross_tile_boundary_W128_K1",
+        "cross_tile_boundary_W128_K10",
+        "cross_tile_boundary_W128_K100",
+        "cross_tile_boundary_W256_K1",
+        "cross_tile_boundary_W256_K10",
+        "cross_tile_boundary_W256_K100",
+        "cross_tile_boundary_W512_K1",
+        "cross_tile_boundary_W512_K10",
+        "cross_tile_boundary_W512_K100",
+        "mixed_ties_extremes_W128_K100",
+        "mixed_ties_extremes_W256_K100",
+        "negative_subnormal_W128_K1",
+        "negative_subnormal_W128_K10",
+        "negative_subnormal_W128_K100",
+        "negative_subnormal_W256_K1",
+        "negative_subnormal_W256_K10",
+        "negative_subnormal_W256_K100",
+        "negative_subnormal_W512_K1",
+        "negative_subnormal_W512_K10",
+        "negative_subnormal_W512_K100",
+        "positive_subnormal_W128_K1",
+        "positive_subnormal_W128_K10",
+        "positive_subnormal_W128_K100",
+        "positive_subnormal_W256_K1",
+        "positive_subnormal_W256_K10",
+        "positive_subnormal_W256_K100",
+        "positive_subnormal_W512_K1",
+        "positive_subnormal_W512_K10",
+        "positive_subnormal_W512_K100"
+      ]
+    },
+    {
+      "configuration": "promotion",
+      "session": 3,
+      "cases": [
+        "cross_tile_boundary_W128_K1",
+        "cross_tile_boundary_W128_K10",
+        "cross_tile_boundary_W128_K100",
+        "cross_tile_boundary_W256_K1",
+        "cross_tile_boundary_W256_K10",
+        "cross_tile_boundary_W256_K100",
+        "cross_tile_boundary_W512_K1",
+        "cross_tile_boundary_W512_K10",
+        "cross_tile_boundary_W512_K100",
+        "mixed_ties_extremes_W128_K100",
+        "mixed_ties_extremes_W256_K100",
+        "negative_subnormal_W128_K1",
+        "negative_subnormal_W128_K10",
+        "negative_subnormal_W128_K100",
+        "negative_subnormal_W256_K1",
+        "negative_subnormal_W256_K10",
+        "negative_subnormal_W256_K100",
+        "negative_subnormal_W512_K1",
+        "negative_subnormal_W512_K10",
+        "negative_subnormal_W512_K100",
+        "positive_subnormal_W128_K1",
+        "positive_subnormal_W128_K10",
+        "positive_subnormal_W128_K100",
+        "positive_subnormal_W256_K1",
+        "positive_subnormal_W256_K10",
+        "positive_subnormal_W256_K100",
+        "positive_subnormal_W512_K1",
+        "positive_subnormal_W512_K10",
+        "positive_subnormal_W512_K100"
+      ]
+    },
+    {
+      "configuration": "reshape",
+      "session": 1,
+      "cases": [
+        "cross_tile_boundary_W128_K1",
+        "cross_tile_boundary_W128_K10",
+        "cross_tile_boundary_W128_K100",
+        "cross_tile_boundary_W256_K1",
+        "cross_tile_boundary_W256_K10",
+        "cross_tile_boundary_W256_K100",
+        "cross_tile_boundary_W512_K1",
+        "cross_tile_boundary_W512_K10",
+        "cross_tile_boundary_W512_K100",
+        "mixed_ties_extremes_W128_K100",
+        "mixed_ties_extremes_W256_K100",
+        "negative_subnormal_W128_K1",
+        "negative_subnormal_W128_K10",
+        "negative_subnormal_W128_K100",
+        "negative_subnormal_W256_K1",
+        "negative_subnormal_W256_K10",
+        "negative_subnormal_W256_K100",
+        "negative_subnormal_W512_K1",
+        "negative_subnormal_W512_K10",
+        "negative_subnormal_W512_K100",
+        "positive_subnormal_W128_K1",
+        "positive_subnormal_W128_K10",
+        "positive_subnormal_W128_K100",
+        "positive_subnormal_W256_K1",
+        "positive_subnormal_W256_K10",
+        "positive_subnormal_W256_K100",
+        "positive_subnormal_W512_K1",
+        "positive_subnormal_W512_K10",
+        "positive_subnormal_W512_K100"
+      ]
+    },
+    {
+      "configuration": "reshape",
+      "session": 2,
+      "cases": [
+        "cross_tile_boundary_W128_K1",
+        "cross_tile_boundary_W128_K10",
+        "cross_tile_boundary_W128_K100",
+        "cross_tile_boundary_W256_K1",
+        "cross_tile_boundary_W256_K10",
+        "cross_tile_boundary_W256_K100",
+        "cross_tile_boundary_W512_K1",
+        "cross_tile_boundary_W512_K10",
+        "cross_tile_boundary_W512_K100",
+        "mixed_ties_extremes_W128_K100",
+        "mixed_ties_extremes_W256_K100",
+        "negative_subnormal_W128_K1",
+        "negative_subnormal_W128_K10",
+        "negative_subnormal_W128_K100",
+        "negative_subnormal_W256_K1",
+        "negative_subnormal_W256_K10",
+        "negative_subnormal_W256_K100",
+        "negative_subnormal_W512_K1",
+        "negative_subnormal_W512_K10",
+        "negative_subnormal_W512_K100",
+        "positive_subnormal_W128_K1",
+        "positive_subnormal_W128_K10",
+        "positive_subnormal_W128_K100",
+        "positive_subnormal_W256_K1",
+        "positive_subnormal_W256_K10",
+        "positive_subnormal_W256_K100",
+        "positive_subnormal_W512_K1",
+        "positive_subnormal_W512_K10",
+        "positive_subnormal_W512_K100"
+      ]
+    },
+    {
+      "configuration": "reshape",
+      "session": 3,
+      "cases": [
+        "cross_tile_boundary_W128_K1",
+        "cross_tile_boundary_W128_K10",
+        "cross_tile_boundary_W128_K100",
+        "cross_tile_boundary_W256_K1",
+        "cross_tile_boundary_W256_K10",
+        "cross_tile_boundary_W256_K100",
+        "cross_tile_boundary_W512_K1",
+        "cross_tile_boundary_W512_K10",
+        "cross_tile_boundary_W512_K100",
+        "mixed_ties_extremes_W128_K100",
+        "mixed_ties_extremes_W256_K100",
+        "negative_subnormal_W128_K1",
+        "negative_subnormal_W128_K10",
+        "negative_subnormal_W128_K100",
+        "negative_subnormal_W256_K1",
+        "negative_subnormal_W256_K10",
+        "negative_subnormal_W256_K100",
+        "negative_subnormal_W512_K1",
+        "negative_subnormal_W512_K10",
+        "negative_subnormal_W512_K100",
+        "positive_subnormal_W128_K1",
+        "positive_subnormal_W128_K10",
+        "positive_subnormal_W128_K100",
+        "positive_subnormal_W256_K1",
+        "positive_subnormal_W256_K10",
+        "positive_subnormal_W256_K100",
+        "positive_subnormal_W512_K1",
+        "positive_subnormal_W512_K10",
+        "positive_subnormal_W512_K100"
+      ]
+    },
+    {
+      "configuration": "topk",
+      "session": 1,
+      "cases": [
+        "cross_tile_boundary_W128_K1",
+        "cross_tile_boundary_W128_K10",
+        "cross_tile_boundary_W128_K100",
+        "cross_tile_boundary_W256_K1",
+        "cross_tile_boundary_W256_K10",
+        "cross_tile_boundary_W256_K100",
+        "cross_tile_boundary_W512_K1",
+        "cross_tile_boundary_W512_K10",
+        "cross_tile_boundary_W512_K100",
+        "mixed_ties_extremes_W128_K100",
+        "mixed_ties_extremes_W256_K100",
+        "negative_subnormal_W128_K1",
+        "negative_subnormal_W128_K10",
+        "negative_subnormal_W128_K100",
+        "negative_subnormal_W256_K1",
+        "negative_subnormal_W256_K10",
+        "negative_subnormal_W256_K100",
+        "negative_subnormal_W512_K1",
+        "negative_subnormal_W512_K10",
+        "negative_subnormal_W512_K100",
+        "positive_subnormal_W128_K1",
+        "positive_subnormal_W128_K10",
+        "positive_subnormal_W128_K100",
+        "positive_subnormal_W256_K1",
+        "positive_subnormal_W256_K10",
+        "positive_subnormal_W256_K100",
+        "positive_subnormal_W512_K1",
+        "positive_subnormal_W512_K10",
+        "positive_subnormal_W512_K100"
+      ]
+    },
+    {
+      "configuration": "topk",
+      "session": 2,
+      "cases": [
+        "cross_tile_boundary_W128_K1",
+        "cross_tile_boundary_W128_K10",
+        "cross_tile_boundary_W128_K100",
+        "cross_tile_boundary_W256_K1",
+        "cross_tile_boundary_W256_K10",
+        "cross_tile_boundary_W256_K100",
+        "cross_tile_boundary_W512_K1",
+        "cross_tile_boundary_W512_K10",
+        "cross_tile_boundary_W512_K100",
+        "mixed_ties_extremes_W128_K100",
+        "mixed_ties_extremes_W256_K100",
+        "negative_subnormal_W128_K1",
+        "negative_subnormal_W128_K10",
+        "negative_subnormal_W128_K100",
+        "negative_subnormal_W256_K1",
+        "negative_subnormal_W256_K10",
+        "negative_subnormal_W256_K100",
+        "negative_subnormal_W512_K1",
+        "negative_subnormal_W512_K10",
+        "negative_subnormal_W512_K100",
+        "positive_subnormal_W128_K1",
+        "positive_subnormal_W128_K10",
+        "positive_subnormal_W128_K100",
+        "positive_subnormal_W256_K1",
+        "positive_subnormal_W256_K10",
+        "positive_subnormal_W256_K100",
+        "positive_subnormal_W512_K1",
+        "positive_subnormal_W512_K10",
+        "positive_subnormal_W512_K100"
+      ]
+    },
+    {
+      "configuration": "topk",
+      "session": 3,
+      "cases": [
+        "cross_tile_boundary_W128_K1",
+        "cross_tile_boundary_W128_K10",
+        "cross_tile_boundary_W128_K100",
+        "cross_tile_boundary_W256_K1",
+        "cross_tile_boundary_W256_K10",
+        "cross_tile_boundary_W256_K100",
+        "cross_tile_boundary_W512_K1",
+        "cross_tile_boundary_W512_K10",
+        "cross_tile_boundary_W512_K100",
+        "mixed_ties_extremes_W128_K100",
+        "mixed_ties_extremes_W256_K100",
+        "negative_subnormal_W128_K1",
+        "negative_subnormal_W128_K10",
+        "negative_subnormal_W128_K100",
+        "negative_subnormal_W256_K1",
+        "negative_subnormal_W256_K10",
+        "negative_subnormal_W256_K100",
+        "negative_subnormal_W512_K1",
+        "negative_subnormal_W512_K10",
+        "negative_subnormal_W512_K100",
+        "positive_subnormal_W128_K1",
+        "positive_subnormal_W128_K10",
+        "positive_subnormal_W128_K100",
+        "positive_subnormal_W256_K1",
+        "positive_subnormal_W256_K10",
+        "positive_subnormal_W256_K100",
+        "positive_subnormal_W512_K1",
+        "positive_subnormal_W512_K10",
+        "positive_subnormal_W512_K100"
+      ]
+    }
+  ]
+}

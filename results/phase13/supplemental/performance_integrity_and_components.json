@@ -1,0 +1,928 @@
+{
+  "counts": {
+    "observations": 20736,
+    "observations_rejections": 0,
+    "observations_accepted_errors": 0,
+    "warmups": 6912,
+    "warmups_rejections": 0,
+    "warmups_accepted_errors": 0
+  },
+  "balanced_positions_verified": true,
+  "placement_verified": true,
+  "fresh_score_domain": [
+    {
+      "dataset": "sift",
+      "query_id": "4337",
+      "n": 1000000,
+      "subnormal_scores": 0,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "sift",
+      "query_id": "3620",
+      "n": 1000000,
+      "subnormal_scores": 0,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "sift",
+      "query_id": "701",
+      "n": 1000000,
+      "subnormal_scores": 0,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "sift",
+      "query_id": "3111",
+      "n": 1000000,
+      "subnormal_scores": 0,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "sift",
+      "query_id": "2262",
+      "n": 1000000,
+      "subnormal_scores": 0,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "sift",
+      "query_id": "8005",
+      "n": 1000000,
+      "subnormal_scores": 0,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "sift",
+      "query_id": "2526",
+      "n": 1000000,
+      "subnormal_scores": 0,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "sift",
+      "query_id": "5971",
+      "n": 1000000,
+      "subnormal_scores": 0,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "832",
+      "n": 5183,
+      "subnormal_scores": 0,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1382",
+      "n": 5183,
+      "subnormal_scores": 0,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "830",
+      "n": 5183,
+      "subnormal_scores": 0,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "904",
+      "n": 5183,
+      "subnormal_scores": 0,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1363",
+      "n": 5183,
+      "subnormal_scores": 1,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1319",
+      "n": 5183,
+      "subnormal_scores": 0,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "578",
+      "n": 5183,
+      "subnormal_scores": 1,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "957",
+      "n": 5183,
+      "subnormal_scores": 3,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "2010",
+      "n": 57638,
+      "subnormal_scores": 25,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "8947",
+      "n": 57638,
+      "subnormal_scores": 31,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "5460",
+      "n": 57638,
+      "subnormal_scores": 38,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "4447",
+      "n": 57638,
+      "subnormal_scores": 37,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "4523",
+      "n": 57638,
+      "subnormal_scores": 15,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "9391",
+      "n": 57638,
+      "subnormal_scores": 20,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "8351",
+      "n": 57638,
+      "subnormal_scores": 40,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "7344",
+      "n": 57638,
+      "subnormal_scores": 28,
+      "zero_scores": 0,
+      "subnormal_top100": 0
+    }
+  ],
+  "components": [
+    {
+      "dataset": "fiqa",
+      "method": "cpp",
+      "field": "backend_execute_sync_ns",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "cpp",
+      "field": "backend_validation_ns",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "cpp",
+      "field": "cpu_tie_repairs",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "cpp",
+      "field": "device_submissions",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "cpp",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 1496550.0,
+      "sum": 829077900,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "cuda",
+      "field": "backend_execute_sync_ns",
+      "observations": 576,
+      "median": 1524400.0,
+      "sum": 1023365400,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "cuda",
+      "field": "backend_validation_ns",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "cuda",
+      "field": "cpu_tie_repairs",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "cuda",
+      "field": "device_submissions",
+      "observations": 576,
+      "median": 1.0,
+      "sum": 576,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "cuda",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 1860750.0,
+      "sum": 1200625600,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "fp16_static",
+      "field": "certificate_ns",
+      "observations": 576,
+      "median": 924850.0,
+      "sum": 523887400,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "fp16_static",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 5186900.0,
+      "sum": 2984840600,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "fp16_static",
+      "field": "infer_ns",
+      "observations": 576,
+      "median": 4060550.0,
+      "sum": 2352092100,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "fp16_static",
+      "field": "input_preparation_ns",
+      "observations": 576,
+      "median": 33150.0,
+      "sum": 20880000,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "fp32",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 5118500.0,
+      "sum": 2957632000,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "fp32",
+      "field": "infer_ns",
+      "observations": 576,
+      "median": 4028700.0,
+      "sum": 2330844300,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "fp32",
+      "field": "input_preparation_ns",
+      "observations": 576,
+      "median": 120850.0,
+      "sum": 72827800,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "fp32",
+      "field": "output_and_certificate_ns",
+      "observations": 576,
+      "median": 971300.0,
+      "sum": 549229500,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "int32",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 5286150.0,
+      "sum": 3050826200,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "native_npu",
+      "field": "backend_execute_sync_ns",
+      "observations": 576,
+      "median": 6696050.0,
+      "sum": 3842965200,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "native_npu",
+      "field": "backend_validation_ns",
+      "observations": 576,
+      "median": 12398100.0,
+      "sum": 7046770500,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "native_npu",
+      "field": "cpu_tie_repairs",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "native_npu",
+      "field": "device_submissions",
+      "observations": 576,
+      "median": 1.0,
+      "sum": 576,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "fiqa",
+      "method": "native_npu",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 20337550.0,
+      "sum": 11589390400,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "cpp",
+      "field": "backend_execute_sync_ns",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "cpp",
+      "field": "backend_validation_ns",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "cpp",
+      "field": "cpu_tie_repairs",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "cpp",
+      "field": "device_submissions",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "cpp",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 189850.0,
+      "sum": 111326800,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "cuda",
+      "field": "backend_execute_sync_ns",
+      "observations": 576,
+      "median": 1015750.0,
+      "sum": 751496500,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "cuda",
+      "field": "backend_validation_ns",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "cuda",
+      "field": "cpu_tie_repairs",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "cuda",
+      "field": "device_submissions",
+      "observations": 576,
+      "median": 1.0,
+      "sum": 576,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "cuda",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 1095050.0,
+      "sum": 798647300,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "fp16_static",
+      "field": "certificate_ns",
+      "observations": 576,
+      "median": 163150.0,
+      "sum": 96576800,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "fp16_static",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 1361050.0,
+      "sum": 807745500,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "fp16_static",
+      "field": "infer_ns",
+      "observations": 576,
+      "median": 1129200.0,
+      "sum": 672910200,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "fp16_static",
+      "field": "input_preparation_ns",
+      "observations": 576,
+      "median": 14800.0,
+      "sum": 9110500,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "fp32",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 1340300.0,
+      "sum": 794009700,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "fp32",
+      "field": "infer_ns",
+      "observations": 576,
+      "median": 1120800.0,
+      "sum": 664075300,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "fp32",
+      "field": "input_preparation_ns",
+      "observations": 576,
+      "median": 21900.0,
+      "sum": 13022400,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "fp32",
+      "field": "output_and_certificate_ns",
+      "observations": 576,
+      "median": 190350.0,
+      "sum": 113923300,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "int32",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 1392400.0,
+      "sum": 821638100,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "native_npu",
+      "field": "backend_execute_sync_ns",
+      "observations": 576,
+      "median": 1336750.0,
+      "sum": 777416600,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "native_npu",
+      "field": "backend_validation_ns",
+      "observations": 576,
+      "median": 171750.0,
+      "sum": 298405600,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "native_npu",
+      "field": "cpu_tie_repairs",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "native_npu",
+      "field": "device_submissions",
+      "observations": 576,
+      "median": 1.0,
+      "sum": 576,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "scifact",
+      "method": "native_npu",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 2195450.0,
+      "sum": 1377827300,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "cpp",
+      "field": "backend_execute_sync_ns",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "cpp",
+      "field": "backend_validation_ns",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "cpp",
+      "field": "cpu_tie_repairs",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "cpp",
+      "field": "device_submissions",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "cpp",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 22253550.0,
+      "sum": 13136307700,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "cuda",
+      "field": "backend_execute_sync_ns",
+      "observations": 576,
+      "median": 3081050.0,
+      "sum": 1933994000,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "cuda",
+      "field": "backend_validation_ns",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "cuda",
+      "field": "cpu_tie_repairs",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "cuda",
+      "field": "device_submissions",
+      "observations": 576,
+      "median": 1.0,
+      "sum": 576,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "cuda",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 7170200.0,
+      "sum": 4268974000,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "fp16_static",
+      "field": "certificate_ns",
+      "observations": 576,
+      "median": 6824500.0,
+      "sum": 3815371000,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "fp16_static",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 33356300.0,
+      "sum": 19206924400,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "fp16_static",
+      "field": "infer_ns",
+      "observations": 576,
+      "median": 23605900.0,
+      "sum": 13704280500,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "fp16_static",
+      "field": "input_preparation_ns",
+      "observations": 576,
+      "median": 1108000.0,
+      "sum": 645490500,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "fp32",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 32270250.0,
+      "sum": 18671845200,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "fp32",
+      "field": "infer_ns",
+      "observations": 576,
+      "median": 23792200.0,
+      "sum": 13888427400,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "fp32",
+      "field": "input_preparation_ns",
+      "observations": 576,
+      "median": 1675050.0,
+      "sum": 967513800,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "fp32",
+      "field": "output_and_certificate_ns",
+      "observations": 576,
+      "median": 6740400.0,
+      "sum": 3809172100,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "int32",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 42503500.0,
+      "sum": 23991140800,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "native_npu",
+      "field": "backend_execute_sync_ns",
+      "observations": 576,
+      "median": 159866650.0,
+      "sum": 91848032100,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "native_npu",
+      "field": "backend_validation_ns",
+      "observations": 576,
+      "median": 6046900.0,
+      "sum": 3253661600,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "native_npu",
+      "field": "cpu_tie_repairs",
+      "observations": 576,
+      "median": 0.0,
+      "sum": 0,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "native_npu",
+      "field": "device_submissions",
+      "observations": 576,
+      "median": 1.0,
+      "sum": 576,
+      "unit": "count",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    },
+    {
+      "dataset": "sift",
+      "method": "native_npu",
+      "field": "elapsed_ns",
+      "observations": 576,
+      "median": 178695900.0,
+      "sum": 102473028200,
+      "unit": "nanoseconds",
+      "interpretation": "pooled descriptive; components are not independent inference costs"
+    }
+  ]
+}

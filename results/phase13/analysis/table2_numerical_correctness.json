@@ -1,0 +1,74 @@
+[
+  {
+    "configuration": "fp16",
+    "unique_cases": 54,
+    "sessions": 3,
+    "npu_calls": 324,
+    "membership_failures": 168,
+    "value_failures": 54,
+    "stable_sequence_failures": 174,
+    "complete_contract_failures": 174,
+    "errors": 0,
+    "cpu_reference_failures": 0
+  },
+  {
+    "configuration": "promotion",
+    "unique_cases": 54,
+    "sessions": 3,
+    "npu_calls": 324,
+    "membership_failures": 168,
+    "value_failures": 54,
+    "stable_sequence_failures": 174,
+    "complete_contract_failures": 174,
+    "errors": 0,
+    "cpu_reference_failures": 0
+  },
+  {
+    "configuration": "topk",
+    "unique_cases": 54,
+    "sessions": 3,
+    "npu_calls": 324,
+    "membership_failures": 144,
+    "value_failures": 174,
+    "stable_sequence_failures": 144,
+    "complete_contract_failures": 174,
+    "errors": 0,
+    "cpu_reference_failures": 0
+  },
+  {
+    "configuration": "reshape",
+    "unique_cases": 54,
+    "sessions": 3,
+    "npu_calls": 324,
+    "membership_failures": 168,
+    "value_failures": 54,
+    "stable_sequence_failures": 174,
+    "complete_contract_failures": 174,
+    "errors": 0,
+    "cpu_reference_failures": 0
+  },
+  {
+    "configuration": "combined",
+    "unique_cases": 54,
+    "sessions": 3,
+    "npu_calls": 324,
+    "membership_failures": 0,
+    "value_failures": 0,
+    "stable_sequence_failures": 0,
+    "complete_contract_failures": 0,
+    "errors": 0,
+    "cpu_reference_failures": 0
+  },
+  {
+    "configuration": "int32",
+    "unique_cases": 54,
+    "sessions": 3,
+    "npu_calls": 324,
+    "membership_failures": 0,
+    "value_failures": 0,
+    "stable_sequence_failures": 0,
+    "complete_contract_failures": 0,
+    "errors": 0,
+    "cpu_reference_failures": 0
+  }
+]
