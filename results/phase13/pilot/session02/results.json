@@ -1,0 +1,299 @@
+{
+  "status": "pilot, previously accessed development input only",
+  "environment": {
+    "timestamp_utc": "2026-11-03T14:16:40.491701+00:00",
+    "pid": 18940,
+    "source_revision": "342b3726f531143ab5aac1666f2ec79a9baea839",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.0",
+    "packages": {
+      "numpy": "2.4.6",
+      "openvino": "2026.4.1",
+      "torch": "2.11.0+cu128",
+      "sentence-transformers": "5.1.2",
+      "scipy": "1.17.1"
+    },
+    "devices": [
+      "CPU",
+      "GPU.0",
+      "GPU.1",
+      "NPU"
+    ],
+    "npu": {
+      "FULL_DEVICE_NAME": "Intel(R) AI Boost",
+      "DEVICE_ARCHITECTURE": "3720",
+      "NPU_DRIVER_VERSION": "1004512",
+      "NPU_COMPILER_VERSION": "458778"
+    },
+    "cuda_available": true,
+    "cuda_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "torch_threads": 16,
+    "power": {
+      "ac_connected": true,
+      "battery_percent": 100,
+      "battery_saver": false,
+      "power_plan": "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)"
+    }
+  },
+  "seed": 1302,
+  "observations": [
+    {
+      "method": "fp32",
+      "block": 0,
+      "elapsed_ns": 48360800,
+      "accepted": true,
+      "correct": true,
+      "error": null,
+      "indices": [
+        932085,
+        934876,
+        561813,
+        708177,
+        706771,
+        695756,
+        435345,
+        701258,
+        455537,
+        872728
+      ],
+      "input_preparation_ns": 3521700,
+      "infer_ns": 34408100,
+      "output_and_certificate_ns": 10410100
+    },
+    {
+      "method": "int32",
+      "block": 0,
+      "elapsed_ns": 57042100,
+      "accepted": true,
+      "correct": true,
+      "error": null,
+      "indices": [
+        932085,
+        934876,
+        561813,
+        708177,
+        706771,
+        695756,
+        435345,
+        701258,
+        455537,
+        872728
+      ]
+    },
+    {
+      "method": "fp32",
+      "block": 1,
+      "elapsed_ns": 48080300,
+      "accepted": true,
+      "correct": true,
+      "error": null,
+      "indices": [
+        932085,
+        934876,
+        561813,
+        708177,
+        706771,
+        695756,
+        435345,
+        701258,
+        455537,
+        872728
+      ],
+      "input_preparation_ns": 2360100,
+      "infer_ns": 34254600,
+      "output_and_certificate_ns": 11449500
+    },
+    {
+      "method": "int32",
+      "block": 1,
+      "elapsed_ns": 55588200,
+      "accepted": true,
+      "correct": true,
+      "error": null,
+      "indices": [
+        932085,
+        934876,
+        561813,
+        708177,
+        706771,
+        695756,
+        435345,
+        701258,
+        455537,
+        872728
+      ]
+    },
+    {
+      "method": "int32",
+      "block": 2,
+      "elapsed_ns": 49713000,
+      "accepted": true,
+      "correct": true,
+      "error": null,
+      "indices": [
+        932085,
+        934876,
+        561813,
+        708177,
+        706771,
+        695756,
+        435345,
+        701258,
+        455537,
+        872728
+      ]
+    },
+    {
+      "method": "fp32",
+      "block": 2,
+      "elapsed_ns": 43032300,
+      "accepted": true,
+      "correct": true,
+      "error": null,
+      "indices": [
+        932085,
+        934876,
+        561813,
+        708177,
+        706771,
+        695756,
+        435345,
+        701258,
+        455537,
+        872728
+      ],
+      "input_preparation_ns": 2471900,
+      "infer_ns": 29913400,
+      "output_and_certificate_ns": 10628300
+    },
+    {
+      "method": "int32",
+      "block": 3,
+      "elapsed_ns": 48758700,
+      "accepted": true,
+      "correct": true,
+      "error": null,
+      "indices": [
+        932085,
+        934876,
+        561813,
+        708177,
+        706771,
+        695756,
+        435345,
+        701258,
+        455537,
+        872728
+      ]
+    },
+    {
+      "method": "fp32",
+      "block": 3,
+      "elapsed_ns": 38674400,
+      "accepted": true,
+      "correct": true,
+      "error": null,
+      "indices": [
+        932085,
+        934876,
+        561813,
+        708177,
+        706771,
+        695756,
+        435345,
+        701258,
+        455537,
+        872728
+      ],
+      "input_preparation_ns": 2093400,
+      "infer_ns": 27809500,
+      "output_and_certificate_ns": 8753500
+    },
+    {
+      "method": "fp32",
+      "block": 4,
+      "elapsed_ns": 37357700,
+      "accepted": true,
+      "correct": true,
+      "error": null,
+      "indices": [
+        932085,
+        934876,
+        561813,
+        708177,
+        706771,
+        695756,
+        435345,
+        701258,
+        455537,
+        872728
+      ],
+      "input_preparation_ns": 2368300,
+      "infer_ns": 26417200,
+      "output_and_certificate_ns": 8553600
+    },
+    {
+      "method": "int32",
+      "block": 4,
+      "elapsed_ns": 43935800,
+      "accepted": true,
+      "correct": true,
+      "error": null,
+      "indices": [
+        932085,
+        934876,
+        561813,
+        708177,
+        706771,
+        695756,
+        435345,
+        701258,
+        455537,
+        872728
+      ]
+    },
+    {
+      "method": "int32",
+      "block": 5,
+      "elapsed_ns": 43010500,
+      "accepted": true,
+      "correct": true,
+      "error": null,
+      "indices": [
+        932085,
+        934876,
+        561813,
+        708177,
+        706771,
+        695756,
+        435345,
+        701258,
+        455537,
+        872728
+      ]
+    },
+    {
+      "method": "fp32",
+      "block": 5,
+      "elapsed_ns": 36320300,
+      "accepted": true,
+      "correct": true,
+      "error": null,
+      "indices": [
+        932085,
+        934876,
+        561813,
+        708177,
+        706771,
+        695756,
+        435345,
+        701258,
+        455537,
+        872728
+      ],
+      "input_preparation_ns": 2152500,
+      "infer_ns": 23936700,
+      "output_and_certificate_ns": 10211400
+    }
+  ]
+}

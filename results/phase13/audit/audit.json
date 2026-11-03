@@ -1,0 +1,245 @@
+{
+  "base_revision": "342b3726f531143ab5aac1666f2ec79a9baea839",
+  "environment": {
+    "timestamp_utc": "2026-11-03T14:16:20.600494+00:00",
+    "pid": 4108,
+    "source_revision": "342b3726f531143ab5aac1666f2ec79a9baea839",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.0",
+    "packages": {
+      "numpy": "2.4.6",
+      "openvino": "2026.4.1",
+      "torch": "2.11.0+cu128",
+      "sentence-transformers": "5.1.2",
+      "scipy": "1.17.1"
+    },
+    "devices": [
+      "CPU",
+      "GPU.0",
+      "GPU.1",
+      "NPU"
+    ],
+    "npu": {
+      "FULL_DEVICE_NAME": "Intel(R) AI Boost",
+      "DEVICE_ARCHITECTURE": "3720",
+      "NPU_DRIVER_VERSION": "1004512",
+      "NPU_COMPILER_VERSION": "458778"
+    },
+    "cuda_available": true,
+    "cuda_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "torch_threads": 16,
+    "power": {
+      "ac_connected": true,
+      "battery_percent": 100,
+      "battery_saver": false,
+      "power_plan": "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)"
+    }
+  },
+  "source_archives": {
+    "sift": {
+      "manifest_sha256": "fb458f0b39268353dc37de88caeb06a97bc3c4040359a99786e4ece369498d80",
+      "archive": "data\\raw\\sift.tar.gz",
+      "archive_sha256": "92f1270c5e3a0cb46b89983e72b0511e4df065c31a9fa0276d8c9b1fca5bc81a",
+      "archive_matches": true,
+      "model_revision": null,
+      "previous_prepared_ids": [
+        "0",
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "scifact": {
+      "manifest_sha256": "025496922077e69acd03268544af41fd7875b032d728f1f0aeae46097b6b20f7",
+      "archive": "data\\raw\\beir\\scifact.zip",
+      "archive_sha256": "536e14446a0ba56ed1398ab1055f39fe852686ecad24a6306c80c490fa8e0165",
+      "archive_matches": true,
+      "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "previous_prepared_ids": [
+        "1",
+        "13",
+        "3",
+        "36",
+        "42",
+        "48",
+        "49",
+        "5",
+        "50",
+        "51",
+        "53",
+        "54",
+        "56",
+        "57",
+        "70",
+        "72"
+      ]
+    },
+    "fiqa": {
+      "manifest_sha256": "5e440a4c2cfc6e3302958ded3c6c7efba8d7dee5dc9b8a73946fbba4d63e60e6",
+      "archive": "data\\raw\\beir\\fiqa.zip",
+      "archive_sha256": "32c7df99ed21252fdfb2cf3f5673502a8d245ee0c44c4a133570d92ce2b3ad02",
+      "archive_matches": true,
+      "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "previous_prepared_ids": [
+        "104",
+        "106",
+        "109",
+        "15",
+        "18",
+        "26",
+        "34",
+        "42",
+        "475",
+        "56",
+        "68",
+        "8",
+        "89",
+        "90",
+        "94",
+        "98"
+      ]
+    }
+  },
+  "query_selection": {
+    "sift": {
+      "excluded_prepared_query_ids": [
+        "0",
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "population": 10000,
+      "eligible": 9984,
+      "selected_ids": [
+        "4337",
+        "3620",
+        "701",
+        "3111",
+        "2262",
+        "8005",
+        "2526",
+        "5971"
+      ],
+      "selection": "8 smallest SHA256(seed|dataset|queryID) among unused IDs"
+    },
+    "scifact": {
+      "excluded_prepared_query_ids": [
+        "1",
+        "13",
+        "3",
+        "36",
+        "42",
+        "48",
+        "49",
+        "5",
+        "50",
+        "51",
+        "53",
+        "54",
+        "56",
+        "57",
+        "70",
+        "72"
+      ],
+      "population": 300,
+      "eligible": 284,
+      "selected_ids": [
+        "832",
+        "1382",
+        "830",
+        "904",
+        "1363",
+        "1319",
+        "578",
+        "957"
+      ],
+      "selection": "8 smallest SHA256(seed|dataset|queryID) among unused IDs"
+    },
+    "fiqa": {
+      "excluded_prepared_query_ids": [
+        "104",
+        "106",
+        "109",
+        "15",
+        "18",
+        "26",
+        "34",
+        "42",
+        "475",
+        "56",
+        "68",
+        "8",
+        "89",
+        "90",
+        "94",
+        "98"
+      ],
+      "population": 648,
+      "eligible": 632,
+      "selected_ids": [
+        "2010",
+        "8947",
+        "5460",
+        "4447",
+        "4523",
+        "9391",
+        "8351",
+        "7344"
+      ],
+      "selection": "8 smallest SHA256(seed|dataset|queryID) among unused IDs"
+    }
+  },
+  "historical_npy_files_inventoried": 330,
+  "historical_prepared_positions": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "phase12_manifest_files_verified": 1641,
+  "phase12_hash_mismatches": [],
+  "phase12_sift_exploratory_log_ratios": {
+    "sift_session01": 0.09260032077252646,
+    "sift_session02": 0.1537866340178991,
+    "sift_session03": 0.13303462896614798
+  },
+  "phase12_log_ratio_sample_sd": 0.03111629776961889,
+  "fresh_score_arrays_read_or_created": false,
+  "scope": "Freshness is relative to recorded preparation/execution history, not an unknowable external access history."
+}

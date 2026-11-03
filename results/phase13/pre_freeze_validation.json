@@ -1,0 +1,8 @@
+{
+  "pytest_passed": 26,
+  "ruff": "passed",
+  "smoke_configurations": 15,
+  "methods_per_configuration": 6,
+  "smoke_all_correct": true,
+  "fresh_scores_accessed": false
+}

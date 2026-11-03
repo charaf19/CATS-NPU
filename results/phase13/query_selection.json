@@ -1,0 +1,101 @@
+{
+  "sift": {
+    "excluded_prepared_query_ids": [
+      "0",
+      "1",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "population": 10000,
+    "eligible": 9984,
+    "selected_ids": [
+      "4337",
+      "3620",
+      "701",
+      "3111",
+      "2262",
+      "8005",
+      "2526",
+      "5971"
+    ],
+    "selection": "8 smallest SHA256(seed|dataset|queryID) among unused IDs"
+  },
+  "scifact": {
+    "excluded_prepared_query_ids": [
+      "1",
+      "13",
+      "3",
+      "36",
+      "42",
+      "48",
+      "49",
+      "5",
+      "50",
+      "51",
+      "53",
+      "54",
+      "56",
+      "57",
+      "70",
+      "72"
+    ],
+    "population": 300,
+    "eligible": 284,
+    "selected_ids": [
+      "832",
+      "1382",
+      "830",
+      "904",
+      "1363",
+      "1319",
+      "578",
+      "957"
+    ],
+    "selection": "8 smallest SHA256(seed|dataset|queryID) among unused IDs"
+  },
+  "fiqa": {
+    "excluded_prepared_query_ids": [
+      "104",
+      "106",
+      "109",
+      "15",
+      "18",
+      "26",
+      "34",
+      "42",
+      "475",
+      "56",
+      "68",
+      "8",
+      "89",
+      "90",
+      "94",
+      "98"
+    ],
+    "population": 648,
+    "eligible": 632,
+    "selected_ids": [
+      "2010",
+      "8947",
+      "5460",
+      "4447",
+      "4523",
+      "9391",
+      "8351",
+      "7344"
+    ],
+    "selection": "8 smallest SHA256(seed|dataset|queryID) among unused IDs"
+  }
+}

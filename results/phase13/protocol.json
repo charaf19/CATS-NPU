@@ -1,0 +1,1146 @@
+{
+  "version": 1,
+  "client_date": "2026-11-03",
+  "methods": [
+    "fp32",
+    "int32",
+    "fp16_static",
+    "native_npu",
+    "cpp",
+    "cuda"
+  ],
+  "performance_sessions": 12,
+  "numerical_sessions": 3,
+  "warmups": 2,
+  "timed_repetitions": 6,
+  "numerical_repetitions": 2,
+  "session_idle_seconds": 10,
+  "query_selection": {
+    "sift": {
+      "excluded_prepared_query_ids": [
+        "0",
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "population": 10000,
+      "eligible": 9984,
+      "selected_ids": [
+        "4337",
+        "3620",
+        "701",
+        "3111",
+        "2262",
+        "8005",
+        "2526",
+        "5971"
+      ],
+      "selection": "8 smallest SHA256(seed|dataset|queryID) among unused IDs"
+    },
+    "scifact": {
+      "excluded_prepared_query_ids": [
+        "1",
+        "13",
+        "3",
+        "36",
+        "42",
+        "48",
+        "49",
+        "5",
+        "50",
+        "51",
+        "53",
+        "54",
+        "56",
+        "57",
+        "70",
+        "72"
+      ],
+      "population": 300,
+      "eligible": 284,
+      "selected_ids": [
+        "832",
+        "1382",
+        "830",
+        "904",
+        "1363",
+        "1319",
+        "578",
+        "957"
+      ],
+      "selection": "8 smallest SHA256(seed|dataset|queryID) among unused IDs"
+    },
+    "fiqa": {
+      "excluded_prepared_query_ids": [
+        "104",
+        "106",
+        "109",
+        "15",
+        "18",
+        "26",
+        "34",
+        "42",
+        "475",
+        "56",
+        "68",
+        "8",
+        "89",
+        "90",
+        "94",
+        "98"
+      ],
+      "population": 648,
+      "eligible": 632,
+      "selected_ids": [
+        "2010",
+        "8947",
+        "5460",
+        "4447",
+        "4523",
+        "9391",
+        "8351",
+        "7344"
+      ],
+      "selection": "8 smallest SHA256(seed|dataset|queryID) among unused IDs"
+    }
+  },
+  "performance_cases": [
+    {
+      "id": "sift_q4337_N1000000_K10_W256",
+      "dataset": "sift",
+      "query_id": "4337",
+      "n": 1000000,
+      "k": 10,
+      "w": 256,
+      "role": "primary"
+    },
+    {
+      "id": "sift_q4337_N1000000_K1_W128",
+      "dataset": "sift",
+      "query_id": "4337",
+      "n": 1000000,
+      "k": 1,
+      "w": 128,
+      "role": "sensitivity"
+    },
+    {
+      "id": "sift_q4337_N1000000_K100_W512",
+      "dataset": "sift",
+      "query_id": "4337",
+      "n": 1000000,
+      "k": 100,
+      "w": 512,
+      "role": "sensitivity"
+    },
+    {
+      "id": "sift_q4337_N16384_K10_W256",
+      "dataset": "sift",
+      "query_id": "4337",
+      "n": 16384,
+      "k": 10,
+      "w": 256,
+      "role": "sensitivity"
+    },
+    {
+      "id": "sift_q4337_N131072_K10_W256",
+      "dataset": "sift",
+      "query_id": "4337",
+      "n": 131072,
+      "k": 10,
+      "w": 256,
+      "role": "sensitivity"
+    },
+    {
+      "id": "sift_q4337_N1000000_K10_W128",
+      "dataset": "sift",
+      "query_id": "4337",
+      "n": 1000000,
+      "k": 10,
+      "w": 128,
+      "role": "sensitivity"
+    },
+    {
+      "id": "sift_q4337_N1000000_K10_W512",
+      "dataset": "sift",
+      "query_id": "4337",
+      "n": 1000000,
+      "k": 10,
+      "w": 512,
+      "role": "sensitivity"
+    },
+    {
+      "id": "sift_q4337_N1000000_K1_W256",
+      "dataset": "sift",
+      "query_id": "4337",
+      "n": 1000000,
+      "k": 1,
+      "w": 256,
+      "role": "sensitivity"
+    },
+    {
+      "id": "sift_q4337_N1000000_K100_W256",
+      "dataset": "sift",
+      "query_id": "4337",
+      "n": 1000000,
+      "k": 100,
+      "w": 256,
+      "role": "sensitivity"
+    },
+    {
+      "id": "sift_q3620_N1000000_K10_W256",
+      "dataset": "sift",
+      "query_id": "3620",
+      "n": 1000000,
+      "k": 10,
+      "w": 256,
+      "role": "primary"
+    },
+    {
+      "id": "sift_q3620_N1000000_K1_W128",
+      "dataset": "sift",
+      "query_id": "3620",
+      "n": 1000000,
+      "k": 1,
+      "w": 128,
+      "role": "sensitivity"
+    },
+    {
+      "id": "sift_q3620_N1000000_K100_W512",
+      "dataset": "sift",
+      "query_id": "3620",
+      "n": 1000000,
+      "k": 100,
+      "w": 512,
+      "role": "sensitivity"
+    },
+    {
+      "id": "sift_q3620_N16384_K10_W256",
+      "dataset": "sift",
+      "query_id": "3620",
+      "n": 16384,
+      "k": 10,
+      "w": 256,
+      "role": "sensitivity"
+    },
+    {
+      "id": "sift_q3620_N131072_K10_W256",
+      "dataset": "sift",
+      "query_id": "3620",
+      "n": 131072,
+      "k": 10,
+      "w": 256,
+      "role": "sensitivity"
+    },
+    {
+      "id": "sift_q3620_N1000000_K10_W128",
+      "dataset": "sift",
+      "query_id": "3620",
+      "n": 1000000,
+      "k": 10,
+      "w": 128,
+      "role": "sensitivity"
+    },
+    {
+      "id": "sift_q3620_N1000000_K10_W512",
+      "dataset": "sift",
+      "query_id": "3620",
+      "n": 1000000,
+      "k": 10,
+      "w": 512,
+      "role": "sensitivity"
+    },
+    {
+      "id": "sift_q3620_N1000000_K1_W256",
+      "dataset": "sift",
+      "query_id": "3620",
+      "n": 1000000,
+      "k": 1,
+      "w": 256,
+      "role": "sensitivity"
+    },
+    {
+      "id": "sift_q3620_N1000000_K100_W256",
+      "dataset": "sift",
+      "query_id": "3620",
+      "n": 1000000,
+      "k": 100,
+      "w": 256,
+      "role": "sensitivity"
+    },
+    {
+      "id": "sift_q701_N1000000_K10_W256",
+      "dataset": "sift",
+      "query_id": "701",
+      "n": 1000000,
+      "k": 10,
+      "w": 256,
+      "role": "primary"
+    },
+    {
+      "id": "sift_q3111_N1000000_K10_W256",
+      "dataset": "sift",
+      "query_id": "3111",
+      "n": 1000000,
+      "k": 10,
+      "w": 256,
+      "role": "primary"
+    },
+    {
+      "id": "sift_q2262_N1000000_K10_W256",
+      "dataset": "sift",
+      "query_id": "2262",
+      "n": 1000000,
+      "k": 10,
+      "w": 256,
+      "role": "primary"
+    },
+    {
+      "id": "sift_q8005_N1000000_K10_W256",
+      "dataset": "sift",
+      "query_id": "8005",
+      "n": 1000000,
+      "k": 10,
+      "w": 256,
+      "role": "primary"
+    },
+    {
+      "id": "sift_q2526_N1000000_K10_W256",
+      "dataset": "sift",
+      "query_id": "2526",
+      "n": 1000000,
+      "k": 10,
+      "w": 256,
+      "role": "primary"
+    },
+    {
+      "id": "sift_q5971_N1000000_K10_W256",
+      "dataset": "sift",
+      "query_id": "5971",
+      "n": 1000000,
+      "k": 10,
+      "w": 256,
+      "role": "primary"
+    },
+    {
+      "id": "scifact_q832_N5183_K10_W256",
+      "dataset": "scifact",
+      "query_id": "832",
+      "n": 5183,
+      "k": 10,
+      "w": 256,
+      "role": "dataset"
+    },
+    {
+      "id": "scifact_q832_N5183_K1_W128",
+      "dataset": "scifact",
+      "query_id": "832",
+      "n": 5183,
+      "k": 1,
+      "w": 128,
+      "role": "sensitivity"
+    },
+    {
+      "id": "scifact_q832_N5183_K100_W512",
+      "dataset": "scifact",
+      "query_id": "832",
+      "n": 5183,
+      "k": 100,
+      "w": 512,
+      "role": "sensitivity"
+    },
+    {
+      "id": "scifact_q1382_N5183_K10_W256",
+      "dataset": "scifact",
+      "query_id": "1382",
+      "n": 5183,
+      "k": 10,
+      "w": 256,
+      "role": "dataset"
+    },
+    {
+      "id": "scifact_q1382_N5183_K1_W128",
+      "dataset": "scifact",
+      "query_id": "1382",
+      "n": 5183,
+      "k": 1,
+      "w": 128,
+      "role": "sensitivity"
+    },
+    {
+      "id": "scifact_q1382_N5183_K100_W512",
+      "dataset": "scifact",
+      "query_id": "1382",
+      "n": 5183,
+      "k": 100,
+      "w": 512,
+      "role": "sensitivity"
+    },
+    {
+      "id": "scifact_q830_N5183_K10_W256",
+      "dataset": "scifact",
+      "query_id": "830",
+      "n": 5183,
+      "k": 10,
+      "w": 256,
+      "role": "dataset"
+    },
+    {
+      "id": "scifact_q904_N5183_K10_W256",
+      "dataset": "scifact",
+      "query_id": "904",
+      "n": 5183,
+      "k": 10,
+      "w": 256,
+      "role": "dataset"
+    },
+    {
+      "id": "scifact_q1363_N5183_K10_W256",
+      "dataset": "scifact",
+      "query_id": "1363",
+      "n": 5183,
+      "k": 10,
+      "w": 256,
+      "role": "dataset"
+    },
+    {
+      "id": "scifact_q1319_N5183_K10_W256",
+      "dataset": "scifact",
+      "query_id": "1319",
+      "n": 5183,
+      "k": 10,
+      "w": 256,
+      "role": "dataset"
+    },
+    {
+      "id": "scifact_q578_N5183_K10_W256",
+      "dataset": "scifact",
+      "query_id": "578",
+      "n": 5183,
+      "k": 10,
+      "w": 256,
+      "role": "dataset"
+    },
+    {
+      "id": "scifact_q957_N5183_K10_W256",
+      "dataset": "scifact",
+      "query_id": "957",
+      "n": 5183,
+      "k": 10,
+      "w": 256,
+      "role": "dataset"
+    },
+    {
+      "id": "fiqa_q2010_N57638_K10_W256",
+      "dataset": "fiqa",
+      "query_id": "2010",
+      "n": 57638,
+      "k": 10,
+      "w": 256,
+      "role": "dataset"
+    },
+    {
+      "id": "fiqa_q2010_N57638_K1_W128",
+      "dataset": "fiqa",
+      "query_id": "2010",
+      "n": 57638,
+      "k": 1,
+      "w": 128,
+      "role": "sensitivity"
+    },
+    {
+      "id": "fiqa_q2010_N57638_K100_W512",
+      "dataset": "fiqa",
+      "query_id": "2010",
+      "n": 57638,
+      "k": 100,
+      "w": 512,
+      "role": "sensitivity"
+    },
+    {
+      "id": "fiqa_q8947_N57638_K10_W256",
+      "dataset": "fiqa",
+      "query_id": "8947",
+      "n": 57638,
+      "k": 10,
+      "w": 256,
+      "role": "dataset"
+    },
+    {
+      "id": "fiqa_q8947_N57638_K1_W128",
+      "dataset": "fiqa",
+      "query_id": "8947",
+      "n": 57638,
+      "k": 1,
+      "w": 128,
+      "role": "sensitivity"
+    },
+    {
+      "id": "fiqa_q8947_N57638_K100_W512",
+      "dataset": "fiqa",
+      "query_id": "8947",
+      "n": 57638,
+      "k": 100,
+      "w": 512,
+      "role": "sensitivity"
+    },
+    {
+      "id": "fiqa_q5460_N57638_K10_W256",
+      "dataset": "fiqa",
+      "query_id": "5460",
+      "n": 57638,
+      "k": 10,
+      "w": 256,
+      "role": "dataset"
+    },
+    {
+      "id": "fiqa_q4447_N57638_K10_W256",
+      "dataset": "fiqa",
+      "query_id": "4447",
+      "n": 57638,
+      "k": 10,
+      "w": 256,
+      "role": "dataset"
+    },
+    {
+      "id": "fiqa_q4523_N57638_K10_W256",
+      "dataset": "fiqa",
+      "query_id": "4523",
+      "n": 57638,
+      "k": 10,
+      "w": 256,
+      "role": "dataset"
+    },
+    {
+      "id": "fiqa_q9391_N57638_K10_W256",
+      "dataset": "fiqa",
+      "query_id": "9391",
+      "n": 57638,
+      "k": 10,
+      "w": 256,
+      "role": "dataset"
+    },
+    {
+      "id": "fiqa_q8351_N57638_K10_W256",
+      "dataset": "fiqa",
+      "query_id": "8351",
+      "n": 57638,
+      "k": 10,
+      "w": 256,
+      "role": "dataset"
+    },
+    {
+      "id": "fiqa_q7344_N57638_K10_W256",
+      "dataset": "fiqa",
+      "query_id": "7344",
+      "n": 57638,
+      "k": 10,
+      "w": 256,
+      "role": "dataset"
+    }
+  ],
+  "numerical_cases": [
+    {
+      "id": "positive_subnormal_W128_K1",
+      "family": "positive_subnormal",
+      "n": 257,
+      "k": 1,
+      "w": 128,
+      "seed": 130000
+    },
+    {
+      "id": "negative_subnormal_W128_K1",
+      "family": "negative_subnormal",
+      "n": 255,
+      "k": 1,
+      "w": 128,
+      "seed": 130001
+    },
+    {
+      "id": "normal_neighbors_W128_K1",
+      "family": "normal_neighbors",
+      "n": 257,
+      "k": 1,
+      "w": 128,
+      "seed": 130002
+    },
+    {
+      "id": "mixed_ties_extremes_W128_K1",
+      "family": "mixed_ties_extremes",
+      "n": 129,
+      "k": 1,
+      "w": 128,
+      "seed": 130003
+    },
+    {
+      "id": "signed_zero_W128_K1",
+      "family": "signed_zero",
+      "n": 129,
+      "k": 1,
+      "w": 128,
+      "seed": 130004
+    },
+    {
+      "id": "cross_tile_boundary_W128_K1",
+      "family": "cross_tile_boundary",
+      "n": 257,
+      "k": 1,
+      "w": 128,
+      "seed": 130005
+    },
+    {
+      "id": "positive_subnormal_W128_K10",
+      "family": "positive_subnormal",
+      "n": 257,
+      "k": 10,
+      "w": 128,
+      "seed": 130006
+    },
+    {
+      "id": "negative_subnormal_W128_K10",
+      "family": "negative_subnormal",
+      "n": 255,
+      "k": 10,
+      "w": 128,
+      "seed": 130007
+    },
+    {
+      "id": "normal_neighbors_W128_K10",
+      "family": "normal_neighbors",
+      "n": 257,
+      "k": 10,
+      "w": 128,
+      "seed": 130008
+    },
+    {
+      "id": "mixed_ties_extremes_W128_K10",
+      "family": "mixed_ties_extremes",
+      "n": 129,
+      "k": 10,
+      "w": 128,
+      "seed": 130009
+    },
+    {
+      "id": "signed_zero_W128_K10",
+      "family": "signed_zero",
+      "n": 129,
+      "k": 10,
+      "w": 128,
+      "seed": 130010
+    },
+    {
+      "id": "cross_tile_boundary_W128_K10",
+      "family": "cross_tile_boundary",
+      "n": 257,
+      "k": 10,
+      "w": 128,
+      "seed": 130011
+    },
+    {
+      "id": "positive_subnormal_W128_K100",
+      "family": "positive_subnormal",
+      "n": 257,
+      "k": 100,
+      "w": 128,
+      "seed": 130012
+    },
+    {
+      "id": "negative_subnormal_W128_K100",
+      "family": "negative_subnormal",
+      "n": 255,
+      "k": 100,
+      "w": 128,
+      "seed": 130013
+    },
+    {
+      "id": "normal_neighbors_W128_K100",
+      "family": "normal_neighbors",
+      "n": 257,
+      "k": 100,
+      "w": 128,
+      "seed": 130014
+    },
+    {
+      "id": "mixed_ties_extremes_W128_K100",
+      "family": "mixed_ties_extremes",
+      "n": 129,
+      "k": 100,
+      "w": 128,
+      "seed": 130015
+    },
+    {
+      "id": "signed_zero_W128_K100",
+      "family": "signed_zero",
+      "n": 129,
+      "k": 100,
+      "w": 128,
+      "seed": 130016
+    },
+    {
+      "id": "cross_tile_boundary_W128_K100",
+      "family": "cross_tile_boundary",
+      "n": 257,
+      "k": 100,
+      "w": 128,
+      "seed": 130017
+    },
+    {
+      "id": "positive_subnormal_W256_K1",
+      "family": "positive_subnormal",
+      "n": 513,
+      "k": 1,
+      "w": 256,
+      "seed": 130018
+    },
+    {
+      "id": "negative_subnormal_W256_K1",
+      "family": "negative_subnormal",
+      "n": 511,
+      "k": 1,
+      "w": 256,
+      "seed": 130019
+    },
+    {
+      "id": "normal_neighbors_W256_K1",
+      "family": "normal_neighbors",
+      "n": 513,
+      "k": 1,
+      "w": 256,
+      "seed": 130020
+    },
+    {
+      "id": "mixed_ties_extremes_W256_K1",
+      "family": "mixed_ties_extremes",
+      "n": 257,
+      "k": 1,
+      "w": 256,
+      "seed": 130021
+    },
+    {
+      "id": "signed_zero_W256_K1",
+      "family": "signed_zero",
+      "n": 257,
+      "k": 1,
+      "w": 256,
+      "seed": 130022
+    },
+    {
+      "id": "cross_tile_boundary_W256_K1",
+      "family": "cross_tile_boundary",
+      "n": 513,
+      "k": 1,
+      "w": 256,
+      "seed": 130023
+    },
+    {
+      "id": "positive_subnormal_W256_K10",
+      "family": "positive_subnormal",
+      "n": 513,
+      "k": 10,
+      "w": 256,
+      "seed": 130024
+    },
+    {
+      "id": "negative_subnormal_W256_K10",
+      "family": "negative_subnormal",
+      "n": 511,
+      "k": 10,
+      "w": 256,
+      "seed": 130025
+    },
+    {
+      "id": "normal_neighbors_W256_K10",
+      "family": "normal_neighbors",
+      "n": 513,
+      "k": 10,
+      "w": 256,
+      "seed": 130026
+    },
+    {
+      "id": "mixed_ties_extremes_W256_K10",
+      "family": "mixed_ties_extremes",
+      "n": 257,
+      "k": 10,
+      "w": 256,
+      "seed": 130027
+    },
+    {
+      "id": "signed_zero_W256_K10",
+      "family": "signed_zero",
+      "n": 257,
+      "k": 10,
+      "w": 256,
+      "seed": 130028
+    },
+    {
+      "id": "cross_tile_boundary_W256_K10",
+      "family": "cross_tile_boundary",
+      "n": 513,
+      "k": 10,
+      "w": 256,
+      "seed": 130029
+    },
+    {
+      "id": "positive_subnormal_W256_K100",
+      "family": "positive_subnormal",
+      "n": 513,
+      "k": 100,
+      "w": 256,
+      "seed": 130030
+    },
+    {
+      "id": "negative_subnormal_W256_K100",
+      "family": "negative_subnormal",
+      "n": 511,
+      "k": 100,
+      "w": 256,
+      "seed": 130031
+    },
+    {
+      "id": "normal_neighbors_W256_K100",
+      "family": "normal_neighbors",
+      "n": 513,
+      "k": 100,
+      "w": 256,
+      "seed": 130032
+    },
+    {
+      "id": "mixed_ties_extremes_W256_K100",
+      "family": "mixed_ties_extremes",
+      "n": 257,
+      "k": 100,
+      "w": 256,
+      "seed": 130033
+    },
+    {
+      "id": "signed_zero_W256_K100",
+      "family": "signed_zero",
+      "n": 257,
+      "k": 100,
+      "w": 256,
+      "seed": 130034
+    },
+    {
+      "id": "cross_tile_boundary_W256_K100",
+      "family": "cross_tile_boundary",
+      "n": 513,
+      "k": 100,
+      "w": 256,
+      "seed": 130035
+    },
+    {
+      "id": "positive_subnormal_W512_K1",
+      "family": "positive_subnormal",
+      "n": 1025,
+      "k": 1,
+      "w": 512,
+      "seed": 130036
+    },
+    {
+      "id": "negative_subnormal_W512_K1",
+      "family": "negative_subnormal",
+      "n": 1023,
+      "k": 1,
+      "w": 512,
+      "seed": 130037
+    },
+    {
+      "id": "normal_neighbors_W512_K1",
+      "family": "normal_neighbors",
+      "n": 1025,
+      "k": 1,
+      "w": 512,
+      "seed": 130038
+    },
+    {
+      "id": "mixed_ties_extremes_W512_K1",
+      "family": "mixed_ties_extremes",
+      "n": 513,
+      "k": 1,
+      "w": 512,
+      "seed": 130039
+    },
+    {
+      "id": "signed_zero_W512_K1",
+      "family": "signed_zero",
+      "n": 513,
+      "k": 1,
+      "w": 512,
+      "seed": 130040
+    },
+    {
+      "id": "cross_tile_boundary_W512_K1",
+      "family": "cross_tile_boundary",
+      "n": 1025,
+      "k": 1,
+      "w": 512,
+      "seed": 130041
+    },
+    {
+      "id": "positive_subnormal_W512_K10",
+      "family": "positive_subnormal",
+      "n": 1025,
+      "k": 10,
+      "w": 512,
+      "seed": 130042
+    },
+    {
+      "id": "negative_subnormal_W512_K10",
+      "family": "negative_subnormal",
+      "n": 1023,
+      "k": 10,
+      "w": 512,
+      "seed": 130043
+    },
+    {
+      "id": "normal_neighbors_W512_K10",
+      "family": "normal_neighbors",
+      "n": 1025,
+      "k": 10,
+      "w": 512,
+      "seed": 130044
+    },
+    {
+      "id": "mixed_ties_extremes_W512_K10",
+      "family": "mixed_ties_extremes",
+      "n": 513,
+      "k": 10,
+      "w": 512,
+      "seed": 130045
+    },
+    {
+      "id": "signed_zero_W512_K10",
+      "family": "signed_zero",
+      "n": 513,
+      "k": 10,
+      "w": 512,
+      "seed": 130046
+    },
+    {
+      "id": "cross_tile_boundary_W512_K10",
+      "family": "cross_tile_boundary",
+      "n": 1025,
+      "k": 10,
+      "w": 512,
+      "seed": 130047
+    },
+    {
+      "id": "positive_subnormal_W512_K100",
+      "family": "positive_subnormal",
+      "n": 1025,
+      "k": 100,
+      "w": 512,
+      "seed": 130048
+    },
+    {
+      "id": "negative_subnormal_W512_K100",
+      "family": "negative_subnormal",
+      "n": 1023,
+      "k": 100,
+      "w": 512,
+      "seed": 130049
+    },
+    {
+      "id": "normal_neighbors_W512_K100",
+      "family": "normal_neighbors",
+      "n": 1025,
+      "k": 100,
+      "w": 512,
+      "seed": 130050
+    },
+    {
+      "id": "mixed_ties_extremes_W512_K100",
+      "family": "mixed_ties_extremes",
+      "n": 513,
+      "k": 100,
+      "w": 512,
+      "seed": 130051
+    },
+    {
+      "id": "signed_zero_W512_K100",
+      "family": "signed_zero",
+      "n": 513,
+      "k": 100,
+      "w": 512,
+      "seed": 130052
+    },
+    {
+      "id": "cross_tile_boundary_W512_K100",
+      "family": "cross_tile_boundary",
+      "n": 1025,
+      "k": 100,
+      "w": 512,
+      "seed": 130053
+    }
+  ],
+  "bootstrap_resamples": 50000,
+  "crossed_bootstrap_resamples": 20000,
+  "analysis_seed": 131313,
+  "primary": {
+    "dataset": "sift",
+    "n": 1000000,
+    "k": 10,
+    "w": 256,
+    "numerator": "int32",
+    "denominator": "fp32",
+    "alpha": 0.05,
+    "practical_ratio": 1.1,
+    "estimand": "exp(mean session mean query paired log median latency ratio))",
+    "test": "two-sided exact session sign-flip versus log ratio zero",
+    "interval": "95% percentile session-cluster bootstrap",
+    "benefit_rule": "p<0.05 and session-bootstrap lower bound>1.10, with no accepted errors or rejected primary checked executions"
+  },
+  "secondary_holm_family": [
+    {
+      "dataset": "sift",
+      "numerator": "native_npu",
+      "denominator": "fp32"
+    },
+    {
+      "dataset": "sift",
+      "numerator": "fp16_static",
+      "denominator": "fp32"
+    },
+    {
+      "dataset": "sift",
+      "numerator": "cpp",
+      "denominator": "fp32"
+    },
+    {
+      "dataset": "sift",
+      "numerator": "cuda",
+      "denominator": "fp32"
+    },
+    {
+      "dataset": "scifact",
+      "numerator": "native_npu",
+      "denominator": "fp32"
+    },
+    {
+      "dataset": "scifact",
+      "numerator": "fp16_static",
+      "denominator": "fp32"
+    },
+    {
+      "dataset": "scifact",
+      "numerator": "cpp",
+      "denominator": "fp32"
+    },
+    {
+      "dataset": "scifact",
+      "numerator": "cuda",
+      "denominator": "fp32"
+    },
+    {
+      "dataset": "fiqa",
+      "numerator": "native_npu",
+      "denominator": "fp32"
+    },
+    {
+      "dataset": "fiqa",
+      "numerator": "fp16_static",
+      "denominator": "fp32"
+    },
+    {
+      "dataset": "fiqa",
+      "numerator": "cpp",
+      "denominator": "fp32"
+    },
+    {
+      "dataset": "fiqa",
+      "numerator": "cuda",
+      "denominator": "fp32"
+    },
+    {
+      "dataset": "scifact",
+      "numerator": "int32",
+      "denominator": "fp32"
+    },
+    {
+      "dataset": "fiqa",
+      "numerator": "int32",
+      "denominator": "fp32"
+    }
+  ],
+  "pilot_justification": {
+    "current_log_ratios": [
+      0.22314151815128933,
+      0.18663319140456988,
+      0.22867327743585325
+    ],
+    "current_log_sd": 0.022843040939365962,
+    "historical_log_sd": 0.03111629776961889,
+    "conservative_planning_sd": 0.07,
+    "t_halfwidth_at_12": 0.044475878113144775,
+    "target": "approximately 4.5% log-ratio halfwidth with planning SD 0.07; not guaranteed power for a narrow 1.10 practical margin"
+  },
+  "environment_requirement": {
+    "timestamp_utc": "2026-11-03T14:16:20.600494+00:00",
+    "pid": 4108,
+    "source_revision": "342b3726f531143ab5aac1666f2ec79a9baea839",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.0",
+    "packages": {
+      "numpy": "2.4.6",
+      "openvino": "2026.4.1",
+      "torch": "2.11.0+cu128",
+      "sentence-transformers": "5.1.2",
+      "scipy": "1.17.1"
+    },
+    "devices": [
+      "CPU",
+      "GPU.0",
+      "GPU.1",
+      "NPU"
+    ],
+    "npu": {
+      "FULL_DEVICE_NAME": "Intel(R) AI Boost",
+      "DEVICE_ARCHITECTURE": "3720",
+      "NPU_DRIVER_VERSION": "1004512",
+      "NPU_COMPILER_VERSION": "458778"
+    },
+    "cuda_available": true,
+    "cuda_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "torch_threads": 16,
+    "power": {
+      "ac_connected": true,
+      "battery_percent": 100,
+      "battery_saver": false,
+      "power_plan": "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)"
+    }
+  },
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "source_sha256": {
+    "scripts/phase13_analyze.py": "ca1b15c80f58aa14fb6f49e4698b5d4c34d9e24f6e333208519de8ff0467e031",
+    "scripts/phase13_audit.py": "e05e67da700d2588a0681bf6ff5b0e2aab27b2bd9c7be3435942d5d57a9a9a5d",
+    "scripts/phase13_common.py": "db37f89d6ea0d1e9bd3adbd1c6a25d9a4fa6bc17bba1df1d4035f779b6257c29",
+    "scripts/phase13_design.py": "1e072cc427f95e3f1215210fdf58a547d3bf2e5bb87aad44a6f3188c0760bcae",
+    "scripts/phase13_pilot.py": "065f5c38f1d5788903501cac2dc4555c00c8ca0baf60a245dd4bb8d854c99a47",
+    "scripts/phase13_prepare.py": "781294c01b7b11ea950843e2fd0146333321850fa219600f4fdfd9557e826351",
+    "scripts/phase13_run.py": "2efb3610fd228555bd666d18f8ca9bfbd6f1e95d189fcb0e1437cdffd72b9b47",
+    "src/cats_npu/precision_topk.py": "4fb6ccb76747ccb3e8c08c4e3629405041f2b5ae73ffa0d2e411a3771e28431b",
+    "src/cats_npu/static_graph.py": "bbc4b9f2799239036322882077f0f757db2ad53762788c0e724592a969fdad19",
+    "src/cats_npu/order_encoding.py": "e8b4eb4c7cd46e70fc8d77555ff210340dd45319d6b677f45dd149bbcdd7b30f",
+    "src/cats_npu/reference.py": "da32bfec076a9c65924e1553926c5df81c17be4170663a32a921070ab1378fb1",
+    "src/cats_npu/algorithms.py": "a33acaa82d1cb9225e87b064b973781f16adc91552e50cde2a4068b95b4dacea",
+    "src/cats_npu/backends.py": "fe58a8265c58f484b623beb6c2961c9af0178a90ecf8cc89a0f55208cf242eab",
+    "src/cats_npu/native.py": "5d03aec465651e66f6df77366b5cec2d2e40e5356f5b8f400fd42785a73e64be",
+    "scripts/evaluate_precision_repair.py": "06a3cd7286a6e9ae11d44082c4581f92c55ff9eda68103b362a9d75098232cd5",
+    "scripts/probe_stable_integer_hierarchy.py": "8aa8d7bc1cfb8d2c8742f97b8ea842678b09125a66df9be0e7482e94b97281da",
+    "scripts/probe_topk_numerical_path.py": "4255a5b9931e319387a0cadb7d4b131380852cdb761e2873fd1bd77371d5594c",
+    "native/topk.cpp": "02fe71fdc9265a644d8c139e851ab8a6cdd877e8c210e06c6ba48a86e38c10d2",
+    "native/CMakeLists.txt": "1387579b89f34e8a9fdae4256915db2d23789b2657811bcede6300e32e50e866"
+  }
+}
